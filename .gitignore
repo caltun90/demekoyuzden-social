@@ -1,0 +1,7 @@
+# uretim ara dosyalari ve test ciktilari (KIT.md, akis adim 8)
+voice/
+scenes_*/
+silent_*.mp4
+list_*.txt
+test-*.mp4
+__pycache__/

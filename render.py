@@ -104,7 +104,9 @@ def line(c, pts, color=INK, w=9, prog=1.0, alpha=1.0, amp=2.2, curve=False, clos
     p = wpath(pts, closed=closed, amp=amp, curve=curve)
     if fill is not None: c.drawPath(p, paint(fill, fill=True, alpha=alpha))
     pa = paint(color, w, alpha=alpha)
-    if prog < 1: pa.setPathEffect(skia.TrimPathEffect.Make(0, clamp(prog)))
+    if prog < 1:
+        pe = skia.TrimPathEffect.Make(0, clamp(prog))   # prog 1'e cok yakinsa None doner
+        if pe is not None: pa.setPathEffect(pe)
     c.drawPath(p, pa)
 
 def circ(c, cx, cy, rx, ry=None, color=INK, w=9, fill=None, alpha=1.0, prog=1.0, amp=1.8, n=14):
@@ -115,7 +117,9 @@ def circ(c, cx, cy, rx, ry=None, color=INK, w=9, fill=None, alpha=1.0, prog=1.0,
     if fill is not None: c.drawPath(p, paint(fill, fill=True, alpha=alpha))
     if w > 0:
         pa = paint(color, w, alpha=alpha)
-        if prog < 1: pa.setPathEffect(skia.TrimPathEffect.Make(0, clamp(prog)))
+        if prog < 1:
+            pe = skia.TrimPathEffect.Make(0, clamp(prog))
+            if pe is not None: pa.setPathEffect(pe)
         c.drawPath(p, pa)
 
 def rrect_pts(x0, y0, x1, y1, r=24, k=5):

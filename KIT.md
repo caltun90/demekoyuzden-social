@@ -20,7 +20,8 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 - `sync.py`: parça dökümü (`list`), satır eşleme ve duraklama kısaltma (`build`), altyazı kontrolü (`check`).
 - `render.py`: çizim motoru + 6 sahne. `FMT=v` (dikey) veya `FMT=h` (yatay). Yeni videoda `scene1..6`, `HL`, `TITLE`,
   gerekirse `tag()` içindeki seri etiketi yeniden yazılır. Yardımcı fonksiyonlara dokunma.
-- `build.sh`: iki formatı üretir, birleştirir, sesi ekler.
+- `build.sh`: iki formatı üretir, birleştirir, sesi ekler. Bir sahne render edilemezse durur, video üretmez.
+- `setup.sh`: bulut ortamı kurulumu (libEGL, Python paketleri, Poppins fontları). Tekrar çalıştırmak güvenli.
 
 ## Yeni video için akış
 1. Konu seç (aşağıdaki havuz + log.json), en az iki güvenilir kaynaktan doğrula.
@@ -29,9 +30,17 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
    - Rakamla yazılan yıl gibi ifadeler (ör. "1927'de") altyazıda kendi satırı olsun, TTS metni yazıyla ("Bin dokuz yüz yirmi yedide").
      Aksi halde altyazı sesin önüne geçer. Böyle bölünen satır sayıya dahil değil.
    - Yabancı adlar için TTS metnini okunuşla yaz (Zeigarnik -> Zaygarnik).
-3. Ses ve hizalama (ÖNEMLİ, her seferinde):
+3. Kurulum (her yeni bulut oturumunda bir kez): `./setup.sh`. Betiğin yaptıkları:
    ```
-   pip install --break-system-packages skia-python soundfile numpy
+   apt-get update && apt-get install -y libegl1                                  # skia libEGL.so.1 ister
+   python3 -m pip install --break-system-packages skia-python soundfile numpy    # düz "pip" KULLANMA
+   # Poppins-Regular/Medium/Bold.ttf -> /usr/share/fonts/truetype/google-fonts/
+   ```
+   - `pip` ile `python3` farklı Python sürümlerine bağlı olabilir. Paket hep `python3 -m pip` ile kurulur.
+   - Poppins fontları bulut ortamında hazır gelmez. `https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700`
+     adresi tarayıcı olmayan istemciye (curl) ttf bağlantılarını verir; betik bunları indirir.
+   Ses ve hizalama (ÖNEMLİ, her seferinde):
+   ```
    python3 voice_google.py Achird gemini-3.1-flash-tts-preview    # hizalamasi guvenilir degil, sadece ham kayit icin
    python3 sync.py list                                           # parcalar + yazi dokumu
    python3 sync.py build "0-1,2-3,4,..."                          # her satira dusen parca araligi (satir sayisi kadar)
