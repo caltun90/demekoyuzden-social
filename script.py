@@ -1,0 +1,21 @@
+# (scene, caption text, tts text or None to reuse caption)
+LINES = [
+ (1, "Gece yatağa girdin ama aklın hâlâ o yarım kalan işte.", None),
+ (1, "Bitirdiğin onca işse çoktan silinmiş gibi.", None),
+ (2, "Merak etme, tek sen değilsin.", None),
+ (2, "Bunun bir adı var: Zeigarnik etkisi.", "Bunun bir adı var. Zaygarnik etkisi."),
+ (3, "1927'de", "Bin dokuz yüz yirmi yedide"),
+ (3, "psikolog Bluma Zeigarnik, insanlara küçük işler verdi ve bazılarını yarıda kesti.",
+     "psikolog Bluma Zaygarnik, insanlara küçük işler verdi ve bazılarını yarıda kesti."),
+ (3, "Katılımcılar, yarım kalan işleri bitenlerden daha iyi hatırladı.", None),
+ (3, "Sonraki deneyler bu hafıza farkını her zaman bulamadı.", None),
+ (3, "Ama şu güçlü çıktı: insanlar yarım bıraktığı işe dönmek istiyor.", "Ama şu güçlü çıktı. İnsanlar yarım bıraktığı işe dönmek istiyor."),
+ (4, "Çünkü başladığın iş, zihninde açık bir sekme gibi kalıyor.", None),
+ (4, "İş bitince sekme kapanıyor, gerginlik de gidiyor.", None),
+ (5, "Küçük bir numara: işi bitiremiyorsan planını yaz.", "Küçük bir numara. İşi bitiremiyorsan planını yaz."),
+ (5, "Ne zaman, nerede yapacaksın?", None),
+ (5, "Araştırmalara göre net bir plan, zihni rahatlatmaya yetebiliyor.", None),
+ (6, "Aklın yarım işe takılırsa kendine kızma.", None),
+ (6, "Beynin sadece açık sekmeyi kapatmak istiyor.", None),
+ (6, "Bir sonraki videoda görüşmek üzere!", None),
+]
