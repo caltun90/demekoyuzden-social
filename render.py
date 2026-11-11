@@ -484,7 +484,7 @@ def scene3(c, t):
     def c1(cx, cy): tasklist(c, cx, cy + 14, 3)
     def c2(cx, cy):
         tasklist(c, cx, cy + 14, 1)
-        cu = seg(t, cut_t, cut_t + .35)
+        cu = seg(t, cut_t, cut_t + .35); cu = 1.0 if cu > .999 else cu
         if cu > 0:
             line(c, [(cx - 165, cy - 18), (cx - 60, cy - 32), (cx + 40, cy - 12), (cx + 120, cy - 28)], CORAL, 9, cu, amp=1.5)
             if cu >= 1: scissors(c, cx + 150, cy - 26, .62)
@@ -549,9 +549,11 @@ def scene4(c, t):
     # gerginlik cizgileri
     ten = seg(t, tab_t + .3, tab_t + .6) * (1 - fill_u)
     if ten > 0:
+        c.save(); c.clipRect(skia.Rect.MakeLTRB(0, ART_Y0, 1080, y0 - 14))   # isinlar pencere icindeki yaziya binmesin
         for k in (0, .5):
             v = (t * 1.1 + k) % 1
             burst(c, tcx + 10, tcy, 190 + 30 * v, 216 + 40 * v, 12, CORAL, 7, (1 - v) * ten)
+        c.restore()
     if close >= 1:
         v = seg(t, b0 + 1.35, b0 + 1.9)
         if v < 1: burst(c, tcx + 10, tcy, 30 + 60 * v, 54 + 80 * v, 8, TEAL, 7, 1 - v)

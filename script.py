@@ -10,7 +10,7 @@ LINES = [
  (3, "Katılımcılar, yarım kalan işleri bitenlerden daha iyi hatırladı.", None),
  (3, "Sonraki deneyler bu hafıza farkını her zaman bulamadı.", None),
  (3, "Ama şu güçlü çıktı: insanlar yarım bıraktığı işe dönmek istiyor.", "Ama şu güçlü çıktı. İnsanlar yarım bıraktığı işe dönmek istiyor."),
- (4, "Çünkü başladığın iş, zihninde açık bir sekme gibi kalıyor.", None),
+ (4, "Çünkü başladığın iş zihninde açık bir sekme gibi kalıyor.", "Çünkü başladığın iş, zihninde açık bir sekme gibi kalıyor."),
  (4, "İş bitince sekme kapanıyor, gerginlik de gidiyor.", None),
  (5, "Küçük bir numara: işi bitiremiyorsan planını yaz.", "Küçük bir numara. İşi bitiremiyorsan planını yaz."),
  (5, "Ne zaman, nerede yapacaksın?", None),

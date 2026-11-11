@@ -52,17 +52,15 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 - Buffer dosya yüklemesi kabul etmez; video açık bir https adresinde durmalı (bu deponun raw adresi).
 
 ## Konu havuzu
-Yapıldı: Kapı eşiği etkisi (pilot, psikoloji).
+Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (2026-11-12, psikoloji).
 Sırada (bu sırayla, bir psikoloji bir başka alan):
-1. Zeigarnik etkisi: yarım kalan iş neden akıldan çıkmaz? (psikoloji) Not: render.py şu an bu konunun sahnelerini içeriyor;
-   2025 meta-analizi (Ghibellini ve Meier) hafıza farkını doğrulamadı, "geri dönme isteği" ise güçlü. Kesinmiş gibi anlatma.
-2. Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim)
-3. Sahne ışığı etkisi (psikoloji)
-4. Esnemek neden bulaşıcı? (bilim)
-5. Dilimin ucunda hissi (psikoloji)
-6. Klavyede harfler neden alfabetik sırada değil? (tarih)
-7. IKEA etkisi (psikoloji)
-8. Soğan doğrarken neden ağlarız? (bilim)
-9. Barnum etkisi (psikoloji)
-10. "Tamam" kelimesi nereden geliyor? (dil)
+1. Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim)
+2. Sahne ışığı etkisi (psikoloji)
+3. Esnemek neden bulaşıcı? (bilim)
+4. Dilimin ucunda hissi (psikoloji)
+5. Klavyede harfler neden alfabetik sırada değil? (tarih)
+6. IKEA etkisi (psikoloji)
+7. Soğan doğrarken neden ağlarız? (bilim)
+8. Barnum etkisi (psikoloji)
+9. "Tamam" kelimesi nereden geliyor? (dil)
 Liste bitince aynı dengeyle (bir psikoloji, bir başka alan) yeni konular bul.
