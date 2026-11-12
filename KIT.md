@@ -10,6 +10,11 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
   Sahne çizimleri y 280-1260 dışına taşmamalı.
 - Dil Türkçe. Psikoloji ağırlıklı; arada gündelik bilim, dil, tarih. Her video tek bir niş soru ve izleyene "demek o yüzden!" dedirtmeli.
 - Görsel: krem zemin, el çizimi çizgi adam, mercan/turkuaz/sarı vurgu, büyük altyazı, üstte seri etiketi.
+- Seri etiketi büyük (dikey 46 punto, yatay 40). Telefonda küçük kalmasın; küçültme.
+- KAPAK: videonun ilk karesi kapaktır. İlk 0,45 sn (ses başlamadan) sahne 1'in en çarpıcı anı + dev kanca sorusu görünür
+  (`COVER`, `COVER_AT`). Kanca kısa, merak uyandıran bir soru olmalı; görünce tıklatmalı.
+- Dikeyde etiketin altında kanca sorusu (`HOOK`) video boyunca durur. YouTube Short kapağını kendi seçtiği kareden
+  aldığı için her karede konu anlaşılmalı. Sahne çizimleri dikeyde y 315'in üstüne çıkmamalı (kanca satırıyla çakışır).
 - Ses: Gemini TTS, ses = Achird. Model: gemini-3.1-flash-tts-preview.
   gemini-3.8-flash-tts KULLANMA: stil talimatını da sesli okuyor.
 - Cem'e yazılan her şey Türkçe, kısa, sade. Em dash yok.
@@ -18,7 +23,7 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 - `script.py`: senaryo satırları (sahne no, altyazı metni, gerekirse TTS için ayrı yazım).
 - `voice_google.py`: Gemini TTS. Tüm senaryoyu tek istekte okutur, `voice/raw_google.wav` yazar, satırlara böler.
 - `sync.py`: parça dökümü (`list`), satır eşleme ve duraklama kısaltma (`build`), altyazı kontrolü (`check`).
-- `render.py`: çizim motoru + 6 sahne. `FMT=v` (dikey) veya `FMT=h` (yatay). Yeni videoda `scene1..6`, `HL`, `TITLE`,
+- `render.py`: çizim motoru + 6 sahne. `FMT=v` (dikey) veya `FMT=h` (yatay). Yeni videoda `scene1..6`, `HL`, `TITLE`, `HOOK`, `COVER`, `COVER_AT`,
   gerekirse `tag()` içindeki seri etiketi yeniden yazılır. Yardımcı fonksiyonlara dokunma.
 - `build.sh`: iki formatı üretir, birleştirir, sesi ekler. Bir sahne render edilemezse durur, video üretmez.
 - `setup.sh`: bulut ortamı kurulumu (libEGL, Python paketleri, Poppins fontları). Tekrar çalıştırmak güvenli.
@@ -49,8 +54,11 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
    `build` satır içi duraklamaları 0,22 sn'ye indirir; ham kayıt 65 sn üstü çıksa bile toplam 62 sn altına iner.
    Toplam süre 62 sn'yi geçerse senaryoyu kısalt ya da `GAP_AFTER` değerlerini azalt.
 4. `render.py` sahnelerini yaz. Zamanları `L(i)` (satır başı/sonu) ve `cap_start(satır, 'kelime', varsayılan)` ile sese bağla.
+   Her videoda `HOOK` (en fazla ~26 karakter soru), `COVER` (aynı sorunun 2-3 kısa satırı, büyük harf) ve
+   `COVER_AT` (sahne 1'in kapakta görünecek anı, sn) değerlerini de yaz.
 5. `python3 sync.py check`: her altyazı penceresinde duyulan söz, altyazıyla aynı olmalı. Altyazı sesten ÖNCE gelmemeli.
-6. Kare kontrolü: `FMT=v python3 render.py still <klasör> 3 17 30 ...` ve `FMT=h` ile en az 6'şar kare; aç ve bak.
+6. Kare kontrolü: `FMT=v python3 render.py still <klasör> 0 3 17 30 ...` ve `FMT=h` ile en az 6'şar kare; aç ve bak.
+   `0` kapak karesidir: yazı taşmıyor mu, çizim çarpıcı mı, tek başına merak uyandırıyor mu?
 7. `./build.sh <YYYY-MM-DD>-<slug>`; süre, ses ve 3 kare son kontrol.
 8. `voice/`, `scenes_*`, `silent_*`, `list_*`, kare klasörleri ve kökteki mp4'ler depoya eklenmez.
 
@@ -59,6 +67,9 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 - Yatay video: YouTube'a normal video. Buffer yalnızca Short gönderdiği için YouTube Studio'dan elle yüklenir.
 - Claude'a bağlı Buffer bağlayıcısı engrowapp hesabına aittir (Engrow, Pofu Kids); bu kanal için kullanılmaz.
 - Buffer dosya yüklemesi kabul etmez; video açık bir https adresinde durmalı (bu deponun raw adresi).
+- Kapak: Instagram ve TikTok gönderisinde video varlığına `metadata: { thumbnailOffset: 200 }` ver (ilk kare = kapak).
+  YouTube Short kapağı Buffer/API ile seçilemez; YouTube kendi seçer, Cem isterse YouTube uygulamasından ilk kareyi seçer.
+- Yatay videoyla birlikte yatay kapak karesini de Cem'e gönder (`FMT=h python3 render.py still <klasör> 0`); YouTube'da küçük resim olarak yükler.
 
 ## Konu havuzu
 Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji).

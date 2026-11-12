@@ -37,6 +37,10 @@ def scene_span(k):
     return SC[k], (SC[SCENES[i + 1]] if i + 1 < len(SCENES) else TOTAL)
 
 TITLE = 'Sahne Işığı Etkisi'   # yatay formatta etiketin altinda gorunur
+HOOK = 'Herkes sana mı bakıyor?'        # dikeyde etiketin altinda surekli gorunen kanca sorusu (en fazla ~26 karakter)
+COVER = ['HERKES SANA', 'MI BAKIYOR?']   # kapak = ilk kare: dev kanca yazisi, 2-3 kisa satir (son satir sari vurgulu)
+COVER_AT = 3.9                           # kapakta sahne 1'in hangi ani cizilsin (sn, en carpici kare)
+COVER_T = 0.45                           # kapak suresi: ses baslayana kadar (voice_google.LEAD)
 HL = {0: ['herkes', 'sana', 'bakıyor.'], 1: ['lekede'], 3: ['tek', 'sen', 'değilsin.'], 4: ['sahne', 'ışığı', 'etkisi.'],
       7: ['utandırıcı', 'bir', 'tişörtle'], 10: ['yaklaşık', 'yarısı'], 11: ['dörtte', 'bir'],
       12: ['sahnenin', 'ortasındayız.'], 14: ['sanıyoruz.'], 15: ['kendi', 'derdiyle'], 16: ['şunu', 'sor.'],
@@ -374,14 +378,33 @@ def captions(c, t):
                     y += 98
             return
 
-def tag(c):
-    s = '1 DAKİKADA PSİKOLOJİ'; size = 34; w = tw(s, size)
-    cx, y0 = (W / 2, 196) if FMT == 'v' else (1510, 120)
-    c.drawRRect(skia.RRect.MakeRectXY(skia.Rect.MakeLTRB(cx - w / 2 - 34, y0, cx + w / 2 + 34, y0 + 66), 33, 33), paint(INK, fill=True))
-    txt(c, s, cx, y0 + 45, size, BG)
+def tag(c, hook=True):
+    s = '1 DAKİKADA PSİKOLOJİ'
+    size, cx, y0, hh = (46, W / 2, 128, 86) if FMT == 'v' else (40, 1510, 108, 76)
+    w = tw(s, size)
+    c.drawRRect(skia.RRect.MakeRectXY(skia.Rect.MakeLTRB(cx - w / 2 - 40, y0, cx + w / 2 + 40, y0 + hh), hh / 2, hh / 2), paint(INK, fill=True))
+    txt(c, s, cx, y0 + hh / 2 + size * .36, size, BG)
     if FMT == 'h':
-        txt(c, TITLE, cx, y0 + 140, 46, CORAL)
-        line(c, [(cx - 150, y0 + 168), (cx, y0 + 163), (cx + 150, y0 + 170)], INK, 7, amp=1.2, curve=True)
+        txt(c, TITLE, cx, y0 + 150, 46, CORAL)
+        line(c, [(cx - 150, y0 + 178), (cx, y0 + 173), (cx + 150, y0 + 180)], INK, 7, amp=1.2, curve=True)
+    elif hook:
+        hs = 60
+        while tw(HOOK, hs) > 940: hs -= 2
+        txt(c, HOOK, cx, 288, hs, CORAL)
+
+def cover(c):
+    """ilk kare (kapak): altyazi yerine dev kanca yazisi; platformlar kapak olarak bu kareyi kullanir"""
+    cx, cy, maxw = (W / 2, 1410, 960) if FMT == 'v' else (1510, 610, 720)
+    size = 150
+    while max(tw(r, size) for r in COVER) > maxw: size -= 4
+    step = size * 1.18
+    y = cy - (len(COVER) - 1) * step / 2 + size * .36
+    for i, r in enumerate(COVER):
+        w = tw(r, size)
+        if i == len(COVER) - 1:
+            c.drawRRect(skia.RRect.MakeRectXY(skia.Rect.MakeLTRB(cx - w / 2 - 18, y - size * .86, cx + w / 2 + 18, y + size * .2), 18, 18), paint(YEL, fill=True))
+        txt(c, r, cx, y, size, INK)
+        y += step
 
 def L(i): return LN[i]['start'], LN[i]['end']
 def cap_start(li, word, default):
@@ -683,12 +706,15 @@ def frame(surface, t, k):
     St.boil = int(t * FPS) // 5; St.n = 0
     c.clear(BG)
     a, b = scene_span(k)
-    if FMT == 'v': DRAW[k](c, t)
+    cov = k == SCENES[0] and t < COVER_T          # kapak: sesten onceki ilk kareler
+    td = COVER_AT if cov else t
+    if FMT == 'v': DRAW[k](c, td)
     else:
         c.save(); c.translate(ART_DX, ART_DY - ART_Y0); c.clipRect(skia.Rect.MakeLTRB(0, ART_Y0, 1080, ART_Y1))
-        DRAW[k](c, t); c.restore()
-    tag(c)
-    captions(c, t)
+        DRAW[k](c, td); c.restore()
+    tag(c, hook=not cov)
+    if cov: cover(c)
+    else: captions(c, t)
     # soft fade in/out at scene edges
     f = min(seg(t, a, a + .16), 1.0 if k == SCENES[-1] else 1 - seg(t, b - .12, b))
     if k == 1: f = 1 - seg(t, b - .12, b) if t > 1 else 1
