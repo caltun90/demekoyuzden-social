@@ -44,7 +44,7 @@ COVER_T = 0.45                           # kapak suresi: ses baslayana kadar (vo
 HL = {0: ['adını'], 1: ['gözünün', 'önünde,'], 2: ['filmlerini'], 3: ['bir', 'türlü', 'gelmiyor.'], 4: ['herkesin'],
       5: ['dilimin', 'ucunda', 'hissi.'], 8: ['az', 'bilinen', 'kelimelerin'], 10: ['ilk', 'harfini'], 11: ['kaç', 'heceli'],
       12: ['kaybolmuyor.'], 13: ['anlamı'], 14: ['zayıflıyor.'], 15: ['özel', 'isimlerde'], 16: ['kullanmadığın'],
-      17: ['haftada', 'bir'], 18: ['artıyor.'], 19: ['yaklaşık', 'yarısında', 'geri', 'geliyor.'], 21: ['birden'],
+      17: ['haftada', 'bir'], 18: ['artıyor.'], 19: ['yaklaşık', 'yarısında', 'geri', 'geliyor.'], 21: ['bir', 'anda'],
       22: ['demek', 'o', 'yüzden!']}
 
 # ---------- helpers ----------
@@ -671,7 +671,7 @@ def scene6(c, t):
     a0, a1 = L(20); b0, b1 = L(21); d0, d1 = L(22); e0, e1 = L(23)
     wash(c, 60, 540, 1020, GY, WASH_Y)
     ground(c, 50, 1030, GY)
-    tb = cap_start(21, 'birden', b0)
+    tb = cap_start(21, 'anda', b0)
     wv = smooth(seg(t, e0 - .1, e0 + .3))
     gone = 1 - smooth(seg(t, e0 - .3, e0 - .05))
     if t < tb:                                           # baska bir isle ugrasirken: alisveristen donuyor

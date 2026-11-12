@@ -1,6 +1,7 @@
 # (scene, caption text, tts text or None to reuse caption)
 # Not: duraklamada bolunen satirlar altyazi senkronu icin ayri; anlatimda tek cumle sayilir.
 # Yil ("1966:") kendi satirinda: altyazi sesin onune gecmesin (KIT.md).
+# Ses "birden" kelimesini "bir anda" diye okudu; altyazi sese uyduruldu.
 LINES = [
  (1, "Bir oyuncunun adını söyleyeceksin.", None),
  (1, "Yüzü gözünün önünde,", None),
@@ -23,7 +24,7 @@ LINES = [
  (5, "yaş ilerledikçe de artıyor.", None),
  (5, "İyi haber: yaklaşık yarısında kelime çok geçmeden geri geliyor.", "İyi haber. Yaklaşık yarısında kelime çok geçmeden geri geliyor."),
  (6, "Hani başka bir işle uğraşırken,", None),
- (6, "birden aklına gelir ya.", None),
+ (6, "bir anda aklına gelir ya.", "birden aklına gelir ya."),
  (6, "Demek o yüzden!", None),
  (6, "Bir sonraki videoda görüşmek üzere!", None),
 ]
