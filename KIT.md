@@ -61,9 +61,8 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 - Buffer dosya yüklemesi kabul etmez; video açık bir https adresinde durmalı (bu deponun raw adresi).
 
 ## Konu havuzu
-Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim).
+Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji).
 Sırada (bu sırayla, bir psikoloji bir başka alan):
-3. Sahne ışığı etkisi (psikoloji)
 4. Esnemek neden bulaşıcı? (bilim)
 5. Dilimin ucunda hissi (psikoloji)
 6. Klavyede harfler neden alfabetik sırada değil? (tarih)

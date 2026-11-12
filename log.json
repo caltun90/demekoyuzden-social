@@ -16,5 +16,16 @@
     "konu": "Gökyüzü neden mavi, gün batımı neden kırmızı?",
     "baslik": "Gökyüzü neden mavi, gün batımı neden kırmızı?",
     "kaynaklar": []
+  },
+  {
+    "date": "2026-11-12",
+    "slug": "sahne-isigi-etkisi",
+    "konu": "Sahne ışığı etkisi: neden herkes bize bakıyor sanırız?",
+    "baslik": "Herkes sana bakıyor gibi mi geliyor? Sahne ışığı etkisi",
+    "kaynaklar": [
+      "Gilovich, Medvec & Savitsky (2000), The spotlight effect in social judgment, Journal of Personality and Social Psychology 78(2), 211-222, doi:10.1037/0022-3514.78.2.211: https://www.kellogg.northwestern.edu/academics-research/research/detail/2000/the-spotlight-effect-in-social-judgment-an-egocentric-bias/",
+      "Colby College CogBlog, The Spotlight Effect (deney özeti): https://web.colby.edu/cogblog/2019/11/26/face-it-you-are-not-that-important-the-spotlight-effect/",
+      "Gilovich, Kruger & Medvec (2002), The spotlight effect revisited, Journal of Experimental Social Psychology 38(1), 93-99"
+    ]
   }
 ]
