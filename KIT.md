@@ -85,16 +85,17 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 ## Konu havuzu
 Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji).
 Sırada (bu sırayla, bir psikoloji bir bilim):
-2. Kendimizi neden gıdıklayamayız? (bilim)
-3. Şarkı neden dile dolanır? (psikoloji)
-4. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
-5. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
-6. Soğan doğrarken neden ağlarız? (bilim)
-7. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
-8. Parmaklarımız suda neden buruşur? (bilim)
-9. Bulutlarda neden yüz görürüz? (psikoloji)
-10. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
-11. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
+1. Arabada telefona bakınca neden midemiz bulanır? (bilim; Cem istedi)
+2. Şarkı neden dile dolanır? (psikoloji)
+3. Kendimizi neden gıdıklayamayız? (bilim)
+4. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
+5. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
+6. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
+7. Soğan doğrarken neden ağlarız? (bilim)
+8. Bulutlarda neden yüz görürüz? (psikoloji)
+9. Parmaklarımız suda neden buruşur? (bilim)
+10. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
+11. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
 12. Nane neden serinletir, acı biber neden yakar? (bilim)
 Liste hiç bitmesin: "Sırada" 4 konunun altına inince aynı dengeyle (bir psikoloji, bir bilim) en az 6 yeni konu ekle. Tarih ve dil konusu ekleme.
 Konu seçme ölçütü (Cem onayladı, 2026-11-13; kalıcı):
