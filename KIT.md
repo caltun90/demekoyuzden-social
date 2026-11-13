@@ -41,7 +41,8 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 - `render.py`: çizim motoru + 6 sahne. `FMT=v` (dikey) veya `FMT=h` (yatay). Yeni videoda `scene1..6`, `HL`, `TITLE`, `HOOK`, `COVER`, `COVER_AT`,
   gerekirse `tag()` içindeki seri etiketi yeniden yazılır. Yardımcı fonksiyonlara dokunma.
 - `build.sh`: iki formatı üretir, birleştirir, sesi ekler. Depo şişmesin diye kodlama `CRF=24`, `PRESET=medium` (render.py; gözle fark yok). Bir sahne render edilemezse durur, video üretmez.
-- `feed.py`, `feed.xml`: yatay videoların YouTube'a otomatik yüklenmesi için RSS akışı (bkz. Paylaşım).
+- `yt_upload.py`: yatay videoyu YouTube'a normal video olarak yükler (bkz. Paylaşım). Yalnızca standart kütüphane kullanır.
+- `feed.py`, `feed.xml`: eski Zapier/RSS denemesi. KULLANILMIYOR; `feed.py add` çalıştırma (aynı video iki kez yüklenmesin).
 - `setup.sh`: bulut ortamı kurulumu (libEGL, Python paketleri, Poppins fontları). Tekrar çalıştırmak güvenli.
 
 ## Yeni video için akış
@@ -80,22 +81,33 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 
 ## Paylaşım
 - Dikey video: Buffer (bahsish.co hesabı, yalnızca API anahtarıyla) üzerinden YouTube Short ("Demek O Yüzden"), TikTok, Instagram Reel. Günde üç video: 12:00, 15:00 ve 19:00.
-- Yatay video: YouTube'a normal video olarak OTOMATİK yüklenir (Cem, 2026-11-13). Buffer yatay videoyu YouTube'a kabul etmez
-  ("Video must be vertical"), o yüzden yol şu: `feed.xml` (RSS) -> Zapier (Cem'in hesabı) -> YouTube. Görev her yatay video için:
+- Yatay video: YouTube'a normal video olarak OTOMATİK yüklenir, doğrudan YouTube API ile (Cem, 2026-11-14). Buffer yatay videoyu
+  YouTube'a kabul etmez ("Video must be vertical"). Google projesi `dov-uploader` (Cem'in hesabı), uygulama "DOV Uploader", bağlı kanal
+  "Demek O Yüzden". Görev her yatay video için, dikey video Buffer'a planlandıktan sonra:
   ```
-  python3 feed.py add videos/<ad>-yatay.mp4 "<YouTube başlığı>" "<açıklama>"
+  YT_CLIENT_ID=... YT_CLIENT_SECRET=... YT_REFRESH_TOKEN=... python3 yt_upload.py videos/<ad>-yatay.mp4 \
+      --title "<YouTube başlığı>" --desc "<açıklama>" --tags "demekoyuzden,<2-4 konu etiketi>" \
+      --publish-at <YYYY-MM-DD>T<SS:DD>:00+03:00 --thumb <yatay kapak karesi>
   ```
-  - Başlık Short ile aynı. Açıklama aynı metin ama `#shorts` etiketi OLMADAN (varsa betik reddeder).
-  - `feed.xml`, o videonun commit'ine eklenir ve birlikte push edilir. Zapier 15 dakikada bir bakar, yeni öğeyi herkese açık yükler.
-  - Bu kural görev talimatındaki "Cem YouTube'a normal video olarak yükler" ve "yalnızca şunları commit et" maddelerinin yerine geçer
-    (`feed.xml` de commit edilir). Anahtar gerekmez. Yatay videoyu Buffer'a verme.
-  - Zapier ücretsiz planı: ayda 100 işlem, günde en fazla 5 YouTube yüklemesi. Günde 3 video buna sığar; aynı videoyu iki kez ekleme.
-  - Görev yüklemenin sonucunu göremez. Raporda "yatay video YouTube'a otomatik yüklenecek" de; Cem görmezse Zapier geçmişine bakar.
+  - Üç değer görev talimatındaki `YT_CLIENT_ID:`, `YT_CLIENT_SECRET:`, `YT_REFRESH_TOKEN:` satırlarından okunur ve yalnızca komutta
+    ortam değişkeni olarak kullanılır. Dosyaya, depoya (herkese açık), belleğe ya da mesaja YAZILMAZ.
+    Satırlardan biri yoksa ya da "BURAYA" yazıyorsa yatay yüklemeyi atla, diğer işleri bitir ve Cem'e tek cümleyle bildir.
+  - Başlık Short ile aynı. Açıklama aynı metin ama `#shorts` etiketi OLMADAN.
+  - `--publish-at`: o videonun Short'u ile aynı saat (12:00, 15:00 ya da 19:00; Buffer için kaydırdıysan aynı kaydırılmış saat).
+    Video önce gizli yüklenir, YouTube o saatte kendisi yayına alır. Saat geçmişse `--publish-at` yerine `--privacy public` kullan.
+  - `--thumb`: yatay kapak karesi (`FMT=h python3 render.py still <klasör> 0` çıktısı). Betik "thumb": "hata 403" dönerse kanal
+    henüz telefonla doğrulanmamış demektir; video yine yüklenmiştir, rapora "kapak eklenemedi, kanal doğrulanınca düzelir" yaz.
+  - Çıktı tek satır JSON: `id`, `url`, `privacy`, `publishAt`. `id` değerini log.json'daki o videonun kaydına `yatay_youtube` olarak yaz.
+    log.json'da `yatay_youtube` olan videoyu bir daha yükleme. Betik hata verirse bir kez daha dene; yine olmazsa Cem'e hata metnini bildir.
+  - Bu kural görev talimatındaki "Cem YouTube'a normal video olarak yükler" ve "Videoyu depo dışında hiçbir yere yükleme" maddelerinin
+    yerine geçer (yalnızca yatay videonun YouTube'a yüklenmesi için). Yatay videoyu Buffer'a verme.
+  - Ağ: `oauth2.googleapis.com` ve `www.googleapis.com` izinli siteler listesinde olmalı. Günlük sınır 100 yükleme.
+  - Raporda her yatay video için YouTube bağlantısını ve yayın saatini yaz.
 - Claude'a bağlı Buffer bağlayıcısı engrowapp hesabına aittir (Engrow, Pofu Kids); bu kanal için kullanılmaz.
 - Buffer dosya yüklemesi kabul etmez; video açık bir https adresinde durmalı (bu deponun raw adresi).
 - Kapak: Instagram ve TikTok gönderisinde video varlığına `metadata: { thumbnailOffset: 200 }` ver (ilk kare = kapak).
   YouTube Short kapağı Buffer/API ile seçilemez; YouTube kendi seçer, Cem isterse YouTube uygulamasından ilk kareyi seçer.
-- Yatay kapak karesini yine Cem'e gönder (`FMT=h python3 render.py still <klasör> 0`). Zapier küçük resim seçemez; Cem isterse YouTube'da elle koyar.
+- Yatay kapak karesi `yt_upload.py --thumb` ile YouTube'a yüklenir; Cem'e ayrıca gönderilir (`FMT=h python3 render.py still <klasör> 0`).
 
 ## Konu havuzu
 Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji).
