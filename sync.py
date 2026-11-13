@@ -8,18 +8,49 @@ import sys, os, io, json, base64, urllib.request, urllib.error
 import numpy as np, soundfile as sf
 CAP = 0.22   # satir ici en uzun duraklama (sn)
 
-def transcribe(clips, sr):
-    parts = [{"text": "Asagida numarali Turkce ses parcalari var. Her biri icin duydugunu aynen yaz. Bicim: 'Parca N: metin'. Baska hicbir sey yazma."}]
-    for i, c in enumerate(clips):
-        b = io.BytesIO(); sf.write(b, c, sr, format='WAV', subtype='PCM_16')
-        parts.append({"text": f"Parca {i}:"})
-        parts.append({"inlineData": {"mimeType": "audio/wav", "data": base64.b64encode(b.getvalue()).decode()}})
-    req = urllib.request.Request("https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent",
-                                 data=json.dumps({"contents": [{"parts": parts}]}).encode(),
+# Yaziya dokme modelleri, sirayla. Ilki gunluk kotaya takilirsa (429) ya da yogunsa (503) siradaki denenir; is yarida kalmaz.
+# Ucretsiz kotada gemini-3-flash-preview gunde 20, gemini-3.1-flash-lite gunde 500 istek (dakikada 15). SYNC_MODEL=... ile tek model zorlanir.
+# Lite parcalari birlestirmeye yatkin; bu yuzden ona kucuk gruplar (BATCH) ve "tam N ogeli JSON" semasi verilir.
+MODELS = ["gemini-3-flash-preview", "gemini-3.1-flash-lite"]
+BATCH = 12
+
+def _wav(c, sr):
+    b = io.BytesIO(); sf.write(b, c, sr, format='WAV', subtype='PCM_16')
+    return {"inlineData": {"mimeType": "audio/wav", "data": base64.b64encode(b.getvalue()).decode()}}
+
+def _call(model, body):
+    req = urllib.request.Request(f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent", data=json.dumps(body).encode(),
                                  headers={"Content-Type": "application/json", "x-goog-api-key": os.environ["GEMINI_API_KEY"]})
-    try: r = json.load(urllib.request.urlopen(req, timeout=180))
-    except urllib.error.HTTPError as e: raise SystemExit(f"STT hatasi {e.code}: {e.read().decode()[:400]}")
-    return r["candidates"][0]["content"]["parts"][0]["text"]
+    return json.load(urllib.request.urlopen(req, timeout=180))["candidates"][0]["content"]["parts"][0]["text"]
+
+def _plain(model, clips, sr):
+    parts = [{"text": "Asagida numarali Turkce ses parcalari var. Her biri icin duydugunu aynen yaz. Bicim: 'Parca N: metin'. Baska hicbir sey yazma."}]
+    for i, c in enumerate(clips): parts += [{"text": f"Parca {i}:"}, _wav(c, sr)]
+    return _call(model, {"contents": [{"parts": parts}]})
+
+def _grouped(model, clips, sr):
+    out = []
+    for g in range(0, len(clips), BATCH):
+        grp = clips[g:g + BATCH]; n = len(grp)
+        parts = [{"text": f"Asagida 0'dan {n - 1}'e numarali {n} ayri Turkce ses parcasi var. Her parcayi TEK BASINA dinle ve yalnizca o parcada duydugunu yaz. "
+                          "Parcalari birlestirme, komsu parcanin sozunu ekleme. Parca bir kelimenin ortasinda kesilmis olabilir; duydugun kadarini yaz. "
+                          f"Sessiz ya da anlasilmaz parca icin bos metin yaz. Tam {n} ogeli bir JSON dizisi dondur; i. oge i. parcanin metni."}]
+        for i, c in enumerate(grp): parts += [{"text": f"Parca {i}:"}, _wav(c, sr)]
+        schema = {"type": "ARRAY", "minItems": n, "maxItems": n, "items": {"type": "OBJECT", "properties": {"i": {"type": "INTEGER"}, "metin": {"type": "STRING"}}, "required": ["i", "metin"]}}
+        res = json.loads(_call(model, {"contents": [{"parts": parts}], "generationConfig": {"temperature": 0, "responseMimeType": "application/json", "responseSchema": schema}}))
+        out += [str(res[i].get("metin", "")) if i < len(res) else "" for i in range(n)]
+    return "\n".join(f"Parca {i}: {t}" for i, t in enumerate(out))
+
+def transcribe(clips, sr):
+    models = [os.environ["SYNC_MODEL"]] if os.environ.get("SYNC_MODEL") else MODELS
+    for k, m in enumerate(models):
+        try:
+            return (_grouped if "lite" in m else _plain)(m, clips, sr)
+        except urllib.error.HTTPError as e:
+            msg = e.read().decode()[:400]
+            if e.code in (429, 503) and k + 1 < len(models):
+                print(f"[{m}: {e.code}, {models[k + 1]} ile deneniyor]", file=sys.stderr); continue
+            raise SystemExit(f"STT hatasi {e.code} ({m}): {msg}")
 
 if __name__ == "__main__":
     cmd = sys.argv[1]

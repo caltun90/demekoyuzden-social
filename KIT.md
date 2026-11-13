@@ -4,15 +4,19 @@ Günlük 1 dakikalık videoları üretmek için araçlar. Kit bu deponun kökün
 Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA BİLİM"). Başka seri yok.
 
 ## Kararlar (Cem)
-- GÜNDE 2 VİDEO (Cem, 2026-11-13). Günlük görev tek çalışmada iki video üretir: "Sırada" listesinin ilk iki konusu (biri psikoloji, biri bilim).
-  Birinci video 12:30'da, ikinci video 19:00'da (Europe/Istanbul) üç platforma planlanır. Bu kural görev talimatındaki
-  "bugünün videosu" ve "aynı gün ikinci kez planlama" maddelerinin yerine geçer:
-  - Önce Buffer'da bugünün gönderilerine bak. Bir saat dilimi (12:30 ya da 19:00) üç kanalda da doluysa o dilime ekleme; yalnızca boş dilimi doldur.
+- GÜNDE 3 VİDEO (Cem, 2026-11-13). Günlük görev tek çalışmada üç video üretir: "Sırada" listesinin ilk üç konusu, listedeki sırayla.
+  Birinci video 12:00'de, ikinci 15:00'te, üçüncü 19:00'da (Europe/Istanbul) üç platforma planlanır. Bu kural görev talimatındaki
+  "bugünün videosu", "19:00" ve "aynı gün ikinci kez planlama" maddelerinin yerine geçer:
+  - Önce Buffer'da bugünün gönderilerine bak. Bir saat dilimi (12:00, 15:00 ya da 19:00) üç kanalda da doluysa o dilime ekleme; yalnızca boş dilimleri doldur.
   - Planlanacak saate 30 dakikadan az kaldıysa ya da saat geçtiyse o video için şimdi + 30 dk kullan.
-  - Akışın tamamı (senaryo, ses, hizalama, sahneler, kare kontrolü, build, push, Buffer) her video için baştan uygulanır. Önce birinciyi bitir ve planla, sonra ikinciye başla.
+  - Akışın tamamı (senaryo, ses, hizalama, sahneler, kare kontrolü, build, push, Buffer) her video için baştan uygulanır. Bir videoyu bitirip planlamadan sonrakine başlama.
     `script.py` ve `render.py` depoda son üretilen videonun halini taşır; her video ayrı commit olur.
-  - Bir video başarısız olursa diğeri yine yayınlanır; hangisinin neden olmadığını Cem'e bildir.
-  - Rapor tek mesajdır: iki konu, iki YouTube başlığı, iki saat, iki yatay video bağlantısı. Dört dosya ve iki yatay kapak karesi Cem'e gönderilir.
+  - Bir video başarısız olursa diğerleri yine yayınlanır; hangisinin neden olmadığını Cem'e bildir. İş yarıda kalmasın.
+  - Buffer ücretsiz planda en fazla 10 planlı gönderi tutar (3 video x 3 kanal = 9). Sınır hatası gelirse planlanamayan gönderiyi Cem'e bildir.
+  - Rapor tek mesajdır: üç konu, üç YouTube başlığı, üç saat, üç yatay video bağlantısı. Altı dosya ve üç yatay kapak karesi Cem'e gönderilir.
+- Gemini ücretsiz kotada (Cem ücretli plana geçmek istemiyor): ses modeli günde 10 istek, `gemini-3-flash-preview` günde 20 istek.
+  `sync.py` kota dolarsa (429) kendiliğinden `gemini-3.1-flash-lite` ile devam eder (günde 500); bir şey yapman gerekmez. Gereksiz `list`/`check` tekrarından kaçın.
+  Ses kotası dolarsa o gün kalan videolar üretilemez; Cem'e bildir.
 - HER video iki formatta: yatay 1920x1080 ve dikey 1080x1920. 30 fps, 45-62 sn.
   `./build.sh <ad>` ikisini üretir: `<ad>-yatay.mp4`, `<ad>-dikey.mp4`.
 - Yatay düzen: dikey sahne çizimi solda (dikey koordinatlarda y 280-1260), sağda etiket + `TITLE` + büyük altyazı.
@@ -33,10 +37,10 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 ## Dosyalar
 - `script.py`: senaryo satırları (sahne no, altyazı metni, gerekirse TTS için ayrı yazım).
 - `voice_google.py`: Gemini TTS. Tüm senaryoyu tek istekte okutur, `voice/raw_google.wav` yazar, satırlara böler.
-- `sync.py`: parça dökümü (`list`), satır eşleme ve duraklama kısaltma (`build`), altyazı kontrolü (`check`).
+- `sync.py`: parça dökümü (`list`), satır eşleme ve duraklama kısaltma (`build`), altyazı kontrolü (`check`). Kota dolarsa yedek modele geçer.
 - `render.py`: çizim motoru + 6 sahne. `FMT=v` (dikey) veya `FMT=h` (yatay). Yeni videoda `scene1..6`, `HL`, `TITLE`, `HOOK`, `COVER`, `COVER_AT`,
   gerekirse `tag()` içindeki seri etiketi yeniden yazılır. Yardımcı fonksiyonlara dokunma.
-- `build.sh`: iki formatı üretir, birleştirir, sesi ekler. Bir sahne render edilemezse durur, video üretmez.
+- `build.sh`: iki formatı üretir, birleştirir, sesi ekler. Depo şişmesin diye kodlama `CRF=24`, `PRESET=medium` (render.py; gözle fark yok). Bir sahne render edilemezse durur, video üretmez.
 - `setup.sh`: bulut ortamı kurulumu (libEGL, Python paketleri, Poppins fontları). Tekrar çalıştırmak güvenli.
 
 ## Yeni video için akış
@@ -74,7 +78,7 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 8. `voice/`, `scenes_*`, `silent_*`, `list_*`, kare klasörleri ve kökteki mp4'ler depoya eklenmez.
 
 ## Paylaşım
-- Dikey video: Buffer (bahsish.co hesabı, yalnızca API anahtarıyla) üzerinden YouTube Short ("Demek O Yüzden"), TikTok, Instagram Reel. Günde iki video: 12:30 ve 19:00.
+- Dikey video: Buffer (bahsish.co hesabı, yalnızca API anahtarıyla) üzerinden YouTube Short ("Demek O Yüzden"), TikTok, Instagram Reel. Günde üç video: 12:00, 15:00 ve 19:00.
 - Yatay video: YouTube'a normal video. Buffer yalnızca Short gönderdiği için YouTube Studio'dan elle yüklenir.
 - Claude'a bağlı Buffer bağlayıcısı engrowapp hesabına aittir (Engrow, Pofu Kids); bu kanal için kullanılmaz.
 - Buffer dosya yüklemesi kabul etmez; video açık bir https adresinde durmalı (bu deponun raw adresi).
