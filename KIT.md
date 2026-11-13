@@ -86,17 +86,18 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji).
 Sırada (bu sırayla, bir psikoloji bir bilim):
 1. Arabada telefona bakınca neden midemiz bulanır? (bilim; Cem istedi)
-2. Şarkı neden dile dolanır? (psikoloji)
+2. Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji; Cem istedi. Tek bir yaygın adı yok: çalışma belleği ve bölünme. Başlangıç kaynağı: Wessel ve ark. 2016, Nature Communications, "Surprise disrupts cognition via a fronto-basal ganglia suppressive mechanism")
 3. Kendimizi neden gıdıklayamayız? (bilim)
-4. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
+4. Şarkı neden dile dolanır? (psikoloji)
 5. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
-6. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
+6. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
 7. Soğan doğrarken neden ağlarız? (bilim)
-8. Bulutlarda neden yüz görürüz? (psikoloji)
+8. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
 9. Parmaklarımız suda neden buruşur? (bilim)
-10. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
+10. Bulutlarda neden yüz görürüz? (psikoloji)
 11. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
-12. Nane neden serinletir, acı biber neden yakar? (bilim)
+12. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
+13. Nane neden serinletir, acı biber neden yakar? (bilim)
 Liste hiç bitmesin: "Sırada" 4 konunun altına inince aynı dengeyle (bir psikoloji, bir bilim) en az 6 yeni konu ekle. Tarih ve dil konusu ekleme.
 Konu seçme ölçütü (Cem onayladı, 2026-11-13; kalıcı):
 - Herkesin kendi yaşadığı, gündelik bir şey olsun (esnemek, gıdıklanmak, dile dolanan şarkı gibi). Başlık kısa bir "neden" sorusu olsun.
