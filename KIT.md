@@ -1,14 +1,16 @@
 # Niş video üretim kiti ("Demek O Yüzden" kanalı)
 
 Günlük 1 dakikalık videoları üretmek için araçlar. Kit bu deponun kökünde durur; videolar `videos/`, yapılanlar `log.json`.
-Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA BİLİM", "1 DAKİKADA DİL", "1 DAKİKADA TARİH").
+Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA BİLİM"). Başka seri yok.
 
 ## Kararlar (Cem)
 - HER video iki formatta: yatay 1920x1080 ve dikey 1080x1920. 30 fps, 45-62 sn.
   `./build.sh <ad>` ikisini üretir: `<ad>-yatay.mp4`, `<ad>-dikey.mp4`.
 - Yatay düzen: dikey sahne çizimi solda (dikey koordinatlarda y 280-1260), sağda etiket + `TITLE` + büyük altyazı.
   Sahne çizimleri y 280-1260 dışına taşmamalı.
-- Dil Türkçe. Psikoloji ağırlıklı; arada gündelik bilim, dil, tarih. Her video tek bir niş soru ve izleyene "demek o yüzden!" dedirtmeli.
+- Dil Türkçe. Kanal yalnızca psikoloji ve gündelik bilim; tarih, dil gibi başka tür video yok (Cem, 2026-11-13).
+  Konular "Esnemek neden bulaşıcı?" gibi herkesin kendi yaşadığı, akılda kalan sorular olsun.
+  Her video tek bir niş soru ve izleyene "demek o yüzden!" dedirtmeli.
 - Görsel: krem zemin, el çizimi çizgi adam, mercan/turkuaz/sarı vurgu, büyük altyazı, üstte seri etiketi.
 - Seri etiketi büyük (dikey 46 punto, yatay 40). Telefonda küçük kalmasın; küçültme.
 - KAPAK: videonun ilk karesi kapaktır. İlk 0,45 sn (ses başlamadan) sahne 1'in en çarpıcı anı + dev kanca sorusu görünür
@@ -73,9 +75,17 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 
 ## Konu havuzu
 Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih).
-Sırada (bu sırayla, bir psikoloji bir başka alan):
-7. IKEA etkisi (psikoloji)
-8. Soğan doğrarken neden ağlarız? (bilim)
-9. Barnum etkisi (psikoloji)
-10. "Tamam" kelimesi nereden geliyor? (dil)
-Liste bitince aynı dengeyle (bir psikoloji, bir başka alan) yeni konular bul.
+Sırada (bu sırayla, bir psikoloji bir bilim):
+1. Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji)
+2. Kendimizi neden gıdıklayamayız? (bilim)
+3. Şarkı neden dile dolanır? (psikoloji)
+4. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
+5. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
+6. Soğan doğrarken neden ağlarız? (bilim)
+7. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
+8. Parmaklarımız suda neden buruşur? (bilim)
+9. Bulutlarda neden yüz görürüz? (psikoloji)
+10. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
+11. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
+12. Nane neden serinletir, acı biber neden yakar? (bilim)
+Liste bitince aynı dengeyle (bir psikoloji, bir bilim) yeni konular bul. Tarih ve dil konusu ekleme.
