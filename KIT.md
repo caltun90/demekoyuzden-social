@@ -41,6 +41,7 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 - `render.py`: çizim motoru + 6 sahne. `FMT=v` (dikey) veya `FMT=h` (yatay). Yeni videoda `scene1..6`, `HL`, `TITLE`, `HOOK`, `COVER`, `COVER_AT`,
   gerekirse `tag()` içindeki seri etiketi yeniden yazılır. Yardımcı fonksiyonlara dokunma.
 - `build.sh`: iki formatı üretir, birleştirir, sesi ekler. Depo şişmesin diye kodlama `CRF=24`, `PRESET=medium` (render.py; gözle fark yok). Bir sahne render edilemezse durur, video üretmez.
+- `feed.py`, `feed.xml`: yatay videoların YouTube'a otomatik yüklenmesi için RSS akışı (bkz. Paylaşım).
 - `setup.sh`: bulut ortamı kurulumu (libEGL, Python paketleri, Poppins fontları). Tekrar çalıştırmak güvenli.
 
 ## Yeni video için akış
@@ -79,12 +80,22 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 
 ## Paylaşım
 - Dikey video: Buffer (bahsish.co hesabı, yalnızca API anahtarıyla) üzerinden YouTube Short ("Demek O Yüzden"), TikTok, Instagram Reel. Günde üç video: 12:00, 15:00 ve 19:00.
-- Yatay video: YouTube'a normal video. Buffer yalnızca Short gönderdiği için YouTube Studio'dan elle yüklenir.
+- Yatay video: YouTube'a normal video olarak OTOMATİK yüklenir (Cem, 2026-11-13). Buffer yatay videoyu YouTube'a kabul etmez
+  ("Video must be vertical"), o yüzden yol şu: `feed.xml` (RSS) -> Zapier (Cem'in hesabı) -> YouTube. Görev her yatay video için:
+  ```
+  python3 feed.py add videos/<ad>-yatay.mp4 "<YouTube başlığı>" "<açıklama>"
+  ```
+  - Başlık Short ile aynı. Açıklama aynı metin ama `#shorts` etiketi OLMADAN (varsa betik reddeder).
+  - `feed.xml`, o videonun commit'ine eklenir ve birlikte push edilir. Zapier 15 dakikada bir bakar, yeni öğeyi herkese açık yükler.
+  - Bu kural görev talimatındaki "Cem YouTube'a normal video olarak yükler" ve "yalnızca şunları commit et" maddelerinin yerine geçer
+    (`feed.xml` de commit edilir). Anahtar gerekmez. Yatay videoyu Buffer'a verme.
+  - Zapier ücretsiz planı: ayda 100 işlem, günde en fazla 5 YouTube yüklemesi. Günde 3 video buna sığar; aynı videoyu iki kez ekleme.
+  - Görev yüklemenin sonucunu göremez. Raporda "yatay video YouTube'a otomatik yüklenecek" de; Cem görmezse Zapier geçmişine bakar.
 - Claude'a bağlı Buffer bağlayıcısı engrowapp hesabına aittir (Engrow, Pofu Kids); bu kanal için kullanılmaz.
 - Buffer dosya yüklemesi kabul etmez; video açık bir https adresinde durmalı (bu deponun raw adresi).
 - Kapak: Instagram ve TikTok gönderisinde video varlığına `metadata: { thumbnailOffset: 200 }` ver (ilk kare = kapak).
   YouTube Short kapağı Buffer/API ile seçilemez; YouTube kendi seçer, Cem isterse YouTube uygulamasından ilk kareyi seçer.
-- Yatay videoyla birlikte yatay kapak karesini de Cem'e gönder (`FMT=h python3 render.py still <klasör> 0`); YouTube'da küçük resim olarak yükler.
+- Yatay kapak karesini yine Cem'e gönder (`FMT=h python3 render.py still <klasör> 0`). Zapier küçük resim seçemez; Cem isterse YouTube'da elle koyar.
 
 ## Konu havuzu
 Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji).
