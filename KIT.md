@@ -83,9 +83,8 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 - Yatay videoyla birlikte yatay kapak karesini de Cem'e gönder (`FMT=h python3 render.py still <klasör> 0`); YouTube'da küçük resim olarak yükler.
 
 ## Konu havuzu
-Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih).
+Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji).
 Sırada (bu sırayla, bir psikoloji bir bilim):
-1. Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji)
 2. Kendimizi neden gıdıklayamayız? (bilim)
 3. Şarkı neden dile dolanır? (psikoloji)
 4. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
