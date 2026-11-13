@@ -109,6 +109,31 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
   YouTube Short kapağı Buffer/API ile seçilemez; YouTube kendi seçer, Cem isterse YouTube uygulamasından ilk kareyi seçer.
 - Yatay kapak karesi `yt_upload.py --thumb` ile YouTube'a yüklenir; Cem'e ayrıca gönderilir (`FMT=h python3 render.py still <klasör> 0`).
 
+## Buffer API (doğrulandı: 2026-11-13)
+Yalnızca API anahtarıyla; Claude'a bağlı Buffer bağlayıcısı (mcp araçları) bu kanal için KULLANILMAZ.
+- İstek: `POST https://api.buffer.com`, başlıklar `Authorization: Bearer $BUFFER_API_KEY` ve `Content-Type: application/json`, gövde `{"query": "..."}` (GraphQL).
+- Organizasyon: `{ account { organizations { id } } }`
+- Kanallar: `{ channels(input:{organizationId:"<org>"}) { id name service isDisconnected } }`. `service` değeri `youtube`, `tiktok`, `instagram`.
+  Kimlikleri her çalışmada buradan oku. Üçünden biri yoksa o kanalı atla ve Cem'e bildir. Başka kanala gönderi atma.
+- Bugünün gönderileri (dolu saat dilimlerini görmek için):
+  `{ posts(first:50, input:{organizationId:"<org>", filter:{dueAt:{start:"<gün>T00:00:00+03:00", end:"<gün>T23:59:59+03:00"}}}) { edges { node { id status dueAt channelService } } } }`
+- Planlama, her kanal için bir kez:
+  ```
+  mutation { createPost(input:{ text:"<açıklama>", channelId:"<kanal>", schedulingType: automatic, mode: customScheduled,
+      dueAt:"<gün>T12:00:00+03:00", assets:[{ video:{ url:"<dikey videonun raw adresi>" <VİDEO_META> } }] <GÖNDERİ_META> }) {
+    __typename ... on PostActionSuccess { post { id status dueAt channelService } } ... on MutationError { message } } }
+  ```
+  - YouTube: `<GÖNDERİ_META>` = `, metadata:{ youtube:{ title:"<başlık>", categoryId:"27", privacy: public, madeForKids: false } }`; `<VİDEO_META>` boş.
+  - Instagram: `<GÖNDERİ_META>` = `, metadata:{ instagram:{ type: reel, shouldShareToFeed: true } }`; `<VİDEO_META>` = `, metadata:{ thumbnailOffset: 200 }`.
+  - TikTok: `<GÖNDERİ_META>` boş; `<VİDEO_META>` = `, metadata:{ thumbnailOffset: 200 }`.
+- Video adresi: `https://raw.githubusercontent.com/caltun90/demekoyuzden-social/main/videos/<dosya>`. Push'tan sonra 200 döndüğünü doğrula.
+  Buffer adresi reddederse bir kez `https://cdn.jsdelivr.net/gh/caltun90/demekoyuzden-social@main/videos/<dosya>` ile dene.
+- YouTube başlığı: en fazla 90 karakter, merak uyandıran soru.
+- Açıklama: 2-3 cümlelik kanca + "Sen de yaşıyor musun? Yorumlara yaz." tarzı soru + en fazla 8 etiket (`#demekoyuzden` ve `#shorts` hep dahil).
+- Doğrulama: planladıktan sonra `filter:{status:[scheduled]}` ile geri oku; üç kanal da doğru saatte `scheduled` olmalı.
+- Beklenmedik bir alan hatası gelirse şema değişmiştir: `{ __type(name:"CreatePostInput") { inputFields { name } } }` ile bak,
+  gerekirse https://developers.buffer.com/llms.txt içindeki örnekleri oku.
+
 ## Konu havuzu
 Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji).
 Sırada (bu sırayla, bir psikoloji bir bilim):
