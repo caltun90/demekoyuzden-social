@@ -4,6 +4,15 @@ Günlük 1 dakikalık videoları üretmek için araçlar. Kit bu deponun kökün
 Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA BİLİM"). Başka seri yok.
 
 ## Kararlar (Cem)
+- GÜNDE 2 VİDEO (Cem, 2026-11-13). Günlük görev tek çalışmada iki video üretir: "Sırada" listesinin ilk iki konusu (biri psikoloji, biri bilim).
+  Birinci video 12:30'da, ikinci video 19:00'da (Europe/Istanbul) üç platforma planlanır. Bu kural görev talimatındaki
+  "bugünün videosu" ve "aynı gün ikinci kez planlama" maddelerinin yerine geçer:
+  - Önce Buffer'da bugünün gönderilerine bak. Bir saat dilimi (12:30 ya da 19:00) üç kanalda da doluysa o dilime ekleme; yalnızca boş dilimi doldur.
+  - Planlanacak saate 30 dakikadan az kaldıysa ya da saat geçtiyse o video için şimdi + 30 dk kullan.
+  - Akışın tamamı (senaryo, ses, hizalama, sahneler, kare kontrolü, build, push, Buffer) her video için baştan uygulanır. Önce birinciyi bitir ve planla, sonra ikinciye başla.
+    `script.py` ve `render.py` depoda son üretilen videonun halini taşır; her video ayrı commit olur.
+  - Bir video başarısız olursa diğeri yine yayınlanır; hangisinin neden olmadığını Cem'e bildir.
+  - Rapor tek mesajdır: iki konu, iki YouTube başlığı, iki saat, iki yatay video bağlantısı. Dört dosya ve iki yatay kapak karesi Cem'e gönderilir.
 - HER video iki formatta: yatay 1920x1080 ve dikey 1080x1920. 30 fps, 45-62 sn.
   `./build.sh <ad>` ikisini üretir: `<ad>-yatay.mp4`, `<ad>-dikey.mp4`.
 - Yatay düzen: dikey sahne çizimi solda (dikey koordinatlarda y 280-1260), sağda etiket + `TITLE` + büyük altyazı.
@@ -65,7 +74,7 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 8. `voice/`, `scenes_*`, `silent_*`, `list_*`, kare klasörleri ve kökteki mp4'ler depoya eklenmez.
 
 ## Paylaşım
-- Dikey video: Buffer (bahsish.co hesabı, yalnızca API anahtarıyla) üzerinden YouTube Short ("Demek O Yüzden"), TikTok, Instagram Reel. 19:00.
+- Dikey video: Buffer (bahsish.co hesabı, yalnızca API anahtarıyla) üzerinden YouTube Short ("Demek O Yüzden"), TikTok, Instagram Reel. Günde iki video: 12:30 ve 19:00.
 - Yatay video: YouTube'a normal video. Buffer yalnızca Short gönderdiği için YouTube Studio'dan elle yüklenir.
 - Claude'a bağlı Buffer bağlayıcısı engrowapp hesabına aittir (Engrow, Pofu Kids); bu kanal için kullanılmaz.
 - Buffer dosya yüklemesi kabul etmez; video açık bir https adresinde durmalı (bu deponun raw adresi).
