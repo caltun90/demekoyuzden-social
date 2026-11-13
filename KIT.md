@@ -88,4 +88,8 @@ Sırada (bu sırayla, bir psikoloji bir bilim):
 10. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
 11. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
 12. Nane neden serinletir, acı biber neden yakar? (bilim)
-Liste bitince aynı dengeyle (bir psikoloji, bir bilim) yeni konular bul. Tarih ve dil konusu ekleme.
+Liste hiç bitmesin: "Sırada" 4 konunun altına inince aynı dengeyle (bir psikoloji, bir bilim) en az 6 yeni konu ekle. Tarih ve dil konusu ekleme.
+Konu seçme ölçütü (Cem onayladı, 2026-11-13; kalıcı):
+- Herkesin kendi yaşadığı, gündelik bir şey olsun (esnemek, gıdıklanmak, dile dolanan şarkı gibi). Başlık kısa bir "neden" sorusu olsun.
+- Cevabı tek cümleyle anlatılabilsin ve izleyene "demek o yüzden!" dedirtsin. Etki adları (Barnum, IKEA) başlıkta değil, cevabın içinde geçsin.
+- Sağlam kaynağı olsun; tartışmalı ya da tekrarlanamamış bulgu, tıbbi tavsiye ve "Yapıldı" listesindekilerin benzeri olmasın.
