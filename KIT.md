@@ -135,11 +135,10 @@ Yalnızca API anahtarıyla; Claude'a bağlı Buffer bağlayıcısı (mcp araçla
   gerekirse https://developers.buffer.com/llms.txt içindeki örnekleri oku.
 
 ## Konu havuzu
-Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji).
+Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim).
 Sırada (bu sırayla, bir psikoloji bir bilim):
-1. Arabada telefona bakınca neden midemiz bulanır? (bilim; Cem istedi)
-2. Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji; Cem istedi. Tek bir yaygın adı yok: çalışma belleği ve bölünme. Başlangıç kaynağı: Wessel ve ark. 2016, Nature Communications, "Surprise disrupts cognition via a fronto-basal ganglia suppressive mechanism")
-3. Kan neden tutar? Kan görünce neden başımız döner? (bilim; Cem istedi)
+1. Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji; Cem istedi. Tek bir yaygın adı yok: çalışma belleği ve bölünme. Başlangıç kaynağı: Wessel ve ark. 2016, Nature Communications, "Surprise disrupts cognition via a fronto-basal ganglia suppressive mechanism")
+2. Kan neden tutar? Kan görünce neden başımız döner? (bilim; Cem istedi)
    - Cevap: kan görünce nabız ve tansiyon önce yükselir, sonra birden düşer. Beyne giden kan azalır; baş döner, göz kararır (vazovagal tepki).
    - Şaşırtan yan: örümcek ya da yükseklik korkusunda nabız yalnızca yükselir, kimse bayılmaz. İnsanı bayıltabilen tek korku bu.
    - Ek bilgi: ailede sık görülür; iğne ve yara görmek de aynı tepkiyi verebilir.
@@ -147,17 +146,17 @@ Sırada (bu sırayla, bir psikoloji bir bilim):
    - Kapanış: "Korkak değilsin, vücudun seni korumaya çalışıyor." Kas sıkma tekniği gibi tedavi önerisi verme.
    - Sahne fikri: parmağa küçük kesik, kalp ve tansiyon göstergesi önce çıkar sonra düşer, çizgi adam sandalyeye çöker. Kan tek küçük mercan damla olsun, ürkütücü çizme.
    - Başlangıç kaynakları (doğrula): Öst, Sterner ve Lindahl 1984, Behaviour Research and Therapy, "Physiological responses in blood phobics"; Page 1994, Clinical Psychology Review, "Blood-injury phobia".
-4. Şarkı neden dile dolanır? (psikoloji)
-5. Kendimizi neden gıdıklayamayız? (bilim)
-6. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
-7. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
-8. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
-9. Soğan doğrarken neden ağlarız? (bilim)
-10. Bulutlarda neden yüz görürüz? (psikoloji)
-11. Parmaklarımız suda neden buruşur? (bilim)
-12. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
-13. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
-14. Nane neden serinletir, acı biber neden yakar? (bilim)
+3. Şarkı neden dile dolanır? (psikoloji)
+4. Kendimizi neden gıdıklayamayız? (bilim)
+5. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
+6. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
+7. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
+8. Soğan doğrarken neden ağlarız? (bilim)
+9. Bulutlarda neden yüz görürüz? (psikoloji)
+10. Parmaklarımız suda neden buruşur? (bilim)
+11. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
+12. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
+13. Nane neden serinletir, acı biber neden yakar? (bilim)
 Liste hiç bitmesin: "Sırada" 4 konunun altına inince aynı dengeyle (bir psikoloji, bir bilim) en az 6 yeni konu ekle. Tarih ve dil konusu ekleme.
 Konu seçme ölçütü (Cem onayladı, 2026-11-13; kalıcı):
 - Herkesin kendi yaşadığı, gündelik bir şey olsun (esnemek, gıdıklanmak, dile dolanan şarkı gibi). Başlık kısa bir "neden" sorusu olsun.
