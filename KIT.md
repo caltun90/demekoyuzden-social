@@ -137,17 +137,21 @@ Yalnızca API anahtarıyla; Claude'a bağlı Buffer bağlayıcısı (mcp araçla
 ## Konu havuzu
 Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim); Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji); Kan neden tutar? Kan görünce neden başımız döner? (bilim).
 Sırada (bu sırayla, bir psikoloji bir bilim):
-1. Şarkı neden dile dolanır? (psikoloji)
-2. Kendimizi neden gıdıklayamayız? (bilim)
-3. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
-4. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
-5. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
-6. Soğan doğrarken neden ağlarız? (bilim)
-7. Bulutlarda neden yüz görürüz? (psikoloji)
-8. Parmaklarımız suda neden buruşur? (bilim)
-9. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
-10. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
-11. Nane neden serinletir, acı biber neden yakar? (bilim)
+1. Gözümüz neden dalar? Boş boş bir noktaya bakarken ne oluyor? (psikoloji; Cem istedi, 2026-11-14)
+   - Yön: göz dalması = zihnin o an dışarıdan içeriye dönmesi (zihin gezinmesi, "algısal kopma"). Gözler açık ama beyin gördüğünü daha az işliyor.
+   - Başlangıç kaynakları (doğrula): Smallwood & Schooler 2006, Psychological Bulletin, "The restless mind"; Killingsworth & Gilbert 2010, Science, "A wandering mind is an unhappy mind" (uyanık zamanın yaklaşık yarısı); Smilek, Carriere & Cheyne 2010, Psychological Science (zihin gezinirken göz kırpma artıyor).
+   - Tıbbi yana girme (nöbet, dikkat eksikliği gibi teşhis ima etme); gündelik, zararsız hali anlat.
+2. Şarkı neden dile dolanır? (psikoloji)
+3. Kendimizi neden gıdıklayamayız? (bilim)
+4. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
+5. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
+6. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
+7. Soğan doğrarken neden ağlarız? (bilim)
+8. Bulutlarda neden yüz görürüz? (psikoloji)
+9. Parmaklarımız suda neden buruşur? (bilim)
+10. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
+11. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
+12. Nane neden serinletir, acı biber neden yakar? (bilim)
 Liste hiç bitmesin: "Sırada" 4 konunun altına inince aynı dengeyle (bir psikoloji, bir bilim) en az 6 yeni konu ekle. Tarih ve dil konusu ekleme.
 Konu seçme ölçütü (Cem onayladı, 2026-11-13; kalıcı):
 - Herkesin kendi yaşadığı, gündelik bir şey olsun (esnemek, gıdıklanmak, dile dolanan şarkı gibi). Başlık kısa bir "neden" sorusu olsun.
