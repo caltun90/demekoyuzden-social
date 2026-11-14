@@ -135,27 +135,19 @@ Yalnızca API anahtarıyla; Claude'a bağlı Buffer bağlayıcısı (mcp araçla
   gerekirse https://developers.buffer.com/llms.txt içindeki örnekleri oku.
 
 ## Konu havuzu
-Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim); Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji).
+Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim); Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji); Kan neden tutar? Kan görünce neden başımız döner? (bilim).
 Sırada (bu sırayla, bir psikoloji bir bilim):
-1. Kan neden tutar? Kan görünce neden başımız döner? (bilim; Cem istedi)
-   - Cevap: kan görünce nabız ve tansiyon önce yükselir, sonra birden düşer. Beyne giden kan azalır; baş döner, göz kararır (vazovagal tepki).
-   - Şaşırtan yan: örümcek ya da yükseklik korkusunda nabız yalnızca yükselir, kimse bayılmaz. İnsanı bayıltabilen tek korku bu.
-   - Ek bilgi: ailede sık görülür; iğne ve yara görmek de aynı tepkiyi verebilir.
-   - "Neden böyle?" kısmı kesin değil. Yaygın açıklama: yaralanınca tansiyonu düşürüp kan kaybını azaltan eski bir refleks. "Bir açıklamaya göre" diye anlat.
-   - Kapanış: "Korkak değilsin, vücudun seni korumaya çalışıyor." Kas sıkma tekniği gibi tedavi önerisi verme.
-   - Sahne fikri: parmağa küçük kesik, kalp ve tansiyon göstergesi önce çıkar sonra düşer, çizgi adam sandalyeye çöker. Kan tek küçük mercan damla olsun, ürkütücü çizme.
-   - Başlangıç kaynakları (doğrula): Öst, Sterner ve Lindahl 1984, Behaviour Research and Therapy, "Physiological responses in blood phobics"; Page 1994, Clinical Psychology Review, "Blood-injury phobia".
-2. Şarkı neden dile dolanır? (psikoloji)
-3. Kendimizi neden gıdıklayamayız? (bilim)
-4. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
-5. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
-6. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
-7. Soğan doğrarken neden ağlarız? (bilim)
-8. Bulutlarda neden yüz görürüz? (psikoloji)
-9. Parmaklarımız suda neden buruşur? (bilim)
-10. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
-11. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
-12. Nane neden serinletir, acı biber neden yakar? (bilim)
+1. Şarkı neden dile dolanır? (psikoloji)
+2. Kendimizi neden gıdıklayamayız? (bilim)
+3. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
+4. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
+5. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
+6. Soğan doğrarken neden ağlarız? (bilim)
+7. Bulutlarda neden yüz görürüz? (psikoloji)
+8. Parmaklarımız suda neden buruşur? (bilim)
+9. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
+10. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
+11. Nane neden serinletir, acı biber neden yakar? (bilim)
 Liste hiç bitmesin: "Sırada" 4 konunun altına inince aynı dengeyle (bir psikoloji, bir bilim) en az 6 yeni konu ekle. Tarih ve dil konusu ekleme.
 Konu seçme ölçütü (Cem onayladı, 2026-11-13; kalıcı):
 - Herkesin kendi yaşadığı, gündelik bir şey olsun (esnemek, gıdıklanmak, dile dolanan şarkı gibi). Başlık kısa bir "neden" sorusu olsun.
