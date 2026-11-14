@@ -135,27 +135,23 @@ Yalnızca API anahtarıyla; Claude'a bağlı Buffer bağlayıcısı (mcp araçla
   gerekirse https://developers.buffer.com/llms.txt içindeki örnekleri oku.
 
 ## Konu havuzu
-Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim); Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji); Kan neden tutar? Kan görünce neden başımız döner? (bilim).
+Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim); Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji); Kan neden tutar? Kan görünce neden başımız döner? (bilim); Gözümüz neden dalar? (psikoloji).
 Sırada (bu sırayla, bir psikoloji bir bilim):
-1. Gözümüz neden dalar? Boş boş bir noktaya bakarken ne oluyor? (psikoloji; Cem istedi, 2026-11-14)
-   - Yön: göz dalması = zihnin o an dışarıdan içeriye dönmesi (zihin gezinmesi, "algısal kopma"). Gözler açık ama beyin gördüğünü daha az işliyor.
-   - Başlangıç kaynakları (doğrula): Smallwood & Schooler 2006, Psychological Bulletin, "The restless mind"; Killingsworth & Gilbert 2010, Science, "A wandering mind is an unhappy mind" (uyanık zamanın yaklaşık yarısı); Smilek, Carriere & Cheyne 2010, Psychological Science (zihin gezinirken göz kırpma artıyor).
-   - Tıbbi yana girme (nöbet, dikkat eksikliği gibi teşhis ima etme); gündelik, zararsız hali anlat.
-2. Meyveyi yıkayınca pestisit gider mi? Pestisit nedir, neden kullanılır? (bilim; Cem istedi, 2026-11-14)
+1. Meyveyi yıkayınca pestisit gider mi? Pestisit nedir, neden kullanılır? (bilim; Cem istedi, 2026-11-14)
    - Cem yalnızca "pestisit" dedi; soru önerisi Claude'un. Gündelik yan: meyve sebzeyi neden yıkarız, su ne kadarını alır, kabuğun içine geçen kısım.
    - Başlangıç kaynakları (doğrula): He ve ark. 2017, Journal of Agricultural and Food Chemistry (elmada yıkama yöntemleri; kalıntının bir kısmı kabuğa işliyor); FDA ve benzeri kurumların yıkama önerisi (akan su, sabun yok).
    - Korkutma, "zararlı/zararsız" hükmü ve sağlık tavsiyesi verme; doz ve hastalık tartışmasına girme. Kesin olmayanı "araştırmalara göre" diye anlat.
-3. Şarkı neden dile dolanır? (psikoloji)
-4. Kendimizi neden gıdıklayamayız? (bilim)
-5. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
-6. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
-7. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
-8. Soğan doğrarken neden ağlarız? (bilim)
-9. Bulutlarda neden yüz görürüz? (psikoloji)
-10. Parmaklarımız suda neden buruşur? (bilim)
-11. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
-12. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
-13. Nane neden serinletir, acı biber neden yakar? (bilim)
+2. Şarkı neden dile dolanır? (psikoloji)
+3. Kendimizi neden gıdıklayamayız? (bilim)
+4. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
+5. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
+6. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
+7. Soğan doğrarken neden ağlarız? (bilim)
+8. Bulutlarda neden yüz görürüz? (psikoloji)
+9. Parmaklarımız suda neden buruşur? (bilim)
+10. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
+11. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
+12. Nane neden serinletir, acı biber neden yakar? (bilim)
 Liste hiç bitmesin: "Sırada" 4 konunun altına inince aynı dengeyle (bir psikoloji, bir bilim) en az 6 yeni konu ekle. Tarih ve dil konusu ekleme.
 Konu seçme ölçütü (Cem onayladı, 2026-11-13; kalıcı):
 - Herkesin kendi yaşadığı, gündelik bir şey olsun (esnemek, gıdıklanmak, dile dolanan şarkı gibi). Başlık kısa bir "neden" sorusu olsun.
