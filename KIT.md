@@ -135,18 +135,17 @@ Yalnızca API anahtarıyla; Claude'a bağlı Buffer bağlayıcısı (mcp araçla
   gerekirse https://developers.buffer.com/llms.txt içindeki örnekleri oku.
 
 ## Konu havuzu
-Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim); Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji); Kan neden tutar? Kan görünce neden başımız döner? (bilim); Gözümüz neden dalar? (psikoloji); Meyveyi yıkayınca pestisit gider mi? (bilim, Cem istedi); Şarkı neden dile dolanır? (psikoloji).
+Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim); Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji); Kan neden tutar? Kan görünce neden başımız döner? (bilim); Gözümüz neden dalar? (psikoloji); Meyveyi yıkayınca pestisit gider mi? (bilim, Cem istedi); Şarkı neden dile dolanır? (psikoloji); Kendimizi neden gıdıklayamayız? (bilim).
 Sırada (bu sırayla, bir psikoloji bir bilim):
-1. Kendimizi neden gıdıklayamayız? (bilim)
-2. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
-3. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
-4. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
-5. Soğan doğrarken neden ağlarız? (bilim)
-6. Bulutlarda neden yüz görürüz? (psikoloji)
-7. Parmaklarımız suda neden buruşur? (bilim)
-8. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
-9. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
-10. Nane neden serinletir, acı biber neden yakar? (bilim)
+1. Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji)
+2. Kendi sesimiz kayıtta neden yabancı gelir? (bilim)
+3. Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji)
+4. Soğan doğrarken neden ağlarız? (bilim)
+5. Bulutlarda neden yüz görürüz? (psikoloji)
+6. Parmaklarımız suda neden buruşur? (bilim)
+7. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
+8. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
+9. Nane neden serinletir, acı biber neden yakar? (bilim)
 Liste hiç bitmesin: "Sırada" 4 konunun altına inince aynı dengeyle (bir psikoloji, bir bilim) en az 6 yeni konu ekle. Tarih ve dil konusu ekleme.
 Konu seçme ölçütü (Cem onayladı, 2026-11-13; kalıcı):
 - Herkesin kendi yaşadığı, gündelik bir şey olsun (esnemek, gıdıklanmak, dile dolanan şarkı gibi). Başlık kısa bir "neden" sorusu olsun.

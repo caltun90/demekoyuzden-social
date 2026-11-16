@@ -165,6 +165,20 @@
       "Beaman, Powell & Rapley (2015), Want to block earworms from conscious awareness? B(u)y gum!, Quarterly Journal of Experimental Psychology 68(6), 1049-1057, doi:10.1080/17470218.2015.1034142 (Reading Üniversitesi; sakız çiğneyenler şarkıyı yaklaşık üçte bir daha az 'duydu'; açıklama iç sesle tekrarın engellenmesi): https://centaur.reading.ac.uk/40114/",
       "Williamson & Jakubowski, earworm tanımı (kısa bir parça döngüde tekrar eder) ve Scientific American Mind (2015), How do you solve a problem like an earworm? (fonolojik döngü açıklaması; videoda \"bir açıklamaya göre\" diye geçiyor): https://www.scientificamerican.com/article/how-do-you-solve-a-problem-like-an-earworm/"
     ],
-    "yayin": "2026-11-16T15:00:00+03:00"
+    "yayin": "2026-11-16T15:00:00+03:00",
+    "yatay_youtube": "rDdNWunoD0o"
+  },
+  {
+    "date": "2026-11-16",
+    "slug": "kendini-gidiklamak",
+    "konu": "Kendimizi neden gıdıklayamayız? (beynin kendi hareketinin duyusal sonucunu tahmin etmesi)",
+    "baslik": "Kendini neden gıdıklayamazsın?",
+    "kaynaklar": [
+      "Blakemore, Wolpert & Frith (1998), Central cancellation of self-produced tickle sensation, Nature Neuroscience 1(7), 635-640 (robotla aynı dokunuş kendinden gelince daha az gıdıklıyor; fMRI'de ikincil somatosensoriyel korteks ve beyincikte daha az etkinlik): https://link.springer.com/article/10.1038/2870",
+      "Blakemore, Frith & Wolpert (1999), Spatio-temporal prediction modulates the perception of self-produced stimuli, Journal of Cognitive Neuroscience 11(5), 551-559 (hareket ile dokunuş arasındaki gecikme ve yön sapması arttıkça gıdıklanma puanı arttı): https://Gwern.net/doc/psychology/neuroscience/1999-blakemore.pdf",
+      "Weiskrantz, Elliott & Darlington (1971), Preliminary observations on tickling oneself, Nature 230, 598-599, doi:10.1038/230598a0 (kendi kendine gıdıklama en zayıf his)",
+      "Wolpert lab, Columbia Üniversitesi, Blakemore, Wolpert & Frith (1999) NeuroImage makalesi (beyincik kendi dokunuşunun sonucunu tahmin ediyor): https://wolpertlab.neuroscience.columbia.edu/sites/default/files/content/papers/BlaWolFri99.pdf"
+    ],
+    "yayin": "2026-11-16T19:00:00+03:00"
   }
 ]
