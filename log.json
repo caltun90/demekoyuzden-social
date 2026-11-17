@@ -1,225 +1,227 @@
 [
-  {
-    "date": "2026-11-12",
-    "slug": "zeigarnik-etkisi",
-    "konu": "Zeigarnik etkisi: yarım kalan iş neden akıldan çıkmaz?",
-    "baslik": "Yarım kalan iş neden aklından çıkmıyor?",
-    "kaynaklar": [
-      "Ghibellini & Meier (2025), Humanities and Social Sciences Communications 12, meta-analiz: https://ideas.repec.org/a/pal/palcom/v12y2025i1d10.1057_s41599-025-05000-w.html",
-      "Masicampo & Baumeister (2011), Journal of Personality and Social Psychology: https://pubmed.ncbi.nlm.nih.gov/21688924/",
-      "Zeigarnik (1927), Psychologische Forschung"
-    ],
-    "yatay_youtube": "YAjvyLTeMRQ"
-  },
-  {
-    "date": "2026-11-12",
-    "slug": "gokyuzu-neden-mavi",
-    "konu": "Gökyüzü neden mavi, gün batımı neden kırmızı?",
-    "baslik": "Gökyüzü neden mavi, gün batımı neden kırmızı?",
-    "kaynaklar": [],
-    "yatay_youtube": "p98w8NWhfVE"
-  },
-  {
-    "date": "2026-11-12",
-    "slug": "sahne-isigi-etkisi",
-    "konu": "Sahne ışığı etkisi: neden herkes bize bakıyor sanırız?",
-    "baslik": "Herkes sana bakıyor gibi mi geliyor? Sahne ışığı etkisi",
-    "kaynaklar": [
-      "Gilovich, Medvec & Savitsky (2000), The spotlight effect in social judgment, Journal of Personality and Social Psychology 78(2), 211-222, doi:10.1037/0022-3514.78.2.211: https://www.kellogg.northwestern.edu/academics-research/research/detail/2000/the-spotlight-effect-in-social-judgment-an-egocentric-bias/",
-      "Colby College CogBlog, The Spotlight Effect (deney özeti): https://web.colby.edu/cogblog/2019/11/26/face-it-you-are-not-that-important-the-spotlight-effect/",
-      "Gilovich, Kruger & Medvec (2002), The spotlight effect revisited, Journal of Experimental Social Psychology 38(1), 93-99"
-    ],
-    "yatay_youtube": "EsNAcSc1BqQ"
-  },
-  {
-    "date": "2026-11-12",
-    "slug": "esnemek-neden-bulasici",
-    "konu": "Esnemek neden bulaşıcı?",
-    "baslik": "Esnemek neden bulaşıcı? Bilim hâlâ tam emin değil",
-    "kaynaklar": [
-      "Provine (1986), Yawning as a stereotyped action pattern and releasing stimulus, Ethology 72(2), 109-122 (5 dakikalık esneme videosu, izleyenlerin %55'i esnedi)",
-      "Norscia & Palagi (2011), Yawn contagion and empathy in Homo sapiens, PLoS ONE 6(12): https://pmc.ncbi.nlm.nih.gov/articles/PMC3233580",
-      "Bartholomew & Cirulli (2014), Individual variation in contagious yawning susceptibility, PLoS ONE 9(3): https://pmc.ncbi.nlm.nih.gov/articles/PMC3954725",
-      "Massen & Gallup (2017), Why contagious yawning does not (yet) equate to empathy, Neuroscience & Biobehavioral Reviews 80",
-      "Brown ve ark. (2017), A neural basis for contagious yawning, Current Biology 27: https://eprints.nottingham.ac.uk/44492",
-      "Anderson & Meno (2003) ve Helt ve ark. (2010): küçük çocuklarda bulaşıcı esneme 4-5 yaşından önce pek görülmüyor"
-    ],
-    "yatay_youtube": "K18psd5S_Po"
-  },
-  {
-    "date": "2026-11-12",
-    "slug": "dilimin-ucunda-hissi",
-    "konu": "Dilimin ucunda hissi: bildiğin kelime neden bir türlü gelmez?",
-    "baslik": "Adı neden dilinin ucunda kalıp bir türlü gelmiyor?",
-    "kaynaklar": [
-      "Brown & McNeill (1966), The \"tip of the tongue\" phenomenon, Journal of Verbal Learning and Verbal Behavior 5(4), 325-337 (az bilinen kelimelerin tanımı; ilk harf ve hece sayısı sık sık doğru tahmin edildi)",
-      "Brown, A. S. (1991), A review of the tip-of-the-tongue experience, Psychological Bulletin 109(2), 204-223 (neredeyse evrensel, haftada yaklaşık bir, yaşla artıyor, özel isimlerde sık, yaklaşık yarısı kısa sürede çözülüyor): https://pubmed.ncbi.nlm.nih.gov/2034750/",
-      "Burke, MacKay, Worthley & Wade (1991), On the tip of the tongue: What causes word finding failures in young and older adults?, Journal of Memory and Language 30(5), 542-579 (anlam ile ses arasındaki bağlantı zayıflıyor; az ve uzun süredir kullanılmayan kelimeler, özel isimler)",
-      "Schwartz & Metcalfe (2011), Tip-of-the-tongue (TOT) states: retrieval, behavior, and experience, Memory & Cognition 39: https://www.columbia.edu/cu/psychology/metcalfe/PDFs/Schwartz_Metcalfe_inPress.pdf"
-    ],
-    "yatay_youtube": "0RaW4-7NBuQ"
-  },
-  {
-    "date": "2026-11-13",
-    "slug": "klavye-neden-karisik",
-    "konu": "Klavyede harfler neden alfabetik sırada değil?",
-    "baslik": "Klavyede harfler neden alfabe sırasında değil?",
-    "kaynaklar": [
-      "Yasuoka & Yasuoka, On the Prehistory of QWERTY, ZINBUN No. 42, 161-174, Kyoto Üniversitesi (ilk kullanıcılar telgrafçılardı; dizilim onların geri bildirimiyle şekillendi): https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/139379/1/42_161.pdf",
-      "Smithsonian Magazine, Fact or Fiction? The Legend of the QWERTY Keyboard (takılan harf kolları anlatısı, Kyoto araştırması, Remington ile yayılma): https://www.smithsonianmag.com/arts-culture/fact-of-fiction-the-legend-of-the-qwerty-keyboard-49863249/",
-      "BBC Science Focus, How did QWERTY end up on our keyboards? (ilk patentte alfabetik dizilim; orta sıradaki DFGHJKL eski sıranın izi): https://www.sciencefocus.com/science/how-did-qwerty-end-up-on-our-keyboards",
-      "History of Information, The Sholes & Glidden Type Writer (1868 patenti, Remington sözleşmesi 1873, piyasaya çıkış 1874): https://www.historyofinformation.com/detail.php?id=2134"
-    ],
-    "yatay_youtube": "bJDpAu1jgLI"
-  },
-  {
-    "date": "2026-11-13",
-    "slug": "kelime-neden-tuhaflasir",
-    "konu": "Anlamsal doygunluk: bir kelimeyi çok tekrarlayınca neden anlamsızlaşır?",
-    "baslik": "Bir kelimeyi tekrarlayınca neden anlamsızlaşıyor?",
-    "kaynaklar": [
-      "Severance & Washburn (1907), The loss of associative power in words after long fixation, American Journal of Psychology 18(2), 182-186 (uzun süre bakılan basılı kelime tuhaf ve yabancı görünüyor)",
-      "Lambert & Jakobovits (1960), Verbal satiation and changes in the intensity of meaning, Journal of Experimental Psychology 60, 376-383, doi:10.1037/h0045624",
-      "Jakobovits (1962), doktora tezi, McGill Üniversitesi (\"semantic satiation\" terimi)",
-      "Tian & Huber (2010), Testing an associative account of semantic satiation, Cognitive Psychology 60(4), 267-290 (yorulan şey kelimenin biçimi ile anlamı arasındaki bağ): https://pmc.ncbi.nlm.nih.gov/articles/PMC2882703"
-    ],
-    "yatay_youtube": "kH-i85VPaPA"
-  },
-  {
-    "date": "2026-11-14",
-    "slug": "arabada-mide-bulantisi",
-    "konu": "Araç tutması: arabada telefona bakınca neden midemiz bulanır?",
-    "baslik": "Arabada telefona bakınca miden neden bulanıyor?",
-    "kaynaklar": [
-      "Reason & Brand (1975), Motion Sickness, Academic Press (duyusal çatışma kuramı: iç kulak hareketi bildirir, sabit bir şeye bakan göz bildirmez)",
-      "Rolnick & Lubow (1991), Why is the driver rarely motion sick? The role of controllability in motion sickness, Ergonomics 34(7), 867-879 (22 çift aynı dönüşe maruz kaldı; dönüşü yönetenlerde belirti daha azdı): https://pubmed.ncbi.nlm.nih.gov/1915252/",
-      "Treisman (1977), Motion sickness: an evolutionary hypothesis, Science 197, 493-495 (bulantı için zehirlenme varsayımı; videoda \"bir açıklamaya göre\" diye geçiyor)",
-      "CDC, Motion Sickness (gözün gördüğü hareket iç kulağın hissettiğinden farklı olunca ortaya çıkar)",
-      "Cleveland Clinic, Motion Sickness (kitabı ve telefonu bırakıp uzağa, ufka bakmak)"
-    ],
-    "yayin": "2026-11-14T12:00:00+03:00",
-    "yatay_youtube": "YtCWuaD5rnU"
-  },
-  {
-    "date": "2026-11-14",
-    "slug": "laf-neden-akildan-ucar",
-    "konu": "Çalışma belleği: söyleyeceğin şey araya başka konu girince neden aklından uçar?",
-    "baslik": "Söyleyeceğin şey neden tam o anda aklından uçuyor?",
-    "kaynaklar": [
-      "Peterson & Peterson (1959), Short-term retention of individual verbal items, Journal of Experimental Psychology 58(3), 193-198 (üç harf; geriye sayarak tekrar engellendi; 18 saniye sonra doğru hatırlama %10'un altında): https://www.simplypsychology.org/peterson-peterson.html",
-      "Wessel, Jenkinson, Brittain, Voets, Aziz & Aron (2016), Surprise disrupts cognition via a fronto-basal ganglia suppressive mechanism, Nature Communications 7:11195, doi:10.1038/ncomms11195 (beklenmedik ses akılda tutulan harflerin hatırlanmasını bozdu; hareketi durduran sistemle aynı sinyal): https://pmc.ncbi.nlm.nih.gov/articles/PMC4837448",
-      "UC San Diego News (18 Nisan 2016), Derailed Train of Thought? Brain's Stopping System May Be at Fault (nedensellik için daha çok araştırma gerektiği notu; videoda \"olabilir\" diye geçiyor): https://www.sciencedaily.com/releases/2016/04/160418085326.htm"
-    ],
-    "yayin": "2026-11-15T12:00:00+03:00",
-    "yatay_youtube": "7ssmgzan_w4"
-  },
-  {
-    "date": "2026-11-14",
-    "slug": "kan-neden-tutar",
-    "konu": "Kan tutması: kan görünce neden başımız döner? (vazovagal tepki)",
-    "baslik": "Kan görünce neden başın döner? Kan neden tutar?",
-    "kaynaklar": [
-      "Öst, Sterner & Lindahl (1984), Physiological responses in blood phobics, Behaviour Research and Therapy 22(2), 109-117 (nabız ve tansiyon önce yükseliyor, sonra düşüyor)",
-      "Ritz, Meuret & Ayala (2010), The psychophysiology of blood-injection-injury phobia: looking beyond the diphasic response paradigm, International Journal of Psychophysiology 78(1), 50-67 (iki evreli tepki herkeste görülmüyor; videoda \"bazı insanlarda\" diye geçiyor): https://pmc.ncbi.nlm.nih.gov/articles/PMC3532914",
-      "NeuRA (Neuroscience Research Australia), Fight, flight or ... faint? Why some people pass out when they see blood or feel pain (kan kaybını azaltma varsayımı kesin değil; videoda \"bir açıklamaya göre\" diye geçiyor): https://blog.neura.edu.au/?p=3118",
-      "BMJ Best Practice, Phobias (kan-iğne-yara korkusunda bayılma ve ailede görülme; bu ikinci evre diğer korkularda yaygın değil)"
-    ],
-    "yayin": "2026-11-15T15:00:00+03:00",
-    "yatay_youtube": "Opgv5zpshd0"
-  },
-  {
-    "date": "2026-11-15",
-    "slug": "goz-neden-dalar",
-    "konu": "Zihin gezinmesi: gözümüz neden dalar, boş boş bakarken ne oluyor?",
-    "baslik": "Gözün neden dalar? Boş boş bakarken beyninde ne oluyor?",
-    "kaynaklar": [
-      "Killingsworth & Gilbert (2010), A wandering mind is an unhappy mind, Science 330(6006), 932, doi:10.1126/science.1192439 (2.250 kişi, telefonla rastgele anlarda soruldu; örneklerin %46,9'unda akıl başka yerdeydi): https://news.harvard.edu/gazette/story/2010/11/wandering-mind-not-a-happy-mind/",
-      "Smallwood, Beach, Schooler & Handy (2008), Going AWOL in the brain: mind wandering reduces cortical analysis of external events, Journal of Cognitive Neuroscience 20(3), 458-469 (zihin gezinirken dış olaylara verilen beyin yanıtı zayıflıyor; algısal kopma): https://pubmed.ncbi.nlm.nih.gov/18004943/",
-      "Reichle, Reineberg & Schooler (2010), Eye movements during mindless reading, Psychological Science 21(9), 1300-1310 (okurken dalanlarda göz kelimelerde daha uzun kalıyor; küçük örneklem): https://eprints.soton.ac.uk/348426",
-      "Baird, Smallwood & Schooler (2011), Back to the future: autobiographical planning and the functionality of mind-wandering, Consciousness and Cognition 20(4), 1604-1611 (zihin gezinmesi çoğunlukla geleceğe dönük; videoda \"bir açıklamaya göre\" diye geçiyor): https://pubmed.ncbi.nlm.nih.gov/21917482/"
-    ],
-    "yayin": "2026-11-15T19:00:00+03:00",
-    "yatay_youtube": "OJRitvr5liQ"
-  },
-  {
-    "date": "2026-11-16",
-    "slug": "pestisit-yikama",
-    "konu": "Pestisit: meyveyi yıkayınca ilaç kalıntısı gider mi?",
-    "baslik": "Meyveyi yıkayınca pestisit gider mi?",
-    "kaynaklar": [
-      "Yang, Doherty, Zhao, Kinchla, Clark & He (2017), Effectiveness of commercial and homemade washing agents in removing pesticide residues on and in apples, Journal of Agricultural and Food Chemistry 65(44), 9744-9752, doi:10.1021/acs.jafc.7b03118, Massachusetts Üniversitesi Amherst (thiabendazol ve fosmet, 24 saat; 2 dk musluk suyu daha az etkili; %1 karbonatlı su 12-15 dk ile %80 ve %96; kabuğa işleyen kısım alınamadı): https://pubmed.ncbi.nlm.nih.gov/29067814/",
-      "Phys.org / UMass Amherst haberi (2017), A better way to wash pesticides off apples (thiabendazol yaklaşık 80, fosmet 20 mikrometre derine işledi; hiçbir yöntem tamamen temizlemedi): https://phys.org/news/2017-10-pesticides-apples.html",
-      "FDA, Selecting and Serving Produce Safely (akan suyun altında ovarak yıkama; sabun, deterjan ya da ticari yıkama ürünü önerilmez): https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely"
-    ],
-    "yayin": "2026-11-16T12:00:00+03:00",
-    "yatay_youtube": "k2z_TuNLP-Q"
-  },
-  {
-    "date": "2026-11-16",
-    "slug": "kulak-kurdu",
-    "konu": "Kulak kurdu (istemsiz müzik imgesi): şarkı neden dile dolanır?",
-    "baslik": "Şarkı neden dile dolanır, kafandan neden çıkmaz?",
-    "kaynaklar": [
-      "Liikkanen (2012), Musical activities predispose to involuntary musical imagery, Psychology of Music 40(2), 236-256 (Finlandiya, 12.519 kişilik internet anketi; %89,2 en az haftada bir yaşıyor): https://pmc.ncbi.nlm.nih.gov/articles/PMC3908735",
-      "Jakubowski, Finkel, Stewart & Müllensiefen (2017), Dissecting an earworm: melodic features and song popularity predict involuntary musical imagery, Psychology of Aesthetics, Creativity, and the Arts 11(2), 122-135, doi:10.1037/aca0000090 (Goldsmiths, Londra Üniversitesi, 3.000 kişi; daha hızlı tempo, genel ve akılda kalıcı ezgi, sıra dışı sıçrama ya da tekrar): https://research.gold.ac.uk/19405",
-      "Beaman, Powell & Rapley (2015), Want to block earworms from conscious awareness? B(u)y gum!, Quarterly Journal of Experimental Psychology 68(6), 1049-1057, doi:10.1080/17470218.2015.1034142 (Reading Üniversitesi; sakız çiğneyenler şarkıyı yaklaşık üçte bir daha az 'duydu'; açıklama iç sesle tekrarın engellenmesi): https://centaur.reading.ac.uk/40114/",
-      "Williamson & Jakubowski, earworm tanımı (kısa bir parça döngüde tekrar eder) ve Scientific American Mind (2015), How do you solve a problem like an earworm? (fonolojik döngü açıklaması; videoda \"bir açıklamaya göre\" diye geçiyor): https://www.scientificamerican.com/article/how-do-you-solve-a-problem-like-an-earworm/"
-    ],
-    "yayin": "2026-11-16T15:00:00+03:00",
-    "yatay_youtube": "rDdNWunoD0o"
-  },
-  {
-    "date": "2026-11-16",
-    "slug": "kendini-gidiklamak",
-    "konu": "Kendimizi neden gıdıklayamayız? (beynin kendi hareketinin duyusal sonucunu tahmin etmesi)",
-    "baslik": "Kendini neden gıdıklayamazsın?",
-    "kaynaklar": [
-      "Blakemore, Wolpert & Frith (1998), Central cancellation of self-produced tickle sensation, Nature Neuroscience 1(7), 635-640 (robotla aynı dokunuş kendinden gelince daha az gıdıklıyor; fMRI'de ikincil somatosensoriyel korteks ve beyincikte daha az etkinlik): https://link.springer.com/article/10.1038/2870",
-      "Blakemore, Frith & Wolpert (1999), Spatio-temporal prediction modulates the perception of self-produced stimuli, Journal of Cognitive Neuroscience 11(5), 551-559 (hareket ile dokunuş arasındaki gecikme ve yön sapması arttıkça gıdıklanma puanı arttı): https://Gwern.net/doc/psychology/neuroscience/1999-blakemore.pdf",
-      "Weiskrantz, Elliott & Darlington (1971), Preliminary observations on tickling oneself, Nature 230, 598-599, doi:10.1038/230598a0 (kendi kendine gıdıklama en zayıf his)",
-      "Wolpert lab, Columbia Üniversitesi, Blakemore, Wolpert & Frith (1999) NeuroImage makalesi (beyincik kendi dokunuşunun sonucunu tahmin ediyor): https://wolpertlab.neuroscience.columbia.edu/sites/default/files/content/papers/BlaWolFri99.pdf"
-    ],
-    "yayin": "2026-11-16T19:00:00+03:00",
-    "yatay_youtube": "12n5Qvbb7sI"
-  },
-  {
-    "date": "2026-11-17",
-    "slug": "siklik-yanilsamasi",
-    "konu": "Sıklık yanılsaması: yeni öğrendiğin şeyi neden her yerde görmeye başlarsın?",
-    "baslik": "Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın?",
-    "kaynaklar": [
-      "Zwicky, A. (7 Ağustos 2005), Just between Dr. Language and I, Language Log, Pennsylvania Üniversitesi (\"frequency illusion\" adının ilk kullanımı; seçici dikkatle açıklıyor): http://itre.cis.upenn.edu/~myl/languagelog/archives/002386.html",
-      "Language Log, \"Frequency illusion\" in the OED (Oxford İngilizce Sözlüğü maddesi; ilk tanık Zwicky'nin 2005 yazısı; diğer adı Baader-Meinhof olgusu): https://languagelog.ldc.upenn.edu/nll/?p=42180",
-      "Psychology Today, Frequency Illusion (seçici dikkat ve doğrulama yanlılığının birleşimi; videoda \"ona göre\" diye geçiyor): https://www.psychologytoday.com/ca/basics/frequency-illusion",
-      "Wood & Cowan (1995), The cocktail party phenomenon revisited, Journal of Experimental Psychology: Learning, Memory, and Cognition 21(1), 255-260 (dinlenmeyen kanalda kendi adını duyanlar %34,6; Moray 1959'da %33) ve Röer & Cowan (2021) ön kayıtlı tekrar (%35): https://pmc.ncbi.nlm.nih.gov/articles/PMC8908911"
-    ],
-    "yayin": "2026-11-17T12:00:00+03:00",
-    "yatay_youtube": "Y35PM_J1d8s"
-  },
-  {
-    "date": "2026-11-17",
-    "slug": "kendi-sesimiz-kayitta",
-    "konu": "Kemik iletimi: kendi sesimiz kayıtta neden yabancı gelir?",
-    "baslik": "Kendi sesin kayıtta neden sana yabancı gelir?",
-    "kaynaklar": [
-      "Reinfeldt, Östli, Håkansson & Stenfelt (2010), Hearing one's own voice during phoneme vocalization: transmission by air and bone conduction, Journal of the Acoustical Society of America 128(2), 751-762, doi:10.1121/1.3458855 (kendi sesimizin hava ve kemik yoluyla gelen iki bileşeni var): https://pubmed.ncbi.nlm.nih.gov/20707445/",
-      "Orepic, Kannape, Faivre & Blanke (2023), Bone conduction facilitates self-other voice discrimination, Royal Society Open Science 10(2), 221561 (kayıt, kemik yoluyla gelen bileşeni içermediği için yabancı gelir; başkaları yalnızca hava yolunu duyar): https://pmc.ncbi.nlm.nih.gov/articles/PMC9929504/",
-      "Holzman & Rousey (1966), The voice as a percept, Journal of Personality and Social Psychology 4(1), 79-86, doi:10.1037/h0023518 (kayıttaki sesini duyanlarda rahatsızlık; \"voice confrontation\" deyimi)",
-      "Kimura & Yotsumoto (2018), PLOS ONE (herkes için geçerli tek bir süzgeç yok; bu yüzden videoda \"daha kalın\" değil \"daha dolgun\" deniyor): https://pmc.ncbi.nlm.nih.gov/articles/PMC6019673/"
-    ],
-    "yayin": "2026-11-17T15:00:00+03:00"
-  },
-  {
-    "date": "2026-11-17",
-    "slug": "barnum-etkisi",
-    "konu": "Barnum (Forer) etkisi: burç yorumları neden hep tutar gibi gelir?",
-    "baslik": "Burç yorumları neden hep seni anlatıyor gibi gelir?",
-    "kaynaklar": [
-      "Forer, B. R. (1949), The fallacy of personal validation: a classroom demonstration of gullibility, Journal of Abnormal and Social Psychology 44(1), 118-123, doi:10.1037/h0059240 (39 öğrenci, herkese aynı metin; ortalama puan 5 üzerinden 4,26; cümleler büyük ölçüde bir burç kitabından)",
-      "Dickson & Kelly (1985), The 'Barnum effect' in personality assessment: a review of the literature, Psychological Reports 57(2), 367-382, doi:10.2466/pr0.1985.57.2.367 (kabul, metnin olumlu olmasına ve kişiye özel sanılmasına bağlı): https://cortecs.org/wp-content/uploads/2014/12/the-barnum-effect-in-personality-assessment-a-review-of-the-literature.pdf",
-      "Meehl, P. E. (1956), Wanted: a good cookbook, American Psychologist 11(6), 263-272 (\"Barnum etkisi\" adı)",
-      "Birnbaum, California State University Fullerton, The Barnum Effect (sınıf gösterimi ve Forer metni): https://psych.fullerton.edu/mbirnbaum/psych101/barnum_demo.htm"
-    ],
-    "yayin": "2026-11-17T19:00:00+03:00"
-  }
+ {
+  "date": "2026-11-12",
+  "slug": "zeigarnik-etkisi",
+  "konu": "Zeigarnik etkisi: yarım kalan iş neden akıldan çıkmaz?",
+  "baslik": "Yarım kalan iş neden aklından çıkmıyor?",
+  "kaynaklar": [
+   "Ghibellini & Meier (2025), Humanities and Social Sciences Communications 12, meta-analiz: https://ideas.repec.org/a/pal/palcom/v12y2025i1d10.1057_s41599-025-05000-w.html",
+   "Masicampo & Baumeister (2011), Journal of Personality and Social Psychology: https://pubmed.ncbi.nlm.nih.gov/21688924/",
+   "Zeigarnik (1927), Psychologische Forschung"
+  ],
+  "yatay_youtube": "YAjvyLTeMRQ"
+ },
+ {
+  "date": "2026-11-12",
+  "slug": "gokyuzu-neden-mavi",
+  "konu": "Gökyüzü neden mavi, gün batımı neden kırmızı?",
+  "baslik": "Gökyüzü neden mavi, gün batımı neden kırmızı?",
+  "kaynaklar": [],
+  "yatay_youtube": "p98w8NWhfVE"
+ },
+ {
+  "date": "2026-11-12",
+  "slug": "sahne-isigi-etkisi",
+  "konu": "Sahne ışığı etkisi: neden herkes bize bakıyor sanırız?",
+  "baslik": "Herkes sana bakıyor gibi mi geliyor? Sahne ışığı etkisi",
+  "kaynaklar": [
+   "Gilovich, Medvec & Savitsky (2000), The spotlight effect in social judgment, Journal of Personality and Social Psychology 78(2), 211-222, doi:10.1037/0022-3514.78.2.211: https://www.kellogg.northwestern.edu/academics-research/research/detail/2000/the-spotlight-effect-in-social-judgment-an-egocentric-bias/",
+   "Colby College CogBlog, The Spotlight Effect (deney özeti): https://web.colby.edu/cogblog/2019/11/26/face-it-you-are-not-that-important-the-spotlight-effect/",
+   "Gilovich, Kruger & Medvec (2002), The spotlight effect revisited, Journal of Experimental Social Psychology 38(1), 93-99"
+  ],
+  "yatay_youtube": "EsNAcSc1BqQ"
+ },
+ {
+  "date": "2026-11-12",
+  "slug": "esnemek-neden-bulasici",
+  "konu": "Esnemek neden bulaşıcı?",
+  "baslik": "Esnemek neden bulaşıcı? Bilim hâlâ tam emin değil",
+  "kaynaklar": [
+   "Provine (1986), Yawning as a stereotyped action pattern and releasing stimulus, Ethology 72(2), 109-122 (5 dakikalık esneme videosu, izleyenlerin %55'i esnedi)",
+   "Norscia & Palagi (2011), Yawn contagion and empathy in Homo sapiens, PLoS ONE 6(12): https://pmc.ncbi.nlm.nih.gov/articles/PMC3233580",
+   "Bartholomew & Cirulli (2014), Individual variation in contagious yawning susceptibility, PLoS ONE 9(3): https://pmc.ncbi.nlm.nih.gov/articles/PMC3954725",
+   "Massen & Gallup (2017), Why contagious yawning does not (yet) equate to empathy, Neuroscience & Biobehavioral Reviews 80",
+   "Brown ve ark. (2017), A neural basis for contagious yawning, Current Biology 27: https://eprints.nottingham.ac.uk/44492",
+   "Anderson & Meno (2003) ve Helt ve ark. (2010): küçük çocuklarda bulaşıcı esneme 4-5 yaşından önce pek görülmüyor"
+  ],
+  "yatay_youtube": "K18psd5S_Po"
+ },
+ {
+  "date": "2026-11-12",
+  "slug": "dilimin-ucunda-hissi",
+  "konu": "Dilimin ucunda hissi: bildiğin kelime neden bir türlü gelmez?",
+  "baslik": "Adı neden dilinin ucunda kalıp bir türlü gelmiyor?",
+  "kaynaklar": [
+   "Brown & McNeill (1966), The \"tip of the tongue\" phenomenon, Journal of Verbal Learning and Verbal Behavior 5(4), 325-337 (az bilinen kelimelerin tanımı; ilk harf ve hece sayısı sık sık doğru tahmin edildi)",
+   "Brown, A. S. (1991), A review of the tip-of-the-tongue experience, Psychological Bulletin 109(2), 204-223 (neredeyse evrensel, haftada yaklaşık bir, yaşla artıyor, özel isimlerde sık, yaklaşık yarısı kısa sürede çözülüyor): https://pubmed.ncbi.nlm.nih.gov/2034750/",
+   "Burke, MacKay, Worthley & Wade (1991), On the tip of the tongue: What causes word finding failures in young and older adults?, Journal of Memory and Language 30(5), 542-579 (anlam ile ses arasındaki bağlantı zayıflıyor; az ve uzun süredir kullanılmayan kelimeler, özel isimler)",
+   "Schwartz & Metcalfe (2011), Tip-of-the-tongue (TOT) states: retrieval, behavior, and experience, Memory & Cognition 39: https://www.columbia.edu/cu/psychology/metcalfe/PDFs/Schwartz_Metcalfe_inPress.pdf"
+  ],
+  "yatay_youtube": "0RaW4-7NBuQ"
+ },
+ {
+  "date": "2026-11-13",
+  "slug": "klavye-neden-karisik",
+  "konu": "Klavyede harfler neden alfabetik sırada değil?",
+  "baslik": "Klavyede harfler neden alfabe sırasında değil?",
+  "kaynaklar": [
+   "Yasuoka & Yasuoka, On the Prehistory of QWERTY, ZINBUN No. 42, 161-174, Kyoto Üniversitesi (ilk kullanıcılar telgrafçılardı; dizilim onların geri bildirimiyle şekillendi): https://repository.kulib.kyoto-u.ac.jp/dspace/bitstream/2433/139379/1/42_161.pdf",
+   "Smithsonian Magazine, Fact or Fiction? The Legend of the QWERTY Keyboard (takılan harf kolları anlatısı, Kyoto araştırması, Remington ile yayılma): https://www.smithsonianmag.com/arts-culture/fact-of-fiction-the-legend-of-the-qwerty-keyboard-49863249/",
+   "BBC Science Focus, How did QWERTY end up on our keyboards? (ilk patentte alfabetik dizilim; orta sıradaki DFGHJKL eski sıranın izi): https://www.sciencefocus.com/science/how-did-qwerty-end-up-on-our-keyboards",
+   "History of Information, The Sholes & Glidden Type Writer (1868 patenti, Remington sözleşmesi 1873, piyasaya çıkış 1874): https://www.historyofinformation.com/detail.php?id=2134"
+  ],
+  "yatay_youtube": "bJDpAu1jgLI"
+ },
+ {
+  "date": "2026-11-13",
+  "slug": "kelime-neden-tuhaflasir",
+  "konu": "Anlamsal doygunluk: bir kelimeyi çok tekrarlayınca neden anlamsızlaşır?",
+  "baslik": "Bir kelimeyi tekrarlayınca neden anlamsızlaşıyor?",
+  "kaynaklar": [
+   "Severance & Washburn (1907), The loss of associative power in words after long fixation, American Journal of Psychology 18(2), 182-186 (uzun süre bakılan basılı kelime tuhaf ve yabancı görünüyor)",
+   "Lambert & Jakobovits (1960), Verbal satiation and changes in the intensity of meaning, Journal of Experimental Psychology 60, 376-383, doi:10.1037/h0045624",
+   "Jakobovits (1962), doktora tezi, McGill Üniversitesi (\"semantic satiation\" terimi)",
+   "Tian & Huber (2010), Testing an associative account of semantic satiation, Cognitive Psychology 60(4), 267-290 (yorulan şey kelimenin biçimi ile anlamı arasındaki bağ): https://pmc.ncbi.nlm.nih.gov/articles/PMC2882703"
+  ],
+  "yatay_youtube": "kH-i85VPaPA"
+ },
+ {
+  "date": "2026-11-14",
+  "slug": "arabada-mide-bulantisi",
+  "konu": "Araç tutması: arabada telefona bakınca neden midemiz bulanır?",
+  "baslik": "Arabada telefona bakınca miden neden bulanıyor?",
+  "kaynaklar": [
+   "Reason & Brand (1975), Motion Sickness, Academic Press (duyusal çatışma kuramı: iç kulak hareketi bildirir, sabit bir şeye bakan göz bildirmez)",
+   "Rolnick & Lubow (1991), Why is the driver rarely motion sick? The role of controllability in motion sickness, Ergonomics 34(7), 867-879 (22 çift aynı dönüşe maruz kaldı; dönüşü yönetenlerde belirti daha azdı): https://pubmed.ncbi.nlm.nih.gov/1915252/",
+   "Treisman (1977), Motion sickness: an evolutionary hypothesis, Science 197, 493-495 (bulantı için zehirlenme varsayımı; videoda \"bir açıklamaya göre\" diye geçiyor)",
+   "CDC, Motion Sickness (gözün gördüğü hareket iç kulağın hissettiğinden farklı olunca ortaya çıkar)",
+   "Cleveland Clinic, Motion Sickness (kitabı ve telefonu bırakıp uzağa, ufka bakmak)"
+  ],
+  "yayin": "2026-11-14T12:00:00+03:00",
+  "yatay_youtube": "YtCWuaD5rnU"
+ },
+ {
+  "date": "2026-11-14",
+  "slug": "laf-neden-akildan-ucar",
+  "konu": "Çalışma belleği: söyleyeceğin şey araya başka konu girince neden aklından uçar?",
+  "baslik": "Söyleyeceğin şey neden tam o anda aklından uçuyor?",
+  "kaynaklar": [
+   "Peterson & Peterson (1959), Short-term retention of individual verbal items, Journal of Experimental Psychology 58(3), 193-198 (üç harf; geriye sayarak tekrar engellendi; 18 saniye sonra doğru hatırlama %10'un altında): https://www.simplypsychology.org/peterson-peterson.html",
+   "Wessel, Jenkinson, Brittain, Voets, Aziz & Aron (2016), Surprise disrupts cognition via a fronto-basal ganglia suppressive mechanism, Nature Communications 7:11195, doi:10.1038/ncomms11195 (beklenmedik ses akılda tutulan harflerin hatırlanmasını bozdu; hareketi durduran sistemle aynı sinyal): https://pmc.ncbi.nlm.nih.gov/articles/PMC4837448",
+   "UC San Diego News (18 Nisan 2016), Derailed Train of Thought? Brain's Stopping System May Be at Fault (nedensellik için daha çok araştırma gerektiği notu; videoda \"olabilir\" diye geçiyor): https://www.sciencedaily.com/releases/2016/04/160418085326.htm"
+  ],
+  "yayin": "2026-11-15T12:00:00+03:00",
+  "yatay_youtube": "7ssmgzan_w4"
+ },
+ {
+  "date": "2026-11-14",
+  "slug": "kan-neden-tutar",
+  "konu": "Kan tutması: kan görünce neden başımız döner? (vazovagal tepki)",
+  "baslik": "Kan görünce neden başın döner? Kan neden tutar?",
+  "kaynaklar": [
+   "Öst, Sterner & Lindahl (1984), Physiological responses in blood phobics, Behaviour Research and Therapy 22(2), 109-117 (nabız ve tansiyon önce yükseliyor, sonra düşüyor)",
+   "Ritz, Meuret & Ayala (2010), The psychophysiology of blood-injection-injury phobia: looking beyond the diphasic response paradigm, International Journal of Psychophysiology 78(1), 50-67 (iki evreli tepki herkeste görülmüyor; videoda \"bazı insanlarda\" diye geçiyor): https://pmc.ncbi.nlm.nih.gov/articles/PMC3532914",
+   "NeuRA (Neuroscience Research Australia), Fight, flight or ... faint? Why some people pass out when they see blood or feel pain (kan kaybını azaltma varsayımı kesin değil; videoda \"bir açıklamaya göre\" diye geçiyor): https://blog.neura.edu.au/?p=3118",
+   "BMJ Best Practice, Phobias (kan-iğne-yara korkusunda bayılma ve ailede görülme; bu ikinci evre diğer korkularda yaygın değil)"
+  ],
+  "yayin": "2026-11-15T15:00:00+03:00",
+  "yatay_youtube": "Opgv5zpshd0"
+ },
+ {
+  "date": "2026-11-15",
+  "slug": "goz-neden-dalar",
+  "konu": "Zihin gezinmesi: gözümüz neden dalar, boş boş bakarken ne oluyor?",
+  "baslik": "Gözün neden dalar? Boş boş bakarken beyninde ne oluyor?",
+  "kaynaklar": [
+   "Killingsworth & Gilbert (2010), A wandering mind is an unhappy mind, Science 330(6006), 932, doi:10.1126/science.1192439 (2.250 kişi, telefonla rastgele anlarda soruldu; örneklerin %46,9'unda akıl başka yerdeydi): https://news.harvard.edu/gazette/story/2010/11/wandering-mind-not-a-happy-mind/",
+   "Smallwood, Beach, Schooler & Handy (2008), Going AWOL in the brain: mind wandering reduces cortical analysis of external events, Journal of Cognitive Neuroscience 20(3), 458-469 (zihin gezinirken dış olaylara verilen beyin yanıtı zayıflıyor; algısal kopma): https://pubmed.ncbi.nlm.nih.gov/18004943/",
+   "Reichle, Reineberg & Schooler (2010), Eye movements during mindless reading, Psychological Science 21(9), 1300-1310 (okurken dalanlarda göz kelimelerde daha uzun kalıyor; küçük örneklem): https://eprints.soton.ac.uk/348426",
+   "Baird, Smallwood & Schooler (2011), Back to the future: autobiographical planning and the functionality of mind-wandering, Consciousness and Cognition 20(4), 1604-1611 (zihin gezinmesi çoğunlukla geleceğe dönük; videoda \"bir açıklamaya göre\" diye geçiyor): https://pubmed.ncbi.nlm.nih.gov/21917482/"
+  ],
+  "yayin": "2026-11-15T19:00:00+03:00",
+  "yatay_youtube": "OJRitvr5liQ"
+ },
+ {
+  "date": "2026-11-16",
+  "slug": "pestisit-yikama",
+  "konu": "Pestisit: meyveyi yıkayınca ilaç kalıntısı gider mi?",
+  "baslik": "Meyveyi yıkayınca pestisit gider mi?",
+  "kaynaklar": [
+   "Yang, Doherty, Zhao, Kinchla, Clark & He (2017), Effectiveness of commercial and homemade washing agents in removing pesticide residues on and in apples, Journal of Agricultural and Food Chemistry 65(44), 9744-9752, doi:10.1021/acs.jafc.7b03118, Massachusetts Üniversitesi Amherst (thiabendazol ve fosmet, 24 saat; 2 dk musluk suyu daha az etkili; %1 karbonatlı su 12-15 dk ile %80 ve %96; kabuğa işleyen kısım alınamadı): https://pubmed.ncbi.nlm.nih.gov/29067814/",
+   "Phys.org / UMass Amherst haberi (2017), A better way to wash pesticides off apples (thiabendazol yaklaşık 80, fosmet 20 mikrometre derine işledi; hiçbir yöntem tamamen temizlemedi): https://phys.org/news/2017-10-pesticides-apples.html",
+   "FDA, Selecting and Serving Produce Safely (akan suyun altında ovarak yıkama; sabun, deterjan ya da ticari yıkama ürünü önerilmez): https://www.fda.gov/food/buy-store-serve-safe-food/selecting-and-serving-produce-safely"
+  ],
+  "yayin": "2026-11-16T12:00:00+03:00",
+  "yatay_youtube": "k2z_TuNLP-Q"
+ },
+ {
+  "date": "2026-11-16",
+  "slug": "kulak-kurdu",
+  "konu": "Kulak kurdu (istemsiz müzik imgesi): şarkı neden dile dolanır?",
+  "baslik": "Şarkı neden dile dolanır, kafandan neden çıkmaz?",
+  "kaynaklar": [
+   "Liikkanen (2012), Musical activities predispose to involuntary musical imagery, Psychology of Music 40(2), 236-256 (Finlandiya, 12.519 kişilik internet anketi; %89,2 en az haftada bir yaşıyor): https://pmc.ncbi.nlm.nih.gov/articles/PMC3908735",
+   "Jakubowski, Finkel, Stewart & Müllensiefen (2017), Dissecting an earworm: melodic features and song popularity predict involuntary musical imagery, Psychology of Aesthetics, Creativity, and the Arts 11(2), 122-135, doi:10.1037/aca0000090 (Goldsmiths, Londra Üniversitesi, 3.000 kişi; daha hızlı tempo, genel ve akılda kalıcı ezgi, sıra dışı sıçrama ya da tekrar): https://research.gold.ac.uk/19405",
+   "Beaman, Powell & Rapley (2015), Want to block earworms from conscious awareness? B(u)y gum!, Quarterly Journal of Experimental Psychology 68(6), 1049-1057, doi:10.1080/17470218.2015.1034142 (Reading Üniversitesi; sakız çiğneyenler şarkıyı yaklaşık üçte bir daha az 'duydu'; açıklama iç sesle tekrarın engellenmesi): https://centaur.reading.ac.uk/40114/",
+   "Williamson & Jakubowski, earworm tanımı (kısa bir parça döngüde tekrar eder) ve Scientific American Mind (2015), How do you solve a problem like an earworm? (fonolojik döngü açıklaması; videoda \"bir açıklamaya göre\" diye geçiyor): https://www.scientificamerican.com/article/how-do-you-solve-a-problem-like-an-earworm/"
+  ],
+  "yayin": "2026-11-16T15:00:00+03:00",
+  "yatay_youtube": "rDdNWunoD0o"
+ },
+ {
+  "date": "2026-11-16",
+  "slug": "kendini-gidiklamak",
+  "konu": "Kendimizi neden gıdıklayamayız? (beynin kendi hareketinin duyusal sonucunu tahmin etmesi)",
+  "baslik": "Kendini neden gıdıklayamazsın?",
+  "kaynaklar": [
+   "Blakemore, Wolpert & Frith (1998), Central cancellation of self-produced tickle sensation, Nature Neuroscience 1(7), 635-640 (robotla aynı dokunuş kendinden gelince daha az gıdıklıyor; fMRI'de ikincil somatosensoriyel korteks ve beyincikte daha az etkinlik): https://link.springer.com/article/10.1038/2870",
+   "Blakemore, Frith & Wolpert (1999), Spatio-temporal prediction modulates the perception of self-produced stimuli, Journal of Cognitive Neuroscience 11(5), 551-559 (hareket ile dokunuş arasındaki gecikme ve yön sapması arttıkça gıdıklanma puanı arttı): https://Gwern.net/doc/psychology/neuroscience/1999-blakemore.pdf",
+   "Weiskrantz, Elliott & Darlington (1971), Preliminary observations on tickling oneself, Nature 230, 598-599, doi:10.1038/230598a0 (kendi kendine gıdıklama en zayıf his)",
+   "Wolpert lab, Columbia Üniversitesi, Blakemore, Wolpert & Frith (1999) NeuroImage makalesi (beyincik kendi dokunuşunun sonucunu tahmin ediyor): https://wolpertlab.neuroscience.columbia.edu/sites/default/files/content/papers/BlaWolFri99.pdf"
+  ],
+  "yayin": "2026-11-16T19:00:00+03:00",
+  "yatay_youtube": "12n5Qvbb7sI"
+ },
+ {
+  "date": "2026-11-17",
+  "slug": "siklik-yanilsamasi",
+  "konu": "Sıklık yanılsaması: yeni öğrendiğin şeyi neden her yerde görmeye başlarsın?",
+  "baslik": "Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın?",
+  "kaynaklar": [
+   "Zwicky, A. (7 Ağustos 2005), Just between Dr. Language and I, Language Log, Pennsylvania Üniversitesi (\"frequency illusion\" adının ilk kullanımı; seçici dikkatle açıklıyor): http://itre.cis.upenn.edu/~myl/languagelog/archives/002386.html",
+   "Language Log, \"Frequency illusion\" in the OED (Oxford İngilizce Sözlüğü maddesi; ilk tanık Zwicky'nin 2005 yazısı; diğer adı Baader-Meinhof olgusu): https://languagelog.ldc.upenn.edu/nll/?p=42180",
+   "Psychology Today, Frequency Illusion (seçici dikkat ve doğrulama yanlılığının birleşimi; videoda \"ona göre\" diye geçiyor): https://www.psychologytoday.com/ca/basics/frequency-illusion",
+   "Wood & Cowan (1995), The cocktail party phenomenon revisited, Journal of Experimental Psychology: Learning, Memory, and Cognition 21(1), 255-260 (dinlenmeyen kanalda kendi adını duyanlar %34,6; Moray 1959'da %33) ve Röer & Cowan (2021) ön kayıtlı tekrar (%35): https://pmc.ncbi.nlm.nih.gov/articles/PMC8908911"
+  ],
+  "yayin": "2026-11-17T12:00:00+03:00",
+  "yatay_youtube": "Y35PM_J1d8s"
+ },
+ {
+  "date": "2026-11-17",
+  "slug": "kendi-sesimiz-kayitta",
+  "konu": "Kemik iletimi: kendi sesimiz kayıtta neden yabancı gelir?",
+  "baslik": "Kendi sesin kayıtta neden sana yabancı gelir?",
+  "kaynaklar": [
+   "Reinfeldt, Östli, Håkansson & Stenfelt (2010), Hearing one's own voice during phoneme vocalization: transmission by air and bone conduction, Journal of the Acoustical Society of America 128(2), 751-762, doi:10.1121/1.3458855 (kendi sesimizin hava ve kemik yoluyla gelen iki bileşeni var): https://pubmed.ncbi.nlm.nih.gov/20707445/",
+   "Orepic, Kannape, Faivre & Blanke (2023), Bone conduction facilitates self-other voice discrimination, Royal Society Open Science 10(2), 221561 (kayıt, kemik yoluyla gelen bileşeni içermediği için yabancı gelir; başkaları yalnızca hava yolunu duyar): https://pmc.ncbi.nlm.nih.gov/articles/PMC9929504/",
+   "Holzman & Rousey (1966), The voice as a percept, Journal of Personality and Social Psychology 4(1), 79-86, doi:10.1037/h0023518 (kayıttaki sesini duyanlarda rahatsızlık; \"voice confrontation\" deyimi)",
+   "Kimura & Yotsumoto (2018), PLOS ONE (herkes için geçerli tek bir süzgeç yok; bu yüzden videoda \"daha kalın\" değil \"daha dolgun\" deniyor): https://pmc.ncbi.nlm.nih.gov/articles/PMC6019673/"
+  ],
+  "yayin": "2026-11-17T15:00:00+03:00",
+  "yatay_youtube": "vtbY_6O1pgg"
+ },
+ {
+  "date": "2026-11-17",
+  "slug": "barnum-etkisi",
+  "konu": "Barnum (Forer) etkisi: burç yorumları neden hep tutar gibi gelir?",
+  "baslik": "Burç yorumları neden hep seni anlatıyor gibi gelir?",
+  "kaynaklar": [
+   "Forer, B. R. (1949), The fallacy of personal validation: a classroom demonstration of gullibility, Journal of Abnormal and Social Psychology 44(1), 118-123, doi:10.1037/h0059240 (39 öğrenci, herkese aynı metin; ortalama puan 5 üzerinden 4,26; cümleler büyük ölçüde bir burç kitabından)",
+   "Dickson & Kelly (1985), The 'Barnum effect' in personality assessment: a review of the literature, Psychological Reports 57(2), 367-382, doi:10.2466/pr0.1985.57.2.367 (kabul, metnin olumlu olmasına ve kişiye özel sanılmasına bağlı): https://cortecs.org/wp-content/uploads/2014/12/the-barnum-effect-in-personality-assessment-a-review-of-the-literature.pdf",
+   "Meehl, P. E. (1956), Wanted: a good cookbook, American Psychologist 11(6), 263-272 (\"Barnum etkisi\" adı)",
+   "Birnbaum, California State University Fullerton, The Barnum Effect (sınıf gösterimi ve Forer metni): https://psych.fullerton.edu/mbirnbaum/psych101/barnum_demo.htm"
+  ],
+  "yayin": "2026-11-17T19:00:00+03:00",
+  "yatay_youtube": "VecOd2cuLhA"
+ }
 ]
