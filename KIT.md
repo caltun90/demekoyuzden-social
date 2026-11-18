@@ -135,14 +135,13 @@ Yalnızca API anahtarıyla; Claude'a bağlı Buffer bağlayıcısı (mcp araçla
   gerekirse https://developers.buffer.com/llms.txt içindeki örnekleri oku.
 
 ## Konu havuzu
-Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim); Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji); Kan neden tutar? Kan görünce neden başımız döner? (bilim); Gözümüz neden dalar? (psikoloji); Meyveyi yıkayınca pestisit gider mi? (bilim, Cem istedi); Şarkı neden dile dolanır? (psikoloji); Kendimizi neden gıdıklayamayız? (bilim); Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji); Kendi sesimiz kayıtta neden yabancı gelir? (bilim); Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji); Bir canlı ölünce hücreleri de hemen ölür mü? Ksenobotlar ve antrobotlar (bilim, Cem istedi).
+Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim); Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji); Kan neden tutar? Kan görünce neden başımız döner? (bilim); Gözümüz neden dalar? (psikoloji); Meyveyi yıkayınca pestisit gider mi? (bilim, Cem istedi); Şarkı neden dile dolanır? (psikoloji); Kendimizi neden gıdıklayamayız? (bilim); Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji); Kendi sesimiz kayıtta neden yabancı gelir? (bilim); Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji); Bir canlı ölünce hücreleri de hemen ölür mü? Ksenobotlar ve antrobotlar (bilim, Cem istedi); Soğan doğrarken neden ağlarız? (bilim).
 Sırada (bu sırayla, bir psikoloji bir bilim):
-1. Soğan doğrarken neden ağlarız? (bilim)
-2. Bulutlarda neden yüz görürüz? (psikoloji)
-3. Parmaklarımız suda neden buruşur? (bilim)
-4. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
-5. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
-6. Nane neden serinletir, acı biber neden yakar? (bilim)
+1. Bulutlarda neden yüz görürüz? (psikoloji)
+2. Parmaklarımız suda neden buruşur? (bilim)
+3. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
+4. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
+5. Nane neden serinletir, acı biber neden yakar? (bilim)
 Liste hiç bitmesin: "Sırada" 4 konunun altına inince aynı dengeyle (bir psikoloji, bir bilim) en az 6 yeni konu ekle. Tarih ve dil konusu ekleme.
 Konu seçme ölçütü (Cem onayladı, 2026-11-13; kalıcı):
 - Herkesin kendi yaşadığı, gündelik bir şey olsun (esnemek, gıdıklanmak, dile dolanan şarkı gibi). Başlık kısa bir "neden" sorusu olsun.
