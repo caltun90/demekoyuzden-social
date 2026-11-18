@@ -30,6 +30,16 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
   (`COVER`, `COVER_AT`). Kanca kısa, merak uyandıran bir soru olmalı; görünce tıklatmalı.
 - Dikeyde etiketin altında kanca sorusu (`HOOK`) video boyunca durur. YouTube Short kapağını kendi seçtiği kareden
   aldığı için her karede konu anlaşılmalı. Sahne çizimleri dikeyde y 315'in üstüne çıkmamalı (kanca satırıyla çakışır).
+- İLK 2 SANİYE KANCASI (Cem, 2026-11-19; istisnasız her video: dikey, yatay, uzun video ve "That's Why" İngilizce sürümleri).
+  İlk 2 saniye izleyiciyi ekrana kilitler. Logo, kanal adı, jenerik, selamlama ("Merhaba", "Bugün size ... anlatacağım"),
+  boş, siyah ya da hareketsiz kareyle açılmaz.
+  - 0:00 kapak karesi (`COVER`) doludur; ses en geç 0,5. saniyede başlar.
+  - `script.py`'nin ilk satırı kanca cümlesidir: en fazla 8 kelime, 2. saniye dolmadan biter. Konunun en şaşırtıcı ya da
+    izleyicinin kendini tanıdığı yanını cevabı vermeden ortaya koyar (beklenmedik iddia, "neden" sorusu, yarıda kesilen an).
+    Cevap videonun ilerisinde gelir; kancanın verdiği söz mutlaka karşılanır. Yanıltıcı tıklama tuzağı ve uydurma bilgi yok.
+  - İlk karede en fazla 5 kelimelik dev kanca yazısı ve sahne 1'in en çarpıcı anı; ilk 2 saniyede belirgin hareket
+    (hızlı yakınlaşma, giriş animasyonu ya da ani kesme). Kanca yazısı altyazıyla üst üste binmez.
+  - Bu kural bu dosyadaki ve `uzun/README.md`'deki diğer açılış kurallarından önce gelir; çelişirse buna uy.
 - Ses: Gemini TTS, ses = Achird. Model: gemini-3.1-flash-tts-preview.
   gemini-3.8-flash-tts KULLANMA: stil talimatını da sesli okuyor.
 - Cem'e yazılan her şey Türkçe, kısa, sade. Em dash yok.
@@ -76,6 +86,8 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 5. `python3 sync.py check`: her altyazı penceresinde duyulan söz, altyazıyla aynı olmalı. Altyazı sesten ÖNCE gelmemeli.
 6. Kare kontrolü: `FMT=v python3 render.py still <klasör> 0 3 17 30 ...` ve `FMT=h` ile en az 6'şar kare; aç ve bak.
    `0` kapak karesidir: yazı taşmıyor mu, çizim çarpıcı mı, tek başına merak uyandırıyor mu?
+   İlk 2 saniye kontrolü: iki formatta `0 0.5 1.0 1.9` karelerini ayrıca aç. İlk kare boşsa, kanca yazısı okunmuyorsa,
+   ilk 2 saniyede hareket yoksa ya da kanca cümlesi 2 saniyeyi aşıyorsa (`voice/final.json` ilk satırın `end` değeri 2,0'dan büyükse) düzelt; düzelmiyorsa yayınlama, Cem'e bildir.
 7. `./build.sh <YYYY-MM-DD>-<slug>`; süre, ses ve 3 kare son kontrol.
 8. `voice/`, `scenes_*`, `silent_*`, `list_*`, kare klasörleri ve kökteki mp4'ler depoya eklenmez.
 

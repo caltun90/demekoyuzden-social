@@ -7,6 +7,7 @@ Depoda `uzun/` klasöründe durur. İlk video: "Beyninin Sana Oynadığı 6 Oyun
 - Yükleme deponun kökündeki `yt_upload.py` ile YouTube Data API üzerinden yapılır (KIT.md "Paylaşım"). Buffer uzun video yüklemez, bu işte Buffer kullanılmaz.
 - Metinde "haftaya", "her hafta", "yarın" geçmez. Kapanış hep "Bir sonraki videoda görüşmek üzere!".
 - Mini test / soru bölümü YOK (Cem: gereksiz).
+- İLK 2 SANİYE KANCASI (Cem, 2026-11-19): KIT.md "Kararlar"daki kural uzun video için de geçerli. `senaryo.py`'nin ilk satırı en fazla 8 kelimelik kanca, 2. saniye dolmadan biter; kanal tanıtımı, `p_clock` açılışı ve bölüm başlıkları 2. saniyeden sonra gelir. İlk 30 saniyede videonun neyi açıklayacağı vaat edilir. Kare kontrolünde `still chk 0 0.5 1.0 1.9` ayrıca açılır.
 
 ## Konu seçimi (Cem, 14 Kasım 2026)
 Uzun videolar sırayla iki türden olur (log.json'daki son "tur": "uzun" kaydının "kaynak_tur" alanına bak, öbürünü seç):
