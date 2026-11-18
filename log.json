@@ -223,5 +223,18 @@
     ],
     "yayin": "2026-11-17T19:00:00+03:00",
     "yatay_youtube": "VecOd2cuLhA"
+  },
+  {
+    "date": "2026-11-18",
+    "slug": "ksenobotlar",
+    "konu": "Ksenobotlar ve antrobotlar: bir canlı ölünce hücreleri de hemen ölür mü?",
+    "baslik": "Bir canlı ölünce hücreleri de hemen ölür mü?",
+    "kaynaklar": [
+      "Kriegman, Blackiston, Levin & Bongard (2020), A scalable pipeline for designing reconfigurable organisms, PNAS 117(4), 1853-1859, doi:10.1073/pnas.1910837117 (kurbağa Xenopus laevis embriyosundan alınan canlı hücreler; kendi kendine hareket; kesilince kendini onarma): https://pmc.ncbi.nlm.nih.gov/articles/PMC6994979",
+      "Gumuskaya ve ark. (2023), Motile living biobots self-construct from adult human somatic progenitor seed cells, Advanced Science; Tufts ve Wyss Enstitüsü duyurusu (yetişkin insan soluk borusu hücreleri, gen değişikliği yok; laboratuvar kabında çizilmiş sinir hücresi tabakasındaki boşlukta yeniden büyüme; mekanizma bilinmiyor): https://wyss.harvard.edu/news/scientists-build-tiny-biological-robots-from-human-cells",
+      "Latil ve ark. (2012), Skeletal muscle stem cells adopt a dormant cell state post mortem and retain regenerative capacity, Nature Communications 3:903, Pasteur Enstitüsü (insanda ölümden 17 gün sonrasına kadar canlı kas kök hücresi): https://www.pasteur.fr/en/whats-new/press-area/press-releases-and-press-kits/dormancy-stem-cells-enables-them-remain-viablemany-days-post-mortem",
+      "Pozhitkov ve ark. (2017), Tracing the dynamics of gene transcripts after organismal death, Open Biology 7:160267 (ölümden sonra saatlerce süren gen etkinliği; yorum tartışmalı, videoda yalnızca 'bazı hücreler saatlerce, hatta günlerce yaşar' deniyor)"
+    ],
+    "yayin": "2026-11-18T12:00:00+03:00"
   }
 ]
