@@ -134,6 +134,38 @@ Yalnızca API anahtarıyla; Claude'a bağlı Buffer bağlayıcısı (mcp araçla
 - Beklenmedik bir alan hatası gelirse şema değişmiştir: `{ __type(name:"CreatePostInput") { inputFields { name } } }` ile bak,
   gerekirse https://developers.buffer.com/llms.txt içindeki örnekleri oku.
 
+## İngilizce sürüm ("That's Why" kanalı)
+Türkçe videoların işi bittikten sonra aynı çalışmada yapılır (Cem, 2026-11-17). Ayrıntı görev talimatındadır; özet:
+- Anahtar: görev talimatındaki `BUFFER_EN_API_KEY` (thatswhyen hesabı). Satır boşsa bölüm atlanır. Bu anahtarla yalnızca üç kanal:
+  YouTube "That's Why", X "ThatsWhyEN", TikTok "thatswhyen". Kimlikler her çalışmada API'den okunur. Türkçe anahtarla bu kanallara,
+  bu anahtarla başka kanala gönderi atılmaz.
+- Kayıt: `en-log.json`, her kayıt `{date, slug, kaynak_date, title_en, yt_post, x_post, tiktok_post}`.
+- Sıra: önce bugünün Türkçe videoları, sonra en-log.json'da olmayan eski Shorts (log.json'da eskiden yeniye; `"tur": "uzun"` hariç). Günde en fazla 5.
+- Kaynak: eski videonun `script.py` ve `render.py` dosyası git geçmişinden alınır
+  (`git log --format=%H -- videos/<tarih>-<slug>-dikey.mp4`, sonra `git show <commit>:script.py`). Bugünün videoları için o videonun commit'i.
+  - `gokyuzu-neden-mavi` videosunun kaynağı depoda yok (yalnızca mp4 yüklenmiş); İngilizcesi üretilemez, atlanır.
+  - `zeigarnik-etkisi` ve `sahne-isigi-etkisi` eski motorla yazılmış: sahneler güncel `render.py` motoruna taşınır, `HOOK`/`COVER` eklenir,
+    sahne 6 kapanış kalıbına uydurulur.
+- Çeviri: doğal İngilizce, 45-62 sn. Ekrandaki bütün yazılar çevrilir (`TITLE`, `HOOK`, `COVER`, `HL`, sahne içi yazılar, `cap_start` kelimeleri,
+  seri etiketi "PSYCHOLOGY IN 1 MINUTE" / "SCIENCE IN 1 MINUTE"). Kapanış "So that's why!" ve "See you in the next video!";
+  sahne 6'daki büyük yazı "See you in the / next video!". Ekranda hiç Türkçe kalmamalı; kare kontrolünde buna bak.
+- Ses: Achird, İngilizce stil talimatıyla (`voice_google.synth(..., style=...)`). Model önce `gemini-2.5-flash-preview-tts`;
+  429 verirse `gemini-3.1-flash-tts-preview`; ikisi de doluysa kalan videolar ertesi güne kalır.
+  `sync.py` dökümü Türkçe sorar; İngilizce ses için istemdeki "Turkce" kelimesi "Ingilizce" yapılarak çalıştırılır.
+- Akışın 3-7. adımları aynen uygulanır. Üretim depo dışında ayrı bir çalışma klasöründe yapılır; kökteki `script.py` ve `render.py`
+  son Türkçe videonun hali olarak kalır. Ad `<bugün>-<slug>-en`; dosyalar `videos/en/` altına (`-dikey.mp4`, `-yatay.mp4`).
+- Planlama (yukarıdaki "Buffer API" şeması, `BUFFER_EN_API_KEY` ile): saat dilimleri 14:00, 17:00, 20:00, 23:00 ve ertesi gün 02:00
+  (Europe/Istanbul). Şimdiden en az 30 dk sonraki ilk boş dilimden sırayla doldur; bütün kanallarda dolu dilimi atla.
+  Kanal başına en fazla 10 planlı gönderi; sınıra gelince dur.
+  - YouTube Short: başlık İngilizce soru (en fazla 90 karakter), `categoryId:"27"`, `privacy: public`, `madeForKids: false`.
+    Açıklama: 2-3 cümlelik kanca + "Does this happen to you too? Tell us in the comments." tarzı soru + en fazla 8 etiket (`#thatswhy`, `#shorts` dahil).
+  - X (`service: twitter`): aynı dikey video, metadata yok. Metin: başlık, boş satır, kısa kanca, en fazla 3 etiket (`#thatswhy` dahil); 280 karakteri geçmez, bağlantı yok.
+  - TikTok: videoya `metadata:{ thumbnailOffset: 200 }`; açıklama YouTube ile aynı ama `#shorts` olmadan.
+  - Planladıktan sonra üç kanalda da `scheduled` olduğunu geri oku, sonra en-log.json'a yaz, commit ve push.
+  - en-log.json'da `tiktok_post` alanı olmayan eski kayıtların videosu da boş bir dilime TikTok için planlanır (günlük 5 sınırına sayılmaz).
+- Yatay İngilizce video şimdilik hiçbir yere yüklenmez; yalnızca depoda durur.
+- Rapor: Türkçe raporun sonuna tek satır: kaç İngilizce video hangi saatlere planlandı, kaç eski video çevrilmeyi bekliyor.
+
 ## Konu havuzu
 Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim); Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji); Kan neden tutar? Kan görünce neden başımız döner? (bilim); Gözümüz neden dalar? (psikoloji); Meyveyi yıkayınca pestisit gider mi? (bilim, Cem istedi); Şarkı neden dile dolanır? (psikoloji); Kendimizi neden gıdıklayamayız? (bilim); Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji); Kendi sesimiz kayıtta neden yabancı gelir? (bilim); Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji); Bir canlı ölünce hücreleri de hemen ölür mü? Ksenobotlar ve antrobotlar (bilim, Cem istedi); Soğan doğrarken neden ağlarız? (bilim); Bulutlarda neden yüz görürüz? Pareidolia (psikoloji).
 Sırada (bu sırayla, bir psikoloji bir bilim):
