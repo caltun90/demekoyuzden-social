@@ -151,7 +151,7 @@ Türkçe videoların işi bittikten sonra aynı çalışmada yapılır (Cem, 202
   YouTube "That's Why", X "ThatsWhyEN", TikTok "thatswhyen". Kimlikler her çalışmada API'den okunur. Türkçe anahtarla bu kanallara,
   bu anahtarla başka kanala gönderi atılmaz.
 - Kayıt: `en-log.json`, her kayıt `{date, slug, kaynak_date, title_en, yt_post, x_post, tiktok_post}`.
-- Sıra: önce bugünün Türkçe videoları, sonra en-log.json'da olmayan eski Shorts (log.json'da eskiden yeniye; `"tur": "uzun"` hariç). Günde en fazla 5.
+- Sıra: önce bugünün Türkçe videoları, sonra en-log.json'da olmayan eski Shorts (log.json'da eskiden yeniye; `"tur": "uzun"` hariç). Günde en fazla 4 (Cem, 2026-11-19; görev talimatındaki "en fazla 5" yerine geçer).
 - Kaynak: eski videonun `script.py` ve `render.py` dosyası git geçmişinden alınır
   (`git log --format=%H -- videos/<tarih>-<slug>-dikey.mp4`, sonra `git show <commit>:script.py`). Bugünün videoları için o videonun commit'i.
   - `gokyuzu-neden-mavi` videosunun kaynağı depoda yok (yalnızca mp4 yüklenmiş); İngilizcesi üretilemez, atlanır.
@@ -165,8 +165,9 @@ Türkçe videoların işi bittikten sonra aynı çalışmada yapılır (Cem, 202
   `sync.py` dökümü Türkçe sorar; İngilizce ses için istemdeki "Turkce" kelimesi "Ingilizce" yapılarak çalıştırılır.
 - Akışın 3-7. adımları aynen uygulanır. Üretim depo dışında ayrı bir çalışma klasöründe yapılır; kökteki `script.py` ve `render.py`
   son Türkçe videonun hali olarak kalır. Ad `<bugün>-<slug>-en`; dosyalar `videos/en/` altına (`-dikey.mp4`, `-yatay.mp4`).
-- Planlama (yukarıdaki "Buffer API" şeması, `BUFFER_EN_API_KEY` ile): saat dilimleri 14:00, 17:00, 20:00, 23:00 ve ertesi gün 02:00
-  (Europe/Istanbul). Şimdiden en az 30 dk sonraki ilk boş dilimden sırayla doldur; bütün kanallarda dolu dilimi atla.
+- Planlama (yukarıdaki "Buffer API" şeması, `BUFFER_EN_API_KEY` ile): saat dilimleri 14:00, 17:00, 20:00 ve 23:00
+  (Europe/Istanbul). Gece 02:00 dilimi YOK (Cem, 2026-11-19: günde 5 Short YouTube'un günlük yükleme sınırına takılıyordu;
+  görev talimatındaki "ve ertesi gün 02:00" ve "günde en fazla 5" maddelerinin yerine geçer). Şimdiden en az 30 dk sonraki ilk boş dilimden sırayla doldur; bütün kanallarda dolu dilimi atla.
   Kanal başına en fazla 10 planlı gönderi; sınıra gelince dur.
   - YouTube Short: başlık İngilizce soru (en fazla 90 karakter), `categoryId:"27"`, `privacy: public`, `madeForKids: false`.
     Açıklama: 2-3 cümlelik kanca + "Does this happen to you too? Tell us in the comments." tarzı soru + en fazla 8 etiket (`#thatswhy`, `#shorts` dahil).
