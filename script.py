@@ -1,22 +1,22 @@
 # (scene, caption text, tts text or None to reuse caption)
 # Not: her cumle (ve duraklamada bolunen yarim cumle) ayri satir; altyazi cumle sinirini asmasin.
-# Yil ("2014'te") kendi satirinda: altyazi sesin onune gecmesin (KIT.md).
+# Yil ("2013'te bir deneyde") tek altyazi parcasi olacak kadar kisa bir satirda: altyazi sesin onune gecmesin (KIT.md).
 LINES = [
- (1, "Buluta baktın ve bir yüz gördün.", None),
- (1, "Prizde bile şaşkın bir surat var.", None),
- (2, "Deli değilsin. Herkesin beyni bunu yapar.", None),
- (2, "Psikolojide bunun bir adı var: pareidolia.", "Psikolojide bunun bir adı var. Pareidolya."),
- (3, "2014'te", "İki bin on dörtte"),
- (3, "araştırmacılar insanlara sadece karıncalı görüntüler gösterdi.", None),
- (3, "Yarısında yüz gizli, dediler.", None),
- (3, "Aslında hiçbirinde yüz yoktu.", None),
- (3, "Yine de her üç görüntüden birinde yüz gördüler.", None),
- (4, "Çünkü beyninde yüzlere ayrılmış özel bir bölge var.", None),
- (4, "Bu bölge o kadar hevesli ki, iki nokta ve bir çizgi ona yeter.", None),
- (5, "Bir açıklamaya göre, atalarımız için bir yüzü kaçırmak tehlikeliydi.", None),
- (5, "Olmayan yüzü görmenin ise bir zararı yoktu.", None),
- (5, "Beyin de işini şansa bırakmıyor.", None),
- (6, "Hani bulutlarda, prizlerde hep yüz görürsün ya.", None),
+ (1, "Parmak suda neden buruşur?", None),
+ (1, "Su çekip şiştiği için mi? Hayır.", None),
+ (2, "Bunu deri değil, sinir sistemin yapıyor.", None),
+ (2, "Doktorlar bunu neredeyse yüz yıl önce fark etti.", None),
+ (2, "Parmağın siniri hasarlıysa, o parmak suda buruşmuyor.", None),
+ (3, "Suda kalınca, sinirlerin parmak ucundaki damarları daraltıyor.", None),
+ (3, "Parmak ucu içten küçülüyor, üstündeki deri de bol gelip kıvrılıyor.", None),
+ (4, "Peki neden? Bir açıklamaya göre bu kıvrımlar, araba lastiğinin dişleri gibi.", None),
+ (4, "Suyu kanallardan dışarı atıp tutuşu artırıyor.", None),
+ (5, "2013'te bir deneyde", "İki bin on üçte bir deneyde"),
+ (5, "buruşuk parmaklılar, ıslak bilyeleri daha hızlı taşıdı.", None),
+ (5, "Kuru bilyelerdeyse fark yoktu.", None),
+ (5, "Ama sonraki bir deney aynı sonucu bulamadı.", None),
+ (5, "Yani işe yarayıp yaramadığı hâlâ tartışılıyor.", None),
+ (6, "Hani banyoda parmakların buruş buruş olur ya.", None),
  (6, "Demek o yüzden!", None),
  (6, "Bir sonraki videoda görüşmek üzere!", None),
 ]
