@@ -179,17 +179,16 @@ Türkçe videoların işi bittikten sonra aynı çalışmada yapılır (Cem, 202
 - Rapor: Türkçe raporun sonuna tek satır: kaç İngilizce video hangi saatlere planlandı, kaç eski video çevrilmeyi bekliyor.
 
 ## Konu havuzu
-Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim); Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji); Kan neden tutar? Kan görünce neden başımız döner? (bilim); Gözümüz neden dalar? (psikoloji); Meyveyi yıkayınca pestisit gider mi? (bilim, Cem istedi); Şarkı neden dile dolanır? (psikoloji); Kendimizi neden gıdıklayamayız? (bilim); Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji); Kendi sesimiz kayıtta neden yabancı gelir? (bilim); Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji); Bir canlı ölünce hücreleri de hemen ölür mü? Ksenobotlar ve antrobotlar (bilim, Cem istedi); Soğan doğrarken neden ağlarız? (bilim); Bulutlarda neden yüz görürüz? Pareidolia (psikoloji); Parmaklarımız suda neden buruşur? (bilim).
+Yapıldı: Kapı eşiği etkisi (pilot, psikoloji); Zeigarnik etkisi (psikoloji); Gökyüzü neden mavi, gün batımı neden kırmızı? (bilim); Sahne ışığı etkisi (psikoloji); Esnemek neden bulaşıcı? (bilim); Dilimin ucunda hissi (psikoloji); Klavyede harfler neden alfabetik sırada değil? (tarih); Bir kelimeyi çok tekrarlayınca neden anlamsızlaşır? (psikoloji); Arabada telefona bakınca neden midemiz bulanır? (bilim); Söyleyeceğin şey araya başka konu girince neden aklından uçar? (psikoloji); Kan neden tutar? Kan görünce neden başımız döner? (bilim); Gözümüz neden dalar? (psikoloji); Meyveyi yıkayınca pestisit gider mi? (bilim, Cem istedi); Şarkı neden dile dolanır? (psikoloji); Kendimizi neden gıdıklayamayız? (bilim); Yeni öğrendiğin şeyi neden her yerde görmeye başlarsın? (psikoloji); Kendi sesimiz kayıtta neden yabancı gelir? (bilim); Burç yorumları neden hep tutar gibi gelir? Barnum etkisi (psikoloji); Bir canlı ölünce hücreleri de hemen ölür mü? Ksenobotlar ve antrobotlar (bilim, Cem istedi); Soğan doğrarken neden ağlarız? (bilim); Bulutlarda neden yüz görürüz? Pareidolia (psikoloji); Parmaklarımız suda neden buruşur? (bilim); Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji).
 Sırada (bu sırayla, bir psikoloji bir bilim):
-1. Kendi yaptığımız şeyi neden daha çok severiz? IKEA etkisi (psikoloji)
-2. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
-3. Nane neden serinletir, acı biber neden yakar? (bilim)
-4. Dönüş yolu neden gidişten kısa gelir? Dönüş yolu etkisi (psikoloji)
-5. Hıçkırık neden tutar? (bilim)
-6. Kalabalıkta adını duyunca neden hemen dönersin? Kokteyl partisi etkisi (psikoloji)
-7. Soğuk içecek neden başımızı ağrıtır? Beyin donması (bilim)
-8. Aynı şarkıyı dinledikçe neden daha çok severiz? Salt maruz kalma etkisi (psikoloji)
-9. Güneşe bakınca neden hapşırırız? (bilim)
+1. Uykuya dalarken neden düşer gibi sıçrarız? (bilim)
+2. Nane neden serinletir, acı biber neden yakar? (bilim)
+3. Dönüş yolu neden gidişten kısa gelir? Dönüş yolu etkisi (psikoloji)
+4. Hıçkırık neden tutar? (bilim)
+5. Kalabalıkta adını duyunca neden hemen dönersin? Kokteyl partisi etkisi (psikoloji)
+6. Soğuk içecek neden başımızı ağrıtır? Beyin donması (bilim)
+7. Aynı şarkıyı dinledikçe neden daha çok severiz? Salt maruz kalma etkisi (psikoloji)
+8. Güneşe bakınca neden hapşırırız? (bilim)
 Liste hiç bitmesin: "Sırada" 4 konunun altına inince aynı dengeyle (bir psikoloji, bir bilim) en az 6 yeni konu ekle. Tarih ve dil konusu ekleme.
 Konu seçme ölçütü (Cem onayladı, 2026-11-13; kalıcı):
 - Herkesin kendi yaşadığı, gündelik bir şey olsun (esnemek, gıdıklanmak, dile dolanan şarkı gibi). Başlık kısa bir "neden" sorusu olsun.

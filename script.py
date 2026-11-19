@@ -1,22 +1,22 @@
 # (scene, caption text, tts text or None to reuse caption)
 # Not: her cumle (ve duraklamada bolunen yarim cumle) ayri satir; altyazi cumle sinirini asmasin.
-# Yil ("2013'te bir deneyde") tek altyazi parcasi olacak kadar kisa bir satirda: altyazi sesin onune gecmesin (KIT.md).
+# Yil ("2012'de bir deneyde") tek altyazi parcasi olacak kadar kisa bir satirda: altyazi sesin onune gecmesin (KIT.md).
 LINES = [
- (1, "Parmak suda neden buruşur?", None),
- (1, "Su çekip şiştiği için mi? Hayır.", None),
- (2, "Bunu deri değil, sinir sistemin yapıyor.", None),
- (2, "Doktorlar bunu neredeyse yüz yıl önce fark etti.", None),
- (2, "Parmağın siniri hasarlıysa, o parmak suda buruşmuyor.", None),
- (3, "Suda kalınca, sinirlerin parmak ucundaki damarları daraltıyor.", None),
- (3, "Parmak ucu içten küçülüyor, üstündeki deri de bol gelip kıvrılıyor.", None),
- (4, "Peki neden? Bir açıklamaya göre bu kıvrımlar, araba lastiğinin dişleri gibi.", None),
- (4, "Suyu kanallardan dışarı atıp tutuşu artırıyor.", None),
- (5, "2013'te bir deneyde", "İki bin on üçte bir deneyde"),
- (5, "buruşuk parmaklılar, ıslak bilyeleri daha hızlı taşıdı.", None),
- (5, "Kuru bilyelerdeyse fark yoktu.", None),
- (5, "Ama sonraki bir deney aynı sonucu bulamadı.", None),
- (5, "Yani işe yarayıp yaramadığı hâlâ tartışılıyor.", None),
- (6, "Hani banyoda parmakların buruş buruş olur ya.", None),
+ (1, "Yamuk raf neden güzel?", None),
+ (1, "Çünkü onu sen kurdun.", None),
+ (1, "Mağazadaki düzgün rafı bile ona değişmezsin.", None),
+ (2, "Psikolojide bunun bir adı var: IKEA etkisi.", "Psikolojide bunun bir adı var. İkea etkisi."),
+ (2, "Emek verdiğimiz şeye, olduğundan fazla değer biçeriz.", None),
+ (3, "2012'de bir deneyde", "İki bin on ikide bir deneyde"),
+ (3, "insanlara kâğıttan kurbağa katlattılar.", None),
+ (3, "Sonra herkese sordular: Buna kaç para verirsin?", None),
+ (3, "Katlayanlar kendi kurbağasına, başkalarının verdiğinin beş katını teklif etti.", None),
+ (3, "Hatta acemi işlerini, ustanın yaptığıyla neredeyse bir tuttular.", None),
+ (4, "Ama bir şart var: İşi bitirmiş olman gerekiyor.", None),
+ (4, "Yarım kalan ya da sökülen işte bu etki kayboldu.", None),
+ (5, "Araştırmacılara göre, bitirdiğin iş sana kendini becerikli hissettiriyor.", None),
+ (5, "Sen de o hissi eşyaya yüklüyorsun.", None),
+ (6, "Hani kendi yaptığın kek hep daha lezzetli gelir ya.", None),
  (6, "Demek o yüzden!", None),
  (6, "Bir sonraki videoda görüşmek üzere!", None),
 ]
