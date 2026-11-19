@@ -4,6 +4,13 @@ Günlük 1 dakikalık videoları üretmek için araçlar. Kit bu deponun kökün
 Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA BİLİM"). Başka seri yok.
 
 ## Kararlar (Cem)
+- YATAY KOPYA YOK (Cem, 2026-11-19: "Shorts olarak attığın videoları yatay olarak atmana gerek yok bi daha").
+  Günlük 1 dakikalık Türkçe videoların yatay sürümü YouTube'a ya da başka hiçbir yere YÜKLENMEZ, depoya da konmaz.
+  Günlük görevde `yt_upload.py` çalıştırılmaz; görev talimatında yatay yükleme adımı (ör. "6. YATAY VİDEO") varsa o adım atlanır.
+  Sebep: kanala günde 6-7 video gidince YouTube'un günlük yükleme sınırı doluyor ve Short'lar Buffer'da
+  "The daily posting limit for this channel has been reached" hatasıyla düşüyor (2026-11-19 12:00 Short'u bu yüzden gitmedi).
+  Bu kural bu dosyadaki ve görev talimatındaki yatay video maddelerinin hepsinden önce gelir.
+  Uzun yatay videolar (Pzt-Per-Cmt 16:00, ayrı görev, `uzun/`) bu kuraldan etkilenmez; onlar yüklenmeye devam eder.
 - GÜNDE 3 VİDEO (Cem, 2026-11-13). Günlük görev tek çalışmada üç video üretir: "Sırada" listesinin ilk üç konusu, listedeki sırayla.
   Birinci video 12:00'de, ikinci 15:00'te, üçüncü 19:00'da (Europe/Istanbul) üç platforma planlanır. Bu kural görev talimatındaki
   "bugünün videosu", "19:00" ve "aynı gün ikinci kez planlama" maddelerinin yerine geçer:
@@ -13,12 +20,12 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
     `script.py` ve `render.py` depoda son üretilen videonun halini taşır; her video ayrı commit olur.
   - Bir video başarısız olursa diğerleri yine yayınlanır; hangisinin neden olmadığını Cem'e bildir. İş yarıda kalmasın.
   - Buffer ücretsiz planda en fazla 10 planlı gönderi tutar (3 video x 3 kanal = 9). Sınır hatası gelirse planlanamayan gönderiyi Cem'e bildir.
-  - Rapor tek mesajdır: üç konu, üç YouTube başlığı, üç saat, üç yatay video bağlantısı. Altı dosya ve üç yatay kapak karesi Cem'e gönderilir.
+  - Rapor tek mesajdır: üç konu, üç YouTube başlığı, üç saat. Üç dikey video Cem'e gönderilir.
 - Gemini ücretsiz kotada (Cem ücretli plana geçmek istemiyor): ses modeli günde 10 istek, `gemini-3-flash-preview` günde 20 istek.
   `sync.py` kota dolarsa (429) kendiliğinden `gemini-3.1-flash-lite` ile devam eder (günde 500); bir şey yapman gerekmez. Gereksiz `list`/`check` tekrarından kaçın.
   Ses kotası dolarsa o gün kalan videolar üretilemez; Cem'e bildir.
-- HER video iki formatta: yatay 1920x1080 ve dikey 1080x1920. 30 fps, 45-62 sn.
-  `./build.sh <ad>` ikisini üretir: `<ad>-yatay.mp4`, `<ad>-dikey.mp4`.
+- Yayınlanan format dikey 1080x1920, 30 fps, 45-62 sn. `./build.sh <ad>` yatay `<ad>-yatay.mp4` da üretir;
+  yatay dosya yalnızca "That's Why" İngilizce sürümünde depoya konur, Türkçe günlük videolarda depoya konmaz ve yüklenmez.
 - Yatay düzen: dikey sahne çizimi solda (dikey koordinatlarda y 280-1260), sağda etiket + `TITLE` + büyük altyazı.
   Sahne çizimleri y 280-1260 dışına taşmamalı.
 - Dil Türkçe. Kanal yalnızca psikoloji ve gündelik bilim; tarih, dil gibi başka tür video yok (Cem, 2026-11-13).
@@ -51,7 +58,7 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 - `render.py`: çizim motoru + 6 sahne. `FMT=v` (dikey) veya `FMT=h` (yatay). Yeni videoda `scene1..6`, `HL`, `TITLE`, `HOOK`, `COVER`, `COVER_AT`,
   gerekirse `tag()` içindeki seri etiketi yeniden yazılır. Yardımcı fonksiyonlara dokunma.
 - `build.sh`: iki formatı üretir, birleştirir, sesi ekler. Depo şişmesin diye kodlama `CRF=24`, `PRESET=medium` (render.py; gözle fark yok). Bir sahne render edilemezse durur, video üretmez.
-- `yt_upload.py`: yatay videoyu YouTube'a normal video olarak yükler (bkz. Paylaşım). Yalnızca standart kütüphane kullanır.
+- `yt_upload.py`: yatay videoyu YouTube'a normal video olarak yükler. Artık yalnızca uzun video görevi kullanır (bkz. Paylaşım). Yalnızca standart kütüphane kullanır.
 - `feed.py`, `feed.xml`: eski Zapier/RSS denemesi. KULLANILMIYOR; `feed.py add` çalıştırma (aynı video iki kez yüklenmesin).
 - `setup.sh`: bulut ortamı kurulumu (libEGL, Python paketleri, Poppins fontları). Tekrar çalıştırmak güvenli.
 
@@ -86,40 +93,32 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 5. `python3 sync.py check`: her altyazı penceresinde duyulan söz, altyazıyla aynı olmalı. Altyazı sesten ÖNCE gelmemeli.
 6. Kare kontrolü: `FMT=v python3 render.py still <klasör> 0 3 17 30 ...` ve `FMT=h` ile en az 6'şar kare; aç ve bak.
    `0` kapak karesidir: yazı taşmıyor mu, çizim çarpıcı mı, tek başına merak uyandırıyor mu?
-   İlk 2 saniye kontrolü: iki formatta `0 0.5 1.0 1.9` karelerini ayrıca aç. İlk kare boşsa, kanca yazısı okunmuyorsa,
+   Türkçe günlük videolarda zorunlu format dikeydir (yatay yayınlanmıyor). İlk 2 saniye kontrolü: `0 0.5 1.0 1.9` karelerini ayrıca aç. İlk kare boşsa, kanca yazısı okunmuyorsa,
    ilk 2 saniyede hareket yoksa ya da kanca cümlesi 2 saniyeyi aşıyorsa (`voice/final.json` ilk satırın `end` değeri 2,0'dan büyükse) düzelt; düzelmiyorsa yayınlama, Cem'e bildir.
 7. `./build.sh <YYYY-MM-DD>-<slug>`; süre, ses ve 3 kare son kontrol.
 8. `voice/`, `scenes_*`, `silent_*`, `list_*`, kare klasörleri ve kökteki mp4'ler depoya eklenmez.
 
 ## Paylaşım
 - Dikey video: Buffer (bahsish.co hesabı, yalnızca API anahtarıyla) üzerinden YouTube Short ("Demek O Yüzden"), TikTok, Instagram Reel. Günde üç video: 12:00, 15:00 ve 19:00.
-- Yatay video: YouTube'a normal video olarak OTOMATİK yüklenir, doğrudan YouTube API ile (Cem, 2026-11-14). Buffer yatay videoyu
-  YouTube'a kabul etmez ("Video must be vertical"). Google projesi `dov-uploader` (Cem'in hesabı), uygulama "DOV Uploader", bağlı kanal
-  "Demek O Yüzden". Görev her yatay video için, dikey video Buffer'a planlandıktan sonra:
+- Yatay kopya: Türkçe günlük videoların yatay sürümü ARTIK YÜKLENMEZ (Kararlar: "YATAY KOPYA YOK", 2026-11-19).
+- `yt_upload.py` kullanımı (yalnızca uzun video görevi için; günlük görev çalıştırmaz). Google projesi `dov-uploader` (Cem'in hesabı),
+  uygulama "DOV Uploader", bağlı kanal "Demek O Yüzden". Buffer yatay videoyu YouTube'a kabul etmez ("Video must be vertical").
   ```
-  YT_CLIENT_ID=... YT_CLIENT_SECRET=... YT_REFRESH_TOKEN=... python3 yt_upload.py videos/<ad>-yatay.mp4 \
+  YT_CLIENT_ID=... YT_CLIENT_SECRET=... YT_REFRESH_TOKEN=... python3 yt_upload.py videos/<ad>.mp4 \
       --title "<YouTube başlığı>" --desc "<açıklama>" --tags "demekoyuzden,<2-4 konu etiketi>" \
-      --publish-at <YYYY-MM-DD>T<SS:DD>:00+03:00 --thumb <yatay kapak karesi>
+      --publish-at <YYYY-MM-DD>T<SS:DD>:00+03:00 --thumb <kapak karesi>
   ```
   - Üç değer görev talimatındaki `YT_CLIENT_ID:`, `YT_CLIENT_SECRET:`, `YT_REFRESH_TOKEN:` satırlarından okunur ve yalnızca komutta
     ortam değişkeni olarak kullanılır. Dosyaya, depoya (herkese açık), belleğe ya da mesaja YAZILMAZ.
-    Satırlardan biri yoksa ya da "BURAYA" yazıyorsa yatay yüklemeyi atla, diğer işleri bitir ve Cem'e tek cümleyle bildir.
-  - Başlık Short ile aynı. Açıklama aynı metin ama `#shorts` etiketi OLMADAN.
-  - `--publish-at`: o videonun Short'u ile aynı saat (12:00, 15:00 ya da 19:00; Buffer için kaydırdıysan aynı kaydırılmış saat).
-    Video önce gizli yüklenir, YouTube o saatte kendisi yayına alır. Saat geçmişse `--publish-at` yerine `--privacy public` kullan.
-  - `--thumb`: yatay kapak karesi (`FMT=h python3 render.py still <klasör> 0` çıktısı). Betik "thumb": "hata 403" dönerse kanal
-    henüz telefonla doğrulanmamış demektir; video yine yüklenmiştir, rapora "kapak eklenemedi, kanal doğrulanınca düzelir" yaz.
-  - Çıktı tek satır JSON: `id`, `url`, `privacy`, `publishAt`. `id` değerini log.json'daki o videonun kaydına `yatay_youtube` olarak yaz.
-    log.json'da `yatay_youtube` olan videoyu bir daha yükleme. Betik hata verirse bir kez daha dene; yine olmazsa Cem'e hata metnini bildir.
-  - Bu kural görev talimatındaki "Cem YouTube'a normal video olarak yükler" ve "Videoyu depo dışında hiçbir yere yükleme" maddelerinin
-    yerine geçer (yalnızca yatay videonun YouTube'a yüklenmesi için). Yatay videoyu Buffer'a verme.
-  - Ağ: `oauth2.googleapis.com` ve `www.googleapis.com` izinli siteler listesinde olmalı. Günlük sınır 100 yükleme.
-  - Raporda her yatay video için YouTube bağlantısını ve yayın saatini yaz.
+  - Video önce gizli yüklenir, YouTube `--publish-at` saatinde kendisi yayına alır. Saat geçmişse `--publish-at` yerine `--privacy public` kullan.
+  - Betik "thumb": "hata 403" dönerse kapak eklenmemiştir; video yine yüklenmiştir, rapora yaz.
+  - Çıktı tek satır JSON: `id`, `url`, `privacy`, `publishAt`. Betik hata verirse bir kez daha dene; yine olmazsa Cem'e hata metnini bildir.
+  - Ağ: `oauth2.googleapis.com` ve `www.googleapis.com` izinli siteler listesinde olmalı.
+  - YouTube kanala 24 saatte yüklenebilecek video sayısını sınırlar; Short'lar da bu sınıra sayılır. Gereksiz yükleme yapma.
 - Claude'a bağlı Buffer bağlayıcısı engrowapp hesabına aittir (Engrow, Pofu Kids); bu kanal için kullanılmaz.
 - Buffer dosya yüklemesi kabul etmez; video açık bir https adresinde durmalı (bu deponun raw adresi).
 - Kapak: Instagram ve TikTok gönderisinde video varlığına `metadata: { thumbnailOffset: 200 }` ver (ilk kare = kapak).
   YouTube Short kapağı Buffer/API ile seçilemez; YouTube kendi seçer, Cem isterse YouTube uygulamasından ilk kareyi seçer.
-- Yatay kapak karesi `yt_upload.py --thumb` ile YouTube'a yüklenir; Cem'e ayrıca gönderilir (`FMT=h python3 render.py still <klasör> 0`).
 
 ## Buffer API (doğrulandı: 2026-11-13)
 Yalnızca API anahtarıyla; Claude'a bağlı Buffer bağlayıcısı (mcp araçları) bu kanal için KULLANILMAZ.
