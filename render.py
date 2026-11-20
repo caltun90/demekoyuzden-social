@@ -36,12 +36,12 @@ def scene_span(k):
     i = SCENES.index(k)
     return SC[k], (SC[SCENES[i + 1]] if i + 1 < len(SCENES) else TOTAL)
 
-TITLE = 'Hipnik sıçrama'   # yatay formatta etiketin altinda gorunur
-HOOK = 'Uyurken neden sıçrarsın?'      # dikeyde etiketin altinda surekli gorunen kanca sorusu (en fazla ~26 karakter)
-COVER = ['UYURKEN', 'NEDEN', 'SIÇRARSIN?']   # kapak = ilk kare: dev kanca yazisi, 2-3 kisa satir (son satir sari vurgulu)
-COVER_AT = 1.17                          # kapakta sahne 1'in hangi ani cizilsin (sn, en carpici kare)
+TITLE = 'Nane ve acı biber'   # yatay formatta etiketin altinda gorunur
+HOOK = 'Nane neden serinletir?'      # dikeyde etiketin altinda surekli gorunen kanca sorusu (en fazla ~26 karakter)
+COVER = ['NANE NEDEN', 'SERİNLETİR?']   # kapak = ilk kare: dev kanca yazisi, 2-3 kisa satir (son satir sari vurgulu)
+COVER_AT = 3.75                          # kapakta sahne 1'in hangi ani cizilsin (sn, en carpici kare)
 COVER_T = 0.45                           # kapak suresi: ses baslayana kadar (voice_google.LEAD)
-HL = {0: ['düştün!'], 1: ['küt'], 2: ['kıpırdamadın.'], 3: ['hipnik', 'sıçrama.'], 4: ['düşme'], 5: ['yüzde', 'yetmişi'], 6: ['gevşer,', 'kapanır.'], 7: ['pürüzsüz'], 8: ['bilmiyor.'], 9: ['düşüyorsun'], 10: ['tutun!'], 11: ['sıçrayıp'], 12: ['daha', 'sık'], 13: ['olağan'], 14: ['sıçrarsın'], 15: ['demek', 'o', 'yüzden!']}
+HL = {0: ['soğuk', 'değil.'], 1: ['sıcak', 'değil.'], 2: ['serinletir,', 'yakar?'], 3: ['alıcılar'], 4: ['üşüyoruz!'], 5: ['yanıyoruz!'], 6: ['mentol,', 'anahtar'], 7: ['serinlik'], 8: ['ferah'], 9: ['kapsaisin'], 10: ['yanlış', 'alarm'], 11: ['serinlemeye'], 12: ['zorlandı.'], 13: ['nobel', 'ödülü'], 14: ['ferahlatır,', 'yakar'], 15: ['demek', 'o', 'yüzden!']}
 
 
 # ---------- helpers ----------
@@ -435,218 +435,233 @@ def arrow(c, p0, p1, color=INK, w=7, prog=1.0, alpha=1.0):
             line(c, [p1, (p1[0] + 26 * math.cos(a + d), p1[1] + 26 * math.sin(a + d))], color, w, alpha=alpha, amp=.5)
 
 # ---------- video scenes ----------
-WOOD = 0xFFEBC998
-WASH_N = 0xFFE4E7F6
-BLANKET = 0xFFA9D8CF
+LEAF = 0xFF5DBE8A
+WASH_C = 0xFFDDEFF7
+WASH_H = 0xFFFBE0D6
 
 def brain(c, x, y, s=1.0):
     cloud(c, x, y, 330 * s, 215 * s, fill=WASH_P, w=10)
     for k, (dx, dy) in enumerate(((-170, -70), (10, -110), (170, -40), (-80, 50))):
         line(c, [(x + (dx - 70) * s, y + dy * s), (x + (dx - 25) * s, y + (dy - 34) * s), (x + (dx + 20) * s, y + (dy + 6) * s), (x + (dx + 70) * s, y + (dy - 26) * s)], CORAL, 8, amp=.8, curve=True)
 
-def heart(c, x, y, s=1.0, col=CORAL, alpha=1.0, w=6):
-    p = skia.Path(); p.moveTo(x, y + 36 * s); p.cubicTo(x - 72 * s, y - 8 * s, x - 36 * s, y - 60 * s, x, y - 22 * s)
-    p.cubicTo(x + 36 * s, y - 60 * s, x + 72 * s, y - 8 * s, x, y + 36 * s); p.close()
-    c.drawPath(p, paint(col, fill=True, alpha=alpha))
-    if w > 0: c.drawPath(p, paint(INK, w, alpha=alpha))
+def leaf(c, x, y, s=1.0):
+    pts = [(x, y - 160 * s), (x + 84 * s, y - 70 * s), (x + 88 * s, y + 40 * s), (x, y + 150 * s), (x - 88 * s, y + 40 * s), (x - 84 * s, y - 70 * s)]
+    line(c, pts, INK, max(5, 9 * s), closed=True, fill=LEAF, curve=True, amp=1.2)
+    line(c, [(x, y - 118 * s), (x, y + 196 * s)], INK, max(4, 7 * s), amp=.8)
+    for dy in (-56, 4, 64):
+        for sd in (-1, 1):
+            line(c, [(x, y + (dy + 22) * s), (x + sd * 50 * s, y + (dy - 22) * s)], INK, max(3, 5 * s), amp=.6)
 
-def bed(c, x, y, s=1.0, jump=0.0, awake=False):
-    """yatak (yandan), icinde uyuyan; (x, y) silte ustunun ortasi; jump: sicrama (px)"""
-    w = 280 * s; j = jump * s
-    q = lambda dx, dy: (x + dx * s, y + dy * s)
-    for sd in (-1, 1): line(c, [q(sd * 240, 70), q(sd * 240, 124)], INK, max(5, 9 * s), amp=.6)
-    box(c, x - w - 18 * s, y - 124 * s, x - w + 16 * s, y + 72 * s, r=10 * s, w=max(5, 8 * s), fill=WOOD, amp=1)
-    box(c, x - w, y + 14 * s, x + w, y + 72 * s, r=12 * s, w=max(5, 8 * s), fill=WOOD, amp=1)
-    box(c, x - w + 8 * s, y - 30 * s, x + w - 6 * s, y + 20 * s, r=16 * s, w=max(5, 8 * s), fill=PAPER, amp=1)
-    box(c, x - w + 22 * s, y - 68 * s, x - w + 176 * s, y - 26 * s, r=20 * s, w=max(4, 7 * s), fill=PAPER, amp=1)
-    hx, hy = x - w + 104 * s, y - 88 * s - j
-    circ(c, x + w - 76 * s, y - 80 * s - j * .7, 26 * s, color=INK, w=max(4, 7 * s), fill=BLANKET, amp=.8, n=10)
-    box(c, x - w + 150 * s, y - 92 * s - j * .8, x + w - 40 * s, y - 28 * s - j * .5, r=30 * s, w=max(5, 8 * s), fill=BLANKET, amp=1)
-    circ(c, hx, hy, 44 * s, color=INK, w=max(5, 8 * s), fill=PAPER, amp=1)
-    if awake:
-        for dx in (-15, 15):
-            c.drawCircle(hx + dx * s, hy - 6 * s, 9 * s, paint(INK, max(2.5, 3.5 * s))); c.drawCircle(hx + dx * s, hy - 7 * s, 4 * s, paint(INK, fill=True))
-        c.drawCircle(hx, hy + 20 * s, 7 * s, paint(INK, max(3, 4.5 * s)))
-    else:
-        for dx in (-15, 15):
-            line(c, [(hx + (dx - 8) * s, hy - 7 * s), (hx + dx * s, hy - 1 * s), (hx + (dx + 8) * s, hy - 7 * s)], INK, max(3, 4.5 * s), amp=.3, curve=True)
-        line(c, [(hx - 9 * s, hy + 18 * s), (hx, hy + 23 * s), (hx + 9 * s, hy + 18 * s)], INK, max(3, 4.5 * s), amp=.3, curve=True)
-    return hx, hy
+def pepper(c, x, y, s=1.0):
+    pts = [(x - 50 * s, y - 118 * s), (x + 44 * s, y - 122 * s), (x + 78 * s, y - 40 * s), (x + 66 * s, y + 66 * s), (x + 16 * s, y + 150 * s), (x - 66 * s, y + 196 * s),
+           (x - 24 * s, y + 110 * s), (x - 16 * s, y + 30 * s), (x - 62 * s, y - 40 * s)]
+    line(c, pts, INK, max(5, 9 * s), closed=True, fill=CORAL, curve=True, amp=1.2)
+    st = [(x - 4 * s, y - 118 * s), (x - 16 * s, y - 168 * s), (x + 26 * s, y - 196 * s)]
+    line(c, st, INK, max(8, 20 * s), amp=.4, curve=True); St.n -= 1
+    line(c, st, LEAF, max(3, 8 * s), amp=.4, curve=True)
+    line(c, [(x + 36 * s, y - 70 * s), (x + 44 * s, y - 10 * s), (x + 34 * s, y + 50 * s)], PAPER, max(4, 8 * s), alpha=.8, amp=.5, curve=True)
 
-def zzz(c, x, y, t, s=1.0):
-    for k in range(3):
-        ph = (t * .45 + k / 3) % 1
-        txt(c, 'z', x + (20 + 70 * ph) * s, y - 130 * ph * s, (34 + 34 * ph) * s, MUTE, alpha=math.sin(math.pi * ph))
+def flake(c, x, y, r, col=TEAL, w=6, alpha=1.0, rot=0.0):
+    for i in range(3):
+        a = math.pi * i / 3 + rot
+        line(c, [(x - r * math.cos(a), y - r * math.sin(a)), (x + r * math.cos(a), y + r * math.sin(a))], col, w, alpha=alpha, amp=.4)
 
-def faller(c, x, gy, s, t):
-    """duserken cizgi adam"""
-    for dx in (-60, 0, 60): line(c, [(x + dx * s, gy - 560 * s), (x + dx * s, gy - 470 * s)], MUTE, 5, amp=.5)
-    with xf(c, x, gy - 210 * s, 1, 20 + 10 * math.sin(t * 9)):
-        fig(c, x, gy, s, 0, dict(FRONT, aL=150, eL=170, aR=150, eR=170, tL=30, kL=8, tR=30, kR=8), 'oh')
+def flame(c, x, y, s=1.0, t=0.0, alpha=1.0):
+    k = 1 + .1 * math.sin(t * 11)
+    p = skia.Path(); p.moveTo(x, y - 74 * s * k); p.cubicTo(x + 54 * s, y - 20 * s, x + 48 * s, y + 42 * s, x, y + 46 * s)
+    p.cubicTo(x - 48 * s, y + 42 * s, x - 54 * s, y - 6 * s, x - 22 * s, y - 34 * s); p.cubicTo(x - 14 * s, y - 12 * s, x - 6 * s, y - 40 * s, x, y - 74 * s * k); p.close()
+    c.drawPath(p, paint(CORAL, fill=True, alpha=alpha)); c.drawPath(p, paint(INK, max(3, 6 * s), alpha=alpha))
+    c.drawCircle(x, y + 14 * s, 15 * s, paint(YEL, fill=True, alpha=alpha))
 
-def moon(c, x, y, r, bg):
-    circ(c, x, y, r, color=INK, w=0, fill=YEL, amp=.5); c.drawCircle(x + r * .45, y - r * .3, r * .86, paint(bg, fill=True))
+def membrane(c, x0, x1, y, prog=1.0):
+    for dy in (-34, 34): line(c, [(x0, y + dy), (x1, y + dy)], MUTE, 10, prog, amp=1.2)
+
+def receptor(c, x, y, col, fill, op=0.0, s=1.0, t=0.0):
+    """zara gomulu kapi; op 0 kapali, 1 acik"""
+    g = 5 * s + 34 * s * op
+    for sd in (-1, 1):
+        x0, x1 = x + sd * g, x + sd * (g + 64 * s)
+        box(c, min(x0, x1), y - 86 * s, max(x0, x1), y + 86 * s, r=24 * s, w=max(5, 8 * s), fill=fill, amp=1)
+    if op > .5:
+        for k in range(3):
+            ph = (t * 1.6 + k / 3) % 1
+            c.drawCircle(x + 9 * s * math.sin(k * 2.1), y - 70 * s + 170 * s * ph, 9 * s, paint(col, fill=True, alpha=math.sin(math.pi * ph)))
+
+def thermo(c, x, y, s=1.0, lvl=.5, col=CORAL):
+    box(c, x - 17 * s, y - 120 * s, x + 17 * s, y + 60 * s, r=16 * s, w=max(4, 7 * s), fill=PAPER, amp=.6)
+    circ(c, x, y + 78 * s, 32 * s, color=INK, w=max(4, 7 * s), fill=col, amp=.6, n=10)
+    wash(c, x - 7 * s, y + 55 * s - 150 * s * lvl, x + 7 * s, y + 60 * s, col, r=5)
+
+def key(c, x, y, s=1.0, col=TEAL):
+    line(c, [(x, y - 14 * s), (x, y + 46 * s)], INK, max(5, 9 * s), amp=.4)
+    for dy in (22, 42): line(c, [(x, y + dy * s), (x + 17 * s, y + dy * s)], INK, max(4, 7 * s), amp=.3)
+    circ(c, x, y - 36 * s, 23 * s, color=INK, w=max(4, 7 * s), fill=col, amp=.5, n=10)
+
+def mouse(c, x, y, s=1.0, d=1, t=0.0):
+    line(c, [(x - d * 62 * s, y - 30 * s), (x - d * 112 * s, y - 52 * s + 9 * s * math.sin(t * 6)), (x - d * 156 * s, y - 26 * s)], INK, max(4, 6 * s), amp=.6, curve=True)
+    for dx in (-36, 30): line(c, [(x + dx * s, y - 12 * s), (x + dx * s + 7 * s * math.sin(t * 14 + dx), y)], INK, max(4, 6 * s), amp=.3)
+    circ(c, x, y - 48 * s, 72 * s, 42 * s, color=INK, w=max(5, 8 * s), fill=PAPER, amp=1, n=12)
+    circ(c, x + d * 56 * s, y - 96 * s, 22 * s, color=INK, w=max(4, 7 * s), fill=WASH_P, amp=.6, n=9)
+    circ(c, x + d * 72 * s, y - 54 * s, 36 * s, 30 * s, color=INK, w=max(5, 8 * s), fill=PAPER, amp=.8, n=10)
+    c.drawCircle(x + d * 84 * s, y - 60 * s, 5 * s, paint(INK, fill=True))
+    c.drawCircle(x + d * 108 * s, y - 50 * s, 7 * s, paint(CORAL, fill=True))
 
 def scene1(c, t):
-    a0, a1 = L(0); k0, k1 = L(1); o0, o1 = L(2)
-    td = a0 + .5
-    tsn = cap_start(2, 'santim', o0 + 1.2); tks = cap_start(2, 'kıpırdamadın', o1 - .9)
-    wash(c, 60, 340, 1020, 1146, WASH_N)
-    moon(c, 150, 440, 56, WASH_N)
-    for k, (x, y) in enumerate(((330, 400), (420, 520), (930, 400), (960, 880), (120, 700))):
-        burst(c, x, y, 0, 12 + 4 * math.sin(t * 3 + k), 4, YEL, 5)
-    ground(c, 60, 1020, 1136)
-    jump = 0 if t < td else 84 * abs(math.sin((t - td) * 7)) * max(0, 1 - (t - td) / 1.1)
-    ca = 1 - seg(t, k0 + .1, k0 + .5)
-    if ca > 0:
-        with xf(c, 700, 610, pop(t, .45, .3), 0, ca):
-            cloud(c, 700, 610, 240, 165, tail=(430, 850), w=8)
-            ph = (t * 1.4) % 1
-            c.save(); pth = skia.Path(); pth.addOval(skia.Rect.MakeLTRB(478, 458, 922, 762)); c.clipPath(pth, skia.ClipOp.kIntersect, True)
-            faller(c, 700, 610 + ph * 330, .42, t)
-            c.restore()
-    hx, hy = bed(c, 540, 1010, 1.0, jump, t > td)
-    if t <= td: zzz(c, hx + 30, hy - 50, t)
-    if td < t < o0: emark(c, 280, 800, 190, t, CORAL, pop(t, td, .3))
-    if td < t < o0:
-        for sd in (-1, 1): line(c, [(hx + sd * 70, hy - 50), (hx + sd * 104, hy - 84)], CORAL, 7, alpha=seg(t, td, td + .1) * (1 - seg(t, td + .8, td + 1.1)), amp=.6)
-    if t > k0:
-        pu = 1 + .28 * abs(math.sin((t - k0) * 9))
-        with xf(c, 610, 850, pop(t, k0, .25) * pu): heart(c, 610, 850, .95)
-        with xf(c, 810, 800, pop(t, k0 + .15, .3), 6 * math.sin(t * 18)): txt(c, 'küt küt', 810, 816, 54, CORAL)
-    if t > tsn:
-        with xf(c, 780, 600, pop(t, tsn, .35), 3):
-            box(c, 640, 530, 920, 670, r=30, w=9, fill=YEL)
-            txt(c, '0 cm', 780, 630, 84, INK)
-    if t > tks:
-        with xf(c, 540, 1205, pop(t, tks, .3)): pill(c, 'yerinden kıpırdamadın', 540, 1205, 44, INK)
+    a0, a1 = L(0); b0, b1 = L(1); q0, q1 = L(2)
+    tsd = cap_start(0, 'soğuk', a0 + .7); tsc = cap_start(1, 'sıcak', b0 + .6)
+    tse = cap_start(2, 'serinletir', q0 + 1.4); tya = cap_start(2, 'öbürü', q1 - 1.3)
+    wash(c, 60, 340, 530, 960, WASH_C)
+    with xf(c, 295, 610, pop(t, a0 - .05, .3), 7 * math.sin(t * 2.4)): leaf(c, 295, 600, 1.12)
+    if t > a0:
+        for k, (x, y) in enumerate(((130, 440), (465, 430), (125, 760), (470, 770))):
+            with xf(c, x, y, pop(t, a0 + .07 * k, .25)): flake(c, x, y, 32 + 5 * math.sin(t * 3 + k), TEAL, 7, rot=t * .9 + k)
+    if t > tsd:
+        with xf(c, 295, 884, pop(t, tsd, .3), -4): pill(c, 'soğuk değil', 295, 884, 50, INK)
+    if t > b0 - .15:
+        wash(c, 550, 340, 1020, 960, WASH_H, seg(t, b0 - .15, b0 + .05))
+        with xf(c, 785, 600, pop(t, b0 - .1, .3), -6 * math.sin(t * 2.4)): pepper(c, 790, 590, 1.05)
+        for k, (x, y) in enumerate(((630, 460), (950, 470), (640, 770), (950, 760))):
+            with xf(c, x, y, pop(t, b0 + .07 * k, .25)): flame(c, x, y, .56, t + k)
+    if t > tsc:
+        with xf(c, 785, 884, pop(t, tsc, .3), 4): pill(c, 'sıcak değil', 785, 884, 50, INK)
+    if t > q0 - .1:
+        with xf(c, 540, 1256, pop(t, q0 - .1, .3)):
+            fig(c, 540, 1256, .6, 0, dict(FRONT, aL=62, eL=150, aR=62, eR=150), 'confused')
+    if t > tse:
+        with xf(c, 250, 1090, pop(t, tse, .3), -3): pill(c, 'serinletir?', 250, 1090, 50, TEAL, PAPER)
+    if t > tya:
+        with xf(c, 840, 1090, pop(t, tya, .3), 3): pill(c, 'yakar?', 840, 1090, 50, CORAL, PAPER)
 
 def scene2(c, t):
-    a0, a1 = L(3); s0, s1 = L(4); y0_, y1_ = L(5)
-    tn = cap_start(3, 'hipnik', a1 - 1.0); tds = cap_start(4, 'düşme', s0 + 1.9); t70 = cap_start(5, 'yüzde', y0_ + 1.1)
-    if t > tn:
-        with xf(c, 540, 445, pop(t, tn, .35), -2):
-            box(c, 190, 378, 890, 512, r=30, w=9, fill=YEL)
-            txt(c, 'hipnik sıçrama', 540, 472, 78, INK)
-    ph = ((t - s0) % 1.25) if t > s0 else 9
-    tw_ = 44 * abs(math.sin(ph * 10)) * max(0, 1 - ph / .45)
-    with xf(c, 540, 760, pop(t, a0 - .1, .35)):
-        hx, hy = bed(c, 540, 760, .62, tw_, False)
-    if t <= s0: zzz(c, hx + 20, hy - 30, t, .7)
-    if tw_ > 4:
-        for sd, x in ((-1, 300), (1, 770)):
-            line(c, [(x, 660), (x + sd * 26, 690), (x - sd * 4, 716), (x + sd * 30, 746)], CORAL, 8, amp=.6)
-    if t > s0 + .1:
-        with xf(c, 540, 910, pop(t, s0 + .1, .3)): pill(c, 'ani kas seğirmesi', 540, 910, 44, TEAL, PAPER)
-    if t > tds:
-        with xf(c, 540, 992, pop(t, tds, .3)): pill(c, '+ düşme hissi', 540, 992, 44, CORAL, PAPER)
-    if t > y0_ - .1:
-        for k in range(10):
-            x = 135 + k * 90
-            p = pop(t, y0_ - .1 + k * .03, .25)
-            on = k < 7 and t > t70 + k * .08
-            with xf(c, x, 1105, p): circ(c, x, 1105, 31, color=INK, w=6, fill=CORAL if on else PAPER, amp=.8, n=10)
-        if t > t70:
-            with xf(c, 540, 1210, pop(t, t70 + .3, .3)): txt(c, 'yaklaşık %70', 540, 1232, 66, INK)
+    a0, a1 = L(3); s0, s1 = L(4); h0, h1 = L(5)
+    tal = cap_start(3, 'sıcaklığı', a0 + 1.4)
+    tso = cap_start(4, 'açılır', s0 + .8); tus = cap_start(4, 'Üşüyoruz', s1 - .8)
+    thi = cap_start(5, 'açılır', h0 + 1.6); tyn = cap_start(5, 'Yanıyoruz', h1 - .8)
+    my = 960
+    membrane(c, 90, 990, my, seg(t, a0 - .1, a0 + .4))
+    if t > a0 + .2:
+        with xf(c, 300, my, pop(t, a0 + .2, .3)): receptor(c, 300, my, TEAL, WASH_C, smooth(seg(t, tso, tso + .3)), 1, t)
+        with xf(c, 780, my, pop(t, a0 + .35, .3)): receptor(c, 780, my, CORAL, WASH_H, smooth(seg(t, thi, thi + .3)), 1, t)
+    if t > a0 - .1:
+        with xf(c, 540, 1190, pop(t, a0 - .1, .3)): pill(c, 'dilinde ve derinde', 540, 1190, 44, INK)
+    if t > tal:
+        with xf(c, 540, 386, pop(t, tal, .35), -1.5):
+            box(c, 200, 334, 880, 438, r=30, w=9, fill=YEL)
+            txt(c, 'sıcaklık alıcıları', 540, 408, 62, INK)
+        with xf(c, 300, 1088, pop(t, tal + .1, .3)): pill(c, 'soğuk', 300, 1088, 40, TEAL, PAPER)
+        with xf(c, 780, 1088, pop(t, tal + .2, .3)): pill(c, 'sıcak', 780, 1088, 40, CORAL, PAPER)
+    if t > s0 - .1:
+        with xf(c, 540, 720, pop(t, s0 - .1, .35), 5 * math.sin(t * 30) * (seg(t, tus, tus + .1) * (1 - seg(t, tus + .5, tus + .7)) + seg(t, tyn, tyn + .1) * (1 - seg(t, tyn + .5, tyn + .7)))):
+            brain(c, 540, 720, .4)
+        for k in range(3):
+            ph = ((t - s0) * .9 + k / 3) % 1
+            flake(c, 220 + 70 * k, 740 + 110 * ph, 20, TEAL, 6, alpha=math.sin(math.pi * ph), rot=t + k)
+    if t > tso + .2: dashes(c, (330, 856), (440, 780), 5, TEAL, 7, seg(t, tso + .2, tso + .5))
+    if t > tus:
+        with xf(c, 250, 540, pop(t, tus, .3), -3):
+            speech(c, 60, 490, 440, 594, (440, 650))
+            txt(c, 'Üşüyoruz!', 250, 562, 56, TEAL)
+    if t > h0 - .1:
+        for k in range(3):
+            with xf(c, 720 + 70 * k, 810, pop(t, h0 - .1 + .08 * k, .25)): flame(c, 720 + 70 * k, 810, .42, t + k)
+    if t > thi + .2: dashes(c, (700, 800), (640, 770), 3, CORAL, 7, seg(t, thi + .2, thi + .5))
+    if t > tyn:
+        with xf(c, 830, 540, pop(t, tyn, .3), 3):
+            speech(c, 640, 490, 1020, 594, (640, 650))
+            txt(c, 'Yanıyoruz!', 830, 562, 56, CORAL)
+
+def lock_scene(c, t, a0, tkey, top, col, fill, label, prop):
+    """sahne 3 ve 4 ortak: ustte bitki, molekul anahtar gibi aliciya oturur"""
+    my, rx = 930, 400
+    membrane(c, 80, 720, my, seg(t, a0 - .1, a0 + .3))
+    with xf(c, 200, 520, pop(t, a0 - .1, .3), 5 * math.sin(t * 2.2)): prop(c, 200, 510, .72)
+    with xf(c, 470, 420, pop(t, a0 + .1, .3), 3): pill(c, label, 470, 420, 46, col, PAPER)
+    with xf(c, rx, my, pop(t, a0, .3)): receptor(c, rx, my, col, fill, smooth(seg(t, top, top + .3)), 1, t)
+    u = smooth(seg(t, a0 + .5, tkey + .25))
+    for k, (dx, dy) in enumerate(((0, 0), (-150, -90), (120, -150))):
+        kx = lerp(250 + 60 * k, rx + dx * (1 - .0), u); ky = lerp(590 + 30 * k, my - 120 + dy, u)
+        if k: ky += 8 * math.sin(t * 4 + k)
+        with xf(c, kx, ky, pop(t, a0 + .3 + .12 * k, .25), (0, -24, 20)[k] * u): key(c, kx, ky, .8, col)
+    return my, rx
 
 def scene3(c, t):
-    a0, a1 = L(6); b0, b1 = L(7)
-    tk = cap_start(6, 'kasların', a0 + 1.1); tbr = cap_start(6, 'beynin', a0 + 2.3); tp = cap_start(7, 'pürüzsüz', b1 - 1.2)
-    y_, x0, x1 = 790, 190, 890
-    with xf(c, 540, 510, pop(t, a0 - .1, .35)): brain(c, 540, 510, .45)
+    a0, a1 = L(6); b0, b1 = L(7); d0, d1 = L(8)
+    tkey = cap_start(6, 'anahtar', a1 - 1.3); tac = cap_start(7, 'alıcı', b0 + 1.7); tbr = cap_start(7, 'beynin', b1 - 1.5)
+    lock_scene(c, t, a0, tkey, tac, TEAL, WASH_C, 'mentol', leaf)
+    if t > b0 - .1:
+        with xf(c, 880, 520, pop(t, b0 - .1, .3)): thermo(c, 880, 500, 1.0, .5, CORAL)
+        with xf(c, 850, 676, pop(t, b0 + .1, .3)): pill(c, 'sıcaklık aynı', 850, 676, 40, INK)
+    if t > tbr - .2:
+        with xf(c, 870, 990, pop(t, tbr - .2, .35)): brain(c, 870, 990, .36)
     if t > tbr:
-        zzz(c, 640, 470, t, .8)
-        with xf(c, 850, 560, pop(t, tbr, .3), 4): pill(c, 'kapanıyor', 850, 560, 40, INK)
-    pr = seg(t, a0, a0 + .4)
-    line(c, [(x0, y_), (x1, y_)], MUTE, 14, pr, amp=.8)
-    if pr >= 1:
-        circ(c, x0, y_ - 92, 30, color=INK, w=6, fill=YEL, amp=.6, n=10); burst(c, x0, y_ - 92, 42, 58, 8, YEL, 6)
-        moon(c, x1, y_ - 92, 38, BG)
-        pill(c, 'uyanık', x0 + 10, y_ + 86, 40, INK); pill(c, 'uyku', x1 - 10, y_ + 86, 40, TEAL, PAPER)
-    u = .1 + .5 * smooth(seg(t, a0 + .4, a1))
-    if t > b0:
-        zz = [(520, y_), (550, y_ - 44), (585, y_ + 44), (620, y_ - 44), (655, y_ + 44), (690, y_ - 44), (720, y_)]
-        line(c, zz, CORAL, 11, seg(t, b0, b0 + .5), amp=.8)
-        u += .13 * math.sin((t - b0) * 8) * seg(t, b0, b0 + .3) + .06
-    kx = lerp(x0, x1, u); ky = y_ + (26 * math.sin((t - b0) * 21) * seg(t, b0, b0 + .3) if t > b0 else 0)
-    if pr >= 1: circ(c, kx, ky, 38, color=INK, w=8, fill=YEL, amp=.8, n=12)
-    slump = seg(t, tk, tk + .9)
-    fig(c, 250, 1236, .62, 1, mix(dict(STAND), dict(STAND, lean=9, tilt=26, aL=3, eL=3, aR=3, eR=3, tL=9, kL=-6, tR=-3, kR=-12), slump), 'smile' if slump < .5 else 'flat')
-    if t > tk:
-        with xf(c, 560, 1010, pop(t, tk, .3), -3): pill(c, 'kaslar gevşiyor', 560, 1010, 44, TEAL, PAPER)
-    if t > tp:
-        with xf(c, 680, 1180, pop(t, tp, .35), -1.5):
-            box(c, 380, 1128, 980, 1232, r=26, w=8, fill=YEL)
-            txt(c, 'geçiş pürüzlü olabilir', 680, 1197, 48, INK)
+        with xf(c, 860, 820, pop(t, tbr, .3), 3):
+            speech(c, 730, 770, 1000, 866, (850, 902))
+            txt(c, 'Serin!', 865, 838, 56, TEAL)
+    if t > d0 - .1:
+        p = pop(t, d0 - .1, .3)
+        with xf(c, 250, 1160, p, -4):
+            box(c, 110, 1118, 350, 1204, r=14, w=8, fill=PAPER)
+            wash(c, 150, 1128, 250, 1194, WASH_C, r=8)
+            box(c, 350, 1136, 392, 1186, r=8, w=7, fill=TEAL)
+        with xf(c, 690, 1160, pop(t, d0 + .1, .3)): pill(c, 'ferahlık da bu yüzden', 690, 1160, 42, TEAL, PAPER)
+        for k, (x, y) in enumerate(((440, 1110), (960, 1100))): flake(c, x, y, 20, TEAL, 6, alpha=seg(t, d0 + .2, d0 + .4), rot=t + k)
 
 def scene4(c, t):
-    q0, q1 = L(8); a0, a1 = L(9); s0, s1 = L(10); w0, w1 = L(11)
-    fa = 1 - smooth(seg(t, a0 - .3, a0 - .05))
-    if fa > .01:
-        tks = cap_start(8, 'kesin', q0 + 1.0)
-        with xf(c, 540, 800, 1, 0, fa):
-            qmark(c, 540, 900, 430, t, CORAL, 1.0, pop(t, q0 - .1, .3))
-            if t > tks:
-                with xf(c, 540, 1130, pop(t, tks, .3)): pill(c, 'kesin nedeni bilinmiyor', 540, 1130, 50, INK)
-    if t > a0 - .3:
-        a = seg(t, a0 - .2, a0 + .1)
-        tbe = cap_start(9, 'beynin', a0 + 1.6); tdu = cap_start(9, 'düşüyorsun', a1 - 1.6)
-        tsi = cap_start(10, 'sinyal', s0 + 1.2); ttu = cap_start(10, 'Tutun', s1 - .5); tj = w0 + .35
-        with xf(c, 540, 800, 1, 0, a):
-            with xf(c, 540, 395, pop(t, a0 - .1, .3)): pill(c, 'bir açıklamaya göre', 540, 395, 46, INK)
-            jump = 0 if t < tj else 76 * abs(math.sin((t - tj) * 7)) * max(0, 1 - (t - tj) / 1.2)
-            hx, hy = bed(c, 580, 1090, .8, jump, t > tj)
-            if t <= tj: zzz(c, hx + 20, hy - 40, t, .8)
-            if t > tsi:
-                z = [(280, 722), (316, 790), (262, 830), (340, 890), (300, 925), (392, 968)]
-                pz = seg(t, tsi, tsi + .35); fl = .65 + .35 * math.sin(t * 16)
-                line(c, z, INK, 16, pz, amp=.5); St.n -= 1; line(c, z, YEL, 9, pz, fl, amp=.5)
-            if t > tbe - .2:
-                sh = 6 * math.sin(t * 30) * seg(t, tdu, tdu + .1) * (1 - seg(t, tdu + .5, tdu + .7))
-                with xf(c, 270, 610, pop(t, tbe - .2, .35), sh): brain(c, 270, 610, .5)
-            if t > tdu:
-                with xf(c, 720, 590, pop(t, tdu, .3), 2):
-                    speech(c, 480, 525, 960, 645, (446, 668))
-                    txt(c, '“Düşüyoruz!”', 720, 606, 60, CORAL)
-            if t > ttu:
-                with xf(c, 770, 830, pop(t, ttu, .35), -4):
-                    box(c, 610, 766, 930, 894, r=30, w=9, fill=YEL)
-                    txt(c, '“Tutun!”', 770, 852, 66, INK)
-            if t > tj: emark(c, 190, 1090, 170, t, CORAL, pop(t, tj, .3))
+    a0, a1 = L(9); b0, b1 = L(10); d0, d1 = L(11)
+    tkey = cap_start(9, 'sıcak', a1 - 1.5); tyl = cap_start(10, 'yanlış', b1 - 1.3); tvu = cap_start(11, 'vücudun', d1 - 1.6)
+    lock_scene(c, t, a0, tkey, tkey + .3, CORAL, WASH_H, 'kapsaisin', pepper)
+    if t > b0 - .1:
+        sh = 6 * math.sin(t * 30) * seg(t, tyl, tyl + .1) * (1 - seg(t, tyl + .6, tyl + .8))
+        with xf(c, 850, 560, pop(t, b0 - .1, .35), sh): brain(c, 850, 560, .4)
+        with xf(c, 850, 400, pop(t, b0, .3)): pill(c, 'dilin yanmıyor', 850, 400, 40, INK)
+    if t > tyl:
+        with xf(c, 850, 740, pop(t, tyl, .35), -2):
+            box(c, 690, 690, 1010, 790, r=26, w=8, fill=YEL)
+            txt(c, 'yanlış alarm', 850, 757, 48, INK)
+        for sd in (-1, 1):
+            for an in (-22, 0, 22):
+                r_ = math.radians(an); r1 = 196 + 8 * math.sin(t * 12 + an)
+                line(c, [(850 + sd * 160 * math.cos(r_), 560 + 160 * math.sin(r_) * .6), (850 + sd * r1 * math.cos(r_), 560 + r1 * math.sin(r_) * .6)], CORAL, 7, amp=.6)
+    if t > d0 - .1:
+        with xf(c, 870, 1256, pop(t, d0 - .1, .3)):
+            me = fig(c, 870, 1256, .56, 0, dict(FRONT, aR=30, eR=165, aL=10, eL=6), 'oh')
+        hx, hy = me['head']
+        for k, (dx, ph0) in enumerate(((-52, 0), (52, .5), (-66, .25))):
+            ph = (t * 1.3 + ph0) % 1
+            c.drawCircle(hx + dx, hy - 10 + 70 * ph, 8, paint(TEAL, fill=True, alpha=1 - ph))
+    if t > tvu:
+        with xf(c, 400, 1170, pop(t, tvu, .3), -2): pill(c, 'ter = serinleme çabası', 400, 1170, 42, TEAL, PAPER)
 
 def scene5(c, t):
-    a0, a1 = L(12); u0, u1 = L(13)
-    ts = cap_start(12, 'stresliyken', a0 + .9); tkh = cap_start(12, 'kahve', a0 + 2.0); tds = cap_start(12, 'daha', a1 - 1.0)
-    tol = cap_start(13, 'olağan', u1 - 1.2)
-    for k, (x, tt, lab) in enumerate(((220, a0 - .1, 'yorgunluk'), (540, ts, 'stres'), (860, tkh, 'kahve'))):
-        if t <= tt: continue
-        y = 560
-        with xf(c, x, y, pop(t, tt, .35), (-3, 0, 3)[k]):
-            box(c, x - 130, y - 130, x + 130, y + 130, r=30, w=8, fill=PAPER)
-            if k == 0:
-                box(c, x - 74, y - 40, x + 66, y + 40, r=12, w=8, fill=PAPER, amp=.8)
-                box(c, x + 66, y - 15, x + 82, y + 15, r=4, w=6, fill=INK, amp=.4)
-                wash(c, x - 60, y - 26, x - 30, y + 26, CORAL, 1 if int(t * 3) % 2 else .45, r=6)
-            elif k == 1:
-                sp = [(x + (8 + 5.2 * i) * math.cos(i * .9 + t * 2), y + (8 + 5.2 * i) * math.sin(i * .9 + t * 2)) for i in range(15)]
-                line(c, sp, CORAL, 8, amp=1.5, curve=True)
-            else:
-                for dx in (-22, 14):
-                    line(c, [(x + dx + 6 * math.sin(t * 4 + j * 1.4 + dx), y - 44 - j * 18) for j in range(4)], MUTE, 6, amp=.5, curve=True)
-                line(c, [(x - 58, y - 30), (x + 50, y - 30), (x + 36, y + 62), (x - 44, y + 62)], INK, 8, closed=True, fill=WOOD, amp=1)
-                line(c, [(x + 48, y - 14), (x + 84, y - 6), (x + 78, y + 30), (x + 42, y + 36)], INK, 8, amp=.8, curve=True)
-        with xf(c, x, 742, pop(t, tt + .1, .3)): pill(c, lab, x, 742, 40, INK)
-    if t > tds:
-        with xf(c, 540, 860, pop(t, tds, .3)):
-            txt(c, 'daha sık', 500, 882, 70, CORAL)
-            arrow(c, (700, 896), (700, 820), CORAL, 10, seg(t, tds + .1, tds + .35))
-    if t > u0 - .1:
-        with xf(c, 540, 1040, pop(t, u0 - .1, .35)): hx, hy = bed(c, 540, 1040, .5, 0, False)
-        zzz(c, hx + 16, hy - 24, t, .65)
-    if t > tol:
-        with xf(c, 540, 1192, pop(t, tol, .35), -1.5):
-            box(c, 110, 1140, 970, 1244, r=28, w=8, fill=YEL)
-            txt(c, 'uykuya dalmanın olağan parçası', 540, 1208, 48, INK)
+    a0, a1 = L(12); n0, n1 = L(13)
+    tfa = cap_start(12, 'fareler', a0 + 2.2); tay = cap_start(12, 'ayırt', a1 - 1.6)
+    with xf(c, 540, 420, pop(t, a0 - .1, .3)): pill(c, 'soğuk alıcısı olmayan fare', 540, 420, 44, INK)
+    py = 860
+    with xf(c, 540, py, pop(t, a0, .3)):
+        box(c, 110, py, 530, py + 56, r=14, w=8, fill=WASH_C)
+        box(c, 550, py, 970, py + 56, r=14, w=8, fill=WASH_Y)
+    if t > a0 + .2:
+        with xf(c, 320, py + 116, pop(t, a0 + .2, .3)): pill(c, 'serin', 320, py + 116, 40, TEAL, PAPER)
+        with xf(c, 760, py + 116, pop(t, a0 + .3, .3)): pill(c, 'ılık', 760, py + 116, 40, CORAL, PAPER)
+        flake(c, 180, py + 116, 20, TEAL, 6, rot=t)
+    if t > tfa - .3:
+        w_ = (t - tfa) * 1.5
+        mx = 540 + 250 * math.sin(w_); d = 1 if math.cos(w_) >= 0 else -1
+        with xf(c, mx, py, pop(t, tfa - .3, .3)): mouse(c, mx, py - 4, 1.0, d, t)
+        if t > tay: qmark(c, mx, py - 140, 100, t, CORAL, 1.0, pop(t, tay, .3))
+    if t > tay:
+        with xf(c, 540, 545, pop(t, tay, .35), -1.5):
+            box(c, 170, 494, 910, 596, r=28, w=8, fill=YEL)
+            txt(c, 'ayırt etmekte zorlandı', 540, 563, 54, INK)
+    if t > n0 - .1:
+        p = pop(t, n0 - .1, .35)
+        with xf(c, 250, 1160, p, 6 * math.sin(t * 3)):
+            for sd in (-1, 1): line(c, [(250 + sd * 22, 1110), (250 + sd * 46, 1050)], TEAL, 22, amp=.5)
+            circ(c, 250, 1176, 66, color=INK, w=9, fill=YEL, amp=1, n=14)
+            burst(c, 250, 1176, 20, 38, 8, INK, 5)
+        with xf(c, 660, 1140, pop(t, n0 + .1, .3)):
+            txt(c, 'Nobel Ödülü', 660, 1160, 72, INK)
+            txt(c, '2021', 660, 1236, 60, CORAL)
 
 def scene6(c, t):
     a0, a1 = L(14); d0, d1 = L(15); e0, e1 = L(16)
@@ -655,21 +670,18 @@ def scene6(c, t):
     ground(c, 50, 1030, gy)
     wv = smooth(seg(t, e0 - .1, e0 + .3))
     aha = t > d0 - .1
-    tdu = cap_start(14, 'düşer', a0 + 1.4)
+    tac = cap_start(14, 'acı', a0 + 1.6)
     pose = dict(FRONT, aR=20, eR=150, aL=10, eL=6, tilt=-6 if not aha else 0)
     pose = mix(pose, dict(FRONT, aR=10, eR=6, aL=148, eL=160 + 26 * math.sin(t * 9)), wv)
     me = fig(c, 540, gy, .95, 0, pose, 'confused' if not aha else 'happy')
     hx, hy = me['top']
     if not aha:
-        with xf(c, 235, 800, pop(t, a0, .3)):
-            bx, by = bed(c, 235, 800, .44, 0, False)
-        zzz(c, bx + 10, by - 20, t, .6)
-        if t > tdu:
-            with xf(c, 830, 760, pop(t, tdu, .3)):
-                cloud(c, 830, 760, 150, 118, w=7)
-                c.save(); pth = skia.Path(); pth.addOval(skia.Rect.MakeLTRB(694, 652, 966, 868)); c.clipPath(pth, skia.ClipOp.kIntersect, True)
-                faller(c, 830, 760 + ((t * 1.4) % 1) * 240, .3, t)
-                c.restore()
+        with xf(c, 225, 800, pop(t, a0, .3), 6 * math.sin(t * 2.4)): leaf(c, 225, 800, .62)
+        for k, (x, y) in enumerate(((120, 690), (330, 700))): flake(c, x, y, 22, TEAL, 6, alpha=seg(t, a0 + .1, a0 + .3), rot=t + k)
+        if t > tac:
+            with xf(c, 850, 790, pop(t, tac, .3), -6 * math.sin(t * 2.4)): pepper(c, 850, 790, .6)
+            for k, (x, y) in enumerate(((760, 690), (950, 700))):
+                with xf(c, x, y, pop(t, tac + .1, .25)): flame(c, x, y, .4, t + k)
         if t > a0 + .5: qmark(c, hx - 20, hy - 30, 150, t, CORAL, 1.0, pop(t, a0 + .5, .3))
     if d0 - .05 < t < e0 - .05:
         p = pop(t, d0 - .05, .35)
