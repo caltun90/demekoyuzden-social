@@ -360,9 +360,20 @@
     "baslik": "Soğuk içecek başını neden ağrıtır? Beynin gerçekten donuyor mu?",
     "kaynaklar": [
       "Harvard Health Publishing (Harvard Women's Health Watch), What causes ice cream headache? (çoğu uzmana göre soğuk, damaktaki küçük damarları büzüp ardından hızla genişletir; damar çevresindeki ağrı alıcıları sinyali trigeminal sinirle beyne iletir; baş ağrısı çekmeyenlerin yüzde 30-40'ında görülür; zararsız ve geçici; yavaş yemek önler): https://www.health.harvard.edu/pain/what-causes-ice-cream-headache",
-      "Johns Hopkins Medicine, How to Ease Brain Freeze (yansıyan ağrı: damaktaki değişiklik başta hissedilir): https://www.hopkinsmedicine.org/health/wellness-and-prevention/how-to-ease-brain-freeze",
+      "Johns Hopkins Medicine, How to Ease Brain Freeze (yansıyan ağrı: damaktaki değişiklik başta hissedilir): https://www.hopkinsmedicine.org/health/expert-qa/how-to-ease-brain-freeze",
       "UCLA Health, The physiology of the ice cream headache (mekanizma kesin değil; yeni görüş trigeminal sinirin damaktaki dallarını öne çıkarıyor, kan akışı değişimi de rol oynayabilir): https://www.uclahealth.org/news/article/physiology-ice-cream-headache",
       "Serrador ve ark. (2012), Cerebral Vascular Blood Flow Changes During 'Brain Freeze', Experimental Biology 2012 bildirisi (ağrı sırasında ön beyin atardamarında genişleme; hakemli makale değil, videoda kullanılmadı): https://www.sciencedaily.com/releases/2012/04/120422231742.htm"
+    ]
+  },
+  {
+    "date": "2026-11-21",
+    "slug": "salt-maruz-kalma-etkisi",
+    "konu": "Aynı şarkıyı dinledikçe neden daha çok severiz? Salt maruz kalma etkisi (tanıdık olan daha kolay işlenir ve hoş gelir; fazla tekrar bıktırır, ters U eğrisi)",
+    "baslik": "İlk dinlediğinde sevmediğin şarkıyı sonra neden seversin?",
+    "kaynaklar": [
+      "Zajonc (1968), Attitudinal effects of mere exposure, Journal of Personality and Social Psychology 9(2, Pt.2), 1-27 (anlamsız kelimeler, Çince benzeri işaretler ve yüzler; daha sık gösterilen daha olumlu değerlendirildi): https://en.wikipedia.org/wiki/Mere-exposure_effect",
+      "Montoya, Horton, Vevea, Citkowicz ve Lauber (2017), A re-examination of the mere exposure effect: The influence of repeated exposure on recognition, familiarity, and liking, Psychological Bulletin 143(5), 459-498 (81 makale, 268 eğri; etki ters U biçiminde: beğeni önce artıyor, sonra düşüyor): https://pubmed.ncbi.nlm.nih.gov/28263645/",
+      "Szpunar, Schellenberg ve Pliner (2004), Liking and memory for musical stimuli as a function of exposure, Journal of Experimental Psychology: Learning, Memory, and Cognition 30(2), 370-381 (dikkatle dinlenen müzikte beğeni tekrarla önce artıyor, sonra azalıyor): https://sites.utm.utoronto.ca/sites/sites.utm.utoronto.ca.glenn_website/files/download/Szpunar.pdf"
     ]
   }
 ]
