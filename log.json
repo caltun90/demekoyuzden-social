@@ -387,5 +387,16 @@
       "Morris (1987), ACHOO syndrome: prevalence and inheritance, Cleveland Clinic Journal of Medicine 54(5), 431-433 (iki ailede otozomal baskın kalıtım; trigeminal sinir uyarımı): https://www.ccjm.org/content/54/5/431.full.pdf",
       "Everett (1964), Sneezing in response to light, Neurology 14, 483-490 (ilk sistemli çalışma; optik-trigeminal toplanma varsayımı, kanıtlanmış değil): https://en.wikipedia.org/wiki/Photic_sneeze_reflex"
     ]
+  },
+  {
+    "date": "2026-11-22",
+    "slug": "sol-basamak-etkisi",
+    "konu": "Fiyatlar neden 9,99 ile biter? Sol basamak etkisi (sayıyı soldan sağa okuruz, büyüklüğü ilk rakama göre kestiririz; etki yalnızca soldaki rakam değişince çıkar: 2,99-3,00 farkı büyük algılanır, 3,59-3,60 farkı algılanmaz)",
+    "baslik": "Fiyatlar neden hep 9,99 ile biter?",
+    "kaynaklar": [
+      "Thomas ve Morwitz (2005), Penny Wise and Pound Foolish: The Left-Digit Effect in Price Cognition, Journal of Consumer Research 32(1), 54-64 (beş deney; 9 ile biten fiyat yalnızca en soldaki rakam değiştiğinde daha düşük algılanıyor: 3,00-2,99 evet, 3,60-3,59 hayır; fiyatlar birbirine yakınken etki daha güçlü): https://ideas.repec.org/a/oup/jconrs/v32y2005i1p54-64.html",
+      "NYU Stern, SternBusiness (2005), A Penny Saved (makalenin yazar özeti; sayılar soldan sağa okunup zihinsel büyüklüğe çevrildiği için 2,99, 3,00'dan belirgin biçimde küçük kodlanıyor): https://w4.stern.nyu.edu/sternbusiness/fall_2005/pennySaved.html",
+      "Sokolova, Seenivasan ve Thomas (2020), The Left-Digit Bias: When and Why Are Consumers Penny Wise and Pound Foolish?, Journal of Marketing Research 57(4), 771-788 (etki, iki fiyat yan yana görüldüğünde daha güçlü): https://journals.sagepub.com/doi/10.1177/0022243720932532"
+    ]
   }
 ]
