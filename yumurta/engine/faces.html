@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<title>yumurta-stili — karakter sayfası</title>
+<style>html,body{margin:0;background:#8d86a8} canvas{display:block}</style>
+<script type="importmap">
+{ "imports": { "three": "/engine/node_modules/three/build/three.module.js", "three/addons/": "/engine/node_modules/three/examples/jsm/" } }
+</script>
+</head>
+<body>
+<canvas id="sheet"></canvas>
+<script type="module">
+// Character sheet: every look of a story × every expression, on one page. Check faces here before rendering a video.
+//   /engine/faces.html?story=is-odasi[&zoom=1]   (zoom=1: heads only)   ->  node faces.mjs is-odasi
+import * as THREE from 'three';
+import { Toon } from '/engine/src/toon.js';
+const q = new URLSearchParams(location.search), story = q.get('story') || 'is-odasi', zoom = q.has('zoom');
+const { LOOK } = await import(`/stories/${story}/story.js`);
+const scene = new THREE.Scene();
+const POSES = [
+  { expr: 'neutral' }, { expr: 'smug', look: .7 }, { expr: 'focused', look: -.6, lookY: .6 }, { expr: 'angry', look: .4 },
+  { expr: 'surprised', look: -.3, sweat: 1 }, { expr: 'worried', look: .5 }, { expr: 'smile', look: -.7, armR: [120, 30] },
+  { expr: 'laugh', mouth: .8, laughMarks: .9 }, { expr: 'grin', look: .3 }, { expr: 'neutral', mouth: .7, look: .8, lit: 1, rim: { color: '#ffb050', a: .55 }, shade: '#b9b4dc' },
+  { expr: 'proud', blink: 1 },
+];
+const names = Object.keys(LOOK), cw = zoom ? 300 : 230, chh = zoom ? 300 : 360;
+const c = document.getElementById('sheet'); c.width = cw * POSES.length; c.height = chh * names.length; const g = c.getContext('2d');
+g.fillStyle = '#8d86a8'; g.fillRect(0, 0, c.width, c.height);
+names.forEach((n, r) => {
+  const t = new Toon(LOOK[n], scene);
+  POSES.forEach((p, i) => {
+    t.draw({ armL: [14, 10], armR: [14, 10], ...p });
+    const S = t.c.width / 768;                                   // canvas px per design unit
+    if (zoom) g.drawImage(t.c, 144 * S, 96 * S, 480 * S, 480 * S, i * cw, r * chh, cw, chh);
+    else g.drawImage(t.c, 110 * S, 30 * S, 548 * S, 858 * S, i * cw, r * chh, cw, chh);
+    g.fillStyle = '#fff'; g.font = '600 15px sans-serif'; g.fillText(`${n} · ${p.expr}`, i * cw + 8, r * chh + 18);
+  });
+});
+window.__ready = true;
+</script>
+</body>
+</html>

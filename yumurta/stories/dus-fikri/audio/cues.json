@@ -1,0 +1,52 @@
+{
+ "DUR": 26.933333333333334,
+ "cues": [
+  {
+   "t": 2.098,
+   "type": "whoosh"
+  },
+  {
+   "t": 10.599,
+   "type": "whoosh"
+  },
+  {
+   "t": 22.748,
+   "type": "whoosh"
+  },
+  {
+   "t": 0,
+   "type": "simmer",
+   "dur": 2.248
+  },
+  {
+   "t": 1.295,
+   "type": "shimmer"
+  },
+  {
+   "t": 6.321,
+   "type": "whoosh"
+  },
+  {
+   "t": 3.119,
+   "type": "scrape",
+   "dur": 0.9
+  },
+  {
+   "t": 8.166,
+   "type": "lock"
+  },
+  {
+   "t": 14.119,
+   "type": "shimmer"
+  },
+  {
+   "t": 21.867,
+   "type": "shimmer"
+  },
+  {
+   "t": 22.948,
+   "type": "simmer",
+   "dur": 3.9853333333333323
+  }
+ ]
+}

@@ -1,0 +1,3 @@
+engine/node_modules/
+stories/*/out/
+stories/*/voice/lines/
