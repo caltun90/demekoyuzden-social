@@ -69,11 +69,50 @@ def lines_of(D):
     assert len(S) == len(L), 'say.txt ile script.txt aynı sayıda satır olmalı'
     return L, S
 
+def split_take(x, sr, texts):
+    """Whole take -> one clip per line: cut points chosen among the pauses so that the voiced time before each cut
+    matches the line's share of the letters (dynamic programming, as in voice_google.align)."""
+    total = len(x) / sr; gaps = silences(x, sr, .12)
+    lead = gaps[0][1] if gaps and gaps[0][0] < .05 else 0.0
+    trail = gaps[-1][0] if gaps and gaps[-1][1] > total - .05 else total
+    inner = [g for g in gaps if g[0] > lead + .05 and g[1] < trail - .05]
+    nb = len(texts) - 1
+    if len(inner) < nb: return None
+    mids = np.array([(a + b) / 2 for a, b in inner]); durs = np.array([b - a for a, b in inner])
+    vb = np.array([(g[0] - lead) - sum(d for (a2, b2), d in zip(inner, durs) if b2 <= g[0]) for g in inner])
+    vt = (trail - lead) - durs.sum(); w = np.array([len(t) for t in texts], float)
+    exp = vt * np.cumsum(w)[:-1] / w.sum(); ng = len(inner)
+    cost = np.abs(vb[None, :] - exp[:, None]) - 1.5 * np.minimum(durs, .6)[None, :]
+    INF = 1e9; dp = np.full((nb, ng), INF); ar = np.zeros((nb, ng), int); dp[0] = cost[0]
+    for i in range(1, nb):
+        best, bj = INF, -1
+        for j in range(ng):
+            if j >= 1 and dp[i - 1, j - 1] < best: best, bj = dp[i - 1, j - 1], j - 1
+            if bj >= 0: dp[i, j] = best + cost[i, j]; ar[i, j] = bj
+    j = int(np.argmin(dp[-1])); pick = [j]
+    for i in range(nb - 1, 0, -1): j = ar[i, j]; pick.append(j)
+    cuts = [lead] + [mids[j] for j in pick[::-1]] + [trail]
+    return [x[int(a * sr):int(b * sr)] for a, b in zip(cuts[:-1], cuts[1:])]
+
 def cmd_tts(D, voice):
     model = arg('--model', 'gemini-3.1-flash-tts-preview')
     style = arg('--stil', '' if '3.8' in model else 'Merak uyandıran, samimi ve akıcı bir anlatıcı gibi, metni aynen oku:')
     C = os.path.join(D, 'voice', 'lines'); os.makedirs(C, exist_ok=True)
     L, Sy = lines_of(D)
+    # first run: the script in as few requests as possible (quota: about 10 voice requests a day per key):
+    # blocks of --grup lines (default 20; a Short is one block, a 9 min video 6-8 blocks), each take split into lines.
+    # Later runs (after `check` deleted the bad lines) re-voice only the missing lines, one request each.
+    G = int(arg('--grup', '20'))
+    if model != 'kokoro' and '--satir' not in sys.argv:
+        for a0 in range(0, len(L), G):
+            idx = list(range(a0, min(a0 + G, len(L))))
+            if any(os.path.exists(os.path.join(C, f'{i:02d}.wav')) for i in idx): continue
+            x, sr = synth_gemini('\n'.join(Sy[i] for i in idx), voice, model, style)
+            sf.write(os.path.join(D, 'voice', f'take{a0:03d}.wav'), x, sr)
+            segs = split_take(x, sr, [Sy[i] for i in idx]) if len(idx) > 1 else [x]
+            if not segs: print('blok', a0, 'duraklama yetmedi, satır satır üretilecek'); continue
+            for i, sg in zip(idx, segs): sf.write(os.path.join(C, f'{i:02d}.wav'), sg, sr)
+            print('blok', a0, '-', idx[-1], 'tek istekte bitti', flush=True)
     for i, say in enumerate(Sy):
         f = os.path.join(C, f'{i:02d}.wav')
         if os.path.exists(f): continue

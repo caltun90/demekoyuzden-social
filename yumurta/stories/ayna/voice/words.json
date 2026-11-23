@@ -1,0 +1,470 @@
+{
+"words": [
+{
+"word": "Koca",
+"start": 0.036,
+"end": 0.31
+},
+{
+"word": "bir",
+"start": 0.31,
+"end": 0.47
+},
+{
+"word": "apartmanı",
+"start": 0.47,
+"end": 0.972
+},
+{
+"word": "tek",
+"start": 0.972,
+"end": 1.131
+},
+{
+"word": "bir",
+"start": 1.131,
+"end": 1.291
+},
+{
+"word": "ayna",
+"start": 1.291,
+"end": 1.565
+},
+{
+"word": "kurtardı.",
+"start": 1.565,
+"end": 1.953
+},
+{
+"word": "Bakın,",
+"start": 2.141,
+"end": 2.359
+},
+{
+"word": "binanın",
+"start": 2.692,
+"end": 3.106
+},
+{
+"word": "asansörü",
+"start": 3.106,
+"end": 3.641
+},
+{
+"word": "çok",
+"start": 3.641,
+"end": 3.812
+},
+{
+"word": "yavaştı",
+"start": 3.812,
+"end": 4.226
+},
+{
+"word": "ve",
+"start": 4.226,
+"end": 4.396
+},
+{
+"word": "kiracılar",
+"start": 4.396,
+"end": 4.932
+},
+{
+"word": "her",
+"start": 4.932,
+"end": 5.102
+},
+{
+"word": "gün",
+"start": 5.102,
+"end": 5.273
+},
+{
+"word": "şikâyet",
+"start": 5.273,
+"end": 5.687
+},
+{
+"word": "ediyordu.",
+"start": 5.687,
+"end": 6.222
+},
+{
+"word": "Yönetici",
+"start": 6.411,
+"end": 6.915
+},
+{
+"word": "Max",
+"start": 6.915,
+"end": 7.076
+},
+{
+"word": "mühendisleri",
+"start": 7.076,
+"end": 7.695
+},
+{
+"word": "çağırdı:",
+"start": 7.695,
+"end": 8.085
+},
+{
+"word": "yeni",
+"start": 8.433,
+"end": 8.698
+},
+{
+"word": "bir",
+"start": 8.698,
+"end": 8.853
+},
+{
+"word": "asansör,",
+"start": 8.853,
+"end": 9.23
+},
+{
+"word": "aylarca",
+"start": 9.49,
+"end": 9.916
+},
+{
+"word": "sürecek",
+"start": 9.916,
+"end": 10.341
+},
+{
+"word": "bir",
+"start": 10.341,
+"end": 10.516
+},
+{
+"word": "iş",
+"start": 10.516,
+"end": 10.692
+},
+{
+"word": "ve",
+"start": 10.692,
+"end": 10.867
+},
+{
+"word": "dev",
+"start": 10.867,
+"end": 11.042
+},
+{
+"word": "bir",
+"start": 11.042,
+"end": 11.217
+},
+{
+"word": "fatura.",
+"start": 11.217,
+"end": 11.642
+},
+{
+"word": "Kapıcı",
+"start": 11.831,
+"end": 12.231
+},
+{
+"word": "Sam",
+"start": 12.231,
+"end": 12.396
+},
+{
+"word": "ise",
+"start": 12.396,
+"end": 12.679
+},
+{
+"word": "sadece",
+"start": 12.679,
+"end": 13.079
+},
+{
+"word": "bir",
+"start": 13.079,
+"end": 13.244
+},
+{
+"word": "ayna",
+"start": 13.244,
+"end": 13.527
+},
+{
+"word": "istedi.",
+"start": 13.527,
+"end": 13.927
+},
+{
+"word": "Herkes",
+"start": 14.116,
+"end": 14.456
+},
+{
+"word": "güldü:",
+"start": 14.456,
+"end": 14.797
+},
+{
+"word": "\"Ayna",
+"start": 15.261,
+"end": 15.526
+},
+{
+"word": "asansörü",
+"start": 15.526,
+"end": 16.011
+},
+{
+"word": "hızlandıracak",
+"start": 16.011,
+"end": 16.607
+},
+{
+"word": "mı?\"",
+"start": 16.607,
+"end": 16.761
+},
+{
+"word": "Sam,",
+"start": 16.95,
+"end": 17.254
+},
+{
+"word": "asansörün",
+"start": 17.355,
+"end": 17.837
+},
+{
+"word": "kapısının",
+"start": 17.837,
+"end": 18.319
+},
+{
+"word": "yanına",
+"start": 18.319,
+"end": 18.691
+},
+{
+"word": "boydan",
+"start": 18.691,
+"end": 18.954
+},
+{
+"word": "boya",
+"start": 18.954,
+"end": 19.216
+},
+{
+"word": "bir",
+"start": 19.216,
+"end": 19.37
+},
+{
+"word": "ayna",
+"start": 19.37,
+"end": 19.632
+},
+{
+"word": "astı.",
+"start": 19.632,
+"end": 19.895
+},
+{
+"word": "Ertesi",
+"start": 20.084,
+"end": 20.526
+},
+{
+"word": "hafta",
+"start": 20.526,
+"end": 20.838
+},
+{
+"word": "şikâyetler",
+"start": 20.838,
+"end": 21.41
+},
+{
+"word": "neredeyse",
+"start": 21.41,
+"end": 21.982
+},
+{
+"word": "bitti.",
+"start": 21.982,
+"end": 22.294
+},
+{
+"word": "Asansör",
+"start": 22.483,
+"end": 22.906
+},
+{
+"word": "aynı",
+"start": 22.906,
+"end": 23.204
+},
+{
+"word": "hızdaydı,",
+"start": 23.204,
+"end": 23.628
+},
+{
+"word": "ama",
+"start": 23.888,
+"end": 24.164
+},
+{
+"word": "insanlar",
+"start": 24.164,
+"end": 24.553
+},
+{
+"word": "beklerken",
+"start": 24.553,
+"end": 24.943
+},
+{
+"word": "saçını",
+"start": 24.943,
+"end": 25.333
+},
+{
+"word": "düzeltiyor,",
+"start": 25.333,
+"end": 25.838
+},
+{
+"word": "kıyafetine",
+"start": 25.99,
+"end": 26.448
+},
+{
+"word": "bakıyordu.",
+"start": 26.448,
+"end": 26.822
+},
+{
+"word": "Çünkü",
+"start": 27.01,
+"end": 27.274
+},
+{
+"word": "yapacak",
+"start": 27.274,
+"end": 27.648
+},
+{
+"word": "bir",
+"start": 27.648,
+"end": 27.802
+},
+{
+"word": "şey",
+"start": 27.802,
+"end": 27.955
+},
+{
+"word": "olunca,",
+"start": 27.955,
+"end": 28.329
+},
+{
+"word": "beklemek",
+"start": 28.568,
+"end": 28.899
+},
+{
+"word": "daha",
+"start": 28.899,
+"end": 29.133
+},
+{
+"word": "kısa",
+"start": 29.133,
+"end": 29.367
+},
+{
+"word": "geliyor.",
+"start": 29.367,
+"end": 29.698
+},
+{
+"word": "Tıpkı",
+"start": 29.887,
+"end": 30.173
+},
+{
+"word": "sohbet",
+"start": 30.173,
+"end": 30.46
+},
+{
+"word": "ederken",
+"start": 30.46,
+"end": 30.866
+},
+{
+"word": "yolun",
+"start": 30.866,
+"end": 31.153
+},
+{
+"word": "kısalması",
+"start": 31.153,
+"end": 31.678
+},
+{
+"word": "gibi.",
+"start": 31.678,
+"end": 31.965
+},
+{
+"word": "Yani",
+"start": 32.154,
+"end": 32.508
+},
+{
+"word": "bazen",
+"start": 32.508,
+"end": 32.862
+},
+{
+"word": "sorunu",
+"start": 32.862,
+"end": 33.364
+},
+{
+"word": "değil,",
+"start": 33.364,
+"end": 33.719
+},
+{
+"word": "beklerken",
+"start": 34.059,
+"end": 34.457
+},
+{
+"word": "hissettiğini",
+"start": 34.457,
+"end": 35.089
+},
+{
+"word": "değiştirmek",
+"start": 35.089,
+"end": 35.604
+},
+{
+"word": "yeter.",
+"start": 35.604,
+"end": 35.884
+}
+],
+"duration": 36.073
+}

@@ -1,3 +1,7 @@
 engine/node_modules/
 stories/*/out/
 stories/*/voice/lines/
+stories/*/voice/take*.wav
+# kökteki "voice/" kuralı hikâye seslerini de dışlıyor: render için gereken metin dosyaları depoya girsin
+!stories/*/voice/
+stories/*/voice/*.wav
