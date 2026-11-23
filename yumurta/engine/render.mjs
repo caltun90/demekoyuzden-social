@@ -24,7 +24,7 @@ page.on('pageerror', e => console.log('PAGEERROR', e.message));
 page.on('console', m => { if (m.type() === 'error' || m.type() === 'warning') console.log('CONSOLE', m.text()); });
 await page.setViewport({ width: 540, height: 960 });
 await page.goto(`http://127.0.0.1:${port}/engine/index.html?story=${story}&capture=1&scale=${scale}`, { waitUntil: 'load' });
-await page.waitForFunction(() => window.__ready, { timeout: 120000 });
+await page.waitForFunction(() => window.__ready, { timeout: +(process.env.READY_TIMEOUT || 300000) });
 const meta = await page.evaluate(() => window.__meta);
 fs.mkdirSync(path.join(SD, 'audio'), { recursive: true });
 fs.writeFileSync(path.join(SD, 'audio', 'cues.json'), JSON.stringify({ DUR: meta.DUR, cues: meta.CUES }, null, 1));

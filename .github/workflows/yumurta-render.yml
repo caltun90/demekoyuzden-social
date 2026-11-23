@@ -46,10 +46,10 @@ jobs:
       - name: parçayı render et
         env:
           CHROME_PATH: /usr/bin/google-chrome
-          CHROME_ARGS: --enable-unsafe-swiftshader
+          CHROME_ARGS: --use-angle=vulkan --enable-features=Vulkan --enable-unsafe-swiftshader
         run: |
           cd yumurta/engine
-          node render.mjs "${{ inputs.story }}" --cues > /dev/null
+          node render.mjs "${{ inputs.story }}" --cues 2>&1 | grep -v "404 (Not Found)" | tail -20
           DUR=$(python3 -c "import json;print(json.load(open('../stories/${{ inputs.story }}/audio/cues.json'))['DUR'])")
           read FROM TO < <(python3 -c "d=$DUR;n=${{ inputs.parts }};i=${{ matrix.part }};f=30;N=round(d*f);a=N*i//n;b=N*(i+1)//n;print(a/f,b/f)")
           echo "parça ${{ matrix.part }}: $FROM - $TO sn"
