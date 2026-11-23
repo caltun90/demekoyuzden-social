@@ -410,5 +410,16 @@
       "Johns Hopkins Medicine, Cubital Tunnel Syndrome (ulnar sinir dirsekte yüzeye yakın; uyuşma ve karıncalanma yüzük ve serçe parmakta): https://www.hopkinsmedicine.org/health/conditions-and-diseases/cubital-tunnel-syndrome",
       "Houston Methodist, Why Does Hitting Your Funny Bone Hurt So Much? (sinir kemikle çarpılan yüzey arasında sıkışır; his genelde kısa sürer ve kendiliğinden geçer): https://www.houstonmethodist.org/blog/articles/2021/feb/why-does-hitting-your-funny-bone-hurt-so-much/"
     ]
+  },
+  {
+    "date": "2026-11-23",
+    "slug": "seri-konum-etkisi",
+    "konu": "Listenin ortasını neden unuturuz? Seri konum etkisi (listenin başı ve sonu hatırlanır, ortası unutulur; klasik açıklama: baştakiler tekrar edilip kalıcı belleğe geçer, sondakiler hâlâ kısa süreli bellektedir; araya başka iş girince sondakilerin üstünlüğü kaybolur)",
+    "baslik": "Alışveriş listesinin ortasını neden hep unutursun?",
+    "kaynaklar": [
+      "Murdock (1962), The serial position effect of free recall, Journal of Experimental Psychology 64(5), 482-488 (farklı uzunlukta kelime listeleri; hatırlama olasılığı kelimenin listedeki sırasına bağlı, baş ve son yüksek, orta düşük): https://doi.org/10.1037/h0045351",
+      "Glanzer ve Cunitz (1966), Two storage mechanisms in free recall, Journal of Verbal Learning and Verbal Behavior 5(4), 351-360 (hatırlamadan önce araya sayı sayma görevi girince sondakilerin üstünlüğü azalıyor ya da kayboluyor, baştakiler etkilenmiyor; iki ayrı depo yorumu): https://doi.org/10.1016/S0022-5371(66)80044-0",
+      "Simply Psychology, Serial Position Effect (iki çalışmanın özeti; ilklik etkisi tekrar ve uzun süreli bellekle, sonluk etkisi kısa süreli bellekle açıklanır; başka açıklamalar da var): https://www.simplypsychology.org/primacy-recency.html"
+    ]
   }
 ]
