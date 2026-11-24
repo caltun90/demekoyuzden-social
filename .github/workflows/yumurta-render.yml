@@ -68,6 +68,7 @@ jobs:
   join:
     needs: render
     runs-on: ubuntu-latest
+    permissions: { contents: write }
     steps:
       - uses: actions/checkout@v4
         with:
@@ -93,3 +94,10 @@ jobs:
           name: final
           path: final/*.mp4
           retention-days: 7
+      - name: render/<hikâye> dalına koy (bulut oturumu artifact indiremez, videoyu git ile alır)
+        run: |
+          S="${{ inputs.story }}"
+          mkdir -p /tmp/r && cd /tmp/r && git init -q && cp "$GITHUB_WORKSPACE/final/$S.mp4" . && git add "$S.mp4"
+          git -c user.name=yumurta-render -c user.email=actions@users.noreply.github.com commit -q -m "render $S (${{ github.run_id }})"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" HEAD:refs/heads/render/$S
+          echo "dal: render/$S"
