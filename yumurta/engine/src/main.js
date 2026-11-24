@@ -52,6 +52,8 @@ window.render = (t) => {
   if (!q.has('nocap') && look.captions !== false) drawCaption(g, groups, t, W, H, LAND ? { y: .86 } : {});
   if (story.overlay) story.overlay(g, t, ctx);
 };
+// render cost of one frame (sub-frames of motion blur), used by render.mjs --split to balance parallel parts
+window.__cost = (t) => { const l = story.frame(t, ctx) || {}; return l.blur ? Math.max(2, Math.round(l.blur)) : 1; };
 window.__meta = { DUR: story.DUR, FPS: story.FPS || 30, NAME: story.NAME || STORY, W, H, CUES: story.CUES || [] };
 window.__ready = true;
 if (!q.has('capture')) { const t0 = performance.now(); const loop = () => { window.render(((performance.now() - t0) / 1000) % story.DUR); requestAnimationFrame(loop); }; loop(); }

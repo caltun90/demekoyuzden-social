@@ -48,6 +48,14 @@ if (args.stills) {
   const filt = files.length === 1 ? `[0:v]scale=${TW}:${TH}` : `${scaleF};${files.map((_, i) => `[v${i}]`).join('')}xstack=inputs=${files.length}:layout=${lay}:fill=black`;
   execFileSync('ffmpeg', ['-y', '-loglevel', 'error', ...inputs, '-filter_complex', filt, '-q:v', '3', sheet]);
   console.log('sheet', sheet);
+} else if (args.split) {
+  // print "FROM TO" (seconds) of part --part out of --split, cut so that every part has about the same render cost
+  const n = +args.split, k = +(args.part || 0), FPS = meta.FPS, N = Math.round(meta.DUR * FPS);
+  const cost = await page.evaluate((N, FPS) => { const c = []; for (let i = 0; i < N; i++) c.push(window.__cost(i / FPS)); return c; }, N, FPS);
+  const tot = cost.reduce((a, b) => a + b, 0), cut = [0]; let acc = 0, j = 1;
+  for (let i = 0; i < N && j < n; i++) { acc += cost[i]; if (acc >= tot * j / n) { cut.push(i + 1); j++; } }
+  while (cut.length < n) cut.push(N); cut.push(N);
+  console.log('SPLIT', (cut[k] / FPS).toFixed(4), (cut[k + 1] / FPS).toFixed(4), 'cost', cost.slice(cut[k], cut[k + 1]).reduce((a, b) => a + b, 0), 'of', tot);
 } else {
   const FPS = meta.FPS, from = +(args.from || 0), to = +(args.to || meta.DUR), N = Math.round((to - from) * FPS);
   const name = args.name || meta.NAME + (scale !== 1 ? `_x${scale}` : '');
@@ -64,7 +72,7 @@ if (args.stills) {
   console.log(`\n${N} frames in ${((Date.now() - t1) / 1000).toFixed(1)} s`);
   const mix = path.join(SD, 'audio', 'mix.wav');
   const final = path.join(OUT, name + '.mp4');
-  if (fs.existsSync(mix)) {
+  if (fs.existsSync(mix) && !process.env.NO_MUX) {
     execFileSync('ffmpeg', ['-y', '-loglevel', 'error', '-i', silent, '-ss', String(from), '-t', String(to - from), '-i', mix, '-map', '0:v:0', '-map', '1:a:0', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '256k', '-shortest', final]);
     fs.unlinkSync(silent);
   } else fs.renameSync(silent, final);

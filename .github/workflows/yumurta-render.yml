@@ -44,20 +44,26 @@ jobs:
           sudo apt-get update -qq && sudo apt-get install -y -qq mesa-vulkan-drivers ffmpeg fonts-noto-core > /dev/null
           cd yumurta/engine && npm ci --ignore-scripts --no-audit --no-fund
       - name: parçayı render et
+        shell: bash
         env:
           CHROME_PATH: /usr/bin/google-chrome
           CHROME_ARGS: --use-angle=vulkan --enable-features=Vulkan --enable-unsafe-swiftshader
+          NO_MUX: '1'
         run: |
           cd yumurta/engine
-          node render.mjs "${{ inputs.story }}" --cues 2>&1 | grep -v "404 (Not Found)" | tail -20
-          DUR=$(python3 -c "import json;print(json.load(open('../stories/${{ inputs.story }}/audio/cues.json'))['DUR'])")
-          read FROM TO < <(python3 -c "d=$DUR;n=${{ inputs.parts }};i=${{ matrix.part }};f=30;N=round(d*f);a=N*i//n;b=N*(i+1)//n;print(a/f,b/f)")
-          echo "parça ${{ matrix.part }}: $FROM - $TO sn"
-          node render.mjs "${{ inputs.story }}" --from=$FROM --to=$TO --scale=${{ inputs.scale }} --crf=${{ inputs.crf }} --name=part_$(printf %03d ${{ matrix.part }})
+          S="${{ inputs.story }}"; P=${{ matrix.part }}; NAME=part_$(printf %03d $P)
+          # parçalar kare sayısına göre değil render maliyetine göre (hareket bulanıklığı kareleri pahalı) eşit bölünür
+          OUT=$(node render.mjs "$S" --split=${{ inputs.parts }} --part=$P 2>&1) || { echo "$OUT" | grep -v "404 (Not Found)" | tail -30; exit 1; }
+          read -r _ FROM TO _ <<< "$(echo "$OUT" | grep '^SPLIT')"
+          [ -n "$FROM" ] || { echo "$OUT" | grep -v "404 (Not Found)" | tail -30; exit 1; }
+          echo "parça $P: $FROM - $TO sn"
+          node render.mjs "$S" --from=$FROM --to=$TO --scale=${{ inputs.scale }} --crf=${{ inputs.crf }} --name=$NAME 2>&1 | grep -v "404 (Not Found)"
+          test -s "../stories/$S/out/$NAME.mp4"
       - uses: actions/upload-artifact@v4
         with:
           name: part-${{ matrix.part }}
-          path: yumurta/stories/${{ inputs.story }}/out/part_*_video.mp4
+          path: yumurta/stories/${{ inputs.story }}/out/part_*.mp4
+          if-no-files-found: error
           retention-days: 2
   join:
     needs: render
@@ -71,8 +77,7 @@ jobs:
       - name: birleştir ve sesi ekle
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg > /dev/null
-          ls parts | sort > /dev/null
-          for f in $(ls parts/part_*_video.mp4 | sort); do echo "file '$PWD/$f'" >> list.txt; done
+          for f in $(ls parts/part_*.mp4 | sort); do echo "file '$PWD/$f'" >> list.txt; done
           cat list.txt
           ffmpeg -y -loglevel error -f concat -safe 0 -i list.txt -c copy silent.mp4
           MIX=yumurta/stories/${{ inputs.story }}/audio/mix.wav
