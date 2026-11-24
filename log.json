@@ -454,5 +454,16 @@
       "Washington State University, Ask Dr. Universe (2021), Why do we get goosebumps? (kürklü hayvanlarda kabaran tüyler deriyle kürk arasına hava hapseder, yalıtım yapar; insanda vücut kılı azaldığı için ısıtmaz): https://askdruniverse.wsu.edu/2021/03/09/why-do-we-get-goosebumps/",
       "Live Science, Why do we get goosebumps? (arrector pili kasları, sempatik sinir sistemi, kürklü atalardan kalan tepki): https://www.livescience.com/32349-what-causes-goose-bumps.html"
     ]
+  },
+  {
+    "date": "2026-11-24",
+    "slug": "capa-etkisi",
+    "konu": "İlk duyduğumuz fiyat neden aklımıza takılır? Çapa etkisi (ilk verilen sayı sonraki tahmini kendine çeker; çarkıfelek 10 ya da 65'te durduruldu, sonra Afrika ülkelerinin BM'deki payı soruldu: ortanca tahmin 10 görenlerde yüzde 25, 65 görenlerde yüzde 45; pazarlıkta ilk söylenen fiyat çoğu zaman sonucu kendine çeker). Yumurta stili.",
+    "baslik": "İlk duyduğun fiyat neden aklına takılır?",
+    "kaynaklar": [
+      "Tversky ve Kahneman (1974), Judgment under Uncertainty: Heuristics and Biases, Science 185(4157), 1124-1131 (çarkıfelek 10 ya da 65'te duracak biçimde ayarlıydı; Afrika ülkelerinin BM'deki yüzdesi için ortanca tahmin 25 ve 45): https://www.science.org/doi/10.1126/science.185.4157.1124",
+      "Klein ve ark. (2014), Investigating Variation in Replicability: A Many Labs Replication Project, Social Psychology 45(3), 142-152 (çapalama etkisi 36 örneklemde güçlü biçimde tekrarlandı): https://doi.org/10.1027/1864-9335/a000178",
+      "Galinsky ve Mussweiler (2001), First offers as anchors: the role of perspective-taking and negotiator focus, Journal of Personality and Social Psychology 81(4), 657-669 (pazarlıkta ilk teklif sonucu kendine çeker): https://doi.org/10.1037/0022-3514.81.4.657"
+    ]
   }
 ]
