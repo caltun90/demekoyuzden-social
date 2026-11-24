@@ -47,7 +47,7 @@ Motorun orijinal örneği ve ayrıntılı stil kuralları: `SKILL_KAYNAK.md` (İ
    # 100 MB üstü video parça parça gelir: git ls-tree --name-only FETCH_HEAD ; her <ad>.mp4.partNN dosyasını sırayla git show ile al, cat ile birleştir.
    # Dal her render'da üzerine yazılır: aynı dalı kullanan iki render'ı aynı anda başlatma; aldığın dosyanın adının hikâyenin adı olduğunu kontrol et.
    ```
-   (`gh workflow run` çalışmaz, GraphQL kapalı; yukarıdaki REST çağrılarını kullan.) Parça sayısı: Short 8, 3-5 dk video 16, 7-10 dk video 20. Bir parça kare başına 2-6 sn sürer; kamera geçişlerindeki hareket bulanıklığı o kareleri 12 kat pahalı yapar. 30 dakikada bir durumu kontrol et; başarısız parça varsa `gh api repos/<owner>/<repo>/actions/jobs/<job_id>/logs` ile hatayı oku, düzelt, yeniden tetikle.
+   (`gh workflow run` çalışmaz, GraphQL kapalı; yukarıdaki REST çağrılarını kullan.) Parça sayısı: Short 8, 3-5 dk video 16, 7-10 dk video 20. Parçalar render maliyetine göre eşit bölünür; ölçülen süre: 27-36 sn'lik Short 6-8 dakikada biter. 1-2 dakikada bir durumu kontrol et. Bir parça başarısız olursa (çoğunlukla Chrome geç açılır) önce yalnızca başarısızları yeniden çalıştır: `gh api -X POST repos/<owner>/<repo>/actions/runs/<run_id>/rerun-failed-jobs`. Yine olmazsa `gh api repos/<owner>/<repo>/actions/jobs/<job_id>/logs` ile hatayı oku, düzelt, yeniden tetikle.
 8. **Son kontrol:** bitmiş dosyadan 0,0 / 0,5 / 1,0 / 1,9 sn ve her plandan bir kare (ffmpeg ile) çıkar, Read ile aç; süre ve ses (`ebur128`, yaklaşık -14 LUFS) kontrol et. Sonra kanalın `KIT.md` paylaşım adımları.
 
 ## 2. Görünüm kuralları (kontrol listesi)
