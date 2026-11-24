@@ -18,6 +18,13 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 - Kanca yazısı: ilk 2 saniye kuralındaki "en fazla 5 kelimelik dev kanca yazısı" `yumurta/lib/kanca.js` ile çizilir
   (`export function overlay(g, t, ctx) { kancaYazisi(g, t, ctx.W, ctx.H, 'KISA SORU?'); }`). Seri etiketi
   ("1 DAKİKADA PSİKOLOJİ") ve video boyu duran `HOOK` satırı bu stilde YOK.
+- KAPAK GÜVENLİ ALANI (Cem, 24 Kasım 2026: "Kapak fotoğrafı tam görünmüyor. Bundan sonrakileri sığacak şekilde ayarla").
+  Instagram ve TikTok profil ızgarası dikey kapağın yalnızca ortadaki 3:4 bölümünü gösterir: üstten ve alttan yüzde 12,5
+  kesilir. İlk karede (kapak) kanca yazısının tamamı, yüz ve ana nesne ekran yüksekliğinin yüzde 15-85 aralığında durur.
+  `kanca.js` yazıyı artık yüzde 20'den başlatır (iki satır yaklaşık yüzde 17-29); `y` değerini 0,18'in altına indirme.
+  İlk karedeki kafa, şapka ve kartlar yüzde 30'un altında başlasın ki yazıyla üst üste binmesin; gerekirse açılış
+  planında kamerayı biraz geri çek. Kare kontrolünde ilk kareyi 3:4'e kırpıp ayrıca aç:
+  `ffmpeg -i kare.png -vf "crop=iw:iw*4/3" kapak.png`. Yazı kesiliyorsa ya da yüze biniyorsa düzelt, sonra render'a gönder.
 - Ses: Achird, `gemini-3.1-flash-tts-preview`, `ses.py tts` (senaryo tek istekte okunur, satırlara bölünür),
   `ses.py check` (sorunlu satır yeniden üretilir), `ses.py build --tempo 1.2-1.3 --kanca 1.1`. Günlük ses kotası
   10 istek: iki Short için yeter; gereksiz tekrar yapma.

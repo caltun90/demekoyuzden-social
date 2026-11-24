@@ -209,7 +209,8 @@ export const LOOK = {
 // ---------------------------------------------------------------- CAMERA
 const SHOT = {
   seller: { pos: [SAT.x - .25, 1.55, SAT.z + 2.3], look: [SAT.x - .22, 1.5, SAT.z], fov: 44 },
-  heroTag: { pos: [HERO.x + .22, 1.42, HERO.z + 2.2], look: [HERO.x + .2, 1.38, HERO.z], fov: 44 },
+  sellerHook: { pos: [SAT.x - .15, 1.6, SAT.z + 2.7], look: [SAT.x - .12, 1.564, SAT.z], fov: 44 },      // cover: everything inside the middle 3:4
+  heroTag: { pos: [HERO.x + .22, 1.52, HERO.z + 2.6], look: [HERO.x + .2, 1.485, HERO.z], fov: 44 },
   two: { pos: [.05, 1.5, 2.95], look: [.05, 1.45, -.82], fov: 46 },
   heroCloud: { pos: [HERO.x + .8, 1.56, HERO.z + 2.42], look: [HERO.x + .1, 1.56, HERO.z], fov: 43 },
   b1: { pos: [200.1, 1.6, 2.35], look: [200.1, 1.6, -1.5], fov: 44 },
@@ -221,7 +222,7 @@ function cameraPath() {
   const t = W;
   const keys = [
     // hook: the seller and his first price -> the hero, the price hooked on him -> the stall
-    { t: 0, ...SHOT.seller, creep: .32, drift: .03 },
+    { t: 0, ...SHOT.sellerHook, creep: .2, drift: .02 },
     { t: t('neden') + .14, dur: .24, move: 'whip', ...SHOT.heroTag, creep: .3, drift: .02 },
     { t: t('Bakın,') + .14, dur: .3, move: 'whip', ...SHOT.two, creep: .16, drift: 0 },
     { t: t('Sonra') + .25, dur: .3, move: 'whip', ...SHOT.seller, creep: .28, drift: .02 },
@@ -365,7 +366,7 @@ export function frame(t, ctx) {
     if (L10) { const hd = H.hand(1); dyn.jacket.position.copy(hd).addScaledVector(UP, -.2).addScaledVector(RT, .04); dyn.jacket.position.z += .03; dyn.jacket.scale.setScalar(.72); dyn.jacket.rotation.z = Math.sin(t * 3) * .04; }
     else { dyn.jacket.position.copy(JKT); dyn.jacket.scale.setScalar(1); }
     // ---- the prices
-    if (hook1) { popCard(dyn.b3, -.3, t, V(SAT.x - .5, 1.63, SAT.z + .05), 1 + .05 * Math.sin(t * 12)); }
+    if (hook1) { popCard(dyn.b3, -.3, t, V(SAT.x - .46, 1.63, SAT.z + .05), 1 + .05 * Math.sin(t * 12)); }
     if (hook2) { popCard(dyn.b3, W('neden') + .1, t, V(HERO.x + .47, 1.74, HERO.z + .05), .72); dropCard(dyn.anchor, A('takılır?'), t, V(HERO.x + .47, 1.42, HERO.z + .06), .82, .9); }
     if (L2) popCard(dyn.b3, A('"Üç') - .02, t, V(.05, 2.4, -1.0), 1.15);
     if (L3) { dyn.b3.visible = true; dyn.b3.position.set(SAT.x - .5, 1.98, SAT.z + .05); dyn.b3.scale.setScalar(.85); popCard(dyn.strike, A('"Ama'), t, V(SAT.x - .5, 1.98, SAT.z + .06), .85, false); popCard(dyn.b2, A('iki'), t, V(SAT.x - .52, 1.5, SAT.z + .05), 1.05); }
