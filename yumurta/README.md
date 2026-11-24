@@ -41,9 +41,11 @@ Motorun orijinal örneği ve ayrıntılı stil kuralları: `SKILL_KAYNAK.md` (İ
    ```bash
    gh api -X POST repos/<owner>/<repo>/actions/workflows/yumurta-render.yml/dispatches -f ref=main -f 'inputs[story]=<ad>' -f 'inputs[parts]=<N>'
    gh api "repos/<owner>/<repo>/actions/runs?per_page=5" --jq '.workflow_runs[] | [.id,.status,.conclusion,.display_title] | @tsv'
-   # bittiğinde video render/<ad> dalında durur (artifact indirme bulut oturumunda engelli, git ile al):
-   git fetch -q --depth 1 origin render/<ad> && git show FETCH_HEAD:<ad>.mp4 > /tmp/<ad>.mp4
-   git push -q origin --delete render/<ad>                # videoyu videos/ altına koyduktan sonra dalı sil
+   # bittiğinde video "dal" girdisindeki dalda durur (varsayılan render/short; uzun video için -f 'inputs[dal]=render/uzun').
+   # Artifact indirme bulut oturumunda engelli, videoyu git ile al:
+   git fetch -q --depth 1 origin render/short && git show FETCH_HEAD:<ad>.mp4 > /tmp/<ad>.mp4
+   # 100 MB üstü video parça parça gelir: git ls-tree --name-only FETCH_HEAD ; her <ad>.mp4.partNN dosyasını sırayla git show ile al, cat ile birleştir.
+   # Dal her render'da üzerine yazılır: aynı dalı kullanan iki render'ı aynı anda başlatma; aldığın dosyanın adının hikâyenin adı olduğunu kontrol et.
    ```
    (`gh workflow run` çalışmaz, GraphQL kapalı; yukarıdaki REST çağrılarını kullan.) Parça sayısı: Short 8, 3-5 dk video 16, 7-10 dk video 20. Bir parça kare başına 2-6 sn sürer; kamera geçişlerindeki hareket bulanıklığı o kareleri 12 kat pahalı yapar. 30 dakikada bir durumu kontrol et; başarısız parça varsa `gh api repos/<owner>/<repo>/actions/jobs/<job_id>/logs` ile hatayı oku, düzelt, yeniden tetikle.
 8. **Son kontrol:** bitmiş dosyadan 0,0 / 0,5 / 1,0 / 1,9 sn ve her plandan bir kare (ffmpeg ile) çıkar, Read ile aç; süre ve ses (`ebur128`, yaklaşık -14 LUFS) kontrol et. Sonra kanalın `KIT.md` paylaşım adımları.

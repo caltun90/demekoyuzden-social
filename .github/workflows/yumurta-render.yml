@@ -1,6 +1,8 @@
 # Yumurta stili videoyu parçalara bölüp aynı anda birçok makinede render eder, birleştirir, sesi ekler.
-# Tetikleme: gh workflow run yumurta-render.yml -f story=<yumurta/stories altındaki klasör> [-f parts=8] [-f scale=1]
-# Çıktı: "final" adlı artifact içinde <story>.mp4 (indir: gh run download <run_id> -n final -D <klasör>)
+# Tetikleme (REST; gh workflow run çalışmaz): gh api -X POST repos/<owner>/<repo>/actions/workflows/yumurta-render.yml/dispatches
+#   -f ref=main -f 'inputs[story]=<yumurta/stories altındaki klasör>' [-f 'inputs[parts]=8'] [-f 'inputs[dal]=render/short']
+# Çıktı: <dal> dalında tek commit, içinde <story>.mp4 (100 MB üstüyse <story>.mp4.part00, part01...). Dal her seferinde
+# üzerine yazılır; aynı dalı kullanan iki render aynı anda çalıştırılmaz. Ayrıca 7 gün duran "final" artifact.
 # Önce görev, hikâyenin klasörünü (story.js, voice/, audio/mix.wav) main'e push etmiş olmalı.
 name: yumurta-render
 run-name: render ${{ inputs.story }} (${{ inputs.parts }} parça)
@@ -11,6 +13,7 @@ on:
       parts: { description: 'paralel parça sayısı (Short 6-10, uzun video 20)', required: false, default: '8' }
       scale: { description: 'çözünürlük çarpanı (1 = tam)', required: false, default: '1' }
       crf: { description: 'x264 kalite (düşük = daha iyi)', required: false, default: '18' }
+      dal: { description: 'bitmiş videonun konacağı dal (her seferinde üzerine yazılır)', required: false, default: 'render/short' }
 permissions:
   contents: read
 concurrency:
@@ -94,10 +97,13 @@ jobs:
           name: final
           path: final/*.mp4
           retention-days: 7
-      - name: render/<hikâye> dalına koy (bulut oturumu artifact indiremez, videoyu git ile alır)
+      - name: teslim dalına koy (bulut oturumu artifact indiremez, videoyu git ile alır)
         run: |
-          S="${{ inputs.story }}"
-          mkdir -p /tmp/r && cd /tmp/r && git init -q && cp "$GITHUB_WORKSPACE/final/$S.mp4" . && git add "$S.mp4"
+          S="${{ inputs.story }}"; B="${{ inputs.dal }}"
+          mkdir -p /tmp/r && cd /tmp/r && git init -q && cp "$GITHUB_WORKSPACE/final/$S.mp4" .
+          # GitHub 100 MB üstü dosya kabul etmez: büyük video (uzun video) 95 MB'lık parçalara bölünür, oturum cat ile birleştirir
+          if [ $(stat -c %s "$S.mp4") -gt 99000000 ]; then split -b 95m -d -a 2 "$S.mp4" "$S.mp4.part"; rm "$S.mp4"; fi
+          git add -A
           git -c user.name=yumurta-render -c user.email=actions@users.noreply.github.com commit -q -m "render $S (${{ github.run_id }})"
-          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" HEAD:refs/heads/render/$S
-          echo "dal: render/$S"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" HEAD:refs/heads/$B
+          ls -la; echo "dal: $B"
