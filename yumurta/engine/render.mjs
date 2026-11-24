@@ -17,8 +17,8 @@ const CHROME = findChrome();
 const ANGLE = process.platform === 'win32' ? ['--use-angle=d3d11'] : process.platform === 'darwin' ? ['--use-angle=metal'] : [];
 
 const { server, port } = await startServer();
-const browser = await puppeteer.launch({ executablePath: CHROME, headless: 'new', protocolTimeout: 0,
-  args: ['--ignore-gpu-blocklist', ...ANGLE, '--enable-gpu-rasterization', '--hide-scrollbars', '--force-device-scale-factor=1', ...(process.env.CHROME_ARGS || '').split(' ').filter(Boolean)] });
+const browser = await puppeteer.launch({ executablePath: CHROME, headless: 'new', protocolTimeout: 0, timeout: 120000,
+  args: ['--ignore-gpu-blocklist', ...ANGLE, ...(process.getuid?.() === 0 ? ['--no-sandbox'] : []), '--enable-gpu-rasterization', '--hide-scrollbars', '--force-device-scale-factor=1', ...(process.env.CHROME_ARGS || '').split(' ').filter(Boolean)] });
 const page = await browser.newPage();
 page.on('pageerror', e => console.log('PAGEERROR', e.message));
 page.on('console', m => { if (m.type() === 'error' || m.type() === 'warning') console.log('CONSOLE', m.text()); });

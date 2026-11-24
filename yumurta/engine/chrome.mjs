@@ -14,7 +14,7 @@ export function findChrome() {
     'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe',
     local && path.join(local, 'Google/Chrome/Application/chrome.exe'),
     '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
-    '/usr/bin/google-chrome', '/usr/bin/google-chrome-stable', '/usr/bin/chromium', '/usr/bin/chromium-browser', '/snap/bin/chromium',
+    '/usr/bin/google-chrome', '/usr/bin/google-chrome-stable', '/opt/pw-browsers/chromium', '/usr/bin/chromium', '/usr/bin/chromium-browser', '/snap/bin/chromium',
   ].filter(Boolean);
   const hit = list.find(p => fs.existsSync(p));
   if (!hit) {

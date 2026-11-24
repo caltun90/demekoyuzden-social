@@ -33,7 +33,7 @@ Motorun orijinal örneği ve ayrıntılı stil kuralları: `SKILL_KAYNAK.md` (İ
    - Yatay uzun video: `export const ASPECT = '16:9';` (1920x1080). Dikey varsayılan.
 5. **Kare kontrolü** (yarım çözünürlük, hızlı):
    ```bash
-   cd engine && npm ci --ignore-scripts && CHROME_PATH=/usr/bin/google-chrome node render.mjs <ad> --stills=0,0.5,1,1.9,<her plandan bir saniye> --scale=0.5
+   cd engine && npm ci --ignore-scripts && node render.mjs <ad> --stills=0,0.5,1,1.9,<her plandan bir saniye> --scale=0.5
    ```
    `stories/<ad>/out/stills.jpg` dosyasını Read ile aç ve 2. bölümdeki listeyle kontrol et. Düzelt, tekrar bak.
 6. **Ses miksi:** `cd engine && node render.mjs <ad> --cues && python3 audio/mix.py ../stories/<ad>` → `audio/mix.wav`.

@@ -53,11 +53,11 @@ jobs:
           cd yumurta/engine
           S="${{ inputs.story }}"; P=${{ matrix.part }}; NAME=part_$(printf %03d $P)
           # parçalar kare sayısına göre değil render maliyetine göre (hareket bulanıklığı kareleri pahalı) eşit bölünür
-          OUT=$(node render.mjs "$S" --split=${{ inputs.parts }} --part=$P 2>&1) || { echo "$OUT" | grep -v "404 (Not Found)" | tail -30; exit 1; }
+          for try in 1 2 3; do OUT=$(node render.mjs "$S" --split=${{ inputs.parts }} --part=$P 2>&1) && break; echo "deneme $try olmadı"; sleep 5; done
           read -r _ FROM TO _ <<< "$(echo "$OUT" | grep '^SPLIT')"
           [ -n "$FROM" ] || { echo "$OUT" | grep -v "404 (Not Found)" | tail -30; exit 1; }
           echo "parça $P: $FROM - $TO sn"
-          node render.mjs "$S" --from=$FROM --to=$TO --scale=${{ inputs.scale }} --crf=${{ inputs.crf }} --name=$NAME 2>&1 | grep -v "404 (Not Found)"
+          for try in 1 2; do node render.mjs "$S" --from=$FROM --to=$TO --scale=${{ inputs.scale }} --crf=${{ inputs.crf }} --name=$NAME 2>&1 | grep -v "404 (Not Found)" && break; echo "render denemesi $try olmadı"; sleep 5; done
           test -s "../stories/$S/out/$NAME.mp4"
       - uses: actions/upload-artifact@v4
         with:
