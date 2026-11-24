@@ -1,0 +1,129 @@
+{
+ "DUR": 37,
+ "cues": [
+  {
+   "t": 1.995,
+   "type": "whoosh"
+  },
+  {
+   "t": 13.511,
+   "type": "whoosh"
+  },
+  {
+   "t": 29.381,
+   "type": "whoosh"
+  },
+  {
+   "t": 0.02,
+   "type": "shimmer"
+  },
+  {
+   "t": 1.603,
+   "type": "lock"
+  },
+  {
+   "t": 4.587,
+   "type": "shimmer"
+  },
+  {
+   "t": 5.743,
+   "type": "rise",
+   "dur": 0.35
+  },
+  {
+   "t": 7.043,
+   "type": "shimmer"
+  },
+  {
+   "t": 7.788,
+   "type": "rise",
+   "dur": 0.35
+  },
+  {
+   "t": 9.754,
+   "type": "rise",
+   "dur": 0.35
+  },
+  {
+   "t": 12.719,
+   "type": "boom"
+  },
+  {
+   "t": 12.739,
+   "type": "lock"
+  },
+  {
+   "t": 14.633,
+   "type": "scrape",
+   "dur": 1.05
+  },
+  {
+   "t": 15.703,
+   "type": "lock"
+  },
+  {
+   "t": 16.091,
+   "type": "rise",
+   "dur": 0.35
+  },
+  {
+   "t": 19.623,
+   "type": "scrape",
+   "dur": 0.4
+  },
+  {
+   "t": 20.005,
+   "type": "lock"
+  },
+  {
+   "t": 21.639,
+   "type": "shimmer"
+  },
+  {
+   "t": 22.607,
+   "type": "scrape",
+   "dur": 0.4
+  },
+  {
+   "t": 23.007,
+   "type": "lock"
+  },
+  {
+   "t": 24.143,
+   "type": "shimmer"
+  },
+  {
+   "t": 25.283,
+   "type": "rise",
+   "dur": 0.35
+  },
+  {
+   "t": 27.779,
+   "type": "stir",
+   "dur": 0.9789999999999992
+  },
+  {
+   "t": 28.758,
+   "type": "boom"
+  },
+  {
+   "t": 29.581,
+   "type": "wind",
+   "dur": 3.383
+  },
+  {
+   "t": 29.581,
+   "type": "simmer",
+   "dur": 3.283
+  },
+  {
+   "t": 33.014,
+   "type": "rise",
+   "dur": 0.35
+  },
+  {
+   "t": 33.85,
+   "type": "shimmer"
+  }
+ ]
+}
