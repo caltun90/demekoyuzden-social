@@ -1,5 +1,14 @@
 # Uzun video kiti (Demek O Yüzden, 7-10 dk yatay)
 
+**YUMURTA STİLİ (Cem, 24 Kasım 2026; bu dosyadaki çizim, ses ve render adımlarının yerine geçer).** Uzun videolar da artık
+`yumurta/` motoruyla, 3B dünyada komik yumurta kafalı karakterlerle üretilir (Cem: "bundan sonraki tüm çöp adam
+animasyonlarını bu şekilde yap"). `uzun.py`, `ses.py`, `realign.py`, `render.py` ARTIK KULLANILMAZ. Yöntem `yumurta/README.md`:
+- Hikâye klasörü `yumurta/stories/<YYYY-MM-DD>-uzun-<slug>/`, story.js başında `export const ASPECT = '16:9';` (1920x1080).
+- `voice/script.txt` 1050-1350 kelime, her satır tek cümle. Ses: `python3 tools/ses.py tts <klasör> Achird` (20 satırlık bloklar, video başına 6-8 istek; kotaya dikkat), `check`, `build --tempo 1.15`.
+- Bölümler: her bölüm ayrı bir set (oda, sokak, laboratuvar, mutfak...); bölüm başlığı, kaynak kartı ("Yazar, yıl, kurum") ve "BU NEDEN ÖNEMLİ?" kartı `overlay(g, t, ctx)` içinde 2B yazı olarak çizilir, kelimeye bağlanır.
+- Render: Actions `parts=20`, `crf=22`. Kapak: bitmiş videonun en komik karesinden ffmpeg ile 1280x720 kare + `kapak.py` yazıları.
+- Takvim, konu seçimi, içerik formatı, kanca, kaynak ve yükleme kuralları aşağıda olduğu gibi geçerli.
+
 Depoda `uzun/` klasöründe durur. İlk video: "Beyninin Sana Oynadığı 6 Oyun" (7:11, Kasım 2026).
 
 ## Yayın takvimi

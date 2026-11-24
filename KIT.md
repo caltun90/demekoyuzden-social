@@ -3,6 +3,29 @@
 Günlük 1 dakikalık videoları üretmek için araçlar. Kit bu deponun kökünde durur; videolar `videos/`, yapılanlar `log.json`.
 Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA BİLİM"). Başka seri yok.
 
+## YUMURTA STİLİ (Cem, 24 Kasım 2026): bu bölüm aşağıdaki görsel, akış ve sayı kurallarının yerine geçer
+- Kanalın bütün videoları (günlük Short'lar ve uzun videolar) artık yumurta kafa stilinde üretilir: 3B dünya, 2B
+  yumurta kafalı komik karakterler, `yumurta/` klasöründeki motorla. Eski çizgi adam motoru (`render.py`, `build.sh`,
+  `script.py`, `voice_google.py`, `sync.py`) ARTIK KULLANILMAZ; dosyalar arşiv olarak durur. Cem: "bundan sonraki tüm
+  çöp adam animasyonlarını bu şekilde yap" (24 Kasım 2026).
+- Üretim yöntemi baştan sona `yumurta/README.md` dosyasındadır; önce onu oku. Ses `yumurta/tools/ses.py`, sahneler
+  `yumurta/stories/<YYYY-MM-DD>-<slug>/story.js`, tam render GitHub Actions'ta (`yumurta-render.yml`, paralel parçalar).
+- GÜNDE 2 SHORT (Cem, 24 Kasım 2026; eski "günde 3" kuralının yerine). Saatler: 12:00 ve 19:00 (Europe/Istanbul).
+  Her Short 30-60 sn (Cem'in beğendiği örnek 27 sn), dikey 1080x1920, 30 fps. Boş saat dilimi kuralı aynen geçerli (Buffer'da dolu dilime ekleme).
+- Karakterler komik ve abartılı olur; Cem'in beğendiği örnek `yumurta/stories/dus-fikri` içindeki patron (büyük kafa,
+  bıyık, düğmeli ceket, kahkaha ve sinsi bakış). Her videoda en az bir böyle "komik yan karakter" (patron, komşu,
+  öğretmen, anne, garson...) olur; anlatılan kişi izleyicinin kendisidir ("sen").
+- Kanca yazısı: ilk 2 saniye kuralındaki "en fazla 5 kelimelik dev kanca yazısı" `yumurta/lib/kanca.js` ile çizilir
+  (`export function overlay(g, t, ctx) { kancaYazisi(g, t, ctx.W, ctx.H, 'KISA SORU?'); }`). Seri etiketi
+  ("1 DAKİKADA PSİKOLOJİ") ve video boyu duran `HOOK` satırı bu stilde YOK.
+- Ses: Achird, `gemini-3.1-flash-tts-preview`, `ses.py tts` (senaryo tek istekte okunur, satırlara bölünür),
+  `ses.py check` (sorunlu satır yeniden üretilir), `ses.py build --tempo 1.2-1.3 --kanca 1.1`. Günlük ses kotası
+  10 istek: iki Short için yeter; gereksiz tekrar yapma.
+- Kapanış: son satır "Bir sonraki videoda görüşmek üzere!" kuralı bu stilde kalkar; son satır tek cümlelik vuruştur
+  (örnek: "Yani bazen en iyi düşünme yolu, düşünmeyi biraz bırakmak."). "Yarın" denmez.
+- Dosya: bitmiş video `videos/<YYYY-MM-DD>-<slug>-dikey.mp4` olarak depoya konur (Buffer ve X görevi bu adı kullanır);
+  Actions'taki `crf` 22 verilir ki dosya küçük kalsın (60 sn yaklaşık 15-25 MB).
+
 ## Kararlar (Cem)
 - YATAY KOPYA YOK (Cem, 2026-11-19: "Shorts olarak attığın videoları yatay olarak atmana gerek yok bi daha").
   Günlük 1 dakikalık Türkçe videoların yatay sürümü YouTube'a ya da başka hiçbir yere YÜKLENMEZ, depoya da konmaz.
