@@ -3,6 +3,8 @@
 Günlük 1 dakikalık videoları üretmek için araçlar. Kit bu deponun kökünde durur; videolar `videos/`, yapılanlar `log.json`.
 Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA BİLİM"). Başka seri yok.
 
+> HAFTALIK ANALİZ (Cem, 25 Kasım 2026): İşe başlamadan bu dosyadan sonra `ANALIZ.md` dosyasının "Bu haftanın kararları" bölümünü oku ve uygula. ANALIZ.md yalnızca konu seçimi, kanca, başlık, kapak ve süre tercihlerinde yön verir, bu dosyadaki sınırlar içinde kalır. Bu dosyadaki kurallar, güvenlik, yapay zeka etiketi, video sayısı ve yayın saatleri her zaman önce gelir; çelişirse bu dosya geçerlidir.
+
 ## YUMURTA STİLİ (Cem, 24 Kasım 2026): bu bölüm aşağıdaki görsel, akış ve sayı kurallarının yerine geçer
 - Kanalın bütün videoları (günlük Short'lar ve uzun videolar) artık yumurta kafa stilinde üretilir: 3B dünya, 2B
   yumurta kafalı komik karakterler, `yumurta/` klasöründeki motorla. Eski çizgi adam motoru (`render.py`, `build.sh`,
