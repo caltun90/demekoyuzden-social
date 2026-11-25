@@ -1,0 +1,455 @@
+{
+"words": [
+{
+"word": "Yağmurdan",
+"start": 0.038,
+"end": 0.481
+},
+{
+"word": "sonra",
+"start": 0.481,
+"end": 0.793
+},
+{
+"word": "toprak",
+"start": 0.793,
+"end": 1.105
+},
+{
+"word": "neden",
+"start": 1.105,
+"end": 1.417
+},
+{
+"word": "kokar?",
+"start": 1.417,
+"end": 1.729
+},
+{
+"word": "Bakın,",
+"start": 1.929,
+"end": 2.129
+},
+{
+"word": "sıcak",
+"start": 2.375,
+"end": 2.696
+},
+{
+"word": "bir",
+"start": 2.696,
+"end": 2.883
+},
+{
+"word": "yaz",
+"start": 2.883,
+"end": 3.07
+},
+{
+"word": "günü,",
+"start": 3.07,
+"end": 3.391
+},
+{
+"word": "ilk",
+"start": 3.691,
+"end": 3.846
+},
+{
+"word": "damlalar",
+"start": 3.846,
+"end": 4.222
+},
+{
+"word": "düşüyor,",
+"start": 4.222,
+"end": 4.598
+},
+{
+"word": "ve",
+"start": 4.914,
+"end": 5.082
+},
+{
+"word": "sen",
+"start": 5.082,
+"end": 5.249
+},
+{
+"word": "derin",
+"start": 5.249,
+"end": 5.537
+},
+{
+"word": "bir",
+"start": 5.537,
+"end": 5.704
+},
+{
+"word": "nefes",
+"start": 5.704,
+"end": 5.992
+},
+{
+"word": "çekiyorsun.",
+"start": 5.992,
+"end": 6.519
+},
+{
+"word": "Yanındaki",
+"start": 6.719,
+"end": 7.081
+},
+{
+"word": "komşu",
+"start": 7.081,
+"end": 7.278
+},
+{
+"word": "gülüyor:",
+"start": 7.278,
+"end": 7.557
+},
+{
+"word": "\"Yağmurun",
+"start": 7.927,
+"end": 8.247
+},
+{
+"word": "kokusu",
+"start": 8.247,
+"end": 8.567
+},
+{
+"word": "mu",
+"start": 8.567,
+"end": 8.699
+},
+{
+"word": "olur?\"",
+"start": 8.699,
+"end": 8.925
+},
+{
+"word": "Aslında",
+"start": 9.125,
+"end": 9.486
+},
+{
+"word": "haklı,",
+"start": 9.486,
+"end": 9.74
+},
+{
+"word": "çünkü",
+"start": 10.009,
+"end": 10.3
+},
+{
+"word": "o",
+"start": 10.3,
+"end": 10.47
+},
+{
+"word": "koku",
+"start": 10.47,
+"end": 10.761
+},
+{
+"word": "yağmurdan",
+"start": 10.761,
+"end": 11.173
+},
+{
+"word": "değil,",
+"start": 11.173,
+"end": 11.463
+},
+{
+"word": "topraktan",
+"start": 11.74,
+"end": 12.143
+},
+{
+"word": "geliyor.",
+"start": 12.143,
+"end": 12.545
+},
+{
+"word": "Toprakta",
+"start": 12.745,
+"end": 13.191
+},
+{
+"word": "yaşayan",
+"start": 13.191,
+"end": 13.637
+},
+{
+"word": "bakteriler,",
+"start": 13.637,
+"end": 14.214
+},
+{
+"word": "geosmin",
+"start": 14.461,
+"end": 14.81
+},
+{
+"word": "adında",
+"start": 14.81,
+"end": 15.16
+},
+{
+"word": "kokulu",
+"start": 15.16,
+"end": 15.51
+},
+{
+"word": "bir",
+"start": 15.51,
+"end": 15.654
+},
+{
+"word": "madde",
+"start": 15.654,
+"end": 15.901
+},
+{
+"word": "üretiyor.",
+"start": 15.901,
+"end": 16.354
+},
+{
+"word": "Araştırmacılar",
+"start": 16.554,
+"end": 17.314
+},
+{
+"word": "hızlı",
+"start": 17.314,
+"end": 17.6
+},
+{
+"word": "kamerayla",
+"start": 17.6,
+"end": 18.122
+},
+{
+"word": "çekti:",
+"start": 18.122,
+"end": 18.408
+},
+{
+"word": "damla",
+"start": 18.808,
+"end": 19.147
+},
+{
+"word": "toprağa",
+"start": 19.147,
+"end": 19.627
+},
+{
+"word": "çarpınca,",
+"start": 19.627,
+"end": 20.108
+},
+{
+"word": "içinde",
+"start": 20.362,
+"end": 20.743
+},
+{
+"word": "minicik",
+"start": 20.743,
+"end": 21.125
+},
+{
+"word": "hava",
+"start": 21.125,
+"end": 21.394
+},
+{
+"word": "kabarcıkları",
+"start": 21.394,
+"end": 22.0
+},
+{
+"word": "hapsoluyor.",
+"start": 22.0,
+"end": 22.494
+},
+{
+"word": "Kabarcıklar",
+"start": 22.694,
+"end": 23.264
+},
+{
+"word": "yükselip",
+"start": 23.264,
+"end": 23.704
+},
+{
+"word": "patlıyor",
+"start": 23.704,
+"end": 24.145
+},
+{
+"word": "ve",
+"start": 24.145,
+"end": 24.326
+},
+{
+"word": "kokuyu",
+"start": 24.326,
+"end": 24.767
+},
+{
+"word": "taşıyan",
+"start": 24.767,
+"end": 25.207
+},
+{
+"word": "minik",
+"start": 25.207,
+"end": 25.518
+},
+{
+"word": "damlacıklar",
+"start": 25.518,
+"end": 26.088
+},
+{
+"word": "havaya",
+"start": 26.088,
+"end": 26.529
+},
+{
+"word": "saçılıyor.",
+"start": 26.529,
+"end": 27.099
+},
+{
+"word": "Tıpkı",
+"start": 27.299,
+"end": 27.56
+},
+{
+"word": "gazozdaki",
+"start": 27.56,
+"end": 28.038
+},
+{
+"word": "kabarcıkların",
+"start": 28.038,
+"end": 28.624
+},
+{
+"word": "patlayıp",
+"start": 28.624,
+"end": 28.994
+},
+{
+"word": "burnunu",
+"start": 28.994,
+"end": 29.363
+},
+{
+"word": "gıdıklaması",
+"start": 29.363,
+"end": 29.95
+},
+{
+"word": "gibi.",
+"start": 29.95,
+"end": 30.21
+},
+{
+"word": "Burnumuz",
+"start": 30.41,
+"end": 30.844
+},
+{
+"word": "da",
+"start": 30.844,
+"end": 31.023
+},
+{
+"word": "bu",
+"start": 31.023,
+"end": 31.202
+},
+{
+"word": "kokunun",
+"start": 31.202,
+"end": 31.636
+},
+{
+"word": "çok",
+"start": 31.636,
+"end": 31.814
+},
+{
+"word": "azını",
+"start": 31.814,
+"end": 32.248
+},
+{
+"word": "bile",
+"start": 32.248,
+"end": 32.555
+},
+{
+"word": "hemen",
+"start": 32.555,
+"end": 32.861
+},
+{
+"word": "yakalıyor.",
+"start": 32.861,
+"end": 33.423
+},
+{
+"word": "Yani",
+"start": 33.623,
+"end": 33.91
+},
+{
+"word": "kokladığın",
+"start": 33.91,
+"end": 34.436
+},
+{
+"word": "şey",
+"start": 34.436,
+"end": 34.603
+},
+{
+"word": "yağmur",
+"start": 34.603,
+"end": 34.89
+},
+{
+"word": "değil,",
+"start": 34.89,
+"end": 35.177
+},
+{
+"word": "topraktaki",
+"start": 35.554,
+"end": 35.991
+},
+{
+"word": "bakterilerin",
+"start": 35.991,
+"end": 36.529
+},
+{
+"word": "kokusu.",
+"start": 36.529,
+"end": 36.867
+}
+],
+"duration": 37.067
+}
