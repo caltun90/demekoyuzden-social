@@ -7,7 +7,7 @@ Sınır: Bu dosya yalnızca konu seçimi, kanca, başlık, kapak ve Short süres
 ## Son veri (25 Kasım 2026, vidIQ herkese açık veri)
 
 - Kanal: 61 abone, 47.670 izlenme, 36 video.
-- Short medyanı yaklaşık 1.200 izlenme. En iyiler: Üşüyünce tüylerin neden diken diken olur 3.762, Uykuya dalarken neden düşer gibi sıçrarsın 2.908, Klavyede harfler neden alfabe sırasında değil 2.301, Kan görünce neden başın döner 2.050.
+- Son 30 Short'ta medyan yaklaşık 1.150 izlenme. En iyiler: Üşüyünce tüylerin neden diken diken olur 3.762, Uykuya dalarken neden düşer gibi sıçrarsın 2.908, Klavyede harfler neden alfabe sırasında değil 2.301, Kan görünce neden başın döner 2.050.
 - En zayıflar: Nane neden serinletir 391, Alışveriş listesinin ortasını neden unutursun 564, Fiyatlar neden 9,99 ile biter 732.
 - Yumurta stilinin ilk iki videosu (24 Kasım, 36 ve 38 sn) saatte 125 ve 69 izlenme aldı; eski stilin ilk günleri bunun çok altındaydı. Stil ve süre birlikte değiştiği için etkisi henüz ayrılamıyor.
 
