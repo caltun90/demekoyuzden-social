@@ -465,5 +465,17 @@
       "Klein ve ark. (2014), Investigating Variation in Replicability: A Many Labs Replication Project, Social Psychology 45(3), 142-152 (çapalama etkisi 36 örneklemde güçlü biçimde tekrarlandı): https://doi.org/10.1027/1864-9335/a000178",
       "Galinsky ve Mussweiler (2001), First offers as anchors: the role of perspective-taking and negotiator focus, Journal of Personality and Social Psychology 81(4), 657-669 (pazarlıkta ilk teklif sonucu kendine çeker): https://doi.org/10.1037/0022-3514.81.4.657"
     ]
+  },
+  {
+    "date": "2026-11-25",
+    "slug": "toprak-kokusu",
+    "konu": "Yağmurdan sonra toprak neden kokar? (koku yağmurdan değil topraktan gelir; toprak bakterileri geosmin adlı kokulu maddeyi üretir; damla gözenekli toprağa çarpınca içinde hava kabarcıkları hapsolur, yükselip patlar ve kokuyu taşıyan minik damlacıkları havaya saçar; burnumuz geosmini çok düşük miktarda bile algılar). Yumurta stili.",
+    "baslik": "Yağmurdan sonra toprak neden kokar?",
+    "kaynaklar": [
+      "Joung ve Buie (2015), Aerosol generation by raindrop impact on soil, Nature Communications 6:6083 (hızlı kamerayla: damla gözenekli yüzeye çarpınca hava kabarcıkları hapsolur, yükselip patlar, aerosol saçar; hafif ve orta yağmurda daha çok): https://doi.org/10.1038/ncomms7083",
+      "MIT News (2015), Rainfall can release aerosols, study finds (aynı çalışmanın özeti; yaklaşık 600 deney, 28 yüzey; yağmur sonrası kokunun böyle yayılabileceği): https://news.mit.edu/2015/rainfall-can-release-aerosols-0114",
+      "Bear ve Thomas (1964), Nature of Argillaceous Odour, Nature 201:993-995 (koku topraktan ve kayadan gelir; petrichor adı): https://doi.org/10.1038/201993a0",
+      "John Innes Centre, Meet the Molecules: Geosmin (geosmini toprak bakterileri, başta Streptomyces üretir; insan burnu çok düşük miktarını algılar): https://www.jic.ac.uk/blog/meet-the-molecules-geosmin/"
+    ]
   }
 ]
