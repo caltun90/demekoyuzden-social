@@ -1,0 +1,415 @@
+{
+"words": [
+{
+"word": "Beklerken",
+"start": 0.04,
+"end": 0.51
+},
+{
+"word": "zaman",
+"start": 0.51,
+"end": 0.842
+},
+{
+"word": "neden",
+"start": 0.842,
+"end": 1.173
+},
+{
+"word": "geçmek",
+"start": 1.173,
+"end": 1.505
+},
+{
+"word": "bilmez?",
+"start": 1.505,
+"end": 1.837
+},
+{
+"word": "Bakın,",
+"start": 2.045,
+"end": 2.253
+},
+{
+"word": "ocağa",
+"start": 2.565,
+"end": 2.919
+},
+{
+"word": "çay",
+"start": 2.919,
+"end": 3.065
+},
+{
+"word": "suyu",
+"start": 3.065,
+"end": 3.315
+},
+{
+"word": "koydun,",
+"start": 3.315,
+"end": 3.565
+},
+{
+"word": "ve",
+"start": 3.805,
+"end": 3.948
+},
+{
+"word": "gözünü",
+"start": 3.948,
+"end": 4.296
+},
+{
+"word": "çaydanlıktan",
+"start": 4.296,
+"end": 4.746
+},
+{
+"word": "ayırmıyorsun.",
+"start": 4.746,
+"end": 5.298
+},
+{
+"word": "Annen",
+"start": 5.506,
+"end": 5.751
+},
+{
+"word": "gülüyor:",
+"start": 5.751,
+"end": 6.098
+},
+{
+"word": "\"Baktıkça",
+"start": 6.466,
+"end": 6.885
+},
+{
+"word": "kaynamaz",
+"start": 6.885,
+"end": 7.304
+},
+{
+"word": "o!\"",
+"start": 7.304,
+"end": 7.477
+},
+{
+"word": "Şaka",
+"start": 7.685,
+"end": 7.957
+},
+{
+"word": "gibi,",
+"start": 7.957,
+"end": 8.229
+},
+{
+"word": "ama",
+"start": 8.421,
+"end": 8.681
+},
+{
+"word": "psikologlar",
+"start": 8.681,
+"end": 9.158
+},
+{
+"word": "bunu",
+"start": 9.158,
+"end": 9.418
+},
+{
+"word": "gerçekten",
+"start": 9.418,
+"end": 9.786
+},
+{
+"word": "denedi.",
+"start": 9.786,
+"end": 10.155
+},
+{
+"word": "Bir",
+"start": 10.363,
+"end": 10.521
+},
+{
+"word": "gruba",
+"start": 10.521,
+"end": 10.793
+},
+{
+"word": "suyun",
+"start": 10.793,
+"end": 11.065
+},
+{
+"word": "kaynamasını",
+"start": 11.065,
+"end": 11.677
+},
+{
+"word": "beklemeleri",
+"start": 11.677,
+"end": 12.289
+},
+{
+"word": "söylendi,",
+"start": 12.289,
+"end": 12.675
+},
+{
+"word": "diğer",
+"start": 12.979,
+"end": 13.217
+},
+{
+"word": "gruba",
+"start": 13.217,
+"end": 13.455
+},
+{
+"word": "hiçbir",
+"start": 13.455,
+"end": 13.693
+},
+{
+"word": "şey",
+"start": 13.693,
+"end": 13.832
+},
+{
+"word": "söylenmedi.",
+"start": 13.832,
+"end": 14.269
+},
+{
+"word": "Aynı",
+"start": 14.477,
+"end": 14.815
+},
+{
+"word": "dört",
+"start": 14.815,
+"end": 15.013
+},
+{
+"word": "dakika,",
+"start": 15.013,
+"end": 15.493
+},
+{
+"word": "kaynamayı",
+"start": 15.773,
+"end": 16.247
+},
+{
+"word": "bekleyenlere",
+"start": 16.247,
+"end": 16.83
+},
+{
+"word": "daha",
+"start": 16.83,
+"end": 17.089
+},
+{
+"word": "uzun",
+"start": 17.089,
+"end": 17.348
+},
+{
+"word": "geldi.",
+"start": 17.348,
+"end": 17.606
+},
+{
+"word": "Çünkü",
+"start": 17.814,
+"end": 18.128
+},
+{
+"word": "beklerken",
+"start": 18.128,
+"end": 18.571
+},
+{
+"word": "dikkatin",
+"start": 18.571,
+"end": 19.015
+},
+{
+"word": "zamana",
+"start": 19.015,
+"end": 19.459
+},
+{
+"word": "kayıyor,",
+"start": 19.459,
+"end": 19.902
+},
+{
+"word": "sanki",
+"start": 20.15,
+"end": 20.462
+},
+{
+"word": "her",
+"start": 20.462,
+"end": 20.643
+},
+{
+"word": "saniyeyi",
+"start": 20.643,
+"end": 21.214
+},
+{
+"word": "tek",
+"start": 21.214,
+"end": 21.396
+},
+{
+"word": "tek",
+"start": 21.396,
+"end": 21.577
+},
+{
+"word": "sayıyorsun.",
+"start": 21.577,
+"end": 22.148
+},
+{
+"word": "Tıpkı",
+"start": 22.356,
+"end": 22.606
+},
+{
+"word": "gözünü",
+"start": 22.606,
+"end": 22.96
+},
+{
+"word": "saatten",
+"start": 22.96,
+"end": 23.314
+},
+{
+"word": "ayırmayınca,",
+"start": 23.314,
+"end": 23.876
+},
+{
+"word": "yelkovanın",
+"start": 24.124,
+"end": 24.56
+},
+{
+"word": "yerinden",
+"start": 24.56,
+"end": 24.896
+},
+{
+"word": "kıpırdamaması",
+"start": 24.896,
+"end": 25.53
+},
+{
+"word": "gibi.",
+"start": 25.53,
+"end": 25.768
+},
+{
+"word": "Bir",
+"start": 25.976,
+"end": 26.136
+},
+{
+"word": "işe",
+"start": 26.136,
+"end": 26.411
+},
+{
+"word": "dalıncaysa",
+"start": 26.411,
+"end": 26.915
+},
+{
+"word": "saate",
+"start": 26.915,
+"end": 27.304
+},
+{
+"word": "bakmayı",
+"start": 27.304,
+"end": 27.694
+},
+{
+"word": "unutuyorsun,",
+"start": 27.694,
+"end": 28.312
+},
+{
+"word": "ve",
+"start": 28.624,
+"end": 28.831
+},
+{
+"word": "zaman",
+"start": 28.831,
+"end": 29.185
+},
+{
+"word": "uçup",
+"start": 29.185,
+"end": 29.54
+},
+{
+"word": "gidiyor.",
+"start": 29.54,
+"end": 30.042
+},
+{
+"word": "Yani",
+"start": 30.25,
+"end": 30.533
+},
+{
+"word": "su",
+"start": 30.533,
+"end": 30.697
+},
+{
+"word": "çabuk",
+"start": 30.697,
+"end": 30.98
+},
+{
+"word": "kaynasın",
+"start": 30.98,
+"end": 31.38
+},
+{
+"word": "istiyorsan,",
+"start": 31.38,
+"end": 31.898
+},
+{
+"word": "çaydanlığa",
+"start": 32.17,
+"end": 32.598
+},
+{
+"word": "bakmayı",
+"start": 32.598,
+"end": 32.929
+},
+{
+"word": "bırak.",
+"start": 32.929,
+"end": 33.163
+}
+],
+"duration": 33.371
+}
