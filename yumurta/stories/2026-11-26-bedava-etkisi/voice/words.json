@@ -1,0 +1,660 @@
+{
+"words": [
+{
+"word": "Bedava",
+"start": 0.041,
+"end": 0.384
+},
+{
+"word": "olunca",
+"start": 0.384,
+"end": 0.727
+},
+{
+"word": "neden",
+"start": 0.727,
+"end": 0.969
+},
+{
+"word": "hemen",
+"start": 0.969,
+"end": 1.211
+},
+{
+"word": "kapıyorsun?",
+"start": 1.211,
+"end": 1.655
+},
+{
+"word": "Bakın,",
+"start": 1.868,
+"end": 2.065
+},
+{
+"word": "markettesin;",
+"start": 2.368,
+"end": 2.86
+},
+{
+"word": "hiç",
+"start": 3.221,
+"end": 3.371
+},
+{
+"word": "ihtiyacın",
+"start": 3.371,
+"end": 3.845
+},
+{
+"word": "olmayan",
+"start": 3.845,
+"end": 4.211
+},
+{
+"word": "bir",
+"start": 4.211,
+"end": 4.362
+},
+{
+"word": "anahtarlık,",
+"start": 4.362,
+"end": 4.835
+},
+{
+"word": "sırf",
+"start": 5.098,
+"end": 5.251
+},
+{
+"word": "bedava",
+"start": 5.251,
+"end": 5.624
+},
+{
+"word": "diye",
+"start": 5.624,
+"end": 5.887
+},
+{
+"word": "sepete",
+"start": 5.887,
+"end": 6.26
+},
+{
+"word": "giriyor.",
+"start": 6.26,
+"end": 6.633
+},
+{
+"word": "Stanttaki",
+"start": 6.846,
+"end": 7.194
+},
+{
+"word": "satıcı",
+"start": 7.194,
+"end": 7.543
+},
+{
+"word": "sırıtıyor:",
+"start": 7.543,
+"end": 7.994
+},
+{
+"word": "\"Buyur",
+"start": 8.346,
+"end": 8.612
+},
+{
+"word": "abi,",
+"start": 8.612,
+"end": 8.879
+},
+{
+"word": "para",
+"start": 8.936,
+"end": 9.216
+},
+{
+"word": "yok,",
+"start": 9.216,
+"end": 9.379
+},
+{
+"word": "al",
+"start": 9.453,
+"end": 9.645
+},
+{
+"word": "götür!\"",
+"start": 9.645,
+"end": 9.975
+},
+{
+"word": "Eve",
+"start": 10.188,
+"end": 10.392
+},
+{
+"word": "gelince",
+"start": 10.392,
+"end": 10.68
+},
+{
+"word": "çekmeceye",
+"start": 10.68,
+"end": 11.053
+},
+{
+"word": "atıyorsun;",
+"start": 11.053,
+"end": 11.426
+},
+{
+"word": "orada",
+"start": 11.803,
+"end": 12.202
+},
+{
+"word": "zaten",
+"start": 12.202,
+"end": 12.483
+},
+{
+"word": "on",
+"start": 12.483,
+"end": 12.647
+},
+{
+"word": "tane",
+"start": 12.647,
+"end": 12.928
+},
+{
+"word": "var.",
+"start": 12.928,
+"end": 13.092
+},
+{
+"word": "Araştırmacılar",
+"start": 13.305,
+"end": 13.992
+},
+{
+"word": "bunu",
+"start": 13.992,
+"end": 14.249
+},
+{
+"word": "çikolatayla",
+"start": 14.249,
+"end": 14.829
+},
+{
+"word": "denedi.",
+"start": 14.829,
+"end": 15.194
+},
+{
+"word": "Bir",
+"start": 15.407,
+"end": 15.538
+},
+{
+"word": "masaya",
+"start": 15.538,
+"end": 15.855
+},
+{
+"word": "iki",
+"start": 15.855,
+"end": 16.08
+},
+{
+"word": "çikolata",
+"start": 16.08,
+"end": 16.491
+},
+{
+"word": "koydular:",
+"start": 16.491,
+"end": 16.808
+},
+{
+"word": "biri",
+"start": 17.194,
+"end": 17.453
+},
+{
+"word": "kaliteli",
+"start": 17.453,
+"end": 17.929
+},
+{
+"word": "ve",
+"start": 17.929,
+"end": 18.08
+},
+{
+"word": "pahalı,",
+"start": 18.08,
+"end": 18.448
+},
+{
+"word": "öbürü",
+"start": 18.776,
+"end": 19.122
+},
+{
+"word": "sıradan",
+"start": 19.122,
+"end": 19.468
+},
+{
+"word": "ve",
+"start": 19.468,
+"end": 19.61
+},
+{
+"word": "çok",
+"start": 19.61,
+"end": 19.752
+},
+{
+"word": "ucuz.",
+"start": 19.752,
+"end": 19.997
+},
+{
+"word": "İkisi",
+"start": 20.21,
+"end": 20.542
+},
+{
+"word": "de",
+"start": 20.542,
+"end": 20.679
+},
+{
+"word": "paralıyken",
+"start": 20.679,
+"end": 21.11
+},
+{
+"word": "çoğu",
+"start": 21.11,
+"end": 21.344
+},
+{
+"word": "kişi",
+"start": 21.344,
+"end": 21.579
+},
+{
+"word": "kaliteli",
+"start": 21.579,
+"end": 22.009
+},
+{
+"word": "olanı",
+"start": 22.009,
+"end": 22.342
+},
+{
+"word": "seçti.",
+"start": 22.342,
+"end": 22.577
+},
+{
+"word": "Sonra",
+"start": 22.79,
+"end": 23.057
+},
+{
+"word": "iki",
+"start": 23.057,
+"end": 23.325
+},
+{
+"word": "fiyattan",
+"start": 23.325,
+"end": 23.704
+},
+{
+"word": "da",
+"start": 23.704,
+"end": 23.86
+},
+{
+"word": "birer",
+"start": 23.86,
+"end": 24.127
+},
+{
+"word": "sent",
+"start": 24.127,
+"end": 24.283
+},
+{
+"word": "indirdiler;",
+"start": 24.283,
+"end": 24.773
+},
+{
+"word": "aradaki",
+"start": 25.233,
+"end": 25.699
+},
+{
+"word": "fark",
+"start": 25.699,
+"end": 25.847
+},
+{
+"word": "aynı",
+"start": 25.847,
+"end": 26.101
+},
+{
+"word": "kaldı,",
+"start": 26.101,
+"end": 26.355
+},
+{
+"word": "ama",
+"start": 26.733,
+"end": 26.967
+},
+{
+"word": "sıradan",
+"start": 26.967,
+"end": 27.299
+},
+{
+"word": "çikolata",
+"start": 27.299,
+"end": 27.728
+},
+{
+"word": "bedava",
+"start": 27.728,
+"end": 28.06
+},
+{
+"word": "oldu.",
+"start": 28.06,
+"end": 28.294
+},
+{
+"word": "Bu",
+"start": 28.507,
+"end": 28.667
+},
+{
+"word": "kez",
+"start": 28.667,
+"end": 28.827
+},
+{
+"word": "çoğunluk",
+"start": 28.827,
+"end": 29.216
+},
+{
+"word": "bedava",
+"start": 29.216,
+"end": 29.605
+},
+{
+"word": "olana",
+"start": 29.605,
+"end": 29.994
+},
+{
+"word": "koştu.",
+"start": 29.994,
+"end": 30.268
+},
+{
+"word": "Oysa",
+"start": 30.482,
+"end": 30.737
+},
+{
+"word": "az",
+"start": 30.737,
+"end": 30.886
+},
+{
+"word": "önce",
+"start": 30.886,
+"end": 31.142
+},
+{
+"word": "kimse",
+"start": 31.142,
+"end": 31.397
+},
+{
+"word": "ona",
+"start": 31.397,
+"end": 31.653
+},
+{
+"word": "dönüp",
+"start": 31.653,
+"end": 31.909
+},
+{
+"word": "bakmıyordu.",
+"start": 31.909,
+"end": 32.377
+},
+{
+"word": "Çünkü",
+"start": 32.59,
+"end": 32.86
+},
+{
+"word": "bir",
+"start": 32.86,
+"end": 33.017
+},
+{
+"word": "şey",
+"start": 33.017,
+"end": 33.174
+},
+{
+"word": "paralıyken",
+"start": 33.174,
+"end": 33.667
+},
+{
+"word": "kafamızda",
+"start": 33.667,
+"end": 34.161
+},
+{
+"word": "hesap",
+"start": 34.161,
+"end": 34.43
+},
+{
+"word": "yaparız:",
+"start": 34.43,
+"end": 34.812
+},
+{
+"word": "değer",
+"start": 35.074,
+"end": 35.39
+},
+{
+"word": "mi,",
+"start": 35.39,
+"end": 35.574
+},
+{
+"word": "değmez",
+"start": 35.664,
+"end": 35.946
+},
+{
+"word": "mi?",
+"start": 35.946,
+"end": 36.111
+},
+{
+"word": "Bedava",
+"start": 36.324,
+"end": 36.664
+},
+{
+"word": "olunca",
+"start": 36.664,
+"end": 37.005
+},
+{
+"word": "hesap",
+"start": 37.005,
+"end": 37.245
+},
+{
+"word": "duruyor;",
+"start": 37.245,
+"end": 37.586
+},
+{
+"word": "kaybedecek",
+"start": 37.938,
+"end": 38.357
+},
+{
+"word": "bir",
+"start": 38.357,
+"end": 38.49
+},
+{
+"word": "şey",
+"start": 38.49,
+"end": 38.623
+},
+{
+"word": "yokmuş",
+"start": 38.623,
+"end": 38.851
+},
+{
+"word": "gibi",
+"start": 38.851,
+"end": 39.079
+},
+{
+"word": "geliyor.",
+"start": 39.079,
+"end": 39.402
+},
+{
+"word": "Tıpkı",
+"start": 39.615,
+"end": 39.871
+},
+{
+"word": "açık",
+"start": 39.871,
+"end": 40.127
+},
+{
+"word": "büfede",
+"start": 40.127,
+"end": 40.49
+},
+{
+"word": "doyduğun",
+"start": 40.49,
+"end": 40.853
+},
+{
+"word": "halde",
+"start": 40.853,
+"end": 41.109
+},
+{
+"word": "tabağı",
+"start": 41.109,
+"end": 41.472
+},
+{
+"word": "bir",
+"start": 41.472,
+"end": 41.622
+},
+{
+"word": "kez",
+"start": 41.622,
+"end": 41.771
+},
+{
+"word": "daha",
+"start": 41.771,
+"end": 42.027
+},
+{
+"word": "doldurman",
+"start": 42.027,
+"end": 42.39
+},
+{
+"word": "gibi.",
+"start": 42.39,
+"end": 42.646
+},
+{
+"word": "Yani",
+"start": 42.859,
+"end": 43.106
+},
+{
+"word": "o",
+"start": 43.106,
+"end": 43.25
+},
+{
+"word": "anahtarlığı",
+"start": 43.25,
+"end": 43.806
+},
+{
+"word": "aslında",
+"start": 43.806,
+"end": 44.156
+},
+{
+"word": "sen",
+"start": 44.156,
+"end": 44.3
+},
+{
+"word": "istemedin;",
+"start": 44.3,
+"end": 44.753
+},
+{
+"word": "sıfır",
+"start": 45.163,
+"end": 45.419
+},
+{
+"word": "rakamı",
+"start": 45.419,
+"end": 45.782
+},
+{
+"word": "istetti.",
+"start": 45.782,
+"end": 46.144
+}
+],
+"duration": 46.358
+}
