@@ -37,8 +37,12 @@ def main():
     cuts = sorted(c['t'] for c in cues['cues'] if c['type'] in ('whoosh', 'cut'))
     bad = ('-nc', 'nc-', 'nd')
     adaylar = []
-    for s in [sorgu] + ([w for w in sorgu.split()] if len(sorgu.split()) > 1 else []) + ['instrumental']:
-        for r in ara(s, lisans) + ara(s, lisans, 2):
+    from collections import Counter
+    for s in [sorgu] + ([w for w in sorgu.split()] if len(sorgu.split()) > 1 else []) + ['instrumental', 'background music', 'happy', 'loop']:
+        res = ara(s, lisans) + ara(s, lisans, 2)
+        print(f'"{s}": {len(res)} sonuç | kaynak {dict(Counter(r.get("source") for r in res))} | lisans {dict(Counter(r.get("license") for r in res))} | '
+              f'{sum(1 for r in res if (r.get("duration") or 0) / 1000 >= DUR + 3)} tanesi yeterince uzun')
+        for r in res:
             lic = (r.get('license') or '').lower()
             if any(b in lic for b in bad) or r['id'] in kul or not r.get('url'): continue
             d = (r.get('duration') or 0) / 1000
