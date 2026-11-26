@@ -69,6 +69,16 @@ Motorun orijinal örneği ve ayrıntılı stil kuralları: `SKILL_KAYNAK.md` (İ
 
 ## 2. Görünüm kuralları (kontrol listesi)
 
+- **Parçacık efektleri (three.quarks, Cem 27 Kasım 2026):** `engine/src/parcacik.js` hazır efektler verir: `konfeti` (başarı, kazanma, doğru cevap, sürpriz sevinç), `kivilcim` (fikir, "aha" anı, keşif; ampul ve düşünce balonuyla iyi gider), `parilti` (değerli ya da sihirli bir şey, temizlik, ödül; `sure` saniye boyunca), `toz` (düşme, sert iniş, koşup durma, kapı çarpması; ayak hizasında `y: 0`), `duman` (yanan yemek, buhar, sinirden kafadan duman; `sure` saniye). Kullanım:
+  ```js
+  import { Parcaciklar } from '/engine/src/parcacik.js';
+  let PF;                                   // setup içinde, setler kurulduktan sonra:
+  PF = new Parcaciklar(scene);
+  PF.ekle('kivilcim', { t: W('fikir') + .05, pos: [x, 2.1, z] });
+  PF.ekle('konfeti', { t: W('kazandın') + .1, pos: [x, 1.0, z], olcek: .9 });
+  // frame(t) içinde, kamera uygulandıktan hemen sonra:  PF.guncelle(t);
+  ```
+  Kurallar: efekt bir kelimeye bağlanır (`W()`), saniye elle yazılmaz. Videoda en fazla 2-3 efekt; anlamı olmayan yere koyma (her videoda zorunlu değil). Aynı efekti art arda iki videonun ana vurgusu yapma (log.json'a bak). Konfetiyi kameradan en az 1,5 m uzakta patlat, yoksa parçalar ekranı kaplar. Efekt yüzü, kanca yazısını ve altyazıyı (yüksekliğin %70'i) kapatmasın; kare kontrolünde efektin başladıktan 0,2 ve 0,8 sn sonraki karelerini ayrıca aç. Ses de eşlik etsin: konfeti ve parıltıda `shimmer`, tozda `boom` ya da `whoosh` cue'su. Efektler kare kare kesindir (paralel render'da aynı kare çıkar), ek kurulum gerekmez.
 - **Hareket zamanlaması (Cem, 27 Kasım 2026):** kamera itmesi, kart girişi, kanca yazısı gibi bir hareketin süresini ve yumuşatmasını seçerken `docs/motion-design/SKILL.md` (LottieFiles motion-design, MIT: Disney'in 12 animasyon prensibi, süre/easing tabloları, koreografi) bölümüne bak; örneğin giriş 200-500 ms ease-out, çıkış girişten kısa, birden çok öğe 40-80 ms arayla. Dosyadaki "Creator MCP" önerileri bizim için geçersiz.
 
 - **Karakterler komik ve abartılı** (Cem'in beğendiği örnek: `dus-fikri` içindeki patron). Büyük kafa (`headW` 260-280), bıyık/sakal, düğmeli ceket, sarık/külah/şapka gibi ayırt edici bir şey. İfadeler sözle birlikte değişir: kahkaha (`laugh` + `laughMarks` + `bob`), sinsi yarı kapalı göz (`smug` + `lid`), ter damlası (`sweat`), şaşkın (`surprised`), kızgın kaş (`angry`, `brow: -.5`). Bir sahne boyunca tek ifadede kalma. Hareket etmeyen karakter kıpırdamaz ama göz kırpar (`blinkAt`), konuşan karakterin ağzı `flap(env, t)` ile oynar.
