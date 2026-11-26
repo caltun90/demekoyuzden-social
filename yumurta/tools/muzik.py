@@ -10,7 +10,7 @@ Kurallar: yalnızca ticari kullanıma açık lisans (varsayılan CC0; "by" veril
 muzik.json'daki "atif" satırı yazılır). NC ve ND lisanslar hiçbir zaman alınmaz. Aynı parça iki kez kullanılmaz
 (--kullanilan listesi). Uygun parça yoksa hiçbir şey yazmaz, çıkış kodu 2: mix.py kendi bestesiyle devam eder.
 """
-import sys, os, json, random, subprocess, urllib.request, urllib.parse
+import sys, os, json, random, subprocess, urllib.request, urllib.parse, urllib.error
 import numpy as np
 
 UA = {'User-Agent': 'demekoyuzden-muzik/1.0 (github.com/caltun90)'}
@@ -20,10 +20,13 @@ def arg(name, default=None):
     return a[a.index(name) + 1] if name in a else default
 
 def get_json(url):
-    return json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60))
+    try:
+        return json.load(urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=60))
+    except urllib.error.HTTPError as e:                  # anahtarsız erişimde page_size en fazla 20; hata gövdesini göster
+        print('Openverse', e.code, e.read().decode()[:300]); return {}
 
 def ara(sorgu, lisans, page=1):
-    q = urllib.parse.urlencode({'q': sorgu, 'license': lisans, 'category': 'music', 'page_size': 50, 'page': page, 'mature': 'false'})
+    q = urllib.parse.urlencode({'q': sorgu, 'license': lisans, 'category': 'music', 'page_size': 20, 'page': page, 'mature': 'false'})
     return get_json('https://api.openverse.org/v1/audio/?' + q).get('results', [])
 
 def main():
@@ -35,7 +38,7 @@ def main():
     bad = ('-nc', 'nc-', 'nd')
     adaylar = []
     for s in [sorgu] + ([w for w in sorgu.split()] if len(sorgu.split()) > 1 else []) + ['instrumental']:
-        for r in ara(s, lisans):
+        for r in ara(s, lisans) + ara(s, lisans, 2):
             lic = (r.get('license') or '').lower()
             if any(b in lic for b in bad) or r['id'] in kul or not r.get('url'): continue
             d = (r.get('duration') or 0) / 1000
