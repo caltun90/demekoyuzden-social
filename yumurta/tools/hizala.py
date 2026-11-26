@@ -6,7 +6,8 @@ wav2vec2 (WhisperX align) ile kelime kelime sese oturtulur. Türkçe model: mpoy
 
   python3 tools/hizala.py <story_dir> [--dil tr|en] [--ses <dosya>]
 
-Girdi : <story>/voice/words.json (ses.py build: words + lines), voice/script.txt (+ say.txt), ses:
+Girdi : <story>/voice/words.json (ses.py build ya da dizivanastudio kopru.py: words + lines), voice/script.txt (+ say.txt;
+        yoksa satır metinleri words.json'daki lines'tan), ses:
         voice/voice.ogg > voice/voice.wav > audio/mix.wav (ilk bulunan)
 Çıktı : voice/words.json (ölçülen saatler; "hizalama" alanı), voice/words_tahmin.json (eski tahmin),
         voice/hizalama.txt (satır satır fark raporu)
@@ -68,7 +69,10 @@ def main():
     J = json.load(open(os.path.join(V, 'words.json'), encoding='utf-8')); W = J['words']
     if J.get('hizalama', '').startswith('whisperx') and os.path.exists(os.path.join(V, 'words_tahmin.json')):
         J = json.load(open(os.path.join(V, 'words_tahmin.json'), encoding='utf-8')); W = J['words']   # yeniden çalıştırma: tahminden başla
-    L = read_lines(os.path.join(V, 'script.txt')); S = read_lines(os.path.join(V, 'say.txt')) or L
+    L = read_lines(os.path.join(V, 'script.txt'))
+    if L is None and J.get('lines') and 'text' in J['lines'][0]:          # dizivanastudio: satırlar kopru.py'den
+        L = [l['text'] for l in J['lines']]
+    S = read_lines(os.path.join(V, 'say.txt')) or L
     if 'lines' in J: spans = [(l['start'], l['end']) for l in J['lines']]
     else:                                                 # eski words.json: satır aralıkları kelimelerden çıkarılır
         cnt = [len(l.split()) for l in L]
@@ -103,7 +107,8 @@ def main():
         if ok:
             st = fill_missing(map_to_script(sw, timed, lw), a, b)
             st = [{'start': min(max(t['start'], pad_a), pad_b), 'end': min(max(t['end'], pad_a), pad_b)} for t in st]
-            for w, t in zip(lw, st): new.append({'word': w, 'start': round(t['start'], 3), 'end': round(t['end'], 3)})
+            for o, t in zip(old, st):                 # kelimenin diğer alanları (konuşmacı, vurgu...) korunur
+                nw = dict(o); nw['start'] = round(t['start'], 3); nw['end'] = round(t['end'], 3); new.append(nw)
             d = [abs(t['start'] - o['start']) for t, o in zip(st, old)]
             rep.append(f'{i:02d} tamam  skor {score:.2f}  ort. fark {np.mean(d):.2f} sn  en büyük {max(d):.2f} sn | {line}')
         else:
