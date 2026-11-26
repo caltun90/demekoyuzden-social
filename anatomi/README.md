@@ -10,7 +10,7 @@ saniye kancası) burada da geçerlidir. Cem'e yazılan her şey Türkçe, kısa 
 - İçindeki parçalarla açıklanabilen gündelik bir eşya ve onun merak edilen sorusu: termos sıcağı nasıl tutar, düdüklü
   tencere neden daha hızlı pişirir, buzdolabı içini nasıl soğutur, kalem pil nasıl elektrik verir, çakmak nasıl yanar,
   mikrodalga yemeği nasıl ısıtır, kulaklık sesi nasıl çıkarır, ütü, tost makinesi, kapı kilidi, su ısıtıcısı, mekanik saat...
-- `log.json`'daki `"tur": "ic-nasil"` kayıtlarına ve `anatomi/bekleyen.json`'a bak, aynı eşyayı tekrar etme. Marka ve logo çizme (nötr eşya).
+- `log.json`'daki `"tur": "ic-nasil"` kayıtlarına bak, aynı eşyayı tekrar etme. Marka ve logo çizme (nötr eşya).
 - Gerçek ölçüleri ve iç yapıyı araştır (söküm yazıları, üretici şemaları); seslendirmedeki her bilgi iki kaynakla doğrulanır.
 
 ## 2. Senaryo ve ses (yumurta düzeni)
@@ -46,12 +46,13 @@ node anatomi/skill/scripts/new-project.mjs /tmp/ic-<slug>      # şablonu kopyal
 - Kontrol: 0,0 / 0,5 / 1,0 / 1,9 sn ve her vuruştan bir kare (Read ile aç), ilk kareyi 3:4 kırpıp kapak güvenli alanına
   bak (`crop=iw:iw*4/3`), süre 30-50 sn, ses var. Yazı nesneyi ya da altyazıyı kapatıyorsa düzelt.
 
-## 5. Kayıt, onay, yayın
-- Commit: hikâye klasörü (voice/script.txt, words.json, voice.ogg, audio/cues.json, muzik.*, altyazi.ass, anatomi/),
-  video ve `anatomi/bekleyen.json` (`{date, slug, konu, baslik, kaynaklar, video}`). `log.json`'a onaydan ÖNCE yazma:
-  X görevi log.json'daki her Short'u kendiliğinden X'e atar.
-- Cem onaylayana kadar hiçbir yere yüklenmez (görev talimatı). Onaydan sonra Buffer API ile YouTube Short, TikTok ve
-  Instagram Reel olarak planlanır (günlük Short'ların 12:00 ve 19:00 dilimleri dışında, 16:00); YouTube'da yapay zeka
-  beyanı Evet. Sonra kayıt `log.json`'a `"tur": "ic-nasil"` ile eklenir ve `bekleyen.json`'dan silinir; X'e günlük X
-  görevi atar. Cem değişiklik isterse düzeltilip yeniden gönderilir; reddederse video silinir, kayıt `bekleyen.json`'da
-  `"durum": "reddedildi"` olarak kalır (aynı eşya tekrar seçilmez).
+## 5. Kayıt ve yayın (Cem 27 Kasım 2026: "Otomatik yayınlansın, bana sormasın")
+- Kalite kontrolünden (bölüm 4) geçmeyen video yayınlanmaz; düzeltilemezse Cem'e bildirilir.
+- Commit: hikâye klasörü (voice/script.txt, words.json, voice.ogg, audio/cues.json, muzik.*, altyazi.ass, anatomi/) ve
+  video (`videos/<ad>-dikey.mp4`).
+- Buffer API ile YouTube Short, TikTok ve Instagram Reel olarak 16:00'ya planlanır (günlük Short'ların 12:00 ve 19:00
+  dilimleri dışında; 16:00'ya 30 dakikadan az kaldıysa ya da geçtiyse ertesi gün 16:00). Planlananlar API'den geri okunur.
+- Planlamadan SONRA kayıt `log.json`'a `{date, slug, konu, baslik, kaynaklar, "tur": "ic-nasil"}` olarak eklenir; X'e
+  günlük X görevi log.json'dan kendisi atar. Video bilgi için Cem'e gönderilir; beğenmezse Buffer'dan silebilir.
+- `anatomi/bekleyen.json`: yarım kalan (render ya da kota yüzünden bitmeyen) iş `{date, slug, durum, not}` olarak
+  buraya yazılır; sonraki çalışma önce onu tamamlar.
