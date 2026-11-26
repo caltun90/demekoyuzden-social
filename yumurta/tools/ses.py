@@ -125,7 +125,7 @@ def cmd_build(D):
     vow = r'[aeiouy]+' if lang_en else r'[aeıioöuüâîû]'
     syl = lambda w: max(1, len(re.findall(vow, w.lower())))
     L, _ = lines_of(D); C = os.path.join(D, 'voice', 'lines')
-    W, out, T, sr0 = [], [], .05, None
+    W, out, T, sr0, LS = [], [], .05, None, []
     for i, line in enumerate(L):
         x, sr = sf.read(os.path.join(C, f'{i:02d}.wav'), dtype='float32')
         if x.ndim > 1: x = x.mean(1)
@@ -149,15 +149,19 @@ def cmd_build(D):
             for j, w in enumerate(gp): W.append({'word': w, 'start': T + a + cs[j] * (b - a), 'end': T + a + cs[j + 1] * (b - a)})
             a = gaps[k][1] if k < len(gaps) else a
         if not out: out.append(np.zeros(int(.05 * sr), np.float32))
+        LS.append({'text': line, 'start': T, 'end': T + len(x) / sr})
         out.append(x); T += len(x) / sr
         gap = .26 if re.search(r'[.?!]["”]?$', line) else .16
         out.append(np.zeros(int(gap * sr), np.float32)); T += gap
     y = np.concatenate(out); sf.write('/tmp/_y.wav', y, sr0)
     V = os.path.join(D, 'voice')
     subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', '/tmp/_y.wav', '-filter:a', f'atempo={tempo}', '-ar', '48000', os.path.join(V, 'voice.wav')], check=True)
-    for w in W: w['start'] = round(w['start'] / tempo, 3); w['end'] = round(w['end'] / tempo, 3)
+    for w in W + LS: w['start'] = round(w['start'] / tempo, 3); w['end'] = round(w['end'] / tempo, 3)
     dur = round(len(y) / sr0 / tempo, 3)
-    json.dump({'words': W, 'duration': dur}, open(os.path.join(V, 'words.json'), 'w'), ensure_ascii=False, indent=0)
+    # words: hecelerle tahmin (hizala.py / hizala.yml WhisperX ile gerçek sesten ölçer); lines: satırların kesin aralığı
+    json.dump({'words': W, 'lines': LS, 'duration': dur}, open(os.path.join(V, 'words.json'), 'w'), ensure_ascii=False, indent=0)
+    # hizalama için küçük ses kopyası (wav'lar git'e girmez; ogg ~0,5 MB/dk)
+    subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-i', os.path.join(V, 'voice.wav'), '-ac', '1', '-ar', '16000', '-c:a', 'libopus', '-b:a', '48k', os.path.join(V, 'voice.ogg')], check=False)
     here = os.path.dirname(os.path.abspath(__file__))
     subprocess.run([sys.executable, os.path.join(here, 'zarf.py'), os.path.join(V, 'voice.wav'), os.path.join(V, 'env.json')], check=True)
     n0 = len(L[0].split()); nw = len(W)

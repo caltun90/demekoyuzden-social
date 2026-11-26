@@ -1,0 +1,55 @@
+# WhisperX kelime hizalama. Bulut oturumu HuggingFace'e ulaşamadığı için hizalama burada yapılır.
+# Tetikleme (REST): gh api -X POST repos/<owner>/<repo>/actions/workflows/hizala.yml/dispatches
+#   -f ref=main -f 'inputs[klasor]=yumurta/stories/<ad>' [-f 'inputs[dil]=tr|en']
+# Önce görev hikâye klasörünü (voice/words.json, voice/script.txt, voice/voice.ogg) main'e push etmiş olmalı.
+# Çıktı: hizalama/<ad> dalında words.json, words_tahmin.json, hizalama.txt (dal her seferinde üzerine yazılır).
+# Oturum: git fetch -q --depth 1 origin hizalama/<ad> && git show FETCH_HEAD:words.json > <klasor>/voice/words.json
+name: hizala
+run-name: hizala ${{ inputs.klasor }}
+on:
+  workflow_dispatch:
+    inputs:
+      klasor: { description: 'hikâye klasörü (depo kökünden, ör. yumurta/stories/2026-11-27-konu)', required: true }
+      dil: { description: 'tr ya da en (boşsa voice/EN dosyasına bakılır)', required: false, default: '' }
+permissions:
+  contents: write
+concurrency:
+  group: hizala-${{ inputs.klasor }}
+  cancel-in-progress: false
+jobs:
+  hizala:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            yumurta/tools
+            ${{ inputs.klasor }}
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ~/.cache/pip
+            ~/.cache/huggingface
+            ~/.cache/torch
+          key: whisperx-3.8.6-cpu-v1
+      - name: paketler
+        run: |
+          python -m pip install -q imageio-ffmpeg && sudo ln -sf "$(python -c 'import imageio_ffmpeg as m; print(m.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+          python -m pip install -q "torch==2.8.*" "torchaudio==2.8.*" "torchvision==0.23.*" --index-url https://download.pytorch.org/whl/cpu
+          python -m pip install -q whisperx==3.8.6
+      - name: hizala
+        run: |
+          D="${{ inputs.klasor }}"; DIL="${{ inputs.dil }}"
+          python yumurta/tools/hizala.py "$D" ${DIL:+--dil $DIL}
+      - name: teslim dalına koy
+        run: |
+          D="${{ inputs.klasor }}"; S=$(basename "$D"); B="hizalama/$S"
+          mkdir -p /tmp/r && cd /tmp/r && git init -q
+          cp "$GITHUB_WORKSPACE/$D/voice/words.json" "$GITHUB_WORKSPACE/$D/voice/words_tahmin.json" "$GITHUB_WORKSPACE/$D/voice/hizalama.txt" .
+          git add -A
+          git -c user.name=hizala -c user.email=actions@users.noreply.github.com commit -q -m "hizala $S (${{ github.run_id }})"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" HEAD:refs/heads/$B
+          head -1 hizalama.txt; echo "dal: $B"
