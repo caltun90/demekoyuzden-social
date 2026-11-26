@@ -1,0 +1,11 @@
+WhisperX hizalama (tr, ses: mix.wav): 95 kelime, 10/10 satır ölçüldü, tahminle ortalama fark 0.10 sn, en büyük 0.46 sn
+00 tamam  skor 0.84  ort. fark 0.04 sn  en büyük 0.06 sn | Kendi evinin kokusunu neden alamazsın?
+01 tamam  skor 0.87  ort. fark 0.07 sn  en büyük 0.15 sn | Bakın, misafirliğe gittiğin her evin kendine has bir kokusu var, ama seninki sanki hiç kokmuyor.
+02 tamam  skor 0.88  ort. fark 0.11 sn  en büyük 0.19 sn | Kapıdan giren komşuysa hemen söylüyor: "Sizde yine balık pişmiş!"
+03 tamam  skor 0.89  ort. fark 0.11 sn  en büyük 0.46 sn | Sen kokluyorsun, kokluyorsun, hiçbir şey yok.
+04 tamam  skor 0.91  ort. fark 0.11 sn  en büyük 0.36 sn | Araştırmacılar bunu denedi: gönüllülerin evine iki hafta boyunca aynı kokuyu koydular.
+05 tamam  skor 0.89  ort. fark 0.08 sn  en büyük 0.17 sn | İki haftanın sonunda gönüllüler o kokuyu çok daha zor fark ediyordu.
+06 tamam  skor 0.94  ort. fark 0.11 sn  en büyük 0.22 sn | Çünkü burnun ve beynin, hep aynı kalan kokuyu önemsiz sayıp sesini kısıyor.
+07 tamam  skor 0.89  ort. fark 0.19 sn  en büyük 0.29 sn | Tıpkı buzdolabının uğultusunu bir süre sonra duymaman gibi.
+08 tamam  skor 0.90  ort. fark 0.10 sn  en büyük 0.22 sn | Böylece yeni bir kokuyu, mesela yanan yemeği, hemen fark edebiliyorsun.
+09 tamam  skor 0.90  ort. fark 0.14 sn  en büyük 0.30 sn | Yani evin kokuyor; sadece burnun ona çoktan alıştı.

@@ -1,0 +1,481 @@
+{
+"words": [
+{
+"word": "Kendi",
+"start": 0.02,
+"end": 0.263
+},
+{
+"word": "evinin",
+"start": 0.303,
+"end": 0.485
+},
+{
+"word": "kokusunu",
+"start": 0.505,
+"end": 0.889
+},
+{
+"word": "neden",
+"start": 0.909,
+"end": 1.132
+},
+{
+"word": "alamazsın?",
+"start": 1.152,
+"end": 1.556
+},
+{
+"word": "Bakın,",
+"start": 1.785,
+"end": 2.006
+},
+{
+"word": "misafirliğe",
+"start": 2.186,
+"end": 2.708
+},
+{
+"word": "gittiğin",
+"start": 2.728,
+"end": 3.049
+},
+{
+"word": "her",
+"start": 3.149,
+"end": 3.289
+},
+{
+"word": "evin",
+"start": 3.329,
+"end": 3.53
+},
+{
+"word": "kendine",
+"start": 3.57,
+"end": 3.891
+},
+{
+"word": "has",
+"start": 3.911,
+"end": 4.031
+},
+{
+"word": "bir",
+"start": 4.051,
+"end": 4.111
+},
+{
+"word": "kokusu",
+"start": 4.132,
+"end": 4.372
+},
+{
+"word": "var,",
+"start": 4.392,
+"end": 4.533
+},
+{
+"word": "ama",
+"start": 4.833,
+"end": 4.954
+},
+{
+"word": "seninki",
+"start": 4.994,
+"end": 5.415
+},
+{
+"word": "sanki",
+"start": 5.515,
+"end": 5.816
+},
+{
+"word": "hiç",
+"start": 5.896,
+"end": 6.057
+},
+{
+"word": "kokmuyor.",
+"start": 6.097,
+"end": 6.438
+},
+{
+"word": "Kapıdan",
+"start": 6.847,
+"end": 7.169
+},
+{
+"word": "giren",
+"start": 7.189,
+"end": 7.37
+},
+{
+"word": "komşuysa",
+"start": 7.411,
+"end": 7.913
+},
+{
+"word": "hemen",
+"start": 7.994,
+"end": 8.215
+},
+{
+"word": "söylüyor:",
+"start": 8.235,
+"end": 8.577
+},
+{
+"word": "\"Sizde",
+"start": 8.597,
+"end": 9.12
+},
+{
+"word": "yine",
+"start": 9.181,
+"end": 9.402
+},
+{
+"word": "balık",
+"start": 9.442,
+"end": 9.643
+},
+{
+"word": "pişmiş!\"",
+"start": 9.683,
+"end": 10.066
+},
+{
+"word": "Sen",
+"start": 10.274,
+"end": 10.455
+},
+{
+"word": "kokluyorsun,",
+"start": 10.495,
+"end": 11.137
+},
+{
+"word": "kokluyorsun,",
+"start": 11.177,
+"end": 11.699
+},
+{
+"word": "hiçbir",
+"start": 12.06,
+"end": 12.281
+},
+{
+"word": "şey",
+"start": 12.301,
+"end": 12.421
+},
+{
+"word": "yok.",
+"start": 12.441,
+"end": 12.562
+},
+{
+"word": "Araştırmacılar",
+"start": 13.191,
+"end": 13.772
+},
+{
+"word": "bunu",
+"start": 13.832,
+"end": 13.972
+},
+{
+"word": "denedi:",
+"start": 13.992,
+"end": 14.293
+},
+{
+"word": "gönüllülerin",
+"start": 14.654,
+"end": 15.135
+},
+{
+"word": "evine",
+"start": 15.155,
+"end": 15.375
+},
+{
+"word": "iki",
+"start": 15.495,
+"end": 15.636
+},
+{
+"word": "hafta",
+"start": 15.676,
+"end": 15.876
+},
+{
+"word": "boyunca",
+"start": 15.896,
+"end": 16.197
+},
+{
+"word": "aynı",
+"start": 16.377,
+"end": 16.557
+},
+{
+"word": "kokuyu",
+"start": 16.578,
+"end": 16.838
+},
+{
+"word": "koydular.",
+"start": 16.858,
+"end": 17.199
+},
+{
+"word": "İki",
+"start": 17.467,
+"end": 17.587
+},
+{
+"word": "haftanın",
+"start": 17.608,
+"end": 17.928
+},
+{
+"word": "sonunda",
+"start": 17.948,
+"end": 18.269
+},
+{
+"word": "gönüllüler",
+"start": 18.329,
+"end": 18.871
+},
+{
+"word": "o",
+"start": 18.911,
+"end": 18.991
+},
+{
+"word": "kokuyu",
+"start": 19.031,
+"end": 19.312
+},
+{
+"word": "çok",
+"start": 19.352,
+"end": 19.632
+},
+{
+"word": "daha",
+"start": 19.652,
+"end": 19.833
+},
+{
+"word": "zor",
+"start": 19.873,
+"end": 20.053
+},
+{
+"word": "fark",
+"start": 20.094,
+"end": 20.294
+},
+{
+"word": "ediyordu.",
+"start": 20.314,
+"end": 20.595
+},
+{
+"word": "Çünkü",
+"start": 21.044,
+"end": 21.265
+},
+{
+"word": "burnun",
+"start": 21.346,
+"end": 21.667
+},
+{
+"word": "ve",
+"start": 21.687,
+"end": 21.768
+},
+{
+"word": "beynin,",
+"start": 21.828,
+"end": 22.17
+},
+{
+"word": "hep",
+"start": 22.35,
+"end": 22.491
+},
+{
+"word": "aynı",
+"start": 22.632,
+"end": 22.812
+},
+{
+"word": "kalan",
+"start": 22.853,
+"end": 23.054
+},
+{
+"word": "kokuyu",
+"start": 23.094,
+"end": 23.395
+},
+{
+"word": "önemsiz",
+"start": 23.516,
+"end": 23.877
+},
+{
+"word": "sayıp",
+"start": 23.938,
+"end": 24.159
+},
+{
+"word": "sesini",
+"start": 24.259,
+"end": 24.52
+},
+{
+"word": "kısıyor.",
+"start": 24.54,
+"end": 24.822
+},
+{
+"word": "Tıpkı",
+"start": 25.232,
+"end": 25.453
+},
+{
+"word": "buzdolabının",
+"start": 25.574,
+"end": 26.077
+},
+{
+"word": "uğultusunu",
+"start": 26.137,
+"end": 26.58
+},
+{
+"word": "bir",
+"start": 26.62,
+"end": 26.721
+},
+{
+"word": "süre",
+"start": 26.761,
+"end": 26.902
+},
+{
+"word": "sonra",
+"start": 26.922,
+"end": 27.123
+},
+{
+"word": "duymaman",
+"start": 27.143,
+"end": 27.485
+},
+{
+"word": "gibi.",
+"start": 27.506,
+"end": 27.646
+},
+{
+"word": "Böylece",
+"start": 28.096,
+"end": 28.458
+},
+{
+"word": "yeni",
+"start": 28.498,
+"end": 28.678
+},
+{
+"word": "bir",
+"start": 28.699,
+"end": 28.779
+},
+{
+"word": "kokuyu,",
+"start": 28.799,
+"end": 29.14
+},
+{
+"word": "mesela",
+"start": 29.261,
+"end": 29.582
+},
+{
+"word": "yanan",
+"start": 29.642,
+"end": 29.883
+},
+{
+"word": "yemeği,",
+"start": 29.923,
+"end": 30.224
+},
+{
+"word": "hemen",
+"start": 30.385,
+"end": 30.646
+},
+{
+"word": "fark",
+"start": 30.686,
+"end": 30.847
+},
+{
+"word": "edebiliyorsun.",
+"start": 30.887,
+"end": 31.309
+},
+{
+"word": "Yani",
+"start": 31.739,
+"end": 32.02
+},
+{
+"word": "evin",
+"start": 32.181,
+"end": 32.402
+},
+{
+"word": "kokuyor;",
+"start": 32.442,
+"end": 32.804
+},
+{
+"word": "sadece",
+"start": 33.046,
+"end": 33.367
+},
+{
+"word": "burnun",
+"start": 33.448,
+"end": 33.749
+},
+{
+"word": "ona",
+"start": 33.85,
+"end": 34.011
+},
+{
+"word": "çoktan",
+"start": 34.091,
+"end": 34.473
+},
+{
+"word": "alıştı.",
+"start": 34.513,
+"end": 34.795
+}
+],
+"duration": 34.943,
+"hizalama": "whisperx-tr"
+}
