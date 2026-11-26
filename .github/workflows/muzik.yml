@@ -1,0 +1,53 @@
+# Openverse'ten telifsiz müzik + librosa ile vuruş eşleme. Bulut oturumu Openverse'e ulaşamadığı için burada çalışır.
+# Tetikleme (REST): gh api -X POST repos/<owner>/<repo>/actions/workflows/muzik.yml/dispatches
+#   -f ref=main -f 'inputs[klasor]=yumurta/stories/<ad>' -f 'inputs[sorgu]=playful curious' [-f 'inputs[lisans]=cc0']
+# Önce görev hikâyenin audio/cues.json dosyasını (render.mjs --cues) main'e push etmiş olmalı.
+# Çıktı: muzik/<ad> dalında muzik.ogg, muzik.json, muzik-kullanilan.json. Uygun parça yoksa dal yazılmaz ve iş
+# "uygun müzik bulunamadı" der: mix.py kendi bestesiyle devam eder.
+name: muzik
+run-name: muzik ${{ inputs.klasor }} (${{ inputs.sorgu }})
+on:
+  workflow_dispatch:
+    inputs:
+      klasor: { description: 'hikâye klasörü (depo kökünden)', required: true }
+      sorgu: { description: 'Openverse arama kelimeleri (İngilizce, ruh hali: playful, curious, calm, lofi, epic...)', required: false, default: 'upbeat playful' }
+      lisans: { description: 'cc0 (varsayılan, atıf gerekmez) ya da cc0,by (atıf açıklamaya yazılır)', required: false, default: 'cc0' }
+permissions:
+  contents: write
+concurrency:
+  group: muzik-${{ inputs.klasor }}
+  cancel-in-progress: false
+jobs:
+  muzik:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            yumurta/tools
+            yumurta/muzik-kullanilan.json
+            ${{ inputs.klasor }}/audio
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - uses: actions/cache@v4
+        with: { path: ~/.cache/pip, key: librosa-0.11-v1 }
+      - name: paketler
+        run: |
+          python -m pip install -q imageio-ffmpeg librosa soundfile && sudo ln -sf "$(python -c 'import imageio_ffmpeg as m; print(m.get_ffmpeg_exe())')" /usr/local/bin/ffmpeg
+      - name: müzik bul ve vuruşa oturt
+        id: m
+        run: |
+          D="${{ inputs.klasor }}"; K=yumurta/muzik-kullanilan.json; [ -f $K ] || echo '[]' > $K
+          set +e; python yumurta/tools/muzik.py "$D" --sorgu "${{ inputs.sorgu }}" --lisans "${{ inputs.lisans }}" --kullanilan $K; c=$?; set -e
+          echo "kod=$c" >> "$GITHUB_OUTPUT"; [ $c -eq 0 ] || [ $c -eq 2 ]
+      - name: teslim dalına koy
+        if: steps.m.outputs.kod == '0'
+        run: |
+          D="${{ inputs.klasor }}"; S=$(basename "$D"); B="muzik/$S"
+          mkdir -p /tmp/r && cd /tmp/r && git init -q
+          cp "$GITHUB_WORKSPACE/$D/audio/muzik.ogg" "$GITHUB_WORKSPACE/$D/audio/muzik.json" "$GITHUB_WORKSPACE/yumurta/muzik-kullanilan.json" .
+          git add -A
+          git -c user.name=muzik -c user.email=actions@users.noreply.github.com commit -q -m "muzik $S (${{ github.run_id }})"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}" HEAD:refs/heads/$B
+          cat muzik.json; echo "dal: $B"

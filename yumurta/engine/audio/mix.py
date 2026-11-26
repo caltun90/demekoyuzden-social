@@ -71,6 +71,13 @@ put(music, t_call, pad(HZ['D3'], DUR - t_call, .06))
 # final resolve chord
 for f in ('D3', 'A3', 'D4', 'F#4'): put(music, DUR - 1.4, pluck(HZ[f], 1.4, .3), .3)
 
+# Openverse müziği (tools/muzik.py, muzik.yml): audio/muzik.ogg varsa kendi beste yerine o çalar; parça zaten
+# sahne geçişleri vuruşa denk gelecek yerden kesilmiş ve yumuşatılmış olarak gelir. Yoksa beste aynen kalır.
+_ext = story / 'audio' / 'muzik.ogg'
+if _ext.exists():
+    _m = load(_ext); music = np.pad(_m, (0, max(0, N - len(_m))))[:N]
+    print('müzik: audio/muzik.ogg', json.load(open(story / 'audio' / 'muzik.json', encoding='utf-8')).get('baslik', '') if (story / 'audio' / 'muzik.json').exists() else '')
+
 # ------------------------------------------------------------------ effects
 sfx = np.zeros(N)
 def noise(d): return rng.standard_normal(int(round(d * SR)))
