@@ -28,7 +28,7 @@ def get_json(url):
 def ara(sorgu, lisans, page=1):
     # Openverse anahtarsız: page_size en fazla 20. category=music bazı kaynaklarda boş dönüyor: önce onunla, boşsa kategorisiz dene.
     for cat in ('music', None):
-        p = {'q': sorgu, 'license': lisans, 'page_size': 20, 'page': page}
+        p = {'q': sorgu if cat or 'music' in sorgu else sorgu + ' music', 'license': lisans, 'page_size': 20, 'page': page}
         if cat: p['category'] = cat
         j = get_json('https://api.openverse.org/v1/audio/?' + urllib.parse.urlencode(p))
         if page == 1: print(f'  [{sorgu} | {cat}] result_count={j.get("result_count")} {"" if j.get("results") is not None else list(j)[:6]}')

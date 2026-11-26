@@ -29,6 +29,13 @@ Motorun orijinal örneği ve ayrıntılı stil kuralları: `SKILL_KAYNAK.md` (İ
    `build` çıktısında hız 2,4-2,9 ve "kanca biter" 2,0 sn'nin altında olmalı; değilse `--tempo` ve `--kanca` ile ayarla.
    Model: `gemini-3.1-flash-tts-preview` (varsayılan, stil talimatını okumaz). `gemini-3.8-flash-tts` stil talimatını SESLİ okur; onunla `--stil ""` ver.
    TTS bazen kelime tekrar eder ya da ekler: `check` bunun için var, atlamadan çalıştır.
+3b. **Kelime hizalama (WhisperX, Cem 27 Kasım 2026, her videoda):** `build` kelime saatlerini hecelerden TAHMİN eder; WhisperX her kelimenin sesteki gerçek yerini ölçer, böylece `W('kelime')` olayları ve altyazı tam o kelimeye oturur. Bulut oturumu HuggingFace'e ulaşamadığı için GitHub Actions'ta çalışır. `build` artık `voice/voice.ogg` ve `words.json` içine satır aralıklarını da yazar; ikisini commit edip main'e push et, sonra:
+   ```bash
+   gh api -X POST repos/<owner>/<repo>/actions/workflows/hizala.yml/dispatches -f ref=main -f 'inputs[klasor]=yumurta/stories/<ad>'   # İngilizce seste: -f 'inputs[dil]=en'
+   # 2-3 dakika sürer (run listesinde "hizala yumurta/stories/<ad>"); bitince:
+   git fetch -q --depth 1 origin hizalama/<ad> && git show FETCH_HEAD:words.json > stories/<ad>/voice/words.json && git show FETCH_HEAD:hizalama.txt | head -3
+   ```
+   `hizalama.txt` ilk satırı kaç satırın ölçüldüğünü yazar; "TAHMİN KALDI" diyen satırlar eski tahmini korur. İş başarısız olursa ya da 8 dakikada bitmezse tahmini `words.json` ile devam et (video yine çıkar, raporda yaz). Hizalama sahnelerden ÖNCE yapılır; ölçülen `words.json` commit edilir.
 4. **Sahneler:** `stories/<ad>/story.js`. Bir örnek hikâyeyi kopyalayıp sahneleri bu hikâyeye göre yeniden kur. Her görsel olay bir kelimeye bağlıdır (`W('kelime', n)`), saniye elle yazılmaz. Aynı kelime birden çok geçiyorsa `n` ver (`W('padişah', 2)`); `W()` noktalama ve büyük harfi yok sayar.
    - Yatay uzun video: `export const ASPECT = '16:9';` (1920x1080). Dikey varsayılan.
 5. **Kare kontrolü** (yarım çözünürlük, hızlı):
@@ -36,7 +43,17 @@ Motorun orijinal örneği ve ayrıntılı stil kuralları: `SKILL_KAYNAK.md` (İ
    cd engine && npm ci --ignore-scripts && node render.mjs <ad> --stills=0,0.5,1,1.9,<her plandan bir saniye> --scale=0.5
    ```
    `stories/<ad>/out/stills.jpg` dosyasını Read ile aç ve 2. bölümdeki listeyle kontrol et. Düzelt, tekrar bak.
-6. **Ses miksi:** `cd engine && node render.mjs <ad> --cues && python3 audio/mix.py ../stories/<ad>` → `audio/mix.wav`.
+6. **Müzik ve ses miksi (Openverse + librosa, Cem 27 Kasım 2026, her videoda):** motorun kendi bestesi her videoda aynı ezgiyi çalıyor; kanal güvenliği için her videoda farklı, telifsiz (CC0) gerçek bir parça kullanılır ve sahne geçişleri vuruşa oturtulur. Bulut oturumu Openverse'e ulaşamadığı için GitHub Actions'ta çalışır:
+   ```bash
+   cd engine && node render.mjs <ad> --cues && cd ..          # audio/cues.json (geçiş saatleri)
+   # cues.json'u commit edip main'e push et, sonra konunun duygusuna uyan 1-3 İngilizce kelimeyle ara
+   # (playful, curious, calm, mysterious, upbeat, lofi, cinematic, dreamy, funny...; aynı sorguyu art arda kullanma):
+   gh api -X POST repos/<owner>/<repo>/actions/workflows/muzik.yml/dispatches -f ref=main -f 'inputs[klasor]=yumurta/stories/<ad>' -f 'inputs[sorgu]=curious playful'
+   # yaklaşık 1 dakika; bitince:
+   git fetch -q --depth 1 origin muzik/<ad> && for f in muzik.ogg muzik.json; do git show FETCH_HEAD:$f > stories/<ad>/audio/$f; done && git show FETCH_HEAD:muzik-kullanilan.json > muzik-kullanilan.json
+   python3 engine/audio/mix.py stories/<ad>                     # muzik.ogg varsa onu çalar, yoksa kendi bestesini → audio/mix.wav
+   ```
+   İş "uygun müzik bulunamadı" derse `muzik/<ad>` dalı yazılmaz: başka bir sorguyla bir kez daha dene, yine olmazsa mix.py kendi bestesiyle devam eder. Varsayılan lisans CC0 (atıf gerekmez); yine de açıklamaya `Müzik: <baslik> (<sanatci>, CC0)` satırını ekle. `lisans=cc0,by` ile CC BY parça gelirse `muzik.json`'daki `atif` satırı açıklamaya MUTLAKA yazılır. NC ve ND lisanslar hiç alınmaz. `audio/muzik.ogg`, `audio/muzik.json` ve `muzik-kullanilan.json` commit edilir (aynı parça iki kez kullanılmaz).
 7. **Render (GitHub Actions, paralel):** hikâye klasörünü commit edip main'e push et (`out/` ve `voice/lines/` git'e girmez), sonra:
    ```bash
    gh api -X POST repos/<owner>/<repo>/actions/workflows/yumurta-render.yml/dispatches -f ref=main -f 'inputs[story]=<ad>' -f 'inputs[parts]=<N>'

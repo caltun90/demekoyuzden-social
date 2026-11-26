@@ -7,6 +7,7 @@
   "license": "MIT",
   "dependencies": {
     "puppeteer-core": "^23.11.1",
-    "three": "0.170.0"
+    "three": "0.170.0",
+    "three.quarks": "^0.16.0"
   }
 }
