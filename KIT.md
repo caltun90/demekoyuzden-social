@@ -30,6 +30,7 @@ Seriler üstteki etiketle ayrılır ("1 DAKİKADA PSİKOLOJİ", "1 DAKİKADA Bİ
 - Ses: Achird, `gemini-3.1-flash-tts-preview`, `ses.py tts` (senaryo tek istekte okunur, satırlara bölünür),
   `ses.py check` (sorunlu satır yeniden üretilir), `ses.py build --tempo 1.2-1.3 --kanca 1.1`. Günlük ses kotası
   10 istek: iki Short için yeter; gereksiz tekrar yapma.
+- İÇİ NASIL? (Cem, 27 Kasım 2026): haftada bir, ayrı bir görevle anatomy-reveal Short'u üretilir (`anatomi/README.md`). Günlük görev bu Short'lara ve `anatomi/` klasörüne dokunmaz; 16:00 dilimi onlarındır.
 - PARÇACIK EFEKTLERİ (Cem, 27 Kasım 2026): konfeti, kıvılcım, parıltı, toz ve duman efektleri `yumurta/README.md` 2. bölümdeki kurallarla kullanılır (videoda en fazla 2-3, anlamlı anlarda, art arda aynı efekt ana vurgu olmaz).
 - WhisperX VE MÜZİK (Cem, 27 Kasım 2026): her videoda `yumurta/README.md` 3b (WhisperX kelime hizalama) ve 6. adım (Openverse'ten telifsiz CC0 müzik, librosa ile geçişler vuruşa) uygulanır. İkisi de GitHub Actions'ta çalışır; biri başarısız olursa video eski yöntemle (tahmini kelime saatleri / motorun kendi bestesi) yine üretilir ve raporda söylenir. Açıklamaya `Müzik: <baslik> (<sanatci>, CC0)` satırı eklenir.
 - Kapanış: son satır "Bir sonraki videoda görüşmek üzere!" kuralı bu stilde kalkar; son satır tek cümlelik vuruştur
