@@ -69,6 +69,8 @@ Motorun orijinal örneği ve ayrıntılı stil kuralları: `SKILL_KAYNAK.md` (İ
 
 ## 2. Görünüm kuralları (kontrol listesi)
 
+- **Hareket zamanlaması (Cem, 27 Kasım 2026):** kamera itmesi, kart girişi, kanca yazısı gibi bir hareketin süresini ve yumuşatmasını seçerken `docs/motion-design/SKILL.md` (LottieFiles motion-design, MIT: Disney'in 12 animasyon prensibi, süre/easing tabloları, koreografi) bölümüne bak; örneğin giriş 200-500 ms ease-out, çıkış girişten kısa, birden çok öğe 40-80 ms arayla. Dosyadaki "Creator MCP" önerileri bizim için geçersiz.
+
 - **Karakterler komik ve abartılı** (Cem'in beğendiği örnek: `dus-fikri` içindeki patron). Büyük kafa (`headW` 260-280), bıyık/sakal, düğmeli ceket, sarık/külah/şapka gibi ayırt edici bir şey. İfadeler sözle birlikte değişir: kahkaha (`laugh` + `laughMarks` + `bob`), sinsi yarı kapalı göz (`smug` + `lid`), ter damlası (`sweat`), şaşkın (`surprised`), kızgın kaş (`angry`, `brow: -.5`). Bir sahne boyunca tek ifadede kalma. Hareket etmeyen karakter kıpırdamaz ama göz kırpar (`blinkAt`), konuşan karakterin ağzı `flap(env, t)` ile oynar.
 - **Kanca yazısı:** kanalın kuralı istiyorsa ilk 2 sn dev yazı `lib/kanca.js` ile: `import { kancaYazisi } from '/lib/kanca.js'; export function overlay(g, t, ctx) { kancaYazisi(g, t, ctx.W, ctx.H, 'EN FAZLA BEŞ KELİME?'); }`
 - **Kapak güvenli alanı (dikey):** profil ızgarası kapağın ortadaki 3:4 bölümünü gösterir. İlk karede yazı, yüz ve ana nesne yüksekliğin yüzde 15-85 aralığında; kanca yazısı yüzde 17-29'da durur, kafa ve kartlar yüzde 30'un altında başlar. İlk kareyi 3:4'e kırpıp kontrol et (`crop=iw:iw*4/3`).
