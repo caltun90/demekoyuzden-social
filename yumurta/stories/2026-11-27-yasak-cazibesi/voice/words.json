@@ -2,583 +2,583 @@
 "words": [
 {
 "word": "Yasak",
-"start": 0.042,
-"end": 0.294
+"start": 0.061,
+"end": 0.323
 },
 {
 "word": "olan",
-"start": 0.294,
-"end": 0.546
+"start": 0.343,
+"end": 0.545
 },
 {
 "word": "neden",
-"start": 0.546,
-"end": 0.798
+"start": 0.585,
+"end": 0.828
 },
 {
 "word": "daha",
-"start": 0.798,
-"end": 1.051
+"start": 0.848,
+"end": 1.009
 },
 {
 "word": "tatlı",
-"start": 1.051,
-"end": 1.303
+"start": 1.029,
+"end": 1.251
 },
 {
 "word": "gelir?",
-"start": 1.303,
-"end": 1.555
+"start": 1.272,
+"end": 1.474
 },
 {
 "word": "Bakın,",
-"start": 1.772,
-"end": 2.097
+"start": 1.953,
+"end": 2.154
 },
 {
 "word": "mutfakta",
-"start": 2.389,
-"end": 2.758
+"start": 2.395,
+"end": 2.757
 },
 {
 "word": "bir",
-"start": 2.758,
-"end": 2.91
+"start": 2.777,
+"end": 2.858
 },
 {
 "word": "pasta",
-"start": 2.91,
-"end": 3.17
+"start": 2.878,
+"end": 3.139
 },
 {
 "word": "var",
-"start": 3.17,
-"end": 3.322
+"start": 3.179,
+"end": 3.36
 },
 {
 "word": "ve",
-"start": 3.322,
-"end": 3.474
+"start": 3.501,
+"end": 3.581
 },
 {
 "word": "hiç",
-"start": 3.474,
-"end": 3.626
+"start": 3.681,
+"end": 3.822
 },
 {
 "word": "umurunda",
-"start": 3.626,
-"end": 4.104
+"start": 3.862,
+"end": 4.123
 },
 {
 "word": "değil.",
-"start": 4.104,
-"end": 4.365
+"start": 4.164,
+"end": 4.324
 },
 {
 "word": "Sonra",
-"start": 4.581,
-"end": 4.903
+"start": 4.762,
+"end": 5.003
 },
 {
 "word": "annen",
-"start": 4.903,
-"end": 5.225
+"start": 5.084,
+"end": 5.325
 },
 {
 "word": "söylüyor:",
-"start": 5.225,
-"end": 5.681
+"start": 5.345,
+"end": 5.707
 },
 {
 "word": "\"Sakın",
-"start": 5.998,
-"end": 6.312
+"start": 5.727,
+"end": 6.33
 },
 {
 "word": "dokunma,",
-"start": 6.312,
-"end": 6.756
+"start": 6.35,
+"end": 6.772
 },
 {
 "word": "misafire!\"",
-"start": 6.881,
-"end": 7.456
+"start": 6.893,
+"end": 7.395
 },
 {
 "word": "Bir",
-"start": 7.673,
-"end": 7.831
+"start": 7.654,
+"end": 7.735
 },
 {
 "word": "anda",
-"start": 7.831,
-"end": 8.103
+"start": 7.815,
+"end": 8.038
 },
 {
 "word": "aklın",
-"start": 8.103,
-"end": 8.375
+"start": 8.159,
+"end": 8.503
 },
 {
 "word": "fikrin",
-"start": 8.375,
-"end": 8.647
+"start": 8.544,
+"end": 8.827
 },
 {
 "word": "o",
-"start": 8.647,
-"end": 8.805
+"start": 8.867,
+"end": 8.907
 },
 {
 "word": "pastada",
-"start": 8.805,
-"end": 9.191
+"start": 8.928,
+"end": 9.251
 },
 {
 "word": "kalıyor.",
-"start": 9.191,
-"end": 9.576
+"start": 9.292,
+"end": 9.555
 },
 {
 "word": "Annen",
-"start": 9.792,
-"end": 10.072
+"start": 10.035,
+"end": 10.276
 },
 {
 "word": "üstüne",
-"start": 10.072,
-"end": 10.468
+"start": 10.296,
+"end": 10.557
 },
 {
 "word": "not",
-"start": 10.468,
-"end": 10.631
+"start": 10.577,
+"end": 10.718
 },
 {
 "word": "yapıştırıyor;",
-"start": 10.631,
-"end": 11.259
+"start": 10.758,
+"end": 11.28
 },
 {
 "word": "sen",
-"start": 11.551,
-"end": 11.711
+"start": 11.562,
+"end": 11.723
 },
 {
 "word": "kapağı",
-"start": 11.711,
-"end": 12.099
+"start": 11.763,
+"end": 12.044
 },
 {
 "word": "kaldırıp",
-"start": 12.099,
-"end": 12.486
+"start": 12.104,
+"end": 12.446
 },
 {
 "word": "kokluyorsun.",
 "start": 12.486,
-"end": 12.989
+"end": 12.969
 },
 {
 "word": "Annen",
-"start": 13.205,
-"end": 13.483
+"start": 13.406,
+"end": 13.667
 },
 {
 "word": "pastayı",
-"start": 13.483,
-"end": 13.877
+"start": 13.688,
+"end": 14.029
 },
 {
 "word": "dolaba",
-"start": 13.877,
-"end": 14.271
+"start": 14.069,
+"end": 14.331
 },
 {
 "word": "kilitliyor;",
-"start": 14.271,
-"end": 14.78
+"start": 14.351,
+"end": 14.813
 },
 {
 "word": "sen",
-"start": 15.055,
-"end": 15.208
+"start": 15.074,
+"end": 15.255
 },
 {
 "word": "gece",
-"start": 15.208,
-"end": 15.469
+"start": 15.335,
+"end": 15.576
 },
 {
 "word": "yarısı",
-"start": 15.469,
-"end": 15.839
+"start": 15.596,
+"end": 15.878
 },
 {
 "word": "elinde",
-"start": 15.839,
-"end": 16.209
+"start": 15.958,
+"end": 16.239
 },
 {
 "word": "tornavidayla",
-"start": 16.209,
-"end": 16.797
+"start": 16.279,
+"end": 16.882
 },
 {
 "word": "dolabın",
-"start": 16.797,
-"end": 17.167
+"start": 16.902,
+"end": 17.184
 },
 {
 "word": "başındasın.",
-"start": 17.167,
-"end": 17.646
+"start": 17.204,
+"end": 17.666
 },
 {
 "word": "Işık",
-"start": 17.863,
-"end": 18.17
+"start": 18.064,
+"end": 18.264
 },
 {
 "word": "yanıyor:",
-"start": 18.17,
-"end": 18.605
+"start": 18.284,
+"end": 18.645
 },
 {
 "word": "annen",
-"start": 18.88,
-"end": 19.135
+"start": 18.905,
+"end": 19.166
 },
 {
 "word": "kapıda,",
-"start": 19.135,
-"end": 19.496
+"start": 19.186,
+"end": 19.506
 },
 {
 "word": "ağzı",
-"start": 19.755,
-"end": 20.072
+"start": 19.787,
+"end": 20.067
 },
 {
 "word": "açık.",
-"start": 20.072,
-"end": 20.388
+"start": 20.107,
+"end": 20.308
 },
 {
 "word": "Çünkü",
-"start": 20.605,
-"end": 20.91
+"start": 20.846,
+"end": 21.027
 },
 {
 "word": "istediğin",
-"start": 20.91,
-"end": 21.47
+"start": 21.087,
+"end": 21.468
 },
 {
 "word": "pasta",
-"start": 21.47,
-"end": 21.775
+"start": 21.508,
+"end": 21.829
 },
 {
 "word": "değil:",
-"start": 21.775,
-"end": 22.08
+"start": 21.869,
+"end": 22.15
 },
 {
 "word": "elinden",
-"start": 22.48,
-"end": 22.864
+"start": 22.491,
+"end": 22.832
 },
 {
 "word": "alınan",
-"start": 22.864,
-"end": 23.248
+"start": 22.872,
+"end": 23.133
 },
 {
 "word": "seçme",
-"start": 23.248,
-"end": 23.519
+"start": 23.193,
+"end": 23.534
 },
 {
 "word": "özgürlüğün.",
-"start": 23.519,
-"end": 24.016
+"start": 23.574,
+"end": 23.996
 },
 {
 "word": "Psikolojide",
-"start": 24.233,
-"end": 24.813
+"start": 24.394,
+"end": 24.855
 },
 {
 "word": "buna",
-"start": 24.813,
-"end": 25.07
+"start": 24.875,
+"end": 25.035
 },
 {
 "word": "tepkisellik",
-"start": 25.07,
-"end": 25.543
+"start": 25.116,
+"end": 25.637
 },
 {
 "word": "deniyor:",
-"start": 25.543,
-"end": 25.908
+"start": 25.677,
+"end": 25.978
 },
 {
 "word": "biri",
-"start": 26.283,
-"end": 26.596
+"start": 26.279,
+"end": 26.439
 },
 {
 "word": "sana",
-"start": 26.596,
-"end": 26.908
+"start": 26.459,
+"end": 26.64
 },
 {
 "word": "\"yapamazsın\"",
-"start": 26.908,
-"end": 27.482
+"start": 26.66,
+"end": 27.522
 },
 {
 "word": "deyince,",
-"start": 27.482,
-"end": 27.925
+"start": 27.542,
+"end": 27.943
 },
 {
 "word": "o",
-"start": 28.233,
-"end": 28.359
+"start": 28.244,
+"end": 28.304
 },
 {
 "word": "seçeneği",
-"start": 28.359,
-"end": 28.756
+"start": 28.324,
+"end": 28.665
 },
 {
 "word": "geri",
-"start": 28.756,
-"end": 28.972
+"start": 28.705,
+"end": 28.906
 },
 {
 "word": "almak",
-"start": 28.972,
-"end": 29.189
+"start": 28.946,
+"end": 29.146
 },
 {
 "word": "için",
-"start": 29.189,
-"end": 29.405
+"start": 29.166,
+"end": 29.327
 },
 {
 "word": "yanıp",
-"start": 29.405,
-"end": 29.622
+"start": 29.367,
+"end": 29.587
 },
 {
 "word": "tutuşuyorsun.",
-"start": 29.622,
+"start": 29.628,
 "end": 30.109
 },
 {
 "word": "Bir",
-"start": 30.325,
-"end": 30.466
+"start": 30.566,
+"end": 30.666
 },
 {
 "word": "üniversitede",
-"start": 30.466,
-"end": 31.111
+"start": 30.726,
+"end": 31.268
 },
 {
 "word": "tuvalet",
-"start": 31.111,
-"end": 31.454
+"start": 31.388,
+"end": 31.669
 },
 {
 "word": "duvarlarına",
-"start": 31.454,
-"end": 31.998
+"start": 31.709,
+"end": 32.15
 },
 {
 "word": "iki",
-"start": 31.998,
-"end": 32.24
+"start": 32.21,
+"end": 32.33
 },
 {
 "word": "tabela",
-"start": 32.24,
-"end": 32.583
+"start": 32.35,
+"end": 32.611
 },
 {
 "word": "asıldı:",
-"start": 32.583,
-"end": 32.925
+"start": 32.671,
+"end": 32.972
 },
 {
 "word": "\"Lütfen",
-"start": 33.334,
-"end": 33.738
+"start": 33.373,
+"end": 33.754
 },
 {
 "word": "yazmayın\"",
-"start": 33.738,
-"end": 34.31
+"start": 33.814,
+"end": 34.235
 },
 {
 "word": "ve",
-"start": 34.31,
-"end": 34.546
+"start": 34.455,
+"end": 34.556
 },
 {
 "word": "\"Kesinlikle",
-"start": 34.546,
-"end": 35.287
+"start": 34.576,
+"end": 35.498
 },
 {
 "word": "yazmayın!\"",
-"start": 35.287,
-"end": 35.859
+"start": 35.518,
+"end": 35.919
 },
 {
 "word": "Sonuç:",
-"start": 36.076,
-"end": 36.426
+"start": 36.116,
+"end": 36.437
 },
 {
 "word": "en",
-"start": 36.767,
-"end": 36.956
+"start": 36.798,
+"end": 36.919
 },
 {
 "word": "çok",
-"start": 36.956,
-"end": 37.144
+"start": 36.959,
+"end": 37.14
 },
 {
 "word": "yazı,",
-"start": 37.144,
-"end": 37.467
+"start": 37.2,
+"end": 37.481
 },
 {
 "word": "sert",
-"start": 37.701,
-"end": 37.838
+"start": 37.741,
+"end": 37.982
 },
 {
 "word": "tabelanın",
-"start": 37.838,
-"end": 38.27
+"start": 38.022,
+"end": 38.363
 },
 {
 "word": "asıldığı",
-"start": 38.27,
-"end": 38.702
+"start": 38.424,
+"end": 38.704
 },
 {
 "word": "duvarlara",
-"start": 38.702,
-"end": 39.133
+"start": 38.724,
+"end": 39.106
 },
 {
 "word": "yazıldı.",
-"start": 39.133,
-"end": 39.467
+"start": 39.126,
+"end": 39.427
 },
 {
 "word": "Annen",
-"start": 39.684,
-"end": 39.929
+"start": 39.945,
+"end": 40.186
 },
 {
 "word": "\"Tamam,",
-"start": 39.929,
-"end": 40.175
+"start": 40.206,
+"end": 40.769
 },
 {
 "word": "ye\"",
-"start": 40.484,
-"end": 40.671
+"start": 40.889,
+"end": 41.009
 },
 {
 "word": "dediği",
-"start": 40.671,
-"end": 41.127
+"start": 41.19,
+"end": 41.371
 },
 {
 "word": "an",
-"start": 41.127,
-"end": 41.315
+"start": 41.471,
+"end": 41.592
 },
 {
 "word": "pasta",
-"start": 41.315,
-"end": 41.636
+"start": 41.813,
+"end": 42.114
 },
 {
 "word": "yine",
-"start": 41.636,
-"end": 41.958
+"start": 42.154,
+"end": 42.355
 },
 {
 "word": "sıradan",
-"start": 41.958,
-"end": 42.414
+"start": 42.395,
+"end": 42.716
 },
 {
 "word": "bir",
-"start": 42.414,
-"end": 42.601
+"start": 42.736,
+"end": 42.816
 },
 {
 "word": "pasta",
-"start": 42.601,
-"end": 42.923
+"start": 42.857,
+"end": 43.118
 },
 {
 "word": "oluyor.",
-"start": 42.923,
+"start": 43.158,
 "end": 43.379
 },
 {
 "word": "Ta",
 "start": 43.595,
-"end": 43.787
+"end": 43.676
 },
 {
 "word": "ki",
-"start": 43.787,
-"end": 43.979
+"start": 43.796,
+"end": 43.917
 },
 {
 "word": "biri",
-"start": 43.979,
-"end": 44.308
+"start": 43.977,
+"end": 44.117
 },
 {
 "word": "yeniden",
-"start": 44.308,
-"end": 44.775
+"start": 44.177,
+"end": 44.579
 },
 {
 "word": "\"Sakın",
-"start": 44.775,
-"end": 45.104
+"start": 44.599,
+"end": 45.241
 },
 {
 "word": "dokunma\"",
-"start": 45.104,
-"end": 45.57
+"start": 45.262,
+"end": 45.663
 },
 {
 "word": "diyene",
-"start": 45.57,
-"end": 46.037
+"start": 45.844,
+"end": 46.085
 },
 {
 "word": "kadar.",
-"start": 46.037,
-"end": 46.366
+"start": 46.125,
+"end": 46.326
 }
 ],
 "lines": [
@@ -648,5 +648,6 @@
 "end": 46.366
 }
 ],
-"duration": 46.583
+"duration": 46.583,
+"hizalama": "whisperx-tr"
 }
