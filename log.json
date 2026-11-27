@@ -531,5 +531,24 @@
       "Nemours KidsHealth, Why Does My Foot Fall Asleep? (sıkışan sinir beyne düzgün sinyal iletemez; hareket edince sinirler yeniden çalışır ve karıncalanma olur): https://kidshealth.org/en/kids/foot-asleep.html",
       "ScienceAlert, Here's What Happens When Your Foot Falls Asleep (asıl neden kan değil sinir baskısı; karışık sinyaller yanma, batma ve karıncalanma olarak yorumlanır): https://www.sciencealert.com/here-s-what-happens-when-your-foot-falls-asleep"
     ]
+  },
+  {
+    "date": "2026-11-27",
+    "slug": "yasak-cazibesi",
+    "konu": "Yasak olan şeyi neden daha çok isteriz? Tepkisellik (bir seçeneğimiz yasaklanınca ya da elimizden alınınca onu geri kazanma isteği doğar, yasaklanan şey daha çekici gelir; üniversite tuvaletlerinde sert yasak tabelası asılan duvarlara, yumuşak rica tabelası asılanlardan daha çok yazı yazıldı). Yumurta stili.",
+    "baslik": "Yasak olan neden daha tatlı gelir?",
+    "sure_sn": 47,
+    "iskelet": "v1",
+    "efektler": [
+      "parilti",
+      "duman"
+    ],
+    "muzik": "Big Band Jazz (TheoTer, CC0)",
+    "kaynaklar": [
+      "Brehm (1966), A Theory of Psychological Reactance, Academic Press (özgürlüğü tehdit edilen kişi onu geri kazanmaya güdülenir; yasaklanan seçenek daha çekici gelir)",
+      "Steindl, Jonas, Sittenthaler, Traut-Mattausch ve Greenberg (2015), Understanding Psychological Reactance: New Developments and Findings, Zeitschrift für Psychologie 223(4), 205-214 (kuramın güncel derlemesi): https://doi.org/10.1027/2151-2604/a000222",
+      "Pennebaker ve Sanders (1976), American Graffiti: Effects of Authority and Reactance Arousal, Personality and Social Psychology Bulletin 2(3), 264-267 (tuvalet duvarlarına yazmayı yasaklayan sert tabela, yumuşak ricaya göre daha çok yazıya yol açtı; etki tabela yetkili birine atfedilince en güçlüydü): https://doi.org/10.1177/014616727600200312",
+      "Hammock ve Brehm (1966), The attractiveness of choice alternatives when freedom to choose is eliminated by a social agent, Journal of Personality 34(4), 546-554 (elinden alınan seçenek daha çekici bulunur)"
+    ]
   }
 ]
