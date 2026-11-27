@@ -265,7 +265,7 @@ function cameraPath() {
     { t: t('Beynin') + .1, dur: .5, ...SHOT.brain, creep: .08, drift: .008 },
     // the loop: up again, and back on the very same foot (the first frame)
     { t: t('Geçince') + .1, dur: .28, move: 'whip', ...SHOT.up, creep: .2, drift: .02 },
-    { t: t('yine') + .08, dur: .26, move: 'whip', ...SHOT.hook, creep: .1, drift: 0 },
+    { t: t('yine') + .08, dur: .26, move: 'whip', ...SHOT.hook, fov: 48.9, creep: .1, drift: 0 },      // creeps in to the first frame's lens: the loop closes
   ];
   const cp = new CamPath(keys, { fps: FPS });
   cp.kick(t('yok') + .05, .4); cp.kick(t('iğne') + .02, .45); cp.kick(t('ortasına') + .12, .9); cp.kick(t('sıkıştı') + .05, .5); cp.kick(t('karmakarışık') + .05, .45); cp.kick(t('oturuyorsun', 2) + .1, .5);
@@ -387,7 +387,7 @@ export function frame(t, ctx) {
   // ---- the turn: he sits up on the carpet under the diagram
   if (mech) {
     const inBrain = t > A('Beynin'), aha = t > A('sanıyor');
-    let hp = { expr: 'neutral', look: 0, lookY: .55, gazeY: 1, brow: .7, lid: 0, armL: [34, -96], armR: [30, -92], blink: bl(4, A('oturunca'), A('sıkıştı'), A('Tıpkı'), A('geçemiyor'), A('Kalkınca'), A('karmakarışık'), A('Beynin'), A('sanıyor')) };
+    let hp = { expr: 'surprised', mouth: .12, look: 0, lookY: .55, gazeY: 1, brow: .6, armL: [34, -96], armR: [30, -92], blink: bl(4, A('oturunca'), A('sıkıştı'), A('Tıpkı'), A('geçemiyor'), A('Kalkınca'), A('karmakarışık'), A('Beynin'), A('sanıyor')) };
     if (t > A('sıkıştı') && t < A('Tıpkı')) hp = { ...hp, expr: 'surprised', brow: 1, mouth: .4 };
     if (t > A('geçemiyor') && t < A('Kalkınca')) hp = { ...hp, expr: 'worried', brow: .7 };
     if (t > A('karmakarışık') && !inBrain) hp = { ...hp, expr: 'surprised', brow: 1, mouth: .5, bob: Math.sin(t * 34) * 3 };
