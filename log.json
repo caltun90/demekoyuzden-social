@@ -513,5 +513,23 @@
       "Ariely (2008), Predictably Irrational, 3. bölüm: The Cost of Zero Cost (aynı deneyin 15 ve 1 sent, sonra 14 sent ve bedava anlatımı; ekrandaki etiketler buradan)",
       "Nicolau ve Sellers (2012), The Free Breakfast Effect: An Experimental Approach to the Zero Price Model in Tourism, Journal of Travel Research 51(3), 243-249 (etkinin otel paketlerinde tekrarı)"
     ]
+  },
+  {
+    "date": "2026-11-27",
+    "slug": "ayak-uyusmasi",
+    "konu": "Uzun süre oturunca ayağımız neden uyuşur? (üstüne oturunca bacaktaki sinir ve onu besleyen ince damarlar sıkışır, sinyal düzgün iletilemez; baskı kalkınca sinir yeniden çalışmaya başlar ve bir süre düzensiz sinyal yollar, beyin bunu karıncalanma ve iğnelenme olarak algılar; adı parestezi). Yumurta stili.",
+    "baslik": "Uzun oturunca ayağın neden uyuşur?",
+    "sure_sn": 34,
+    "iskelet": "v1",
+    "efektler": [
+      "toz",
+      "kivilcim"
+    ],
+    "muzik": "montage.wav (wi-photos, CC0)",
+    "kaynaklar": [
+      "MSD Manual (Merck Manual) Home Edition, When the Foot Is Asleep (sinire binen baskı, baskı kalkınca karıncalanma): https://www.msdmanuals.com/home/multimedia/table/when-the-foot-is-asleep",
+      "Nemours KidsHealth, Why Does My Foot Fall Asleep? (sıkışan sinir beyne düzgün sinyal iletemez; hareket edince sinirler yeniden çalışır ve karıncalanma olur): https://kidshealth.org/en/kids/foot-asleep.html",
+      "ScienceAlert, Here's What Happens When Your Foot Falls Asleep (asıl neden kan değil sinir baskısı; karışık sinyaller yanma, batma ve karıncalanma olarak yorumlanır): https://www.sciencealert.com/here-s-what-happens-when-your-foot-falls-asleep"
+    ]
   }
 ]
