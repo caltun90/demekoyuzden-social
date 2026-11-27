@@ -1,0 +1,12 @@
+WhisperX hizalama (tr, ses: voice.ogg): 82 kelime, 11/11 satır ölçüldü, tahminle ortalama fark 0.13 sn, en büyük 0.36 sn
+00 tamam  skor 0.79  ort. fark 0.01 sn  en büyük 0.02 sn | Ayağın neden uyuşur?
+01 tamam  skor 0.91  ort. fark 0.17 sn  en büyük 0.32 sn | Bakın, yer sofrasında bir saattir ayağının üstünde oturuyorsun.
+02 tamam  skor 0.89  ort. fark 0.06 sn  en büyük 0.10 sn | Çay almaya kalkıyorsun: ayağın sanki yerinde yok.
+03 tamam  skor 0.82  ort. fark 0.04 sn  en büyük 0.08 sn | Deden gülüyor: "Ayağın uyuşmuş!"
+04 tamam  skor 0.92  ort. fark 0.17 sn  en büyük 0.28 sn | Bir adım atıyorsun: binlerce iğne batıyor.
+05 tamam  skor 0.86  ort. fark 0.09 sn  en büyük 0.22 sn | Bir adım daha: bacağın lastik gibi bükülüyor ve halının ortasına yığılıyorsun.
+06 tamam  skor 0.89  ort. fark 0.14 sn  en büyük 0.36 sn | Çünkü sorun ayağında değil: üstüne oturunca oraya giden sinir sıkıştı.
+07 tamam  skor 0.94  ort. fark 0.06 sn  en büyük 0.14 sn | Tıpkı üstüne basılan hortum gibi, sinyal geçemiyor.
+08 tamam  skor 0.92  ort. fark 0.18 sn  en büyük 0.31 sn | Kalkınca sinir yeniden çalışmaya başlıyor ve bir süre karmakarışık sinyal yolluyor.
+09 tamam  skor 0.91  ort. fark 0.23 sn  en büyük 0.33 sn | Beynin de bu karmaşayı iğne batması sanıyor.
+10 tamam  skor 0.80  ort. fark 0.13 sn  en büyük 0.30 sn | Geçince de gidip yine aynı ayağının üstüne oturuyorsun.

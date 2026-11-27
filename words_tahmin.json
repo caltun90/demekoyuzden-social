@@ -1,0 +1,472 @@
+{
+"words": [
+{
+"word": "Ayağın",
+"start": 0.038,
+"end": 0.392
+},
+{
+"word": "neden",
+"start": 0.392,
+"end": 0.641
+},
+{
+"word": "uyuşur?",
+"start": 0.641,
+"end": 0.994
+},
+{
+"word": "Bakın,",
+"start": 1.194,
+"end": 1.394
+},
+{
+"word": "yer",
+"start": 1.733,
+"end": 1.88
+},
+{
+"word": "sofrasında",
+"start": 1.88,
+"end": 2.341
+},
+{
+"word": "bir",
+"start": 2.341,
+"end": 2.488
+},
+{
+"word": "saattir",
+"start": 2.488,
+"end": 2.845
+},
+{
+"word": "ayağının",
+"start": 2.845,
+"end": 3.306
+},
+{
+"word": "üstünde",
+"start": 3.306,
+"end": 3.663
+},
+{
+"word": "oturuyorsun.",
+"start": 3.663,
+"end": 4.229
+},
+{
+"word": "Çay",
+"start": 4.429,
+"end": 4.595
+},
+{
+"word": "almaya",
+"start": 4.595,
+"end": 4.995
+},
+{
+"word": "kalkıyorsun:",
+"start": 4.995,
+"end": 5.514
+},
+{
+"word": "ayağın",
+"start": 5.783,
+"end": 6.236
+},
+{
+"word": "sanki",
+"start": 6.236,
+"end": 6.556
+},
+{
+"word": "yerinde",
+"start": 6.556,
+"end": 7.009
+},
+{
+"word": "yok.",
+"start": 7.009,
+"end": 7.195
+},
+{
+"word": "Deden",
+"start": 7.395,
+"end": 7.656
+},
+{
+"word": "gülüyor:",
+"start": 7.656,
+"end": 8.026
+},
+{
+"word": "\"Ayağın",
+"start": 8.403,
+"end": 8.789
+},
+{
+"word": "uyuşmuş!\"",
+"start": 8.789,
+"end": 9.175
+},
+{
+"word": "Bir",
+"start": 9.375,
+"end": 9.556
+},
+{
+"word": "adım",
+"start": 9.556,
+"end": 9.867
+},
+{
+"word": "atıyorsun:",
+"start": 9.867,
+"end": 10.436
+},
+{
+"word": "binlerce",
+"start": 10.629,
+"end": 11.028
+},
+{
+"word": "iğne",
+"start": 11.028,
+"end": 11.31
+},
+{
+"word": "batıyor.",
+"start": 11.31,
+"end": 11.709
+},
+{
+"word": "Bir",
+"start": 11.909,
+"end": 12.081
+},
+{
+"word": "adım",
+"start": 12.081,
+"end": 12.376
+},
+{
+"word": "daha:",
+"start": 12.376,
+"end": 12.671
+},
+{
+"word": "bacağın",
+"start": 12.925,
+"end": 13.32
+},
+{
+"word": "lastik",
+"start": 13.32,
+"end": 13.598
+},
+{
+"word": "gibi",
+"start": 13.598,
+"end": 13.877
+},
+{
+"word": "bükülüyor",
+"start": 13.877,
+"end": 14.388
+},
+{
+"word": "ve",
+"start": 14.388,
+"end": 14.551
+},
+{
+"word": "halının",
+"start": 14.551,
+"end": 14.945
+},
+{
+"word": "ortasına",
+"start": 14.945,
+"end": 15.456
+},
+{
+"word": "yığılıyorsun.",
+"start": 15.456,
+"end": 16.084
+},
+{
+"word": "Çünkü",
+"start": 16.284,
+"end": 16.635
+},
+{
+"word": "sorun",
+"start": 16.635,
+"end": 16.987
+},
+{
+"word": "ayağında",
+"start": 16.987,
+"end": 17.632
+},
+{
+"word": "değil:",
+"start": 17.632,
+"end": 17.984
+},
+{
+"word": "üstüne",
+"start": 18.453,
+"end": 18.874
+},
+{
+"word": "oturunca",
+"start": 18.874,
+"end": 19.419
+},
+{
+"word": "oraya",
+"start": 19.419,
+"end": 19.841
+},
+{
+"word": "giden",
+"start": 19.841,
+"end": 20.138
+},
+{
+"word": "sinir",
+"start": 20.138,
+"end": 20.435
+},
+{
+"word": "sıkıştı.",
+"start": 20.435,
+"end": 20.857
+},
+{
+"word": "Tıpkı",
+"start": 21.057,
+"end": 21.32
+},
+{
+"word": "üstüne",
+"start": 21.32,
+"end": 21.694
+},
+{
+"word": "basılan",
+"start": 21.694,
+"end": 22.068
+},
+{
+"word": "hortum",
+"start": 22.068,
+"end": 22.331
+},
+{
+"word": "gibi,",
+"start": 22.331,
+"end": 22.595
+},
+{
+"word": "sinyal",
+"start": 22.803,
+"end": 23.063
+},
+{
+"word": "geçemiyor.",
+"start": 23.063,
+"end": 23.539
+},
+{
+"word": "Kalkınca",
+"start": 23.739,
+"end": 24.176
+},
+{
+"word": "sinir",
+"start": 24.176,
+"end": 24.484
+},
+{
+"word": "yeniden",
+"start": 24.484,
+"end": 24.921
+},
+{
+"word": "çalışmaya",
+"start": 24.921,
+"end": 25.486
+},
+{
+"word": "başlıyor",
+"start": 25.486,
+"end": 25.923
+},
+{
+"word": "ve",
+"start": 25.923,
+"end": 26.103
+},
+{
+"word": "bir",
+"start": 26.103,
+"end": 26.283
+},
+{
+"word": "süre",
+"start": 26.283,
+"end": 26.591
+},
+{
+"word": "karmakarışık",
+"start": 26.591,
+"end": 27.285
+},
+{
+"word": "sinyal",
+"start": 27.285,
+"end": 27.593
+},
+{
+"word": "yolluyor.",
+"start": 27.593,
+"end": 28.03
+},
+{
+"word": "Beynin",
+"start": 28.23,
+"end": 28.519
+},
+{
+"word": "de",
+"start": 28.519,
+"end": 28.688
+},
+{
+"word": "bu",
+"start": 28.688,
+"end": 28.856
+},
+{
+"word": "karmaşayı",
+"start": 28.856,
+"end": 29.387
+},
+{
+"word": "iğne",
+"start": 29.387,
+"end": 29.676
+},
+{
+"word": "batması",
+"start": 29.676,
+"end": 30.085
+},
+{
+"word": "sanıyor.",
+"start": 30.085,
+"end": 30.495
+},
+{
+"word": "Geçince",
+"start": 30.695,
+"end": 31.016
+},
+{
+"word": "de",
+"start": 31.016,
+"end": 31.148
+},
+{
+"word": "gidip",
+"start": 31.148,
+"end": 31.375
+},
+{
+"word": "yine",
+"start": 31.375,
+"end": 31.602
+},
+{
+"word": "aynı",
+"start": 31.602,
+"end": 31.828
+},
+{
+"word": "ayağının",
+"start": 31.828,
+"end": 32.244
+},
+{
+"word": "üstüne",
+"start": 32.244,
+"end": 32.565
+},
+{
+"word": "oturuyorsun.",
+"start": 32.565,
+"end": 33.075
+}
+],
+"lines": [
+{
+"text": "Ayağın neden uyuşur?",
+"start": 0.038,
+"end": 0.994
+},
+{
+"text": "Bakın, yer sofrasında bir saattir ayağının üstünde oturuyorsun.",
+"start": 1.194,
+"end": 4.229
+},
+{
+"text": "Çay almaya kalkıyorsun: ayağın sanki yerinde yok.",
+"start": 4.429,
+"end": 7.195
+},
+{
+"text": "Deden gülüyor: \"Ayağın uyuşmuş!\"",
+"start": 7.395,
+"end": 9.175
+},
+{
+"text": "Bir adım atıyorsun: binlerce iğne batıyor.",
+"start": 9.375,
+"end": 11.709
+},
+{
+"text": "Bir adım daha: bacağın lastik gibi bükülüyor ve halının ortasına yığılıyorsun.",
+"start": 11.909,
+"end": 16.084
+},
+{
+"text": "Çünkü sorun ayağında değil: üstüne oturunca oraya giden sinir sıkıştı.",
+"start": 16.284,
+"end": 20.857
+},
+{
+"text": "Tıpkı üstüne basılan hortum gibi, sinyal geçemiyor.",
+"start": 21.057,
+"end": 23.539
+},
+{
+"text": "Kalkınca sinir yeniden çalışmaya başlıyor ve bir süre karmakarışık sinyal yolluyor.",
+"start": 23.739,
+"end": 28.03
+},
+{
+"text": "Beynin de bu karmaşayı iğne batması sanıyor.",
+"start": 28.23,
+"end": 30.495
+},
+{
+"text": "Geçince de gidip yine aynı ayağının üstüne oturuyorsun.",
+"start": 30.695,
+"end": 33.075
+}
+],
+"duration": 33.275
+}
