@@ -1,0 +1,652 @@
+{
+"words": [
+{
+"word": "Yasak",
+"start": 0.042,
+"end": 0.294
+},
+{
+"word": "olan",
+"start": 0.294,
+"end": 0.546
+},
+{
+"word": "neden",
+"start": 0.546,
+"end": 0.798
+},
+{
+"word": "daha",
+"start": 0.798,
+"end": 1.051
+},
+{
+"word": "tatlı",
+"start": 1.051,
+"end": 1.303
+},
+{
+"word": "gelir?",
+"start": 1.303,
+"end": 1.555
+},
+{
+"word": "Bakın,",
+"start": 1.772,
+"end": 2.097
+},
+{
+"word": "mutfakta",
+"start": 2.389,
+"end": 2.758
+},
+{
+"word": "bir",
+"start": 2.758,
+"end": 2.91
+},
+{
+"word": "pasta",
+"start": 2.91,
+"end": 3.17
+},
+{
+"word": "var",
+"start": 3.17,
+"end": 3.322
+},
+{
+"word": "ve",
+"start": 3.322,
+"end": 3.474
+},
+{
+"word": "hiç",
+"start": 3.474,
+"end": 3.626
+},
+{
+"word": "umurunda",
+"start": 3.626,
+"end": 4.104
+},
+{
+"word": "değil.",
+"start": 4.104,
+"end": 4.365
+},
+{
+"word": "Sonra",
+"start": 4.581,
+"end": 4.903
+},
+{
+"word": "annen",
+"start": 4.903,
+"end": 5.225
+},
+{
+"word": "söylüyor:",
+"start": 5.225,
+"end": 5.681
+},
+{
+"word": "\"Sakın",
+"start": 5.998,
+"end": 6.312
+},
+{
+"word": "dokunma,",
+"start": 6.312,
+"end": 6.756
+},
+{
+"word": "misafire!\"",
+"start": 6.881,
+"end": 7.456
+},
+{
+"word": "Bir",
+"start": 7.673,
+"end": 7.831
+},
+{
+"word": "anda",
+"start": 7.831,
+"end": 8.103
+},
+{
+"word": "aklın",
+"start": 8.103,
+"end": 8.375
+},
+{
+"word": "fikrin",
+"start": 8.375,
+"end": 8.647
+},
+{
+"word": "o",
+"start": 8.647,
+"end": 8.805
+},
+{
+"word": "pastada",
+"start": 8.805,
+"end": 9.191
+},
+{
+"word": "kalıyor.",
+"start": 9.191,
+"end": 9.576
+},
+{
+"word": "Annen",
+"start": 9.792,
+"end": 10.072
+},
+{
+"word": "üstüne",
+"start": 10.072,
+"end": 10.468
+},
+{
+"word": "not",
+"start": 10.468,
+"end": 10.631
+},
+{
+"word": "yapıştırıyor;",
+"start": 10.631,
+"end": 11.259
+},
+{
+"word": "sen",
+"start": 11.551,
+"end": 11.711
+},
+{
+"word": "kapağı",
+"start": 11.711,
+"end": 12.099
+},
+{
+"word": "kaldırıp",
+"start": 12.099,
+"end": 12.486
+},
+{
+"word": "kokluyorsun.",
+"start": 12.486,
+"end": 12.989
+},
+{
+"word": "Annen",
+"start": 13.205,
+"end": 13.483
+},
+{
+"word": "pastayı",
+"start": 13.483,
+"end": 13.877
+},
+{
+"word": "dolaba",
+"start": 13.877,
+"end": 14.271
+},
+{
+"word": "kilitliyor;",
+"start": 14.271,
+"end": 14.78
+},
+{
+"word": "sen",
+"start": 15.055,
+"end": 15.208
+},
+{
+"word": "gece",
+"start": 15.208,
+"end": 15.469
+},
+{
+"word": "yarısı",
+"start": 15.469,
+"end": 15.839
+},
+{
+"word": "elinde",
+"start": 15.839,
+"end": 16.209
+},
+{
+"word": "tornavidayla",
+"start": 16.209,
+"end": 16.797
+},
+{
+"word": "dolabın",
+"start": 16.797,
+"end": 17.167
+},
+{
+"word": "başındasın.",
+"start": 17.167,
+"end": 17.646
+},
+{
+"word": "Işık",
+"start": 17.863,
+"end": 18.17
+},
+{
+"word": "yanıyor:",
+"start": 18.17,
+"end": 18.605
+},
+{
+"word": "annen",
+"start": 18.88,
+"end": 19.135
+},
+{
+"word": "kapıda,",
+"start": 19.135,
+"end": 19.496
+},
+{
+"word": "ağzı",
+"start": 19.755,
+"end": 20.072
+},
+{
+"word": "açık.",
+"start": 20.072,
+"end": 20.388
+},
+{
+"word": "Çünkü",
+"start": 20.605,
+"end": 20.91
+},
+{
+"word": "istediğin",
+"start": 20.91,
+"end": 21.47
+},
+{
+"word": "pasta",
+"start": 21.47,
+"end": 21.775
+},
+{
+"word": "değil:",
+"start": 21.775,
+"end": 22.08
+},
+{
+"word": "elinden",
+"start": 22.48,
+"end": 22.864
+},
+{
+"word": "alınan",
+"start": 22.864,
+"end": 23.248
+},
+{
+"word": "seçme",
+"start": 23.248,
+"end": 23.519
+},
+{
+"word": "özgürlüğün.",
+"start": 23.519,
+"end": 24.016
+},
+{
+"word": "Psikolojide",
+"start": 24.233,
+"end": 24.813
+},
+{
+"word": "buna",
+"start": 24.813,
+"end": 25.07
+},
+{
+"word": "tepkisellik",
+"start": 25.07,
+"end": 25.543
+},
+{
+"word": "deniyor:",
+"start": 25.543,
+"end": 25.908
+},
+{
+"word": "biri",
+"start": 26.283,
+"end": 26.596
+},
+{
+"word": "sana",
+"start": 26.596,
+"end": 26.908
+},
+{
+"word": "\"yapamazsın\"",
+"start": 26.908,
+"end": 27.482
+},
+{
+"word": "deyince,",
+"start": 27.482,
+"end": 27.925
+},
+{
+"word": "o",
+"start": 28.233,
+"end": 28.359
+},
+{
+"word": "seçeneği",
+"start": 28.359,
+"end": 28.756
+},
+{
+"word": "geri",
+"start": 28.756,
+"end": 28.972
+},
+{
+"word": "almak",
+"start": 28.972,
+"end": 29.189
+},
+{
+"word": "için",
+"start": 29.189,
+"end": 29.405
+},
+{
+"word": "yanıp",
+"start": 29.405,
+"end": 29.622
+},
+{
+"word": "tutuşuyorsun.",
+"start": 29.622,
+"end": 30.109
+},
+{
+"word": "Bir",
+"start": 30.325,
+"end": 30.466
+},
+{
+"word": "üniversitede",
+"start": 30.466,
+"end": 31.111
+},
+{
+"word": "tuvalet",
+"start": 31.111,
+"end": 31.454
+},
+{
+"word": "duvarlarına",
+"start": 31.454,
+"end": 31.998
+},
+{
+"word": "iki",
+"start": 31.998,
+"end": 32.24
+},
+{
+"word": "tabela",
+"start": 32.24,
+"end": 32.583
+},
+{
+"word": "asıldı:",
+"start": 32.583,
+"end": 32.925
+},
+{
+"word": "\"Lütfen",
+"start": 33.334,
+"end": 33.738
+},
+{
+"word": "yazmayın\"",
+"start": 33.738,
+"end": 34.31
+},
+{
+"word": "ve",
+"start": 34.31,
+"end": 34.546
+},
+{
+"word": "\"Kesinlikle",
+"start": 34.546,
+"end": 35.287
+},
+{
+"word": "yazmayın!\"",
+"start": 35.287,
+"end": 35.859
+},
+{
+"word": "Sonuç:",
+"start": 36.076,
+"end": 36.426
+},
+{
+"word": "en",
+"start": 36.767,
+"end": 36.956
+},
+{
+"word": "çok",
+"start": 36.956,
+"end": 37.144
+},
+{
+"word": "yazı,",
+"start": 37.144,
+"end": 37.467
+},
+{
+"word": "sert",
+"start": 37.701,
+"end": 37.838
+},
+{
+"word": "tabelanın",
+"start": 37.838,
+"end": 38.27
+},
+{
+"word": "asıldığı",
+"start": 38.27,
+"end": 38.702
+},
+{
+"word": "duvarlara",
+"start": 38.702,
+"end": 39.133
+},
+{
+"word": "yazıldı.",
+"start": 39.133,
+"end": 39.467
+},
+{
+"word": "Annen",
+"start": 39.684,
+"end": 39.929
+},
+{
+"word": "\"Tamam,",
+"start": 39.929,
+"end": 40.175
+},
+{
+"word": "ye\"",
+"start": 40.484,
+"end": 40.671
+},
+{
+"word": "dediği",
+"start": 40.671,
+"end": 41.127
+},
+{
+"word": "an",
+"start": 41.127,
+"end": 41.315
+},
+{
+"word": "pasta",
+"start": 41.315,
+"end": 41.636
+},
+{
+"word": "yine",
+"start": 41.636,
+"end": 41.958
+},
+{
+"word": "sıradan",
+"start": 41.958,
+"end": 42.414
+},
+{
+"word": "bir",
+"start": 42.414,
+"end": 42.601
+},
+{
+"word": "pasta",
+"start": 42.601,
+"end": 42.923
+},
+{
+"word": "oluyor.",
+"start": 42.923,
+"end": 43.379
+},
+{
+"word": "Ta",
+"start": 43.595,
+"end": 43.787
+},
+{
+"word": "ki",
+"start": 43.787,
+"end": 43.979
+},
+{
+"word": "biri",
+"start": 43.979,
+"end": 44.308
+},
+{
+"word": "yeniden",
+"start": 44.308,
+"end": 44.775
+},
+{
+"word": "\"Sakın",
+"start": 44.775,
+"end": 45.104
+},
+{
+"word": "dokunma\"",
+"start": 45.104,
+"end": 45.57
+},
+{
+"word": "diyene",
+"start": 45.57,
+"end": 46.037
+},
+{
+"word": "kadar.",
+"start": 46.037,
+"end": 46.366
+}
+],
+"lines": [
+{
+"text": "Yasak olan neden daha tatlı gelir?",
+"start": 0.042,
+"end": 1.555
+},
+{
+"text": "Bakın, mutfakta bir pasta var ve hiç umurunda değil.",
+"start": 1.772,
+"end": 4.365
+},
+{
+"text": "Sonra annen söylüyor: \"Sakın dokunma, misafire!\"",
+"start": 4.581,
+"end": 7.456
+},
+{
+"text": "Bir anda aklın fikrin o pastada kalıyor.",
+"start": 7.673,
+"end": 9.576
+},
+{
+"text": "Annen üstüne not yapıştırıyor; sen kapağı kaldırıp kokluyorsun.",
+"start": 9.793,
+"end": 12.989
+},
+{
+"text": "Annen pastayı dolaba kilitliyor; sen gece yarısı elinde tornavidayla dolabın başındasın.",
+"start": 13.205,
+"end": 17.646
+},
+{
+"text": "Işık yanıyor: annen kapıda, ağzı açık.",
+"start": 17.863,
+"end": 20.388
+},
+{
+"text": "Çünkü istediğin pasta değil: elinden alınan seçme özgürlüğün.",
+"start": 20.605,
+"end": 24.016
+},
+{
+"text": "Psikolojide buna tepkisellik deniyor: biri sana \"yapamazsın\" deyince, o seçeneği geri almak için yanıp tutuşuyorsun.",
+"start": 24.233,
+"end": 30.109
+},
+{
+"text": "Bir üniversitede tuvalet duvarlarına iki tabela asıldı: \"Lütfen yazmayın\" ve \"Kesinlikle yazmayın!\"",
+"start": 30.325,
+"end": 35.859
+},
+{
+"text": "Sonuç: en çok yazı, sert tabelanın asıldığı duvarlara yazıldı.",
+"start": 36.076,
+"end": 39.467
+},
+{
+"text": "Annen \"Tamam, ye\" dediği an pasta yine sıradan bir pasta oluyor.",
+"start": 39.684,
+"end": 43.379
+},
+{
+"text": "Ta ki biri yeniden \"Sakın dokunma\" diyene kadar.",
+"start": 43.595,
+"end": 46.366
+}
+],
+"duration": 46.583
+}

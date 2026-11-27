@@ -1,0 +1,14 @@
+WhisperX hizalama (tr, ses: voice.ogg): 116 kelime, 13/13 satır ölçüldü, tahminle ortalama fark 0.12 sn, en büyük 0.52 sn
+00 tamam  skor 0.92  ort. fark 0.03 sn  en büyük 0.05 sn | Yasak olan neden daha tatlı gelir?
+01 tamam  skor 0.91  ort. fark 0.10 sn  en büyük 0.24 sn | Bakın, mutfakta bir pasta var ve hiç umurunda değil.
+02 tamam  skor 0.87  ort. fark 0.13 sn  en büyük 0.27 sn | Sonra annen söylüyor: "Sakın dokunma, misafire!"
+03 tamam  skor 0.94  ort. fark 0.10 sn  en büyük 0.22 sn | Bir anda aklın fikrin o pastada kalıyor.
+04 tamam  skor 0.86  ort. fark 0.10 sn  en büyük 0.24 sn | Annen üstüne not yapıştırıyor; sen kapağı kaldırıp kokluyorsun.
+05 tamam  skor 0.93  ort. fark 0.12 sn  en büyük 0.21 sn | Annen pastayı dolaba kilitliyor; sen gece yarısı elinde tornavidayla dolabın başındasın.
+06 tamam  skor 0.85  ort. fark 0.08 sn  en büyük 0.20 sn | Işık yanıyor: annen kapıda, ağzı açık.
+07 tamam  skor 0.90  ort. fark 0.08 sn  en büyük 0.24 sn | Çünkü istediğin pasta değil: elinden alınan seçme özgürlüğün.
+08 tamam  skor 0.87  ort. fark 0.07 sn  en büyük 0.25 sn | Psikolojide buna tepkisellik deniyor: biri sana "yapamazsın" deyince, o seçeneği geri almak için yanıp tutuşuyorsun.
+09 tamam  skor 0.88  ort. fark 0.16 sn  en büyük 0.28 sn | Bir üniversitede tuvalet duvarlarına iki tabela asıldı: "Lütfen yazmayın" ve "Kesinlikle yazmayın!"
+10 tamam  skor 0.91  ort. fark 0.06 sn  en büyük 0.18 sn | Sonuç: en çok yazı, sert tabelanın asıldığı duvarlara yazıldı.
+11 tamam  skor 0.83  ort. fark 0.37 sn  en büyük 0.52 sn | Annen "Tamam, ye" dediği an pasta yine sıradan bir pasta oluyor.
+12 tamam  skor 0.91  ort. fark 0.10 sn  en büyük 0.27 sn | Ta ki biri yeniden "Sakın dokunma" diyene kadar.
