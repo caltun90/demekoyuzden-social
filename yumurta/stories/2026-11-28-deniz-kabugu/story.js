@@ -262,10 +262,10 @@ export const LOOK = {
 const SHOT = {
   hook: { pos: [-.02, 1.4, 1.95], look: [-.02, 1.33, -.5], fov: 46 },
   ear: { pos: [.12, 1.5, .5], look: [-.04, 1.46, -.5], fov: 40 },
-  face: { pos: [-.5, 1.48, .72], look: [-.3, 1.44, -.5], fov: 40 },
+  face: { pos: [-.46, 1.48, 1.35], look: [-.3, 1.44, -.5], fov: 40 },
   wide: { pos: [.3, 1.35, 4.2], look: [.3, 1.02, -1], fov: 50 },
   wideIn: { pos: [-.05, 1.36, 2.7], look: [-.08, 1.2, -.5], fov: 46 },
-  amca: { pos: [1.3, 1.5, 1.55], look: [1.14, 1.47, -1.05], fov: 42 },
+  amca: { pos: [1.4, 1.5, 1.55], look: [1.27, 1.47, -1.05], fov: 42 },
   two: { pos: [.4, 1.45, 4.3], look: [.4, 1.2, -1], fov: 50 },
   twoIn: { pos: [.42, 1.42, 3.7], look: [.42, 1.22, -1], fov: 48 },
   mech: { pos: [M.x, 1.3, 4.0], look: [M.x, 1.2, .2], fov: 46 },
@@ -409,7 +409,6 @@ export function frame(t, ctx) {
     else if (t >= tWave1 && t < tB2) wv(tWave1, V(hx + .6, 1.98, HP.z), .9);
     else if (t >= tWave3 && t < tWorld) wv(tWave3, V(hx + .1, 2.2, HP.z), 1.1);
     if (t >= tOcean && t < tB3) { const s = popCard(dyn.ocean, tOcean, t, V(hx + .52, 2.3, HP.z - .1), 1.0); if (s) { dyn.ocean.rotation.z += Math.sin(t * 4) * .03; dyn.ocean.position.y += Math.sin(t * 6) * .015; } }
-    if (hook && t > A('sesi')) popCard(dyn.q[0], A('sesi'), t, V(hx - .32, 1.82, HP.z + .02));
     // "not the sea": the world's own hum comes to the shell from every side
     if (worldBeat) {
       if (t > A('deniz', 5) && t < A('etrafındaki', 2)) { wv(A('deniz', 5), V(hx + .72, 2.15, HP.z), .9); if (t > A('değil')) popCard(dyn.cross, A('değil'), t, V(hx + .72, 2.15, HP.z + .03), 1.2); }
@@ -452,9 +451,9 @@ export function frame(t, ctx) {
     if (t >= tStun && t < tWorld) ap = t < A('gelmiyor') ? { ...ap, expr: 'surprised', look: -.5, brow: 1, mouth: .35, lid: 0 } : { ...ap, expr: 'worried', look: .1, lookY: .3, gazeX: -.6, gazeY: .6, brow: .8, sweat: 1, lid: 0, mouth: .1, armL: [40, -64], armR: [40, -64] };
     if (t >= tWorld) ap = t < A('Ama') ? { ...ap, expr: 'worried', look: -.6, brow: .7, lid: 0, armL: [40, -64], armR: [40, -64] } : { ...ap, expr: 'surprised', mouth: .3, look: -.2, lookY: .3, gazeY: .6, brow: 1, lid: 0, armL: EAR };
     AM.show(); AM.place(AP.x, 0, AP.z, cam, tint); AM.draw({ ...ap, ...lit }); AM.castFrom(SUNDIR, true);
-    if (t >= tStun && t < A('denizden')) popCard(dyn.q[1], tStun + .08, t, t < tBreak + .1 ? V(AP.x - .5, 2.0, AP.z + .02) : V(AP.x + .42, 1.93, AP.z + .02));
-    if (t > A('gelmiyor') && t < tMech) { const s = popCard(dyn.waves, A('denizden'), t, V(AP.x + .4, 1.93, AP.z), .75); popCard(dyn.cross, A('gelmiyor'), t, V(AP.x + .4, 1.93, AP.z + .03), .95); }
-    else if (t >= A('denizden') && t < tMech) popCard(dyn.waves, A('denizden'), t, V(AP.x + .4, 1.93, AP.z), .75);
+    if (t >= tStun && t < A('denizden')) popCard(dyn.q[1], tStun + .08, t, t < tBreak + .1 ? V(AP.x - .5, 2.0, AP.z + .02) : V(AP.x + .47, 2.0, AP.z + .02));
+    if (t > A('gelmiyor') && t < tMech) { const s = popCard(dyn.waves, A('denizden'), t, V(AP.x + .47, 2.0, AP.z), .62); popCard(dyn.cross, A('gelmiyor'), t, V(AP.x + .47, 2.0, AP.z + .03), .8); }
+    else if (t >= A('denizden') && t < tMech) popCard(dyn.waves, A('denizden'), t, V(AP.x + .47, 2.0, AP.z), .62);
     // the last gag: now he listens to his own glass
     if (t > A('Ama') && !loop) { const eh = AM.hand(-1) || V(AP.x - .3, 1.5, AP.z); popCard(dyn.glassA, A('Ama') + .1, t, eh.clone().add(V(-.06, .04, .02)), 1.1, false); dyn.glassA.rotation.z = -1.35; dyn.glass3.visible = false; }
     if ((t >= A('Balıkçı') && t < tB2) || (t >= tBreak && t < tMech)) focus = V(AP.x, 1.5, AP.z);
