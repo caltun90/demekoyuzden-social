@@ -550,5 +550,23 @@
       "Pennebaker ve Sanders (1976), American Graffiti: Effects of Authority and Reactance Arousal, Personality and Social Psychology Bulletin 2(3), 264-267 (tuvalet duvarlarına yazmayı yasaklayan sert tabela, yumuşak ricaya göre daha çok yazıya yol açtı; etki tabela yetkili birine atfedilince en güçlüydü): https://doi.org/10.1177/014616727600200312",
       "Hammock ve Brehm (1966), The attractiveness of choice alternatives when freedom to choose is eliminated by a social agent, Journal of Personality 34(4), 546-554 (elinden alınan seçenek daha çekici bulunur)"
     ]
+  },
+  {
+    "date": "2026-11-28",
+    "slug": "deniz-kabugu",
+    "konu": "Deniz kabuğunu kulağımıza tutunca neden deniz sesi duyarız? (ses denizden gelmez; kabuğun içindeki boşluk etraftaki uğultuyu içinde yansıtıp bazı frekanslarını güçlendirir; boş bir bardak da aynı sesi verir, ses geçirmeyen odada kabuk da susar). Yumurta stili.",
+    "baslik": "Deniz kabuğunda neden deniz sesi duyarsın?",
+    "sure_sn": 31,
+    "iskelet": "v1",
+    "efektler": [
+      "toz",
+      "kivilcim"
+    ],
+    "muzik": "Happy (Hoshi_Hana, CC0)",
+    "kaynaklar": [
+      "Live Science, Why do seashells sound like the ocean? (kabuk etraftaki gürültüyü içinde yansıtıp bazı frekansları güçlendirir; boş bardak ya da kulağa kapatılan avuç da aynı sesi verir): https://www.livescience.com/33041-why-do-seashells-sound-like-the-ocean.html",
+      "UC Berkeley California Magazine, Glad You Asked (Temmuz-Ağustos 2007; ses geçirmeyen stüdyoda kabuk ses vermez, bu yüzden kan akışı açıklaması yanlıştır): https://alumni.berkeley.edu/california-magazine/july-august-2007-summer-travel-issue/glad-you-asked/",
+      "HowStuffWorks, Why Can You Hear the Ocean When Holding a Seashell to Your Ear? (ortam gürültüsünün kabuk içinde rezonansı): https://science.howstuffworks.com/question556.htm"
+    ]
   }
 ]
