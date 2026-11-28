@@ -1,0 +1,697 @@
+{
+"words": [
+{
+"word": "Adını",
+"start": 0.041,
+"end": 0.435
+},
+{
+"word": "az",
+"start": 0.435,
+"end": 0.598
+},
+{
+"word": "önce",
+"start": 0.598,
+"end": 0.876
+},
+{
+"word": "söyledi.",
+"start": 0.876,
+"end": 1.271
+},
+{
+"word": "Unuttun",
+"start": 1.271,
+"end": 1.665
+},
+{
+"word": "bile!",
+"start": 1.665,
+"end": 1.943
+},
+{
+"word": "Bakın,",
+"start": 2.157,
+"end": 2.394
+},
+{
+"word": "bir",
+"start": 2.698,
+"end": 2.877
+},
+{
+"word": "düğündesin",
+"start": 2.877,
+"end": 3.439
+},
+{
+"word": "ve",
+"start": 3.439,
+"end": 3.619
+},
+{
+"word": "teyzen",
+"start": 3.619,
+"end": 3.926
+},
+{
+"word": "seni",
+"start": 3.926,
+"end": 4.233
+},
+{
+"word": "herkesle",
+"start": 4.233,
+"end": 4.668
+},
+{
+"word": "tanıştırıyor.",
+"start": 4.668,
+"end": 5.358
+},
+{
+"word": "İlk",
+"start": 5.572,
+"end": 5.711
+},
+{
+"word": "adam",
+"start": 5.711,
+"end": 5.951
+},
+{
+"word": "elini",
+"start": 5.951,
+"end": 6.29
+},
+{
+"word": "sıkıyor:",
+"start": 6.29,
+"end": 6.629
+},
+{
+"word": "\"Ben",
+"start": 6.883,
+"end": 7.04
+},
+{
+"word": "Selim.\"",
+"start": 7.04,
+"end": 7.308
+},
+{
+"word": "Üç",
+"start": 7.522,
+"end": 7.69
+},
+{
+"word": "saniye",
+"start": 7.69,
+"end": 8.098
+},
+{
+"word": "sonra",
+"start": 8.098,
+"end": 8.387
+},
+{
+"word": "adı",
+"start": 8.387,
+"end": 8.675
+},
+{
+"word": "aklından",
+"start": 8.675,
+"end": 9.083
+},
+{
+"word": "uçmuş.",
+"start": 9.083,
+"end": 9.372
+},
+{
+"word": "Teyzen",
+"start": 9.585,
+"end": 9.834
+},
+{
+"word": "fısıldıyor:",
+"start": 9.834,
+"end": 10.29
+},
+{
+"word": "\"Selim'di!\"",
+"start": 10.552,
+"end": 11.149
+},
+{
+"word": "İkinci",
+"start": 11.362,
+"end": 11.65
+},
+{
+"word": "adam",
+"start": 11.65,
+"end": 11.854
+},
+{
+"word": "adını",
+"start": 11.854,
+"end": 12.142
+},
+{
+"word": "iki",
+"start": 12.142,
+"end": 12.346
+},
+{
+"word": "kere",
+"start": 12.346,
+"end": 12.549
+},
+{
+"word": "söylüyor,",
+"start": 12.549,
+"end": 12.838
+},
+{
+"word": "sen",
+"start": 13.059,
+"end": 13.188
+},
+{
+"word": "de",
+"start": 13.188,
+"end": 13.317
+},
+{
+"word": "tekrar",
+"start": 13.317,
+"end": 13.538
+},
+{
+"word": "ediyorsun:",
+"start": 13.538,
+"end": 13.944
+},
+{
+"word": "yine",
+"start": 14.313,
+"end": 14.501
+},
+{
+"word": "uçuyor.",
+"start": 14.501,
+"end": 14.769
+},
+{
+"word": "Üçüncü",
+"start": 14.982,
+"end": 15.33
+},
+{
+"word": "adam",
+"start": 15.33,
+"end": 15.576
+},
+{
+"word": "adını",
+"start": 15.576,
+"end": 15.924
+},
+{
+"word": "söylemiyor",
+"start": 15.924,
+"end": 16.375
+},
+{
+"word": "bile:",
+"start": 16.375,
+"end": 16.621
+},
+{
+"word": "\"Ben",
+"start": 17.031,
+"end": 17.161
+},
+{
+"word": "fırıncıyım.\"",
+"start": 17.161,
+"end": 17.57
+},
+{
+"word": "İşte",
+"start": 17.783,
+"end": 18.058
+},
+{
+"word": "bunu",
+"start": 18.058,
+"end": 18.333
+},
+{
+"word": "bütün",
+"start": 18.333,
+"end": 18.608
+},
+{
+"word": "gece",
+"start": 18.608,
+"end": 18.883
+},
+{
+"word": "unutmuyorsun!",
+"start": 18.883,
+"end": 19.502
+},
+{
+"word": "Çünkü",
+"start": 19.715,
+"end": 19.774
+},
+{
+"word": "\"fırıncı\"",
+"start": 19.774,
+"end": 19.858
+},
+{
+"word": "deyince",
+"start": 19.858,
+"end": 19.941
+},
+{
+"word": "aklına",
+"start": 19.941,
+"end": 20.025
+},
+{
+"word": "ekmek,",
+"start": 20.025,
+"end": 20.084
+},
+{
+"word": "un,",
+"start": 20.24,
+"end": 21.707
+},
+{
+"word": "sıcak",
+"start": 21.863,
+"end": 22.215
+},
+{
+"word": "bir",
+"start": 22.215,
+"end": 22.421
+},
+{
+"word": "fırın",
+"start": 22.421,
+"end": 22.773
+},
+{
+"word": "geliyor:",
+"start": 22.773,
+"end": 23.272
+},
+{
+"word": "kelime",
+"start": 23.608,
+"end": 23.918
+},
+{
+"word": "bir",
+"start": 23.918,
+"end": 24.045
+},
+{
+"word": "sürü",
+"start": 24.045,
+"end": 24.263
+},
+{
+"word": "şeye",
+"start": 24.263,
+"end": 24.481
+},
+{
+"word": "tutunuyor.",
+"start": 24.481,
+"end": 24.881
+},
+{
+"word": "\"Selim\"",
+"start": 25.094,
+"end": 25.371
+},
+{
+"word": "ise",
+"start": 25.371,
+"end": 25.648
+},
+{
+"word": "hiçbir",
+"start": 25.648,
+"end": 25.925
+},
+{
+"word": "şeye",
+"start": 25.925,
+"end": 26.202
+},
+{
+"word": "tutunmuyor:",
+"start": 26.202,
+"end": 26.709
+},
+{
+"word": "boş",
+"start": 26.963,
+"end": 27.095
+},
+{
+"word": "bir",
+"start": 27.095,
+"end": 27.226
+},
+{
+"word": "etiket",
+"start": 27.226,
+"end": 27.546
+},
+{
+"word": "gibi.",
+"start": 27.546,
+"end": 27.771
+},
+{
+"word": "Tıpkı",
+"start": 27.984,
+"end": 28.241
+},
+{
+"word": "çivisiz",
+"start": 28.241,
+"end": 28.605
+},
+{
+"word": "duvara",
+"start": 28.605,
+"end": 28.968
+},
+{
+"word": "asılan",
+"start": 28.968,
+"end": 29.332
+},
+{
+"word": "tablo",
+"start": 29.332,
+"end": 29.588
+},
+{
+"word": "gibi:",
+"start": 29.588,
+"end": 29.845
+},
+{
+"word": "tutunacak",
+"start": 30.189,
+"end": 30.598
+},
+{
+"word": "yeri",
+"start": 30.598,
+"end": 30.822
+},
+{
+"word": "yok,",
+"start": 30.822,
+"end": 30.952
+},
+{
+"word": "düşüyor.",
+"start": 31.222,
+"end": 31.534
+},
+{
+"word": "Bir",
+"start": 31.747,
+"end": 31.921
+},
+{
+"word": "deneyde",
+"start": 31.921,
+"end": 32.344
+},
+{
+"word": "yabancı",
+"start": 32.344,
+"end": 32.767
+},
+{
+"word": "yüzlere",
+"start": 32.767,
+"end": 33.19
+},
+{
+"word": "aynı",
+"start": 33.19,
+"end": 33.489
+},
+{
+"word": "kelime",
+"start": 33.489,
+"end": 33.912
+},
+{
+"word": "bazen",
+"start": 33.912,
+"end": 34.21
+},
+{
+"word": "meslek,",
+"start": 34.21,
+"end": 34.509
+},
+{
+"word": "bazen",
+"start": 34.738,
+"end": 34.983
+},
+{
+"word": "soyadı",
+"start": 34.983,
+"end": 35.329
+},
+{
+"word": "diye",
+"start": 35.329,
+"end": 35.574
+},
+{
+"word": "eşlendi.",
+"start": 35.574,
+"end": 35.92
+},
+{
+"word": "Meslek",
+"start": 36.133,
+"end": 36.421
+},
+{
+"word": "olunca",
+"start": 36.421,
+"end": 36.83
+},
+{
+"word": "akılda",
+"start": 36.83,
+"end": 37.238
+},
+{
+"word": "kaldı,",
+"start": 37.238,
+"end": 37.526
+},
+{
+"word": "soyadı",
+"start": 37.731,
+"end": 38.074
+},
+{
+"word": "olunca",
+"start": 38.074,
+"end": 38.417
+},
+{
+"word": "çok",
+"start": 38.417,
+"end": 38.558
+},
+{
+"word": "daha",
+"start": 38.558,
+"end": 38.8
+},
+{
+"word": "kolay",
+"start": 38.8,
+"end": 39.043
+},
+{
+"word": "unutuldu.",
+"start": 39.043,
+"end": 39.486
+},
+{
+"word": "Adı",
+"start": 39.7,
+"end": 39.881
+},
+{
+"word": "da",
+"start": 39.881,
+"end": 39.987
+},
+{
+"word": "buradan",
+"start": 39.987,
+"end": 40.245
+},
+{
+"word": "geliyor:",
+"start": 40.245,
+"end": 40.503
+},
+{
+"word": "fırıncı",
+"start": 40.732,
+"end": 41.029
+},
+{
+"word": "paradoksu.",
+"start": 41.029,
+"end": 41.413
+},
+{
+"word": "Gecenin",
+"start": 41.626,
+"end": 41.94
+},
+{
+"word": "sonunda",
+"start": 41.94,
+"end": 42.253
+},
+{
+"word": "fırıncı",
+"start": 42.253,
+"end": 42.567
+},
+{
+"word": "sana",
+"start": 42.567,
+"end": 42.788
+},
+{
+"word": "dönüyor:",
+"start": 42.788,
+"end": 43.102
+},
+{
+"word": "\"Senin",
+"start": 43.569,
+"end": 43.793
+},
+{
+"word": "adın",
+"start": 43.793,
+"end": 44.018
+},
+{
+"word": "neydi?\"",
+"start": 44.018,
+"end": 44.242
+}
+],
+"lines": [
+{
+"text": "Adını az önce söyledi. Unuttun bile!",
+"start": 0.041,
+"end": 1.943
+},
+{
+"text": "Bakın, bir düğündesin ve teyzen seni herkesle tanıştırıyor.",
+"start": 2.157,
+"end": 5.358
+},
+{
+"text": "İlk adam elini sıkıyor: \"Ben Selim.\"",
+"start": 5.572,
+"end": 7.308
+},
+{
+"text": "Üç saniye sonra adı aklından uçmuş.",
+"start": 7.522,
+"end": 9.372
+},
+{
+"text": "Teyzen fısıldıyor: \"Selim'di!\"",
+"start": 9.585,
+"end": 11.149
+},
+{
+"text": "İkinci adam adını iki kere söylüyor, sen de tekrar ediyorsun: yine uçuyor.",
+"start": 11.362,
+"end": 14.769
+},
+{
+"text": "Üçüncü adam adını söylemiyor bile: \"Ben fırıncıyım.\"",
+"start": 14.982,
+"end": 17.57
+},
+{
+"text": "İşte bunu bütün gece unutmuyorsun!",
+"start": 17.783,
+"end": 19.502
+},
+{
+"text": "Çünkü \"fırıncı\" deyince aklına ekmek, un, sıcak bir fırın geliyor: kelime bir sürü şeye tutunuyor.",
+"start": 19.715,
+"end": 24.881
+},
+{
+"text": "\"Selim\" ise hiçbir şeye tutunmuyor: boş bir etiket gibi.",
+"start": 25.094,
+"end": 27.771
+},
+{
+"text": "Tıpkı çivisiz duvara asılan tablo gibi: tutunacak yeri yok, düşüyor.",
+"start": 27.984,
+"end": 31.534
+},
+{
+"text": "Bir deneyde yabancı yüzlere aynı kelime bazen meslek, bazen soyadı diye eşlendi.",
+"start": 31.747,
+"end": 35.92
+},
+{
+"text": "Meslek olunca akılda kaldı, soyadı olunca çok daha kolay unutuldu.",
+"start": 36.133,
+"end": 39.486
+},
+{
+"text": "Adı da buradan geliyor: fırıncı paradoksu.",
+"start": 39.7,
+"end": 41.413
+},
+{
+"text": "Gecenin sonunda fırıncı sana dönüyor: \"Senin adın neydi?\"",
+"start": 41.626,
+"end": 44.242
+}
+],
+"duration": 44.455
+}
