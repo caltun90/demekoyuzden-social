@@ -1,0 +1,11 @@
+WhisperX hizalama (tr, ses: voice.ogg): 83 kelime, 10/10 satır ölçüldü, tahminle ortalama fark 0.09 sn, en büyük 0.47 sn
+00 tamam  skor 0.86  ort. fark 0.05 sn  en büyük 0.06 sn | Deniz kabuğunda neden deniz sesi var?
+01 tamam  skor 0.86  ort. fark 0.08 sn  en büyük 0.14 sn | Bakın, sahilde bir kabuk bulup kulağına tutuyorsun: içinde dalgalar!
+02 tamam  skor 0.88  ort. fark 0.16 sn  en büyük 0.47 sn | Balıkçı amca gülüyor: "İçinde deniz kalmış!"
+03 tamam  skor 0.91  ort. fark 0.05 sn  en büyük 0.11 sn | Daha büyük bir kabuk buluyorsun: bu sefer koca bir okyanus.
+04 tamam  skor 0.85  ort. fark 0.19 sn  en büyük 0.38 sn | Sonra amcanın boş bardağını kulağına tutuyorsun: yine deniz!
+05 tamam  skor 0.85  ort. fark 0.05 sn  en büyük 0.09 sn | Çünkü o ses denizden gelmiyor: kabuk, etrafındaki uğultuyu içinde çınlatıp büyütüyor.
+06 tamam  skor 0.90  ort. fark 0.07 sn  en büyük 0.14 sn | Tıpkı boş şişeye üfleyince çıkan ses gibi: her boşluk bazı sesleri güçlendirir.
+07 tamam  skor 0.81  ort. fark 0.06 sn  en büyük 0.15 sn | Hiç sesin olmadığı bir odada kabuk da susar.
+08 tamam  skor 0.91  ort. fark 0.12 sn  en büyük 0.16 sn | Yani dinlediğin deniz değil, etrafındaki dünya.
+09 tamam  skor 0.81  ort. fark 0.11 sn  en büyük 0.18 sn | Ama sen yine de kabuğu kulağına tutuyorsun.
