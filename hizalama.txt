@@ -1,0 +1,16 @@
+WhisperX hizalama (tr, ses: voice.ogg): 123 kelime, 15/15 satır ölçüldü, tahminle ortalama fark 0.14 sn, en büyük 1.77 sn
+00 tamam  skor 0.89  ort. fark 0.06 sn  en büyük 0.13 sn | Adını az önce söyledi. Unuttun bile!
+01 tamam  skor 0.88  ort. fark 0.13 sn  en büyük 0.23 sn | Bakın, bir düğündesin ve teyzen seni herkesle tanıştırıyor.
+02 tamam  skor 0.87  ort. fark 0.08 sn  en büyük 0.28 sn | İlk adam elini sıkıyor: "Ben Selim."
+03 tamam  skor 0.92  ort. fark 0.05 sn  en büyük 0.09 sn | Üç saniye sonra adı aklından uçmuş.
+04 tamam  skor 0.80  ort. fark 0.03 sn  en büyük 0.06 sn | Teyzen fısıldıyor: "Selim'di!"
+05 tamam  skor 0.95  ort. fark 0.06 sn  en büyük 0.38 sn | İkinci adam adını iki kere söylüyor, sen de tekrar ediyorsun: yine uçuyor.
+06 tamam  skor 0.88  ort. fark 0.22 sn  en büyük 0.39 sn | Üçüncü adam adını söylemiyor bile: "Ben fırıncıyım."
+07 tamam  skor 0.89  ort. fark 0.07 sn  en büyük 0.16 sn | İşte bunu bütün gece unutmuyorsun!
+08 tamam  skor 0.89  ort. fark 0.46 sn  en büyük 1.77 sn | Çünkü "fırıncı" deyince aklına ekmek, un, sıcak bir fırın geliyor: kelime bir sürü şeye tutunuyor.
+09 tamam  skor 0.84  ort. fark 0.17 sn  en büyük 0.31 sn | "Selim" ise hiçbir şeye tutunmuyor: boş bir etiket gibi.
+10 tamam  skor 0.88  ort. fark 0.11 sn  en büyük 0.26 sn | Tıpkı çivisiz duvara asılan tablo gibi: tutunacak yeri yok, düşüyor.
+11 tamam  skor 0.90  ort. fark 0.06 sn  en büyük 0.20 sn | Bir deneyde yabancı yüzlere aynı kelime bazen meslek, bazen soyadı diye eşlendi.
+12 tamam  skor 0.92  ort. fark 0.11 sn  en büyük 0.24 sn | Meslek olunca akılda kaldı, soyadı olunca çok daha kolay unutuldu.
+13 tamam  skor 0.95  ort. fark 0.01 sn  en büyük 0.03 sn | Adı da buradan geliyor: fırıncı paradoksu.
+14 tamam  skor 0.89  ort. fark 0.09 sn  en büyük 0.45 sn | Gecenin sonunda fırıncı sana dönüyor: "Senin adın neydi?"
