@@ -1,0 +1,472 @@
+{
+"words": [
+{
+"word": "Deniz",
+"start": 0.04,
+"end": 0.306
+},
+{
+"word": "kabuğunda",
+"start": 0.306,
+"end": 0.793
+},
+{
+"word": "neden",
+"start": 0.793,
+"end": 1.059
+},
+{
+"word": "deniz",
+"start": 1.059,
+"end": 1.324
+},
+{
+"word": "sesi",
+"start": 1.324,
+"end": 1.59
+},
+{
+"word": "var?",
+"start": 1.59,
+"end": 1.745
+},
+{
+"word": "Bakın,",
+"start": 1.953,
+"end": 2.169
+},
+{
+"word": "sahilde",
+"start": 2.369,
+"end": 2.675
+},
+{
+"word": "bir",
+"start": 2.675,
+"end": 2.801
+},
+{
+"word": "kabuk",
+"start": 2.801,
+"end": 3.017
+},
+{
+"word": "bulup",
+"start": 3.017,
+"end": 3.233
+},
+{
+"word": "kulağına",
+"start": 3.233,
+"end": 3.629
+},
+{
+"word": "tutuyorsun:",
+"start": 3.629,
+"end": 4.025
+},
+{
+"word": "içinde",
+"start": 4.377,
+"end": 4.815
+},
+{
+"word": "dalgalar!",
+"start": 4.815,
+"end": 5.253
+},
+{
+"word": "Balıkçı",
+"start": 5.461,
+"end": 5.839
+},
+{
+"word": "amca",
+"start": 5.839,
+"end": 6.106
+},
+{
+"word": "gülüyor:",
+"start": 6.106,
+"end": 6.485
+},
+{
+"word": "\"İçinde",
+"start": 6.981,
+"end": 7.48
+},
+{
+"word": "deniz",
+"start": 7.48,
+"end": 7.832
+},
+{
+"word": "kalmış!\"",
+"start": 7.832,
+"end": 8.184
+},
+{
+"word": "Daha",
+"start": 8.392,
+"end": 8.621
+},
+{
+"word": "büyük",
+"start": 8.621,
+"end": 8.85
+},
+{
+"word": "bir",
+"start": 8.85,
+"end": 8.984
+},
+{
+"word": "kabuk",
+"start": 8.984,
+"end": 9.213
+},
+{
+"word": "buluyorsun:",
+"start": 9.213,
+"end": 9.632
+},
+{
+"word": "bu",
+"start": 9.864,
+"end": 10.037
+},
+{
+"word": "sefer",
+"start": 10.037,
+"end": 10.334
+},
+{
+"word": "koca",
+"start": 10.334,
+"end": 10.631
+},
+{
+"word": "bir",
+"start": 10.631,
+"end": 10.804
+},
+{
+"word": "okyanus.",
+"start": 10.804,
+"end": 11.224
+},
+{
+"word": "Sonra",
+"start": 11.432,
+"end": 11.687
+},
+{
+"word": "amcanın",
+"start": 11.687,
+"end": 12.048
+},
+{
+"word": "boş",
+"start": 12.048,
+"end": 12.197
+},
+{
+"word": "bardağını",
+"start": 12.197,
+"end": 12.665
+},
+{
+"word": "kulağına",
+"start": 12.665,
+"end": 13.132
+},
+{
+"word": "tutuyorsun:",
+"start": 13.132,
+"end": 13.6
+},
+{
+"word": "yine",
+"start": 13.888,
+"end": 14.17
+},
+{
+"word": "deniz!",
+"start": 14.17,
+"end": 14.452
+},
+{
+"word": "Çünkü",
+"start": 14.66,
+"end": 14.941
+},
+{
+"word": "o",
+"start": 14.941,
+"end": 15.105
+},
+{
+"word": "ses",
+"start": 15.105,
+"end": 15.27
+},
+{
+"word": "denizden",
+"start": 15.27,
+"end": 15.669
+},
+{
+"word": "gelmiyor:",
+"start": 15.669,
+"end": 16.068
+},
+{
+"word": "kabuk,",
+"start": 16.428,
+"end": 16.676
+},
+{
+"word": "etrafındaki",
+"start": 16.86,
+"end": 17.461
+},
+{
+"word": "uğultuyu",
+"start": 17.461,
+"end": 17.951
+},
+{
+"word": "içinde",
+"start": 17.951,
+"end": 18.33
+},
+{
+"word": "çınlatıp",
+"start": 18.33,
+"end": 18.709
+},
+{
+"word": "büyütüyor.",
+"start": 18.709,
+"end": 19.199
+},
+{
+"word": "Tıpkı",
+"start": 19.407,
+"end": 19.635
+},
+{
+"word": "boş",
+"start": 19.635,
+"end": 19.769
+},
+{
+"word": "şişeye",
+"start": 19.769,
+"end": 20.093
+},
+{
+"word": "üfleyince",
+"start": 20.093,
+"end": 20.512
+},
+{
+"word": "çıkan",
+"start": 20.512,
+"end": 20.741
+},
+{
+"word": "ses",
+"start": 20.741,
+"end": 20.874
+},
+{
+"word": "gibi:",
+"start": 20.874,
+"end": 21.103
+},
+{
+"word": "her",
+"start": 21.471,
+"end": 21.65
+},
+{
+"word": "boşluk",
+"start": 21.65,
+"end": 21.957
+},
+{
+"word": "bazı",
+"start": 21.957,
+"end": 22.265
+},
+{
+"word": "sesleri",
+"start": 22.265,
+"end": 22.7
+},
+{
+"word": "güçlendirir.",
+"start": 22.7,
+"end": 23.264
+},
+{
+"word": "Hiç",
+"start": 23.472,
+"end": 23.626
+},
+{
+"word": "sesin",
+"start": 23.626,
+"end": 23.892
+},
+{
+"word": "olmadığı",
+"start": 23.892,
+"end": 24.378
+},
+{
+"word": "bir",
+"start": 24.378,
+"end": 24.533
+},
+{
+"word": "odada",
+"start": 24.533,
+"end": 24.909
+},
+{
+"word": "kabuk",
+"start": 24.909,
+"end": 25.174
+},
+{
+"word": "da",
+"start": 25.174,
+"end": 25.329
+},
+{
+"word": "susar.",
+"start": 25.329,
+"end": 25.594
+},
+{
+"word": "Yani",
+"start": 25.802,
+"end": 26.089
+},
+{
+"word": "dinlediğin",
+"start": 26.089,
+"end": 26.614
+},
+{
+"word": "deniz",
+"start": 26.614,
+"end": 26.9
+},
+{
+"word": "değil,",
+"start": 26.9,
+"end": 27.186
+},
+{
+"word": "etrafındaki",
+"start": 27.482,
+"end": 28.175
+},
+{
+"word": "dünya.",
+"start": 28.175,
+"end": 28.482
+},
+{
+"word": "Ama",
+"start": 28.69,
+"end": 28.959
+},
+{
+"word": "sen",
+"start": 28.959,
+"end": 29.116
+},
+{
+"word": "yine",
+"start": 29.116,
+"end": 29.385
+},
+{
+"word": "de",
+"start": 29.385,
+"end": 29.542
+},
+{
+"word": "kabuğu",
+"start": 29.542,
+"end": 29.923
+},
+{
+"word": "kulağına",
+"start": 29.923,
+"end": 30.416
+},
+{
+"word": "tutuyorsun.",
+"start": 30.416,
+"end": 30.909
+}
+],
+"lines": [
+{
+"text": "Deniz kabuğunda neden deniz sesi var?",
+"start": 0.04,
+"end": 1.745
+},
+{
+"text": "Bakın, sahilde bir kabuk bulup kulağına tutuyorsun: içinde dalgalar!",
+"start": 1.953,
+"end": 5.253
+},
+{
+"text": "Balıkçı amca gülüyor: \"İçinde deniz kalmış!\"",
+"start": 5.461,
+"end": 8.184
+},
+{
+"text": "Daha büyük bir kabuk buluyorsun: bu sefer koca bir okyanus.",
+"start": 8.392,
+"end": 11.224
+},
+{
+"text": "Sonra amcanın boş bardağını kulağına tutuyorsun: yine deniz!",
+"start": 11.432,
+"end": 14.452
+},
+{
+"text": "Çünkü o ses denizden gelmiyor: kabuk, etrafındaki uğultuyu içinde çınlatıp büyütüyor.",
+"start": 14.66,
+"end": 19.199
+},
+{
+"text": "Tıpkı boş şişeye üfleyince çıkan ses gibi: her boşluk bazı sesleri güçlendirir.",
+"start": 19.407,
+"end": 23.264
+},
+{
+"text": "Hiç sesin olmadığı bir odada kabuk da susar.",
+"start": 23.472,
+"end": 25.594
+},
+{
+"text": "Yani dinlediğin deniz değil, etrafındaki dünya.",
+"start": 25.802,
+"end": 28.482
+},
+{
+"text": "Ama sen yine de kabuğu kulağına tutuyorsun.",
+"start": 28.69,
+"end": 30.909
+}
+],
+"duration": 31.117
+}
