@@ -2,418 +2,418 @@
 "words": [
 {
 "word": "Deniz",
-"start": 0.04,
-"end": 0.306
+"start": 0.08,
+"end": 0.301
 },
 {
 "word": "kabuğunda",
-"start": 0.306,
-"end": 0.793
+"start": 0.361,
+"end": 0.762
 },
 {
 "word": "neden",
-"start": 0.793,
-"end": 1.059
+"start": 0.842,
+"end": 1.103
 },
 {
 "word": "deniz",
-"start": 1.059,
+"start": 1.123,
 "end": 1.324
 },
 {
 "word": "sesi",
-"start": 1.324,
-"end": 1.59
+"start": 1.364,
+"end": 1.544
 },
 {
 "word": "var?",
-"start": 1.59,
-"end": 1.745
+"start": 1.564,
+"end": 1.685
 },
 {
 "word": "Bakın,",
-"start": 1.953,
-"end": 2.169
+"start": 1.974,
+"end": 2.175
 },
 {
 "word": "sahilde",
-"start": 2.369,
-"end": 2.675
+"start": 2.396,
+"end": 2.778
 },
 {
 "word": "bir",
-"start": 2.675,
-"end": 2.801
+"start": 2.798,
+"end": 2.879
 },
 {
 "word": "kabuk",
-"start": 2.801,
-"end": 3.017
+"start": 2.919,
+"end": 3.12
 },
 {
 "word": "bulup",
-"start": 3.017,
-"end": 3.233
+"start": 3.16,
+"end": 3.321
 },
 {
 "word": "kulağına",
-"start": 3.233,
-"end": 3.629
+"start": 3.362,
+"end": 3.683
 },
 {
 "word": "tutuyorsun:",
-"start": 3.629,
-"end": 4.025
+"start": 3.704,
+"end": 4.086
 },
 {
 "word": "içinde",
-"start": 4.377,
-"end": 4.815
+"start": 4.388,
+"end": 4.709
 },
 {
 "word": "dalgalar!",
-"start": 4.815,
-"end": 5.253
+"start": 4.75,
+"end": 5.192
 },
 {
 "word": "Balıkçı",
-"start": 5.461,
-"end": 5.839
+"start": 5.522,
+"end": 5.885
 },
 {
 "word": "amca",
-"start": 5.839,
-"end": 6.106
+"start": 5.946,
+"end": 6.147
 },
 {
 "word": "gülüyor:",
-"start": 6.106,
-"end": 6.485
+"start": 6.167,
+"end": 6.49
 },
 {
 "word": "\"İçinde",
-"start": 6.981,
-"end": 7.48
+"start": 6.51,
+"end": 7.316
 },
 {
 "word": "deniz",
-"start": 7.48,
-"end": 7.832
+"start": 7.357,
+"end": 7.639
 },
 {
 "word": "kalmış!\"",
-"start": 7.832,
-"end": 8.184
+"start": 7.72,
+"end": 8.183
 },
 {
 "word": "Daha",
-"start": 8.392,
-"end": 8.621
+"start": 8.453,
+"end": 8.673
 },
 {
 "word": "büyük",
-"start": 8.621,
-"end": 8.85
+"start": 8.714,
+"end": 8.914
 },
 {
 "word": "bir",
-"start": 8.85,
-"end": 8.984
+"start": 8.955,
+"end": 9.015
 },
 {
 "word": "kabuk",
-"start": 8.984,
-"end": 9.213
+"start": 9.055,
+"end": 9.256
 },
 {
 "word": "buluyorsun:",
-"start": 9.213,
-"end": 9.632
+"start": 9.276,
+"end": 9.637
 },
 {
 "word": "bu",
-"start": 9.864,
-"end": 10.037
+"start": 9.878,
+"end": 9.959
 },
 {
 "word": "sefer",
-"start": 10.037,
-"end": 10.334
+"start": 9.979,
+"end": 10.24
 },
 {
 "word": "koca",
-"start": 10.334,
-"end": 10.631
+"start": 10.34,
+"end": 10.641
 },
 {
 "word": "bir",
-"start": 10.631,
-"end": 10.804
+"start": 10.661,
+"end": 10.762
 },
 {
 "word": "okyanus.",
-"start": 10.804,
-"end": 11.224
+"start": 10.802,
+"end": 11.123
 },
 {
 "word": "Sonra",
-"start": 11.432,
-"end": 11.687
+"start": 11.473,
+"end": 11.755
 },
 {
 "word": "amcanın",
-"start": 11.687,
-"end": 12.048
+"start": 11.976,
+"end": 12.278
 },
 {
 "word": "boş",
-"start": 12.048,
-"end": 12.197
+"start": 12.338,
+"end": 12.539
 },
 {
 "word": "bardağını",
-"start": 12.197,
-"end": 12.665
+"start": 12.58,
+"end": 12.922
 },
 {
 "word": "kulağına",
-"start": 12.665,
-"end": 13.132
+"start": 12.942,
+"end": 13.244
 },
 {
 "word": "tutuyorsun:",
-"start": 13.132,
-"end": 13.6
+"start": 13.264,
+"end": 13.626
 },
 {
 "word": "yine",
-"start": 13.888,
-"end": 14.17
+"start": 13.948,
+"end": 14.129
 },
 {
 "word": "deniz!",
-"start": 14.17,
-"end": 14.452
+"start": 14.15,
+"end": 14.451
 },
 {
 "word": "Çünkü",
-"start": 14.66,
-"end": 14.941
+"start": 14.68,
+"end": 14.921
 },
 {
 "word": "o",
-"start": 14.941,
-"end": 15.105
+"start": 15.022,
+"end": 15.082
 },
 {
 "word": "ses",
-"start": 15.105,
-"end": 15.27
+"start": 15.102,
+"end": 15.303
 },
 {
 "word": "denizden",
-"start": 15.27,
-"end": 15.669
+"start": 15.343,
+"end": 15.705
 },
 {
 "word": "gelmiyor:",
-"start": 15.669,
-"end": 16.068
+"start": 15.745,
+"end": 16.106
 },
 {
 "word": "kabuk,",
-"start": 16.428,
-"end": 16.676
+"start": 16.427,
+"end": 16.689
 },
 {
 "word": "etrafındaki",
-"start": 16.86,
-"end": 17.461
+"start": 16.889,
+"end": 17.432
 },
 {
 "word": "uğultuyu",
-"start": 17.461,
-"end": 17.951
+"start": 17.552,
+"end": 17.954
 },
 {
 "word": "içinde",
-"start": 17.951,
-"end": 18.33
+"start": 18.014,
+"end": 18.295
 },
 {
 "word": "çınlatıp",
-"start": 18.33,
-"end": 18.709
+"start": 18.335,
+"end": 18.757
 },
 {
 "word": "büyütüyor.",
-"start": 18.709,
+"start": 18.797,
 "end": 19.199
 },
 {
 "word": "Tıpkı",
 "start": 19.407,
-"end": 19.635
+"end": 19.628
 },
 {
 "word": "boş",
-"start": 19.635,
-"end": 19.769
+"start": 19.689,
+"end": 19.869
 },
 {
 "word": "şişeye",
-"start": 19.769,
-"end": 20.093
+"start": 19.889,
+"end": 20.15
 },
 {
 "word": "üfleyince",
-"start": 20.093,
-"end": 20.512
+"start": 20.211,
+"end": 20.552
 },
 {
 "word": "çıkan",
-"start": 20.512,
-"end": 20.741
+"start": 20.572,
+"end": 20.773
 },
 {
 "word": "ses",
-"start": 20.741,
-"end": 20.874
+"start": 20.793,
+"end": 20.954
 },
 {
 "word": "gibi:",
-"start": 20.874,
-"end": 21.103
+"start": 20.994,
+"end": 21.135
 },
 {
 "word": "her",
-"start": 21.471,
-"end": 21.65
+"start": 21.476,
+"end": 21.657
 },
 {
 "word": "boşluk",
-"start": 21.65,
-"end": 21.957
+"start": 21.697,
+"end": 22.018
 },
 {
 "word": "bazı",
-"start": 21.957,
-"end": 22.265
+"start": 22.099,
+"end": 22.36
 },
 {
 "word": "sesleri",
-"start": 22.265,
-"end": 22.7
+"start": 22.38,
+"end": 22.681
 },
 {
 "word": "güçlendirir.",
-"start": 22.7,
-"end": 23.264
+"start": 22.721,
+"end": 23.223
 },
 {
 "word": "Hiç",
-"start": 23.472,
-"end": 23.626
+"start": 23.513,
+"end": 23.655
 },
 {
 "word": "sesin",
-"start": 23.626,
-"end": 23.892
+"start": 23.695,
+"end": 23.937
 },
 {
 "word": "olmadığı",
-"start": 23.892,
-"end": 24.378
+"start": 24.038,
+"end": 24.382
 },
 {
 "word": "bir",
-"start": 24.378,
-"end": 24.533
+"start": 24.402,
+"end": 24.483
 },
 {
 "word": "odada",
-"start": 24.533,
-"end": 24.909
+"start": 24.543,
+"end": 24.806
 },
 {
 "word": "kabuk",
-"start": 24.909,
-"end": 25.174
+"start": 25.008,
+"end": 25.21
 },
 {
 "word": "da",
-"start": 25.174,
-"end": 25.329
+"start": 25.25,
+"end": 25.31
 },
 {
 "word": "susar.",
-"start": 25.329,
-"end": 25.594
+"start": 25.331,
+"end": 25.573
 },
 {
 "word": "Yani",
-"start": 25.802,
-"end": 26.089
+"start": 25.964,
+"end": 26.185
 },
 {
 "word": "dinlediğin",
-"start": 26.089,
-"end": 26.614
+"start": 26.246,
+"end": 26.709
 },
 {
 "word": "deniz",
-"start": 26.614,
-"end": 26.9
+"start": 26.749,
+"end": 27.011
 },
 {
 "word": "değil,",
-"start": 26.9,
-"end": 27.186
+"start": 27.031,
+"end": 27.273
 },
 {
 "word": "etrafındaki",
-"start": 27.482,
-"end": 28.175
+"start": 27.515,
+"end": 28.058
 },
 {
 "word": "dünya.",
-"start": 28.175,
-"end": 28.482
+"start": 28.099,
+"end": 28.401
 },
 {
 "word": "Ama",
-"start": 28.69,
-"end": 28.959
+"start": 28.711,
+"end": 28.892
 },
 {
 "word": "sen",
-"start": 28.959,
-"end": 29.116
+"start": 28.933,
+"end": 29.195
 },
 {
 "word": "yine",
-"start": 29.116,
-"end": 29.385
+"start": 29.255,
+"end": 29.497
 },
 {
 "word": "de",
-"start": 29.385,
-"end": 29.542
+"start": 29.537,
+"end": 29.638
 },
 {
 "word": "kabuğu",
-"start": 29.542,
-"end": 29.923
+"start": 29.719,
+"end": 30.041
 },
 {
 "word": "kulağına",
-"start": 29.923,
-"end": 30.416
+"start": 30.102,
+"end": 30.465
 },
 {
 "word": "tutuyorsun.",
-"start": 30.416,
-"end": 30.909
+"start": 30.485,
+"end": 30.929
 }
 ],
 "lines": [
@@ -468,5 +468,6 @@
 "end": 30.909
 }
 ],
-"duration": 31.117
+"duration": 31.117,
+"hizalama": "whisperx-tr"
 }
